@@ -1,0 +1,3520 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "BioScribe public-data descriptor workbench",
+    "description": "Scientific release and sensitive intake blocked. No validated predictive endpoints.",
+    "version": "3.0.0"
+  },
+  "paths": {
+    "/health/live": {
+      "get": {
+        "summary": "Live",
+        "operationId": "live_health_live_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health/ready": {
+      "get": {
+        "summary": "Ready",
+        "operationId": "ready_health_ready_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/capabilities": {
+      "get": {
+        "summary": "Capabilities",
+        "operationId": "capabilities_v3_capabilities_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/runs": {
+      "post": {
+        "summary": "Submit",
+        "operationId": "submit_v3_runs_post",
+        "parameters": [
+          {
+            "name": "idempotency-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Idempotency-Key"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RunRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunView"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/runs/{run_id}": {
+      "get": {
+        "summary": "Get",
+        "operationId": "get_v3_runs__run_id__get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunView"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/runs/{run_id}/cancel": {
+      "post": {
+        "summary": "Cancel",
+        "operationId": "cancel_v3_runs__run_id__cancel_post",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunView"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/runs/{run_id}/export": {
+      "get": {
+        "summary": "Export",
+        "operationId": "export_v3_runs__run_id__export_get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunView"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/runs/{run_id}/audit": {
+      "get": {
+        "summary": "Audit",
+        "operationId": "audit_v3_runs__run_id__audit_get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/runs/{run_id}/provenance": {
+      "get": {
+        "summary": "Provenance",
+        "operationId": "provenance_v3_runs__run_id__provenance_get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/lab/runs": {
+      "post": {
+        "summary": "Analyze",
+        "operationId": "analyze_lab_runs_post",
+        "parameters": [
+          {
+            "name": "idempotency-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Idempotency-Key"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/provenance_lab__schemas__LabRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/lab/replay": {
+      "post": {
+        "summary": "Replay",
+        "operationId": "replay_lab_replay_post",
+        "parameters": [
+          {
+            "name": "idempotency-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Idempotency-Key"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/provenance_lab__schemas__ReplayPackage"
+                  },
+                  {
+                    "$ref": "#/components/schemas/provenance_lab_legacy_v1__schemas__ReplayPackage"
+                  }
+                ],
+                "title": "Payload"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/lab/runs/{run_id}": {
+      "get": {
+        "summary": "Get",
+        "operationId": "get_lab_runs__run_id__get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/lab/runs/{run_id}/cancel": {
+      "post": {
+        "summary": "Cancel",
+        "operationId": "cancel_lab_runs__run_id__cancel_post",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/lab/runs/{run_id}/export": {
+      "get": {
+        "summary": "Export",
+        "operationId": "export_lab_runs__run_id__export_get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/lab/schema": {
+      "get": {
+        "summary": "Schema",
+        "operationId": "schema_lab_schema_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/assistant/capabilities": {
+      "get": {
+        "summary": "Capabilities",
+        "operationId": "capabilities_assistant_capabilities_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/assistant/reviews": {
+      "post": {
+        "summary": "Submit",
+        "operationId": "submit_assistant_reviews_post",
+        "parameters": [
+          {
+            "name": "idempotency-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Idempotency-Key"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/assistant/reviews/{run_id}": {
+      "get": {
+        "summary": "Get",
+        "operationId": "get_assistant_reviews__run_id__get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/assistant/reviews/{run_id}/export": {
+      "get": {
+        "summary": "Export",
+        "operationId": "export_assistant_reviews__run_id__export_get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/assistant/schema": {
+      "get": {
+        "summary": "Schema",
+        "operationId": "schema_assistant_schema_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ChemicalIdentity": {
+        "properties": {
+          "identity_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Identity Sha256"
+          },
+          "input_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Input Sha256"
+          },
+          "canonical_isomeric_smiles": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Canonical Isomeric Smiles"
+          },
+          "formal_charge": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Formal Charge"
+          },
+          "fragments": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Fragments"
+          },
+          "stereocenters": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Stereocenters"
+          },
+          "policies": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Policies"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "identified",
+              "unsupported_input",
+              "unavailable"
+            ],
+            "title": "Status"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "identity_sha256",
+          "input_sha256",
+          "canonical_isomeric_smiles",
+          "formal_charge",
+          "fragments",
+          "stereocenters",
+          "policies",
+          "status"
+        ],
+        "title": "ChemicalIdentity"
+      },
+      "Coverage": {
+        "properties": {
+          "total": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Total"
+          },
+          "analyzed": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Analyzed"
+          },
+          "complete": {
+            "type": "boolean",
+            "title": "Complete"
+          },
+          "coordinate_system": {
+            "type": "string",
+            "enum": [
+              "zero_based_half_open",
+              "molecule",
+              "not_applicable"
+            ],
+            "title": "Coordinate System"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "total",
+          "analyzed",
+          "complete",
+          "coordinate_system",
+          "reason"
+        ],
+        "title": "Coverage"
+      },
+      "CurrentArtifact": {
+        "properties": {
+          "contract_version": {
+            "type": "string",
+            "const": "3.1.0",
+            "title": "Contract Version",
+            "default": "3.1.0"
+          },
+          "run_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{32}$",
+            "title": "Run Id"
+          },
+          "input_identity": {
+            "$ref": "#/components/schemas/InputIdentity"
+          },
+          "chemical_identities": {
+            "items": {
+              "$ref": "#/components/schemas/ChemicalIdentity"
+            },
+            "type": "array",
+            "title": "Chemical Identities"
+          },
+          "outputs": {
+            "items": {
+              "$ref": "#/components/schemas/Evidence"
+            },
+            "type": "array",
+            "title": "Outputs"
+          },
+          "manifest": {
+            "$ref": "#/components/schemas/Manifest"
+          },
+          "scientific_release": {
+            "type": "string",
+            "const": "blocked",
+            "title": "Scientific Release",
+            "default": "blocked"
+          },
+          "sensitive_intake": {
+            "type": "string",
+            "const": "blocked",
+            "title": "Sensitive Intake",
+            "default": "blocked"
+          },
+          "audit_integrity": {
+            "type": "string",
+            "const": "integrity_unverified",
+            "title": "Audit Integrity",
+            "default": "integrity_unverified"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id",
+          "input_identity",
+          "chemical_identities",
+          "outputs",
+          "manifest"
+        ],
+        "title": "CurrentArtifact"
+      },
+      "Diagnostic": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "enum": [
+              "empty_input",
+              "unsupported_annotation",
+              "non_ascii_character",
+              "whitespace_or_control",
+              "atom_limit",
+              "dummy_atom",
+              "query_graph",
+              "unsupported_bond",
+              "unsupported_stereo",
+              "atom_map",
+              "ring_closure",
+              "branch_syntax",
+              "smiles_syntax",
+              "invalid_valence",
+              "aromaticity_failure",
+              "sanitization_failure",
+              "unspecified_stereo",
+              "multiple_fragments",
+              "charged_graph"
+            ],
+            "title": "Code"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "error",
+              "warning"
+            ],
+            "title": "Severity"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "character_offset": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Character Offset"
+          },
+          "atom_indices": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Atom Indices",
+            "default": []
+          },
+          "bond_indices": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Bond Indices",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "code",
+          "severity",
+          "message"
+        ],
+        "title": "Diagnostic"
+      },
+      "Evidence": {
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{32}$",
+            "title": "Run Id"
+          },
+          "input_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Input Sha256"
+          },
+          "field_id": {
+            "type": "string",
+            "title": "Field Id"
+          },
+          "quantity": {
+            "type": "string",
+            "title": "Quantity"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          },
+          "units": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Units"
+          },
+          "evidence_category": {
+            "type": "string",
+            "enum": [
+              "computed_descriptor",
+              "structural_rule_observation",
+              "unvalidated_heuristic",
+              "model_prediction",
+              "unverified_extraction"
+            ],
+            "title": "Evidence Category"
+          },
+          "method_id": {
+            "type": "string",
+            "title": "Method Id"
+          },
+          "method_version": {
+            "type": "string",
+            "title": "Method Version"
+          },
+          "implementation_fidelity": {
+            "type": "string",
+            "enum": [
+              "fixture_checked",
+              "not_verified"
+            ],
+            "title": "Implementation Fidelity"
+          },
+          "fidelity_record": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Fidelity Record"
+          },
+          "validation_record": {
+            "type": "null",
+            "title": "Validation Record"
+          },
+          "validation_status": {
+            "type": "string",
+            "enum": [
+              "not_available",
+              "not_applicable"
+            ],
+            "title": "Validation Status"
+          },
+          "validation_reason": {
+            "type": "string",
+            "title": "Validation Reason"
+          },
+          "domain": {
+            "type": "string",
+            "enum": [
+              "in_domain",
+              "out_of_domain",
+              "undetermined",
+              "not_applicable"
+            ],
+            "title": "Domain"
+          },
+          "domain_reason": {
+            "type": "string",
+            "title": "Domain Reason"
+          },
+          "coverage": {
+            "$ref": "#/components/schemas/Coverage"
+          },
+          "assessment_status": {
+            "type": "string",
+            "enum": [
+              "computed",
+              "observed",
+              "not_assessed",
+              "needs_review"
+            ],
+            "title": "Assessment Status"
+          },
+          "execution_status": {
+            "type": "string",
+            "enum": [
+              "succeeded",
+              "failed",
+              "unavailable",
+              "unsupported_input"
+            ],
+            "title": "Execution Status"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id",
+          "input_sha256",
+          "field_id",
+          "quantity",
+          "value",
+          "units",
+          "evidence_category",
+          "method_id",
+          "method_version",
+          "implementation_fidelity",
+          "fidelity_record",
+          "validation_status",
+          "validation_reason",
+          "domain",
+          "domain_reason",
+          "coverage",
+          "assessment_status",
+          "execution_status",
+          "reason"
+        ],
+        "title": "Evidence"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HistoricalArtifact": {
+        "properties": {
+          "contract_version": {
+            "type": "string",
+            "const": "3.0.0",
+            "title": "Contract Version",
+            "default": "3.0.0"
+          },
+          "run_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{32}$",
+            "title": "Run Id"
+          },
+          "input_identity": {
+            "$ref": "#/components/schemas/HistoricalInputIdentity"
+          },
+          "chemical_identities": {
+            "items": {
+              "$ref": "#/components/schemas/HistoricalChemicalIdentity"
+            },
+            "type": "array",
+            "title": "Chemical Identities"
+          },
+          "outputs": {
+            "items": {
+              "$ref": "#/components/schemas/HistoricalEvidence"
+            },
+            "type": "array",
+            "title": "Outputs"
+          },
+          "manifest": {
+            "$ref": "#/components/schemas/HistoricalManifest"
+          },
+          "scientific_release": {
+            "type": "string",
+            "const": "blocked",
+            "title": "Scientific Release",
+            "default": "blocked"
+          },
+          "sensitive_intake": {
+            "type": "string",
+            "const": "blocked",
+            "title": "Sensitive Intake",
+            "default": "blocked"
+          },
+          "audit_integrity": {
+            "type": "string",
+            "const": "integrity_unverified",
+            "title": "Audit Integrity",
+            "default": "integrity_unverified"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id",
+          "input_identity",
+          "chemical_identities",
+          "outputs",
+          "manifest"
+        ],
+        "title": "HistoricalArtifact"
+      },
+      "HistoricalChemicalIdentity": {
+        "properties": {
+          "input_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Input Sha256"
+          },
+          "canonical_isomeric_smiles": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Canonical Isomeric Smiles"
+          },
+          "formal_charge": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Formal Charge"
+          },
+          "fragments": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Fragments"
+          },
+          "stereocenters": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Stereocenters"
+          },
+          "policies": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Policies"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "identified",
+              "unsupported_input",
+              "unavailable"
+            ],
+            "title": "Status"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "input_sha256",
+          "canonical_isomeric_smiles",
+          "formal_charge",
+          "fragments",
+          "stereocenters",
+          "policies",
+          "status"
+        ],
+        "title": "HistoricalChemicalIdentity"
+      },
+      "HistoricalCoverage": {
+        "properties": {
+          "total": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Total"
+          },
+          "analyzed": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Analyzed"
+          },
+          "complete": {
+            "type": "boolean",
+            "title": "Complete"
+          },
+          "coordinate_system": {
+            "type": "string",
+            "enum": [
+              "zero_based_half_open",
+              "molecule",
+              "not_applicable"
+            ],
+            "title": "Coordinate System"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "total",
+          "analyzed",
+          "complete",
+          "coordinate_system",
+          "reason"
+        ],
+        "title": "HistoricalCoverage"
+      },
+      "HistoricalEvidence": {
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{32}$",
+            "title": "Run Id"
+          },
+          "input_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Input Sha256"
+          },
+          "field_id": {
+            "type": "string",
+            "title": "Field Id"
+          },
+          "quantity": {
+            "type": "string",
+            "title": "Quantity"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          },
+          "units": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Units"
+          },
+          "evidence_category": {
+            "type": "string",
+            "enum": [
+              "computed_descriptor",
+              "structural_rule_observation",
+              "unvalidated_heuristic",
+              "model_prediction",
+              "unverified_extraction"
+            ],
+            "title": "Evidence Category"
+          },
+          "method_id": {
+            "type": "string",
+            "title": "Method Id"
+          },
+          "method_version": {
+            "type": "string",
+            "title": "Method Version"
+          },
+          "implementation_fidelity": {
+            "type": "string",
+            "enum": [
+              "fixture_checked",
+              "not_verified"
+            ],
+            "title": "Implementation Fidelity"
+          },
+          "fidelity_record": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Fidelity Record"
+          },
+          "validation_record": {
+            "type": "null",
+            "title": "Validation Record"
+          },
+          "validation_status": {
+            "type": "string",
+            "enum": [
+              "not_available",
+              "not_applicable"
+            ],
+            "title": "Validation Status"
+          },
+          "validation_reason": {
+            "type": "string",
+            "title": "Validation Reason"
+          },
+          "domain": {
+            "type": "string",
+            "enum": [
+              "in_domain",
+              "out_of_domain",
+              "undetermined",
+              "not_applicable"
+            ],
+            "title": "Domain"
+          },
+          "domain_reason": {
+            "type": "string",
+            "title": "Domain Reason"
+          },
+          "coverage": {
+            "$ref": "#/components/schemas/HistoricalCoverage"
+          },
+          "assessment_status": {
+            "type": "string",
+            "enum": [
+              "computed",
+              "observed",
+              "not_assessed",
+              "needs_review"
+            ],
+            "title": "Assessment Status"
+          },
+          "execution_status": {
+            "type": "string",
+            "enum": [
+              "succeeded",
+              "failed",
+              "unavailable",
+              "unsupported_input"
+            ],
+            "title": "Execution Status"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id",
+          "input_sha256",
+          "field_id",
+          "quantity",
+          "value",
+          "units",
+          "evidence_category",
+          "method_id",
+          "method_version",
+          "implementation_fidelity",
+          "fidelity_record",
+          "validation_status",
+          "validation_reason",
+          "domain",
+          "domain_reason",
+          "coverage",
+          "assessment_status",
+          "execution_status",
+          "reason"
+        ],
+        "title": "HistoricalEvidence"
+      },
+      "HistoricalInputIdentity": {
+        "properties": {
+          "request_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Request Sha256"
+          },
+          "content_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Content Sha256"
+          },
+          "polymer_type": {
+            "type": "string",
+            "title": "Polymer Type"
+          },
+          "record_count": {
+            "type": "integer",
+            "title": "Record Count"
+          },
+          "source": {
+            "$ref": "#/components/schemas/HistoricalSourceIdentity"
+          },
+          "records": {
+            "items": {
+              "$ref": "#/components/schemas/HistoricalRecord"
+            },
+            "type": "array",
+            "title": "Records"
+          },
+          "normalization_policy": {
+            "type": "string",
+            "const": "ascii_case_and_layout_only_v1",
+            "title": "Normalization Policy",
+            "default": "ascii_case_and_layout_only_v1"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "request_sha256",
+          "content_sha256",
+          "polymer_type",
+          "record_count",
+          "source",
+          "records"
+        ],
+        "title": "HistoricalInputIdentity"
+      },
+      "HistoricalManifest": {
+        "properties": {
+          "code_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Code Sha256"
+          },
+          "registry_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Registry Sha256"
+          },
+          "dependency_lock_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Dependency Lock Sha256"
+          },
+          "dependencies": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Dependencies"
+          },
+          "python_version": {
+            "type": "string",
+            "title": "Python Version"
+          },
+          "parameters": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Parameters"
+          },
+          "random_seed": {
+            "type": "null",
+            "title": "Random Seed"
+          },
+          "model": {
+            "type": "string",
+            "const": "none",
+            "title": "Model",
+            "default": "none"
+          },
+          "external_destinations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 0,
+            "title": "External Destinations"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "code_sha256",
+          "registry_sha256",
+          "dependency_lock_sha256",
+          "dependencies",
+          "python_version",
+          "parameters"
+        ],
+        "title": "HistoricalManifest"
+      },
+      "HistoricalRecord": {
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "title": "Record Id"
+          },
+          "sequence": {
+            "type": "string",
+            "title": "Sequence"
+          },
+          "original_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Original Sha256"
+          },
+          "normalized_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Normalized Sha256"
+          },
+          "normalization": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Normalization"
+          },
+          "source_offsets": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Source Offsets"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "record_id",
+          "sequence",
+          "original_sha256",
+          "normalized_sha256",
+          "normalization",
+          "source_offsets"
+        ],
+        "title": "HistoricalRecord"
+      },
+      "HistoricalSourceIdentity": {
+        "properties": {
+          "accession": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 128
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Accession"
+          },
+          "version": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 64
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Version"
+          },
+          "organism_taxon_id": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Organism Taxon Id"
+          },
+          "provenance": {
+            "type": "string",
+            "const": "user_supplied_unverified",
+            "title": "Provenance",
+            "default": "user_supplied_unverified"
+          },
+          "unknown_reason": {
+            "type": "string",
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Unknown Reason",
+            "default": "User supplied; no verified source accession"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "HistoricalSourceIdentity"
+      },
+      "InputIdentity": {
+        "properties": {
+          "request_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Request Sha256"
+          },
+          "content_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Content Sha256"
+          },
+          "polymer_type": {
+            "type": "string",
+            "title": "Polymer Type"
+          },
+          "record_count": {
+            "type": "integer",
+            "title": "Record Count"
+          },
+          "source": {
+            "$ref": "#/components/schemas/SourceIdentity"
+          },
+          "records": {
+            "items": {
+              "$ref": "#/components/schemas/Record"
+            },
+            "type": "array",
+            "title": "Records"
+          },
+          "normalization_policy": {
+            "type": "string",
+            "const": "ascii_case_and_layout_only_v1",
+            "title": "Normalization Policy",
+            "default": "ascii_case_and_layout_only_v1"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "request_sha256",
+          "content_sha256",
+          "polymer_type",
+          "record_count",
+          "source",
+          "records"
+        ],
+        "title": "InputIdentity"
+      },
+      "Manifest": {
+        "properties": {
+          "code_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Code Sha256"
+          },
+          "registry_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Registry Sha256"
+          },
+          "dependency_lock_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Dependency Lock Sha256"
+          },
+          "installation_lock_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Installation Lock Sha256"
+          },
+          "dependencies": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Dependencies"
+          },
+          "python_version": {
+            "type": "string",
+            "title": "Python Version"
+          },
+          "parameters": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Parameters"
+          },
+          "random_seed": {
+            "type": "null",
+            "title": "Random Seed"
+          },
+          "model": {
+            "type": "string",
+            "const": "none",
+            "title": "Model",
+            "default": "none"
+          },
+          "external_destinations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 0,
+            "title": "External Destinations"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "code_sha256",
+          "registry_sha256",
+          "dependency_lock_sha256",
+          "installation_lock_sha256",
+          "dependencies",
+          "python_version",
+          "parameters"
+        ],
+        "title": "Manifest"
+      },
+      "Record": {
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "title": "Record Id"
+          },
+          "sequence": {
+            "type": "string",
+            "title": "Sequence"
+          },
+          "original_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Original Sha256"
+          },
+          "normalized_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Normalized Sha256"
+          },
+          "normalization": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Normalization"
+          },
+          "source_offsets": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Source Offsets"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "record_id",
+          "sequence",
+          "original_sha256",
+          "normalized_sha256",
+          "normalization",
+          "source_offsets"
+        ],
+        "title": "Record"
+      },
+      "Reference": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "enum": [
+              "PubChem",
+              "ChEMBL"
+            ],
+            "title": "Source"
+          },
+          "identifier": {
+            "type": "string",
+            "title": "Identifier"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "raw_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Raw Sha256"
+          },
+          "retrieved_utc": {
+            "type": "string",
+            "title": "Retrieved Utc"
+          },
+          "source_version": {
+            "type": "string",
+            "title": "Source Version"
+          },
+          "url": {
+            "type": "string",
+            "title": "Url"
+          },
+          "correspondence": {
+            "type": "string",
+            "const": "exact_isomeric_graph",
+            "title": "Correspondence",
+            "default": "exact_isomeric_graph"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "source",
+          "identifier",
+          "label",
+          "raw_sha256",
+          "retrieved_utc",
+          "source_version",
+          "url"
+        ],
+        "title": "Reference"
+      },
+      "ReviewRequest": {
+        "properties": {
+          "contract_version": {
+            "type": "string",
+            "const": "evidence-assistant/0.1.0",
+            "title": "Contract Version",
+            "default": "evidence-assistant/0.1.0"
+          },
+          "data_scope": {
+            "type": "string",
+            "const": "public_non_sensitive",
+            "title": "Data Scope",
+            "default": "public_non_sensitive"
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 8000,
+            "minLength": 1,
+            "title": "Text"
+          },
+          "use_model": {
+            "type": "boolean",
+            "title": "Use Model",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "title": "ReviewRequest"
+      },
+      "RunRequest": {
+        "properties": {
+          "contract_version": {
+            "type": "string",
+            "const": "3.1.0",
+            "title": "Contract Version",
+            "default": "3.1.0"
+          },
+          "data_classification": {
+            "type": "string",
+            "const": "public_non_sensitive",
+            "title": "Data Classification"
+          },
+          "polymer_type": {
+            "type": "string",
+            "enum": [
+              "protein",
+              "dna",
+              "rna",
+              "notes",
+              "molecule"
+            ],
+            "title": "Polymer Type"
+          },
+          "content": {
+            "type": "string",
+            "maxLength": 131072,
+            "title": "Content"
+          },
+          "record_count": {
+            "type": "integer",
+            "maximum": 8.0,
+            "minimum": 0.0,
+            "title": "Record Count"
+          },
+          "source": {
+            "$ref": "#/components/schemas/SourceIdentity"
+          },
+          "molecules": {
+            "items": {
+              "type": "string",
+              "maxLength": 2048,
+              "minLength": 1
+            },
+            "type": "array",
+            "maxItems": 16,
+            "title": "Molecules"
+          },
+          "analysis": {
+            "type": "string",
+            "const": "descriptors_and_observations",
+            "title": "Analysis",
+            "default": "descriptors_and_observations"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "data_classification",
+          "polymer_type",
+          "content",
+          "record_count"
+        ],
+        "title": "RunRequest"
+      },
+      "RunView": {
+        "properties": {
+          "contract_version": {
+            "type": "string",
+            "enum": [
+              "3.0.0",
+              "3.1.0"
+            ],
+            "title": "Contract Version",
+            "default": "3.1.0"
+          },
+          "run_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{32}$",
+            "title": "Run Id"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "queued",
+              "running",
+              "succeeded",
+              "failed",
+              "cancelled"
+            ],
+            "title": "Status"
+          },
+          "request_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Request Sha256"
+          },
+          "created_at": {
+            "type": "string",
+            "title": "Created At"
+          },
+          "attempts": {
+            "type": "integer",
+            "title": "Attempts"
+          },
+          "error_code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error Code"
+          },
+          "artifact_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Artifact Sha256"
+          },
+          "artifact": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/CurrentArtifact"
+              },
+              {
+                "$ref": "#/components/schemas/HistoricalArtifact"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Artifact"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id",
+          "status",
+          "request_sha256",
+          "created_at",
+          "attempts",
+          "error_code",
+          "artifact_sha256",
+          "artifact"
+        ],
+        "title": "RunView"
+      },
+      "SourceIdentity": {
+        "properties": {
+          "accession": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 128
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Accession"
+          },
+          "version": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 64
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Version"
+          },
+          "organism_taxon_id": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Organism Taxon Id"
+          },
+          "provenance": {
+            "type": "string",
+            "const": "user_supplied_unverified",
+            "title": "Provenance",
+            "default": "user_supplied_unverified"
+          },
+          "unknown_reason": {
+            "type": "string",
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Unknown Reason",
+            "default": "User supplied; no verified source accession"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "SourceIdentity"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "provenance_lab__schemas__Bundle": {
+        "properties": {
+          "sources": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Sources"
+          },
+          "dependency_lock": {
+            "type": "string",
+            "title": "Dependency Lock"
+          },
+          "installation_lock": {
+            "type": "string",
+            "title": "Installation Lock"
+          },
+          "references": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "References"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "sources",
+          "dependency_lock",
+          "installation_lock",
+          "references"
+        ],
+        "title": "Bundle"
+      },
+      "provenance_lab__schemas__LabRequest": {
+        "properties": {
+          "contract_version": {
+            "type": "string",
+            "const": "lab-1.1.0",
+            "title": "Contract Version",
+            "default": "lab-1.1.0"
+          },
+          "data_scope": {
+            "type": "string",
+            "const": "public_non_sensitive",
+            "title": "Data Scope",
+            "default": "public_non_sensitive"
+          },
+          "molecules": {
+            "items": {
+              "type": "string",
+              "maxLength": 2048
+            },
+            "type": "array",
+            "maxItems": 16,
+            "minItems": 1,
+            "title": "Molecules"
+          },
+          "budget": {
+            "type": "integer",
+            "maximum": 16.0,
+            "minimum": 1.0,
+            "title": "Budget",
+            "default": 3
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "molecules"
+        ],
+        "title": "LabRequest"
+      },
+      "provenance_lab__schemas__Molecule": {
+        "properties": {
+          "index": {
+            "type": "integer",
+            "title": "Index"
+          },
+          "original_smiles": {
+            "type": "string",
+            "title": "Original Smiles"
+          },
+          "input_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Input Sha256"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "identified",
+              "rejected"
+            ],
+            "title": "Status"
+          },
+          "canonical_smiles": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Canonical Smiles"
+          },
+          "identity_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Identity Sha256"
+          },
+          "formal_charge": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Formal Charge"
+          },
+          "fragments": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Fragments"
+          },
+          "normalization_history": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Normalization History"
+          },
+          "diagnostics": {
+            "items": {
+              "$ref": "#/components/schemas/Diagnostic"
+            },
+            "type": "array",
+            "title": "Diagnostics"
+          },
+          "properties": {
+            "items": {
+              "$ref": "#/components/schemas/provenance_lab__schemas__Property"
+            },
+            "type": "array",
+            "title": "Properties"
+          },
+          "references": {
+            "items": {
+              "$ref": "#/components/schemas/Reference"
+            },
+            "type": "array",
+            "title": "References"
+          },
+          "reference_status": {
+            "type": "string",
+            "enum": [
+              "matched_frozen_record",
+              "not_available",
+              "not_computed"
+            ],
+            "title": "Reference Status"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "index",
+          "original_smiles",
+          "input_sha256",
+          "status",
+          "canonical_smiles",
+          "identity_sha256",
+          "formal_charge",
+          "fragments",
+          "normalization_history",
+          "diagnostics",
+          "properties",
+          "references",
+          "reference_status"
+        ],
+        "title": "Molecule"
+      },
+      "provenance_lab__schemas__Property": {
+        "properties": {
+          "quantity": {
+            "type": "string",
+            "title": "Quantity"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          },
+          "units": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Units"
+          },
+          "availability": {
+            "type": "string",
+            "enum": [
+              "computed",
+              "not_computed",
+              "not_available",
+              "not_applicable"
+            ],
+            "title": "Availability"
+          },
+          "assessment_status": {
+            "type": "string",
+            "enum": [
+              "computed",
+              "not_assessed"
+            ],
+            "title": "Assessment Status"
+          },
+          "evidence_category": {
+            "type": "string",
+            "enum": [
+              "computed_descriptor",
+              "unvalidated_heuristic",
+              "model_prediction"
+            ],
+            "title": "Evidence Category"
+          },
+          "method": {
+            "type": "string",
+            "const": "bioscribe-evidence-lab/1.1.0",
+            "title": "Method",
+            "default": "bioscribe-evidence-lab/1.1.0"
+          },
+          "implementation_fidelity": {
+            "type": "string",
+            "const": "software_fixture_checked",
+            "title": "Implementation Fidelity",
+            "default": "software_fixture_checked"
+          },
+          "validation_record": {
+            "type": "null",
+            "title": "Validation Record"
+          },
+          "predictive_validation": {
+            "type": "string",
+            "const": "not_assessed",
+            "title": "Predictive Validation",
+            "default": "not_assessed"
+          },
+          "domain": {
+            "type": "string",
+            "enum": [
+              "accepted_graph",
+              "unsupported_input",
+              "undefined_quantity",
+              "not_established"
+            ],
+            "title": "Domain"
+          },
+          "coverage": {
+            "type": "string",
+            "enum": [
+              "complete",
+              "none"
+            ],
+            "title": "Coverage"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "quantity",
+          "value",
+          "units",
+          "availability",
+          "assessment_status",
+          "evidence_category",
+          "domain",
+          "coverage",
+          "reason"
+        ],
+        "title": "Property"
+      },
+      "provenance_lab__schemas__Ranking": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "computed",
+              "not_assessed"
+            ],
+            "title": "Status"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          },
+          "budget": {
+            "type": "integer",
+            "title": "Budget"
+          },
+          "heuristic_order": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Heuristic Order"
+          },
+          "qed_order": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Qed Order"
+          },
+          "heuristic_selection": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Heuristic Selection"
+          },
+          "qed_selection": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Qed Selection"
+          },
+          "tie_break": {
+            "type": "string",
+            "const": "identity_sha256_then_index",
+            "title": "Tie Break",
+            "default": "identity_sha256_then_index"
+          },
+          "interpretation": {
+            "type": "string",
+            "const": "Descriptor orderings only; no activity labels or performance assessment",
+            "title": "Interpretation",
+            "default": "Descriptor orderings only; no activity labels or performance assessment"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "status",
+          "reason",
+          "budget",
+          "heuristic_order",
+          "qed_order",
+          "heuristic_selection",
+          "qed_selection"
+        ],
+        "title": "Ranking"
+      },
+      "provenance_lab__schemas__ReplayPackage": {
+        "properties": {
+          "format": {
+            "type": "string",
+            "const": "bioscribe-replay/1.0.0",
+            "title": "Format",
+            "default": "bioscribe-replay/1.0.0"
+          },
+          "run_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{32}$",
+            "title": "Run Id"
+          },
+          "request": {
+            "$ref": "#/components/schemas/provenance_lab__schemas__LabRequest"
+          },
+          "result": {
+            "$ref": "#/components/schemas/provenance_lab__schemas__Result"
+          },
+          "result_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Result Sha256"
+          },
+          "bundle": {
+            "$ref": "#/components/schemas/provenance_lab__schemas__Bundle"
+          },
+          "runtime": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Runtime"
+          },
+          "integrity_scope": {
+            "type": "string",
+            "const": "Checksums detect inconsistency; they do not authenticate authorship",
+            "title": "Integrity Scope",
+            "default": "Checksums detect inconsistency; they do not authenticate authorship"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id",
+          "request",
+          "result",
+          "result_sha256",
+          "bundle",
+          "runtime"
+        ],
+        "title": "ReplayPackage"
+      },
+      "provenance_lab__schemas__Result": {
+        "properties": {
+          "contract_version": {
+            "type": "string",
+            "const": "lab-1.1.0",
+            "title": "Contract Version",
+            "default": "lab-1.1.0"
+          },
+          "request_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Request Sha256"
+          },
+          "engine_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Engine Sha256"
+          },
+          "snapshot_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Snapshot Sha256"
+          },
+          "identity_policy": {
+            "type": "string",
+            "const": "exact_isomeric_graph/1.0.0",
+            "title": "Identity Policy",
+            "default": "exact_isomeric_graph/1.0.0"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/provenance_lab__schemas__Molecule"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "identity_groups": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array",
+            "title": "Identity Groups"
+          },
+          "ranking": {
+            "$ref": "#/components/schemas/provenance_lab__schemas__Ranking"
+          },
+          "scientific_assessment": {
+            "type": "string",
+            "const": "not_assessed",
+            "title": "Scientific Assessment",
+            "default": "not_assessed"
+          },
+          "sensitive_intake": {
+            "type": "string",
+            "const": "blocked",
+            "title": "Sensitive Intake",
+            "default": "blocked"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "request_sha256",
+          "engine_sha256",
+          "snapshot_sha256",
+          "rows",
+          "identity_groups",
+          "ranking"
+        ],
+        "title": "Result"
+      },
+      "provenance_lab_legacy_v1__schemas__Bundle": {
+        "properties": {
+          "sources": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Sources"
+          },
+          "dependency_lock": {
+            "type": "string",
+            "title": "Dependency Lock"
+          },
+          "references": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "References"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "sources",
+          "dependency_lock",
+          "references"
+        ],
+        "title": "Bundle"
+      },
+      "provenance_lab_legacy_v1__schemas__LabRequest": {
+        "properties": {
+          "contract_version": {
+            "type": "string",
+            "const": "lab-1.0.0",
+            "title": "Contract Version",
+            "default": "lab-1.0.0"
+          },
+          "data_scope": {
+            "type": "string",
+            "const": "public_non_sensitive",
+            "title": "Data Scope",
+            "default": "public_non_sensitive"
+          },
+          "molecules": {
+            "items": {
+              "type": "string",
+              "maxLength": 2048
+            },
+            "type": "array",
+            "maxItems": 16,
+            "minItems": 1,
+            "title": "Molecules"
+          },
+          "budget": {
+            "type": "integer",
+            "maximum": 16.0,
+            "minimum": 1.0,
+            "title": "Budget",
+            "default": 3
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "molecules"
+        ],
+        "title": "LabRequest"
+      },
+      "provenance_lab_legacy_v1__schemas__Molecule": {
+        "properties": {
+          "index": {
+            "type": "integer",
+            "title": "Index"
+          },
+          "original_smiles": {
+            "type": "string",
+            "title": "Original Smiles"
+          },
+          "input_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Input Sha256"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "identified",
+              "rejected"
+            ],
+            "title": "Status"
+          },
+          "canonical_smiles": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Canonical Smiles"
+          },
+          "identity_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Identity Sha256"
+          },
+          "formal_charge": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Formal Charge"
+          },
+          "fragments": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Fragments"
+          },
+          "normalization_history": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Normalization History"
+          },
+          "diagnostics": {
+            "items": {
+              "$ref": "#/components/schemas/Diagnostic"
+            },
+            "type": "array",
+            "title": "Diagnostics"
+          },
+          "properties": {
+            "items": {
+              "$ref": "#/components/schemas/provenance_lab_legacy_v1__schemas__Property"
+            },
+            "type": "array",
+            "title": "Properties"
+          },
+          "references": {
+            "items": {
+              "$ref": "#/components/schemas/Reference"
+            },
+            "type": "array",
+            "title": "References"
+          },
+          "reference_status": {
+            "type": "string",
+            "enum": [
+              "matched_frozen_record",
+              "not_available",
+              "not_computed"
+            ],
+            "title": "Reference Status"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "index",
+          "original_smiles",
+          "input_sha256",
+          "status",
+          "canonical_smiles",
+          "identity_sha256",
+          "formal_charge",
+          "fragments",
+          "normalization_history",
+          "diagnostics",
+          "properties",
+          "references",
+          "reference_status"
+        ],
+        "title": "Molecule"
+      },
+      "provenance_lab_legacy_v1__schemas__Property": {
+        "properties": {
+          "quantity": {
+            "type": "string",
+            "title": "Quantity"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          },
+          "units": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Units"
+          },
+          "availability": {
+            "type": "string",
+            "enum": [
+              "computed",
+              "not_computed",
+              "not_available",
+              "not_applicable"
+            ],
+            "title": "Availability"
+          },
+          "assessment_status": {
+            "type": "string",
+            "enum": [
+              "computed",
+              "not_assessed"
+            ],
+            "title": "Assessment Status"
+          },
+          "evidence_category": {
+            "type": "string",
+            "enum": [
+              "computed_descriptor",
+              "unvalidated_heuristic",
+              "model_prediction"
+            ],
+            "title": "Evidence Category"
+          },
+          "method": {
+            "type": "string",
+            "const": "bioscribe-evidence-lab/1.0.0",
+            "title": "Method",
+            "default": "bioscribe-evidence-lab/1.0.0"
+          },
+          "implementation_fidelity": {
+            "type": "string",
+            "const": "software_fixture_checked",
+            "title": "Implementation Fidelity",
+            "default": "software_fixture_checked"
+          },
+          "validation_record": {
+            "type": "null",
+            "title": "Validation Record"
+          },
+          "predictive_validation": {
+            "type": "string",
+            "const": "not_assessed",
+            "title": "Predictive Validation",
+            "default": "not_assessed"
+          },
+          "domain": {
+            "type": "string",
+            "enum": [
+              "accepted_graph",
+              "unsupported_input",
+              "undefined_quantity",
+              "not_established"
+            ],
+            "title": "Domain"
+          },
+          "coverage": {
+            "type": "string",
+            "enum": [
+              "complete",
+              "none"
+            ],
+            "title": "Coverage"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "quantity",
+          "value",
+          "units",
+          "availability",
+          "assessment_status",
+          "evidence_category",
+          "domain",
+          "coverage",
+          "reason"
+        ],
+        "title": "Property"
+      },
+      "provenance_lab_legacy_v1__schemas__Ranking": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "computed",
+              "not_assessed"
+            ],
+            "title": "Status"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          },
+          "budget": {
+            "type": "integer",
+            "title": "Budget"
+          },
+          "heuristic_order": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Heuristic Order"
+          },
+          "qed_order": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Qed Order"
+          },
+          "heuristic_selection": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Heuristic Selection"
+          },
+          "qed_selection": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Qed Selection"
+          },
+          "tie_break": {
+            "type": "string",
+            "const": "input_sha256_then_index",
+            "title": "Tie Break",
+            "default": "input_sha256_then_index"
+          },
+          "interpretation": {
+            "type": "string",
+            "const": "Descriptor orderings only; no activity labels or performance assessment",
+            "title": "Interpretation",
+            "default": "Descriptor orderings only; no activity labels or performance assessment"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "status",
+          "reason",
+          "budget",
+          "heuristic_order",
+          "qed_order",
+          "heuristic_selection",
+          "qed_selection"
+        ],
+        "title": "Ranking"
+      },
+      "provenance_lab_legacy_v1__schemas__ReplayPackage": {
+        "properties": {
+          "format": {
+            "type": "string",
+            "const": "bioscribe-replay/1.0.0",
+            "title": "Format",
+            "default": "bioscribe-replay/1.0.0"
+          },
+          "run_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{32}$",
+            "title": "Run Id"
+          },
+          "request": {
+            "$ref": "#/components/schemas/provenance_lab_legacy_v1__schemas__LabRequest"
+          },
+          "result": {
+            "$ref": "#/components/schemas/provenance_lab_legacy_v1__schemas__Result"
+          },
+          "result_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Result Sha256"
+          },
+          "bundle": {
+            "$ref": "#/components/schemas/provenance_lab_legacy_v1__schemas__Bundle"
+          },
+          "runtime": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Runtime"
+          },
+          "integrity_scope": {
+            "type": "string",
+            "const": "Checksums detect inconsistency; they do not authenticate authorship",
+            "title": "Integrity Scope",
+            "default": "Checksums detect inconsistency; they do not authenticate authorship"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id",
+          "request",
+          "result",
+          "result_sha256",
+          "bundle",
+          "runtime"
+        ],
+        "title": "ReplayPackage"
+      },
+      "provenance_lab_legacy_v1__schemas__Result": {
+        "properties": {
+          "contract_version": {
+            "type": "string",
+            "const": "lab-1.0.0",
+            "title": "Contract Version",
+            "default": "lab-1.0.0"
+          },
+          "request_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Request Sha256"
+          },
+          "engine_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Engine Sha256"
+          },
+          "snapshot_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Snapshot Sha256"
+          },
+          "identity_policy": {
+            "type": "string",
+            "const": "exact_isomeric_graph/1.0.0",
+            "title": "Identity Policy",
+            "default": "exact_isomeric_graph/1.0.0"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/provenance_lab_legacy_v1__schemas__Molecule"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "identity_groups": {
+            "items": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "type": "array",
+            "title": "Identity Groups"
+          },
+          "ranking": {
+            "$ref": "#/components/schemas/provenance_lab_legacy_v1__schemas__Ranking"
+          },
+          "scientific_assessment": {
+            "type": "string",
+            "const": "not_assessed",
+            "title": "Scientific Assessment",
+            "default": "not_assessed"
+          },
+          "sensitive_intake": {
+            "type": "string",
+            "const": "blocked",
+            "title": "Sensitive Intake",
+            "default": "blocked"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "request_sha256",
+          "engine_sha256",
+          "snapshot_sha256",
+          "rows",
+          "identity_groups",
+          "ranking"
+        ],
+        "title": "Result"
+      }
+    }
+  }
+}

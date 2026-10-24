@@ -1,0 +1,76 @@
+{
+    "scenarios": {
+        "warfarin-aspirin": {
+            "title": "Warfarin + Aspirin Interaction",
+            "emoji": "⚠️💊",
+            "simpleExplanation": "Imagine your blood is like a river with tiny repair boats (platelets) and a repair crew (clotting factors). Warfarin fires the repair crew, and Aspirin punctures the boats. Together? The river has NO way to fix leaks. That's why combining these drugs can cause dangerous, uncontrollable bleeding.",
+            "advancedExplanation": "Warfarin inhibits Vitamin K epoxide reductase (VKORC1), reducing synthesis of Factors II, VII, IX, and X. Aspirin irreversibly acetylates COX-1, blocking thromboxane A2 production in platelets. The dual impairment of both primary hemostasis (platelet plug) and secondary hemostasis (fibrin clot) creates a synergistic bleeding risk that far exceeds either drug alone.",
+            "metaphor": "🏠 It's like disabling BOTH the fire alarm AND the sprinkler system — now there's nothing to stop a small spark from burning the house down.",
+            "quiz": {
+                "question": "A patient on warfarin needs pain relief. Which is SAFEST?",
+                "options": [
+                    "Aspirin",
+                    "Ibuprofen",
+                    "Acetaminophen (Tylenol)",
+                    "Naproxen"
+                ],
+                "correct": 2,
+                "explanation": "Acetaminophen is the safest analgesic for patients on warfarin. Unlike NSAIDs (aspirin, ibuprofen, naproxen), it does not significantly affect platelet function or increase bleeding risk at therapeutic doses."
+            }
+        },
+        "paracetamol-toxicity": {
+            "title": "Paracetamol (Acetaminophen) Hepatotoxicity",
+            "emoji": "🫘🔴",
+            "simpleExplanation": "Your liver is like a laundry machine that cleans up drug 'stains.' Normally, paracetamol creates a tiny bit of toxic 'bleach' (NAPQI), but the liver has a 'neutralizer' called glutathione that handles it. Take TOO MUCH paracetamol? The neutralizer runs out, and the toxic bleach DESTROYS the liver from the inside.",
+            "advancedExplanation": "At therapeutic doses, ~5% of acetaminophen is oxidized by CYP2E1 to the reactive metabolite NAPQI (N-acetyl-p-benzoquinone imine), which is immediately conjugated by hepatic glutathione (GSH) to a non-toxic mercapturate. In overdose, glucuronidation and sulfation pathways saturate, shunting more drug through CYP2E1. GSH stores deplete below a critical threshold (~30%), and unquenched NAPQI covalently binds hepatocyte proteins, causing centrilobular necrosis.",
+            "metaphor": "🧹 It's like a janitor who can clean 3 spills per hour. If you make 10 spills at once, the mess overwhelms the janitor and the whole floor gets ruined.",
+            "quiz": {
+                "question": "What is the antidote for acetaminophen overdose?",
+                "options": [
+                    "Flumazenil",
+                    "Naloxone",
+                    "N-Acetylcysteine (NAC)",
+                    "Vitamin K"
+                ],
+                "correct": 2,
+                "explanation": "NAC (N-Acetylcysteine) replenishes hepatic glutathione stores, allowing the liver to neutralize NAPQI. It's most effective within 8 hours of ingestion but still beneficial up to 72 hours."
+            }
+        },
+        "docking-score": {
+            "title": "Understanding Docking Scores",
+            "emoji": "🔑🔒",
+            "simpleExplanation": "A docking score of -9.4 kcal/mol is like testing how well a key fits into a lock. The more NEGATIVE the number, the BETTER the fit. -9.4 means the key slides in perfectly and clicks tight. A score of -3.0 means the key barely fits and wobbles around. Drug designers want scores of -7.0 or better!",
+            "advancedExplanation": "The binding free energy (ΔG) in kcal/mol represents the thermodynamic favorability of ligand-receptor binding. ΔG = ΔH - TΔS, where enthalpy (ΔH) captures hydrogen bonds, van der Waals, and electrostatic interactions, while entropy (TΔS) accounts for desolvation and conformational penalties. A score of -9.4 kcal/mol corresponds to a binding affinity (Kd) of approximately 130 nM, calculated via ΔG = RT·ln(Kd).",
+            "metaphor": "🧲 Think of the drug as a magnet and the protein as a fridge. -9.4 means the magnet SNAPS onto the fridge and won't let go. -3.0 means it barely sticks and falls off if you breathe on it.",
+            "quiz": {
+                "question": "Which docking score indicates the STRONGEST binding?",
+                "options": [
+                    "-3.2 kcal/mol",
+                    "-6.0 kcal/mol",
+                    "-11.8 kcal/mol",
+                    "+2.5 kcal/mol"
+                ],
+                "correct": 2,
+                "explanation": "More negative = stronger binding. -11.8 kcal/mol indicates extremely tight binding (sub-nanomolar Kd). Positive scores indicate unfavorable (repulsive) interactions."
+            }
+        },
+        "lipinski-rules": {
+            "title": "Lipinski's Rule of Five",
+            "emoji": "📏✅",
+            "simpleExplanation": "Lipinski's rules are like the 'height requirements' for a theme park ride — but for molecules getting into your body. Your drug needs to be: not too heavy (MW ≤ 500), not too greasy (LogP ≤ 5), not too sticky (HBD ≤ 5, HBA ≤ 10). Break 2+ rules? The drug probably can't get past the intestinal wall into your blood!",
+            "advancedExplanation": "Lipinski's Rule of Five is an empirical heuristic predicting oral bioavailability based on four physicochemical properties: MW ≤ 500 Da (intestinal permeability), LogP ≤ 5 (lipophilicity-solubility balance), HBD ≤ 5 and HBA ≤ 10 (desolvation energy penalty). Compounds violating ≥ 2 rules have < 10% probability of reaching Phase II clinical trials via oral administration.",
+            "metaphor": "📦 Imagine shipping a package through the body's postal system. Too heavy? Can't fit through the slot. Too greasy? Slips out of the carrier's hands. Too sticky? Gets stuck at the sorting office.",
+            "quiz": {
+                "question": "A molecule has MW=620, LogP=3.1, HBD=2, HBA=6. How many Lipinski violations?",
+                "options": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ],
+                "correct": 1,
+                "explanation": "Only MW (620 > 500) violates a rule. LogP, HBD, and HBA all pass. With just 1 violation, the molecule still has a reasonable chance of oral bioavailability."
+            }
+        }
+    }
+}

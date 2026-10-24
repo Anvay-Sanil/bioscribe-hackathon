@@ -1,0 +1,43 @@
+{
+  "client_date": "2026-10-18",
+  "client_timezone": "Asia/Calcutta",
+  "scope": "Reject contradictory molecular field metadata before local report display",
+  "software_checks": {
+    "command": "node --test learning/viewer/tests/report.test.cjs",
+    "exit_code": 0,
+    "passed": 29,
+    "failed": 0
+  },
+  "regressions": [
+    "Numeric heuristic with assessment_status not_assessed is rejected",
+    "Molecular weight declared kg/mol is rejected; no implicit relabeling or conversion",
+    "Missing or unsupported assessment status, units, method and version are rejected for all four fields in all three exports",
+    "Contradictory evidence category, coverage, predictive domain or validation record is rejected",
+    "Missing or unsupported input policy is rejected",
+    "Rejected metadata clears a previously loaded report immediately"
+  ],
+  "accepted_exports": [
+    "budget-100-result.json",
+    "budget-10-result.json",
+    "budget-10-unknown-result.json"
+  ],
+  "browser_checks": {
+    "status": "not_rerun",
+    "historical_evidence": "verification.json",
+    "reason": "Parser-only change with no HTML, CSS or DOM-renderer changes; current verification uses the actual parser and loader. Previous browser checks and screenshots remain historical."
+  },
+  "saved_exports_changed": false,
+  "application_code_or_locks_changed": false,
+  "scientific_study_changed": false,
+  "prior_verification_sha256": "876e23f38773f8a4a7c3fe6fb4bd7f7144ad2775403d5be3272a595ae0bad544",
+  "prior_file_sha256": {
+    "report.js": "0bf385d3f5fbe4f763047543854c24e95047e4c5f8364c7cea6b6153c5f0dde0",
+    "tests/report.test.cjs": "d81e8bd3e7224ac0a381a09c4b3fa0a1580d7f23b09368de8cb05a165de6aee0",
+    "README.md": "df7c7e4d0ae2e72b6c88f457876c38c7a79c43dd2e94e01753a75be3b7a32192"
+  },
+  "file_sha256": {
+    "report.js": "3f31dd7629ad5e50073282ecf49fde8856e1c67aa2f1c6b48ea470e4e6a68521",
+    "tests/report.test.cjs": "b33631936d8cef4de7c6e02917027a87af64d49e095db49ab14c05291418e8df",
+    "README.md": "f8cfd463186d658f830660153fd7fae1059c0a58d680095e36b833594b727c8a"
+  }
+}

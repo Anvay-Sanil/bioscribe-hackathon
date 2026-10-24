@@ -1,0 +1,56 @@
+{
+  "client_date": "2026-10-18",
+  "client_timezone": "Asia/Calcutta",
+  "scope": "Table-only molecule search and invented-label filtering",
+  "software_checks": {
+    "command": "node --test learning/viewer/tests/report.test.cjs learning/viewer/tests/filters.test.cjs",
+    "exit_code": 0,
+    "passed": 39,
+    "failed": 0
+  },
+  "browser_checks": {
+    "command": "node learning/viewer/tests/browser-check.cjs",
+    "browser_channel": "msedge",
+    "exit_code": 0,
+    "passed": 17,
+    "results": "verification-search/browser-checks.json",
+    "execution": "Automated local-file testing in installed headless Edge outside the Windows command sandbox; not an interactive in-app rerun"
+  },
+  "acceptance": {
+    "unknown_filter_rows": [
+      "alkane-028"
+    ],
+    "unknown_filter_caption": "Showing 1 of 120 molecules",
+    "cleared_filter_rows": 120,
+    "cleared_filter_caption": "Showing 120 of 120 molecules",
+    "comparisons_throughout": "Not assessed",
+    "report_level_selections_counts_comparisons_unchanged": true
+  },
+  "closed_parser_correction_unchanged": true,
+  "scientific_study_changed": false,
+  "application_code_or_locks_changed": false,
+  "saved_exports_changed": false,
+  "baseline_hashes_checked": 130,
+  "baseline_results": "verification-search/baseline-checks.json",
+  "historical_verification_sha256": {
+    "verification.json": "876e23f38773f8a4a7c3fe6fb4bd7f7144ad2775403d5be3272a595ae0bad544",
+    "verification-field-contracts.json": "c1036f3f3e6ef4f4012471759c05008de56d229b2d6408bc04ee1f6355814598"
+  },
+  "file_sha256": {
+    "index.html": "ad6b02c8c319ecd86ab389d3a320e432fb778db292be78648bbd8c489338a3e2",
+    "viewer.js": "cc3a49857dee43d93f6cc395dce4ccded4634be9d10a76a34145a832060e783d",
+    "viewer.css": "9773ee147a5624aa11721f1ac05760037abc0876bb0e13f1775d0a4683a165a1",
+    "filters.js": "beae7be45927cbf8078f44a9f91aef69cec2fd3554cbf0b15768985fbbea6f0a",
+    "report.js": "3f31dd7629ad5e50073282ecf49fde8856e1c67aa2f1c6b48ea470e4e6a68521",
+    "tests/report.test.cjs": "b33631936d8cef4de7c6e02917027a87af64d49e095db49ab14c05291418e8df",
+    "tests/filters.test.cjs": "3cf2028944f6199d709244ab9109163572c1ded3806929e6e0404f391146fa35",
+    "tests/browser-check.cjs": "9e80758c2f419df02e1c7d29f3220d9ba349b0a6e831ba6b6571f4ca2dc41f6d",
+    "README.md": "870e87a95c9c601a5720786165349d22f7de1ffbb29bf84fe6f0acca6573c2f9",
+    "verification-search/baseline-checks.json": "9358be5885a7c1e8be083d15418263a73aa8854392a7ce09c1c83e0702add82c",
+    "verification-search/browser-checks.json": "a7dda580a1a04e5bd86aef195b3748e81b886c352bb2a38f17694fcdb0576526",
+    "verification-search/budget-10.png": "25d9329b539c7bffff1e01ed1167b62bdbbf256be0c8229f5d013f0f5390cacc",
+    "verification-search/mobile.png": "c81389b3eb7eb3c2f5d8ffd51a781a0f099354fa81e2e3097c12b35faef498b7",
+    "verification-search/unknown-filter.png": "d4aefa2946a7221a2c80e188884acbbe45f28d9c695eeaa01f99e42591988f10",
+    "verification-search/unknown-label.png": "405aafda4324d02517f4b7a6999e92d47b2b21c203a9d756c00feacba60f0daf"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "recorded_at_utc": "2026-10-16T19:15:02.455376+00:00",
+  "user_date": "2026-10-17",
+  "user_timezone": "Asia/Calcutta",
+  "scope": "Phase 4 framework and offline structural preflight only; no empirical scientific evaluation",
+  "scientific_assessment": "not_assessed",
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "runtime_source_changed": false,
+  "dependencies": {
+    "new_dependencies": [],
+    "lock": "backend/requirements-phase3.lock",
+    "lock_unchanged_in_baseline": true,
+    "environment": "Existing .phase3-clean reused; no fresh installation",
+    "python": "3.11.9",
+    "pydantic": "2.11.7",
+    "pytest": "8.4.1"
+  },
+  "new_software_tests": {
+    "tests": "45",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "6.644",
+    "timestamp": "2026-10-17T00:43:59.798343+05:30"
+  },
+  "counting_policy": "45 final-source offline software tests. An earlier 38-test run was superseded after additional checks. Neither count is added to the user-confirmed 173 backend / 25 client checks; no count is predictive evidence.",
+  "commands": [
+    {
+      "cwd": ".",
+      "command": "& .phase3-clean/Scripts/python.exe -B -m pytest validation/phase4/tests -q -p no:cacheprovider --junitxml=docs/phase4-verification.xml",
+      "exit_code": 0,
+      "result": "45 passed in 6.69s; zero failures/errors/skips",
+      "artifact": "docs/phase4-verification.xml"
+    },
+    {
+      "cwd": ".",
+      "command": "& .phase3-clean/Scripts/python.exe -B -m validation.phase4.preflight validation/phase4/study.template.json --bundle-root validation/phase4",
+      "python_process_exit_code": 2,
+      "result": "Expected blocked draft; missing scientific design remains unresolved",
+      "artifact": "docs/phase4-preflight-result.json",
+      "shell_note": "For PowerShell process-code propagation append a newline followed by exit $LASTEXITCODE. The Python subprocess invocation independently captured exit 2."
+    },
+    {
+      "cwd": ".",
+      "command": "& .phase3-clean/Scripts/python.exe -B -c \"import hashlib,json; from pathlib import Path; p=Path('docs/PHASE_3_VERIFICATION.json'); d=json.loads(p.read_text()); checks={k:Path(k).is_file() and hashlib.sha256(Path(k).read_bytes()).hexdigest()==v for k,v in d['file_sha256'].items()}; print(json.dumps({'checked':len(checks),'matched':sum(checks.values()),'mismatches':[k for k,v in checks.items() if not v],'ledger_sha256':hashlib.sha256(p.read_bytes()).hexdigest()},indent=2)); raise SystemExit(0 if all(checks.values()) else 1)\"",
+      "exit_code": 0,
+      "result": "78/78 accepted Phase 3 file hashes match",
+      "artifact": "docs/phase4-baseline-check.json"
+    }
+  ],
+  "inherited_evidence": {
+    "backend_tests": 173,
+    "client_checks": 25,
+    "file_hashes": 78,
+    "attribution": "Independently confirmed by user in latest review; application suites not rerun in this phase",
+    "R1_R2_R3": "closed for constrained public-data workflow"
+  },
+  "not_performed": [
+    "Empirical dataset acquisition or scientific performance evaluation",
+    "Scientific threshold selection or sample-size justification for a real endpoint",
+    "New candidate model, inferential evaluator, empirical domain/calibration study or independent scientific replication",
+    "Positive validation registry/lifecycle or runtime activation",
+    "Browser/build/clean-install repetition",
+    "Deployment, privacy, audit trust-boundary or regulatory qualification"
+  ],
+  "unmet_gates_reference": "docs/PHASE_4_VALIDATION_FRAMEWORK.md section 11; all previously declared Phase 3 deployment gates remain open",
+  "file_sha256": {
+    "validation/__init__.py": "4486844fd15aa4068864c23347cca093f2e8c0766fe76c67fe810afb1b28160b",
+    "validation/phase4/__init__.py": "3aaf3be7c7050ce8893cb8470544101a88b85eddbcfa3ec9409ba03afcc46ccc",
+    "validation/phase4/contracts.py": "26180455a18624a74d54fc69475daf3d67a9825f9966e58f447fec685d565c9e",
+    "validation/phase4/dataset-manifest.template.json": "7a7704edd7d975210379af3ee28f1eedfd9758a66d844ef8acd58aeec170c2eb",
+    "validation/phase4/evaluation-report.template.json": "a79aadd0a79567d5a81986010385ee45ef8eb9d2021f5db7af69fa140cb6694a",
+    "validation/phase4/preflight.py": "1556e190c6be88b48d29d340fd982014321091f61b0b892f127379fe6846d7c8",
+    "validation/phase4/protocol.schema.json": "854a3a0e18a9d988d60c00e7a5007a46c3c939ffc788c76623d58a22caa77b57",
+    "validation/phase4/README.md": "edc948060fec1653b2d8c71a54bd800e0781dce8ac9ec1d1397b122268794204",
+    "validation/phase4/split.schema.json": "5d63cd597bccc8ae006a340ab11bab6a5a75bc66ef2faf8e15db28dee997f3eb",
+    "validation/phase4/study.template.json": "0b5182e9ae0acb637af5a31199e77b183855a2778ccbbd9d9f42c803624f60f8",
+    "validation/phase4/tests/test_preflight.py": "1d9782f7b13fbe12e2cebc4b634b1abd3cdd8261fae8aee78b064caa266671c7",
+    "docs/PHASE_4_VALIDATION_FRAMEWORK.md": "1285f1cfcee6b0f18f951dfe0ed68c2da6af027121649dd4448867584f87b036",
+    "docs/phase4-verification.xml": "afff76c6a5b1d4debc34d1df4b1e066d852df2603b5b0642b2d329b437331f3a",
+    "docs/phase4-baseline-check.json": "33c54168ff66bcfda464361dad3b39173d3ff8758236a673654a4d139eeb0a87",
+    "docs/phase4-preflight-result.json": "3e65fababe2371d80beabb2a9f1ac16f58d54ecf14230c0748cf4fdaa53804b8"
+  },
+  "hash_policy": "Hashes cover delivery source, schemas, worksheets, framework and evidence; this ledger does not hash itself or authenticate authorship."
+}

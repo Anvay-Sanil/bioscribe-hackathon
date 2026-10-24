@@ -1,0 +1,376 @@
+{
+  "protein_composition": {
+    "version": "1.0.0",
+    "reference": "https://biopython.org/docs/1.83/api/Bio.SeqUtils.ProtParam.html",
+    "algorithm": "count(group residues)/sequence length; overlapping groups",
+    "parameters": {
+      "helix_group_fraction": "EMALK",
+      "turn_group_fraction": "NPGSD",
+      "sheet_group_fraction": "VIYFWLT"
+    },
+    "assumptions": "canonical protein only; no structural occupancy or disorder inference",
+    "fidelity": "fixture_checked",
+    "fixture": "tests_phase3/test_methods.py::test_composition",
+    "predictive_validation": null,
+    "validation_status": "not_available",
+    "owner": "BioScribe maintainers",
+    "scientific_review": "not_performed",
+    "outputs": {
+      "helix_group_fraction": {
+        "units": "dimensionless",
+        "shape": "fraction",
+        "field_suffix": "helix_group_fraction"
+      },
+      "turn_group_fraction": {
+        "units": "dimensionless",
+        "shape": "fraction",
+        "field_suffix": "turn_group_fraction"
+      },
+      "sheet_group_fraction": {
+        "units": "dimensionless",
+        "shape": "fraction",
+        "field_suffix": "sheet_group_fraction"
+      }
+    }
+  },
+  "sequence_length": {
+    "version": "1.0.0",
+    "reference": "BioScribe identity policy v1",
+    "algorithm": "count accepted normalized residues",
+    "parameters": {},
+    "assumptions": "declared polymer identity; no inferred accession",
+    "fidelity": "fixture_checked",
+    "fixture": "tests_phase3/test_identity.py",
+    "predictive_validation": null,
+    "validation_status": "not_available",
+    "owner": "BioScribe maintainers",
+    "scientific_review": "not_performed",
+    "outputs": {
+      "sequence_length": {
+        "units": "residues",
+        "shape": "count",
+        "field_suffix": "length"
+      }
+    }
+  },
+  "ps00107_observation": {
+    "version": "1.0.0",
+    "reference": "https://prosite.expasy.org/PS00107; pattern version 1, data update 1995-11-01; retrieved 2026-10-15",
+    "algorithm": "regex translation; overlapping starts; longest match per start; zero-based half-open",
+    "parameters": {
+      "prosite": "[LIV]-G-{P}-G-{P}-[FYWMGSTNH]-[SGA]-{PW}-[LIVCAT]-{PD}-x-[GSTACLIVMFY]-x(5,18)-[LIVMFYWCSTAR]-[AIVP]-[LIVMFAGCKR]-K.",
+      "regex": "[LIV]G[^P]G[^P][FYWMGSTNH][SGA][^PW][LIVCAT][^PD].[GSTACLIVMFY].{5,18}[LIVMFYWCSTAR][AIVP][LIVMFAGCKR]K"
+    },
+    "assumptions": "pattern observations only; not catalytic activity, kinase classification or a 3D pocket",
+    "fidelity": "fixture_checked",
+    "fixture": "tests_phase3/test_methods.py::test_ps00107",
+    "predictive_validation": null,
+    "validation_status": "not_available",
+    "owner": "BioScribe maintainers",
+    "scientific_review": "not_performed",
+    "outputs": {
+      "PS00107_pattern_matches": {
+        "units": "count",
+        "shape": "count",
+        "field_suffix": "ps00107_count"
+      },
+      "PS00107_match_interval": {
+        "units": "zero_based_half_open",
+        "shape": "interval",
+        "field_suffix": "ps00107.{index}"
+      }
+    }
+  },
+  "rdkit_descriptors": {
+    "version": "1.2.0",
+    "reference": "RDKit 2025.03.3 descriptors",
+    "algorithm": "Canonical graph reparse; MolWt, MolLogP, TPSA, QED and aromatic heavy-atom proportion; 8-decimal reporting",
+    "parameters": {},
+    "assumptions": "whole sanitized molecular graph; no salt stripping, protonation adjustment or tautomer normalization",
+    "fidelity": "fixture_checked",
+    "fixture": "tests_phase3/test_methods.py::test_chemistry",
+    "predictive_validation": null,
+    "validation_status": "not_available",
+    "owner": "BioScribe maintainers",
+    "scientific_review": "not_performed",
+    "input_policy": {
+      "id": "plain_smiles_concrete_graph",
+      "version": "1.2.0",
+      "parser": "RDKit 2025.03.3 SmilesParserParams",
+      "parameters": {
+        "parseName": false,
+        "allowCXSMILES": false,
+        "sanitize": false,
+        "removeHs": false
+      },
+      "text": "One nonempty ASCII SMILES string without whitespace/control characters; no names or CXSMILES; no trimming or repair",
+      "graph": "Shared molecular_core: no dummy/query atoms, atom maps, unsupported bonds or non-tetrahedral atom stereo; canonical reparse for calculation",
+      "identity": "Retain fragments, formal charges, isotopes and specified/unspecified stereochemistry; no salt stripping or tautomer/protonation adjustment",
+      "interpretation": "Syntactic/concrete-graph eligibility only; not endpoint-specific predictive validation",
+      "reference": "https://www.rdkit.org/docs/RDKit_Book.html#reading-molecule-names",
+      "fixture": "tests_phase3/test_sentinel_molecules.py"
+    },
+    "outputs": {
+      "molecular_weight": {
+        "units": "g/mol",
+        "shape": "nonnegative",
+        "field_suffix": "molecular_weight"
+      },
+      "calculated_logp": {
+        "units": "dimensionless",
+        "shape": "number",
+        "field_suffix": "calculated_logp"
+      },
+      "tpsa": {
+        "units": "angstrom^2",
+        "shape": "nonnegative",
+        "field_suffix": "tpsa"
+      },
+      "aromatic_heavy_atom_fraction": {
+        "units": "dimensionless",
+        "shape": "fraction",
+        "field_suffix": "aromatic_heavy_atom_fraction"
+      },
+      "qed": {
+        "units": "dimensionless",
+        "shape": "fraction",
+        "field_suffix": "qed"
+      }
+    }
+  },
+  "structural_alert_scan": {
+    "version": "1.2.0",
+    "reference": "BioScribe limited structural rule set v1",
+    "algorithm": "RDKit SMARTS matches; all rules must compile and complete",
+    "parameters": {
+      "nitro": "[N+](=O)[O-]",
+      "aniline_substructure": "c1ccccc1N",
+      "epoxide": "C1OC1",
+      "aldehyde": "[CH]=O",
+      "conjugated_carbonyl": "C=CC(=O)",
+      "acyl_halide": "C(=O)[F,Cl,Br,I]",
+      "hydrazine_substructure": "NN"
+    },
+    "assumptions": "not a toxicity assay or safety assessment",
+    "fidelity": "fixture_checked",
+    "fixture": "tests_phase3/test_methods.py::test_alerts",
+    "predictive_validation": null,
+    "validation_status": "not_available",
+    "owner": "BioScribe maintainers",
+    "scientific_review": "not_performed",
+    "input_policy": {
+      "id": "plain_smiles_concrete_graph",
+      "version": "1.2.0",
+      "parser": "RDKit 2025.03.3 SmilesParserParams",
+      "parameters": {
+        "parseName": false,
+        "allowCXSMILES": false,
+        "sanitize": false,
+        "removeHs": false
+      },
+      "text": "One nonempty ASCII SMILES string without whitespace/control characters; no names or CXSMILES; no trimming or repair",
+      "graph": "Shared molecular_core: no dummy/query atoms, atom maps, unsupported bonds or non-tetrahedral atom stereo; canonical reparse for calculation",
+      "identity": "Retain fragments, formal charges, isotopes and specified/unspecified stereochemistry; no salt stripping or tautomer/protonation adjustment",
+      "interpretation": "Syntactic/concrete-graph eligibility only; not endpoint-specific predictive validation",
+      "reference": "https://www.rdkit.org/docs/RDKit_Book.html#reading-molecule-names",
+      "fixture": "tests_phase3/test_sentinel_molecules.py"
+    },
+    "outputs": {
+      "nitro": {
+        "units": "zero_based_atom_indices",
+        "shape": "indices",
+        "field_suffix": "alert.nitro.{index}"
+      },
+      "aniline_substructure": {
+        "units": "zero_based_atom_indices",
+        "shape": "indices",
+        "field_suffix": "alert.aniline_substructure.{index}"
+      },
+      "epoxide": {
+        "units": "zero_based_atom_indices",
+        "shape": "indices",
+        "field_suffix": "alert.epoxide.{index}"
+      },
+      "aldehyde": {
+        "units": "zero_based_atom_indices",
+        "shape": "indices",
+        "field_suffix": "alert.aldehyde.{index}"
+      },
+      "conjugated_carbonyl": {
+        "units": "zero_based_atom_indices",
+        "shape": "indices",
+        "field_suffix": "alert.conjugated_carbonyl.{index}"
+      },
+      "acyl_halide": {
+        "units": "zero_based_atom_indices",
+        "shape": "indices",
+        "field_suffix": "alert.acyl_halide.{index}"
+      },
+      "hydrazine_substructure": {
+        "units": "zero_based_atom_indices",
+        "shape": "indices",
+        "field_suffix": "alert.hydrazine_substructure.{index}"
+      },
+      "matches_in_limited_rule_set": {
+        "units": "count",
+        "shape": "count",
+        "field_suffix": "alert_match_count"
+      },
+      "structural_alert_scan": {
+        "units": "dimensionless",
+        "shape": "null",
+        "field_suffix": "alerts"
+      }
+    }
+  },
+  "prioritization_heuristic": {
+    "version": "1.2.0",
+    "reference": "BioScribe descriptor distance heuristic v1; no affinity reference",
+    "algorithm": "abs(MW-350)/350 + abs(TPSA-75)/75; lower is nearer chosen descriptor targets",
+    "parameters": {
+      "mw_target": 350,
+      "tpsa_target": 75
+    },
+    "assumptions": "unvalidated dimensionless ordering; target independent; not docking or binding energy",
+    "fidelity": "fixture_checked",
+    "fixture": "tests_phase3/test_methods.py::test_heuristic",
+    "predictive_validation": null,
+    "validation_status": "not_available",
+    "owner": "BioScribe maintainers",
+    "scientific_review": "not_performed",
+    "input_policy": {
+      "id": "plain_smiles_concrete_graph",
+      "version": "1.2.0",
+      "parser": "RDKit 2025.03.3 SmilesParserParams",
+      "parameters": {
+        "parseName": false,
+        "allowCXSMILES": false,
+        "sanitize": false,
+        "removeHs": false
+      },
+      "text": "One nonempty ASCII SMILES string without whitespace/control characters; no names or CXSMILES; no trimming or repair",
+      "graph": "Shared molecular_core: no dummy/query atoms, atom maps, unsupported bonds or non-tetrahedral atom stereo; canonical reparse for calculation",
+      "identity": "Retain fragments, formal charges, isotopes and specified/unspecified stereochemistry; no salt stripping or tautomer/protonation adjustment",
+      "interpretation": "Syntactic/concrete-graph eligibility only; not endpoint-specific predictive validation",
+      "reference": "https://www.rdkit.org/docs/RDKit_Book.html#reading-molecule-names",
+      "fixture": "tests_phase3/test_sentinel_molecules.py"
+    },
+    "outputs": {
+      "descriptor_distance": {
+        "units": "dimensionless",
+        "shape": "nonnegative",
+        "field_suffix": "prioritization_heuristic"
+      }
+    }
+  },
+  "assessment_policy": {
+    "version": "1.0.0",
+    "reference": "Accepted Phase 2 diagnostic",
+    "algorithm": "abstain from unsupported predictions",
+    "parameters": {},
+    "assumptions": "no endpoint-specific predictive validation records installed",
+    "fidelity": "fixture_checked",
+    "fixture": "tests_phase3/test_contract.py",
+    "predictive_validation": null,
+    "validation_status": "not_available",
+    "owner": "BioScribe maintainers",
+    "scientific_review": "not_performed",
+    "outputs": {
+      "binding_affinity": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "binding_affinity"
+      },
+      "confidence": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "confidence"
+      },
+      "toxicity": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "toxicity"
+      },
+      "ames_mutagenicity": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "ames_mutagenicity"
+      },
+      "herg_liability": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "herg_liability"
+      },
+      "half_life": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "half_life"
+      },
+      "renal_clearance": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "renal_clearance"
+      },
+      "elimination_route": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "elimination_route"
+      },
+      "metabolic_stability": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "metabolic_stability"
+      },
+      "cyp_substrate": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "cyp_substrate"
+      },
+      "cyp_inhibition": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "cyp_inhibition"
+      },
+      "synthesis_feasibility": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "synthesis_feasibility"
+      },
+      "secondary_structure": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "secondary_structure"
+      },
+      "frameshift": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "frameshift"
+      },
+      "esol_solubility": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "esol_solubility"
+      }
+    }
+  },
+  "notes_review_policy": {
+    "version": "1.0.0",
+    "reference": "Accepted Phase 2 diagnostic",
+    "algorithm": "retain source in protected run; do not extract scientific facts",
+    "parameters": {},
+    "assumptions": "unverified notes require review; LLM extraction disabled",
+    "fidelity": "fixture_checked",
+    "fixture": "tests_phase3/test_identity.py",
+    "predictive_validation": null,
+    "validation_status": "not_available",
+    "owner": "BioScribe maintainers",
+    "scientific_review": "not_performed",
+    "outputs": {
+      "source_notes": {
+        "units": null,
+        "shape": "null",
+        "field_suffix": "review"
+      }
+    }
+  }
+}

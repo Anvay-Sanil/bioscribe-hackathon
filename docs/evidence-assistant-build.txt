@@ -1,0 +1,43 @@
+
+> bioscribe-ai@0.1.0 build
+> next build --turbopack
+
+   ▲ Next.js 15.5.4 (Turbopack)
+
+   Creating an optimized production build ...
+ ✓ Finished writing to disk in 234ms
+ ✓ Compiled successfully in 3.8s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/11) ...
+   Generating static pages (2/11) 
+   Generating static pages (5/11) 
+   Generating static pages (8/11) 
+ ✓ Generating static pages (11/11)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                         Size  First Load JS
+┌ ○ /                                0 B         159 kB
+├ ○ /_not-found                      0 B         159 kB
+├ ○ /dashboard                   3.36 kB         163 kB
+├ ○ /evidence                    28.4 kB         216 kB
+├ ○ /evidence-assistant          7.05 kB         195 kB
+├ ○ /molecules                     15 kB         203 kB
+├ ○ /pipeline/new                  11 kB         199 kB
+├ ○ /proof                           0 B         159 kB
+└ ƒ /results/[id]                19.6 kB         207 kB
++ First Load JS shared by all     195 kB
+  ├ chunks/079d5ede7af38810.js   58.9 kB
+  ├ chunks/108e59a3f7f331bf.js   21.7 kB
+  ├ chunks/8082ab48faca5ea1.js   17.2 kB
+  ├ chunks/ecb15f463522636a.js   40.7 kB
+  ├ chunks/0cafa1f35bcc82f6.css  34.2 kB
+  └ other shared chunks (total)  21.9 kB
+
+
+ƒ Middleware                     39.4 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

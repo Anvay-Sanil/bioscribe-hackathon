@@ -1,0 +1,7 @@
+flowchart LR
+    A[Original SMILES rows] --> B[Strict parsing and graph identity]
+    B --> C[Calculated descriptors and evidence states]
+    C --> D[Fixed-budget descriptor comparison]
+    D --> E[Saved report and replay package]
+    E --> F[Matching-engine recomputation]
+    F --> G[Declared scientific payload comparison]

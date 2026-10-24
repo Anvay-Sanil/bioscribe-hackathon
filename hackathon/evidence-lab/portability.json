@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "comparison": "Exact SHA-256 of canonical scientific payload at declared 8-decimal reporting precision",
+  "results": [
+    {
+      "match": true,
+      "linux": {
+        "actual_sha256": "59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7",
+        "comparison": "Exact canonical scientific payload at declared 8-decimal precision",
+        "expected_sha256": "59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7",
+        "network": "not_required",
+        "scientific_assessment": "not_assessed",
+        "status": "matched"
+      },
+      "windows": {
+        "actual_sha256": "59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7",
+        "comparison": "Exact canonical scientific payload at declared 8-decimal precision",
+        "expected_sha256": "59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7",
+        "network": "not_required",
+        "scientific_assessment": "not_assessed",
+        "status": "matched"
+      },
+      "case": "reference"
+    },
+    {
+      "match": true,
+      "linux": {
+        "actual_sha256": "dd4692c1bdbf7ba76066b24906e5fce733f0eac0ddd789dd45730081ae689b30",
+        "comparison": "Exact canonical scientific payload at declared 8-decimal precision",
+        "expected_sha256": "dd4692c1bdbf7ba76066b24906e5fce733f0eac0ddd789dd45730081ae689b30",
+        "network": "not_required",
+        "scientific_assessment": "not_assessed",
+        "status": "matched"
+      },
+      "windows": {
+        "actual_sha256": "dd4692c1bdbf7ba76066b24906e5fce733f0eac0ddd789dd45730081ae689b30",
+        "comparison": "Exact canonical scientific payload at declared 8-decimal precision",
+        "expected_sha256": "dd4692c1bdbf7ba76066b24906e5fce733f0eac0ddd789dd45730081ae689b30",
+        "network": "not_required",
+        "scientific_assessment": "not_assessed",
+        "status": "matched"
+      },
+      "case": "challenge"
+    }
+  ],
+  "environments": [
+    "Windows x86_64 CPython 3.11.9",
+    "Linux x86_64 Docker CPython 3.11.9"
+  ],
+  "linux_image": "sha256:455456c6aaf2ef6628def62b2da081aa37541b0a3a0ed95af8468808c5c2478c",
+  "scope": "Two operating-system environments on one physical host; not a universal any-machine guarantee",
+  "network": "Linux --network none; both CLI processes deny socket connections"
+}

@@ -1,0 +1,68 @@
+{
+  "purpose": "SYNTHETIC SOFTWARE FIXTURE. Mock interpretation; no scientific verdict or live model inference.",
+  "review": {
+    "research_aid_label": "Research aid, not a prediction of efficacy or safety.",
+    "run_id": "2e9db1152fc444c9b482b27d8a6da690",
+    "text": "Synthetic claim for decoder testing only.",
+    "input_sha256": "80622a334db0feabe47862ad3e662bfa2625699f904bdcbbdf011ecc340683c9",
+    "snapshot_sha256": "ba7a0e1800d1b516eb7c5bf5c4e3753f61afeb049c60abac786ccd81785f3110",
+    "created_utc": "2026-10-24T20:54:06.451814+00:00",
+    "statements": [
+      {
+        "text": "Synthetic claim for decoder testing only.",
+        "start": 0,
+        "end": 41,
+        "verdict": "supported",
+        "interpretation": "experimental_model_interpretation",
+        "confidence": null,
+        "confidence_status": "not_calibrated",
+        "requires_review": true,
+        "reason_code": "model_interpretation_exact_quote_requires_review",
+        "citations": [
+          {
+            "source_id": "PMID:12873516",
+            "kind": "paper_passage",
+            "role": "supports",
+            "locator": "/normalized_abstract/characters/0:100",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12873516/",
+            "source_sha256": "2a79dc1e2841a1e3fa8099c701851de2d671efd24b620c863207a4dc9ea72cfc",
+            "excerpt": "Oxidation of 1-benzyl-3,4-dihydroisoquinolines with cerium(IV) ammonium nitrate (CAN) under mild con",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "review:2e9db1152fc444c9b482b27d8a6da690",
+            "kind": "run_record",
+            "role": "assessment_trace",
+            "locator": "/statements/0",
+            "url": null,
+            "source_sha256": "6716b765f2f552fa839de7724eca19a5e965e8cd4043bab6373665ba66d39ab5",
+            "excerpt": "{\"model_response_sha256\":\"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\",\"reason\":\"model_interpretation_exact_quote_requires_review\",\"snapshot_sha256\":\"ba7a0e1800d1b516eb7c5bf5c4e3753f61afeb049c60abac786ccd81785f3110\",\"statement\":\"Synthetic claim for decoder testing only.\"}",
+            "retraction_status": "not_applicable"
+          }
+        ]
+      }
+    ],
+    "disagreements": [],
+    "excluded_sources": [],
+    "model": {
+      "status": "synthetic_software_fixture",
+      "used_for_verdict": true,
+      "response_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    "scientific_assessment": "not_assessed",
+    "scope": "Experimental interpretation of selected frozen abstracts only. Exact quote binding is software evidence, not proof of entailment. Every interpretation requires human review. No calibrated probabilities, full-text search or efficacy/safety prediction.",
+    "contract_version": "paper-review/0.2.0",
+    "method": "bounded_paper_interpretation/0.2.0",
+    "implementation_sha256": "06881c5e1a6f46390a70ad198af669def9c2a8ffa5d9384ce697f8644b48d076"
+  },
+  "papers": [
+    {
+      "source_id": "PMID:12873516",
+      "abstract": "Oxidation of 1-benzyl-3,4-dihydroisoquinolines with cerium(IV) ammonium nitrate (CAN) under mild condition yielded the mixture of corresponding 1-benzylisoquinolines (b-type) and 1-benzoylisoquinolines (a- or c-type) in an equal yields. The selective oxidation products (c-type) can be prepared by using MeCN instead of MeOH. In the antiplatelet assays, four inducers were employed, including AA, Col, PAF, and Thr. In the PAF or Col induced platelet aggregation, compounds belonging to a- and b-type showed stronger inhibitory effects than aspirin.",
+      "title": "Antiplatelet activity of benzylisoquinoline derivatives oxidized by cerium(IV) ammonium nitrate.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12873516/",
+      "raw_sha256": "2a79dc1e2841a1e3fa8099c701851de2d671efd24b620c863207a4dc9ea72cfc",
+      "eligibility": "eligible_as_of_snapshot"
+    }
+  ]
+}

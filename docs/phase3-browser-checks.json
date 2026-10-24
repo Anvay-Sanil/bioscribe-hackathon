@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-16",
+  "status": "passed",
+  "method": "Interactive in-app browser against the local production frontend and real API/worker",
+  "input": "Generated public FASTA fixture LLLLLLLLLL and ethanol SMILES CCO",
+  "run_id": "be3e14de6ad54765b9cc013a5c5a4b80",
+  "checks": [
+    "File chooser loads the actual FASTA file into the submission",
+    "Authenticated submission navigates to its backend-issued run ID",
+    "Persisted run completes and displays per-field evidence and abstention states",
+    "Leucine composition values are helix-group 1, turn-group 0, sheet-group 1 without coil inference",
+    "Zero structural alerts do not become a toxicity assessment",
+    "Browser export downloads and equals the persisted artifact with matching hashes",
+    "Full reload clears the in-memory token and does not show cached findings",
+    "Reauthentication retrieves the same persisted run",
+    "Unknown run shows an explicit missing-or-unauthorized state without findings",
+    "Legacy clinical-safety route is explicitly disabled"
+  ],
+  "screenshot": "phase3-browser.jpg",
+  "export": "phase3-browser-export.json",
+  "limitations": "Local synthetic software fixture only; no scientific predictive evaluation or sensitive-data deployment validation. Manual browser verification is recorded separately from the automated test count."
+}

@@ -1,0 +1,96 @@
+{
+  "recorded_at_utc": "2026-10-17T12:29:31.857215+00:00",
+  "design_id": "BS-RANK-001",
+  "design_version": "0.3",
+  "scope": "Prospective blocked design amendment: adopt returned assay 2.1 metadata identity and separate descriptive fixed-library replay from unchanged inferential qualification gates",
+  "scientific_assessment": "not_assessed",
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "deployment": "blocked",
+  "protocol_freeze": "blocked",
+  "preregistration_receipt": null,
+  "confirmatory_evaluation": "blocked",
+  "descriptive_outcome_access": "blocked",
+  "application_code_changed": false,
+  "accepted_framework_or_locks_changed": false,
+  "prior_design_changed": false,
+  "new_software_tests_run": false,
+  "empirical_outcomes_acquired": false,
+  "candidate_or_qed_scores_computed": false,
+  "confidence_intervals_or_power_computed": false,
+  "baseline_checks": [
+    {
+      "ledger": "docs/PHASE_3_VERIFICATION.json",
+      "ledger_sha256": "39a2ad7d62ba964061784aff18a128ea0bfbc6dca9396d63afaa34f665eaa94c",
+      "checked": 78,
+      "mismatches": []
+    },
+    {
+      "ledger": "docs/PHASE_4_VERIFICATION.json",
+      "ledger_sha256": "e0494760a7e50dc457b40d5f2bc396206e250bd689de4a4ab1a1ef144cd4a7fc",
+      "checked": 15,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/preparation-verification.json",
+      "ledger_sha256": "da16b1bf855d50fa081263825e53a5844a9fa365bffd9d53758cc7c47a3f883b",
+      "checked": 18,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/design-v0.2/verification.json",
+      "ledger_sha256": "8f65224d1eab2fc9cf218c3f9924466eb65e9e4949a742c520074e65de349e09",
+      "checked": 12,
+      "mismatches": []
+    }
+  ],
+  "preflight": {
+    "command": "& .phase3-clean/Scripts/python.exe -B -m validation.phase4.preflight validation/studies/BS-RANK-001/design-v0.3/protocol.draft.json --bundle-root validation/studies/BS-RANK-001/design-v0.3",
+    "python_exit_code": 2,
+    "status": "blocked",
+    "artifact": "preflight-result.json",
+    "checked_artifacts": 0
+  },
+  "offline_amendment_checks": {
+    "exact_commands": "VERIFICATION.md",
+    "python_exit_code": 0,
+    "artifact": "amendment-checks.json",
+    "scope": "byte correspondence and declared design-state checks only"
+  },
+  "decisions": {
+    "adopted_assay_identity": "AID1030/version2/revision1",
+    "adoption_scope": "proposed design only; no freeze or approved outcome release",
+    "historical_1_1_authenticated": false,
+    "initial_analysis": "descriptive_fixed_library_replay",
+    "point_margins": {
+      "precision_difference": 0.05,
+      "enrichment": 2.0
+    },
+    "existing_confidence_bound_gates_preserved": true,
+    "qualification_gates": "unmet",
+    "construct_status": "reference_correspondence_only_experimental_identity_unverified"
+  },
+  "unmet_requirements": [
+    "Raw outcome release/version 2.1 binding and source integrity",
+    "Experimental construct/material identity and assay suitability",
+    "Field/sign/unit/QC mapping, source adjudication, replicate and unknown handling",
+    "Qualified empirical library, source lineage, actual leakage/exposure and dependence analysis",
+    "Named accepted custodian, scientific owner and independent statistical reviewer",
+    "Verified institution-approved protected custody and trusted receipts",
+    "Tested study selector and descriptive evaluator with exact-100 and identity semantics",
+    "Inferential population, sampling or measurement model, interval calibration and power/sample size",
+    "Numerical coverage, subgroup support and multiplicity requirements",
+    "Protocol freeze, preregistration and authorized outcome access/evaluation",
+    "Scientific release, sensitive intake and existing deployment gates"
+  ],
+  "file_sha256": {
+    "amendment-checks.json": "cac48c8fffa9cca1840944d6185a50a358d86e00b98ed0fb8f4d12114b9d7a45",
+    "descriptive-report.template.json": "d3d106f845603a9bd9efa3b5b1469bb45fb4c43d399223352ce417dfd7a36868",
+    "design-decisions.json": "cb1ebadd175f0051665117d74d53e052878adfb3c4030b2e45a796d9183d56ec",
+    "preflight-result.json": "a005d9628bf0a0406b26832b9cd608119d40b01480c85d926bab09e574d8a542",
+    "protocol.draft.json": "ccab21b806df67509425b99a83b148b6b7224a70dfc55f86c4a61ed2f619d392",
+    "PROTOCOL_DRAFT.md": "bc136e39f3b8e44327d1df10e3bb951eea8f317ee311a099fa3eff933d2a0f51",
+    "VERIFICATION.md": "11407d916918188640c515fa2cf525ff51220b6501459febd6212c899cdb2a18"
+  },
+  "hash_meaning": "Local byte correspondence only; no authenticated authorship, independently protected checkpoint, preregistration timestamp or scientific approval; this ledger does not hash itself"
+}

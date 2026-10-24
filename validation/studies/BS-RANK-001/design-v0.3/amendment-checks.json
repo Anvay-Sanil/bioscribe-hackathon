@@ -1,0 +1,38 @@
+{
+  "scope": "offline design and metadata correspondence only",
+  "baseline_checks": [
+    {
+      "ledger": "docs/PHASE_3_VERIFICATION.json",
+      "ledger_sha256": "39a2ad7d62ba964061784aff18a128ea0bfbc6dca9396d63afaa34f665eaa94c",
+      "checked": 78,
+      "mismatches": []
+    },
+    {
+      "ledger": "docs/PHASE_4_VERIFICATION.json",
+      "ledger_sha256": "e0494760a7e50dc457b40d5f2bc396206e250bd689de4a4ab1a1ef144cd4a7fc",
+      "checked": 15,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/preparation-verification.json",
+      "ledger_sha256": "da16b1bf855d50fa081263825e53a5844a9fa365bffd9d53758cc7c47a3f883b",
+      "checked": 18,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/design-v0.2/verification.json",
+      "ledger_sha256": "8f65224d1eab2fc9cf218c3f9924466eb65e9e4949a742c520074e65de349e09",
+      "checked": 12,
+      "mismatches": []
+    }
+  ],
+  "qualification_gates_preserved": true,
+  "metadata_identity": "AID1030/version2/revision1",
+  "raw_outcome_version_verified": false,
+  "reference_sequences_equal": true,
+  "experimental_construct_verified": false,
+  "template_unpopulated": true,
+  "inferential_model_unassigned": true,
+  "preflight_status": "blocked",
+  "scientific_assessment": "not_assessed"
+}

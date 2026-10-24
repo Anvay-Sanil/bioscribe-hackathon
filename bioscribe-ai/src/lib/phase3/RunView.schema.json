@@ -1,0 +1,1265 @@
+{
+  "$defs": {
+    "ChemicalIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "identity_sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Identity Sha256"
+        },
+        "input_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Input Sha256",
+          "type": "string"
+        },
+        "canonical_isomeric_smiles": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Canonical Isomeric Smiles"
+        },
+        "formal_charge": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Formal Charge"
+        },
+        "fragments": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Fragments"
+        },
+        "stereocenters": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Stereocenters",
+          "type": "array"
+        },
+        "policies": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Policies",
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "identified",
+            "unsupported_input",
+            "unavailable"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "identity_sha256",
+        "input_sha256",
+        "canonical_isomeric_smiles",
+        "formal_charge",
+        "fragments",
+        "stereocenters",
+        "policies",
+        "status"
+      ],
+      "title": "ChemicalIdentity",
+      "type": "object"
+    },
+    "Coverage": {
+      "additionalProperties": false,
+      "properties": {
+        "total": {
+          "minimum": 0,
+          "title": "Total",
+          "type": "integer"
+        },
+        "analyzed": {
+          "minimum": 0,
+          "title": "Analyzed",
+          "type": "integer"
+        },
+        "complete": {
+          "title": "Complete",
+          "type": "boolean"
+        },
+        "coordinate_system": {
+          "enum": [
+            "zero_based_half_open",
+            "molecule",
+            "not_applicable"
+          ],
+          "title": "Coordinate System",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "total",
+        "analyzed",
+        "complete",
+        "coordinate_system",
+        "reason"
+      ],
+      "title": "Coverage",
+      "type": "object"
+    },
+    "CurrentArtifact": {
+      "additionalProperties": false,
+      "properties": {
+        "contract_version": {
+          "const": "3.1.0",
+          "default": "3.1.0",
+          "title": "Contract Version",
+          "type": "string"
+        },
+        "run_id": {
+          "pattern": "^[a-f0-9]{32}$",
+          "title": "Run Id",
+          "type": "string"
+        },
+        "input_identity": {
+          "$ref": "#/$defs/InputIdentity"
+        },
+        "chemical_identities": {
+          "items": {
+            "$ref": "#/$defs/ChemicalIdentity"
+          },
+          "title": "Chemical Identities",
+          "type": "array"
+        },
+        "outputs": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "manifest": {
+          "$ref": "#/$defs/Manifest"
+        },
+        "scientific_release": {
+          "const": "blocked",
+          "default": "blocked",
+          "title": "Scientific Release",
+          "type": "string"
+        },
+        "sensitive_intake": {
+          "const": "blocked",
+          "default": "blocked",
+          "title": "Sensitive Intake",
+          "type": "string"
+        },
+        "audit_integrity": {
+          "const": "integrity_unverified",
+          "default": "integrity_unverified",
+          "title": "Audit Integrity",
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id",
+        "input_identity",
+        "chemical_identities",
+        "outputs",
+        "manifest"
+      ],
+      "title": "CurrentArtifact",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "pattern": "^[a-f0-9]{32}$",
+          "title": "Run Id",
+          "type": "string"
+        },
+        "input_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Input Sha256",
+          "type": "string"
+        },
+        "field_id": {
+          "title": "Field Id",
+          "type": "string"
+        },
+        "quantity": {
+          "title": "Quantity",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "units": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Units"
+        },
+        "evidence_category": {
+          "enum": [
+            "computed_descriptor",
+            "structural_rule_observation",
+            "unvalidated_heuristic",
+            "model_prediction",
+            "unverified_extraction"
+          ],
+          "title": "Evidence Category",
+          "type": "string"
+        },
+        "method_id": {
+          "title": "Method Id",
+          "type": "string"
+        },
+        "method_version": {
+          "title": "Method Version",
+          "type": "string"
+        },
+        "implementation_fidelity": {
+          "enum": [
+            "fixture_checked",
+            "not_verified"
+          ],
+          "title": "Implementation Fidelity",
+          "type": "string"
+        },
+        "fidelity_record": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Fidelity Record"
+        },
+        "validation_record": {
+          "default": null,
+          "title": "Validation Record",
+          "type": "null"
+        },
+        "validation_status": {
+          "enum": [
+            "not_available",
+            "not_applicable"
+          ],
+          "title": "Validation Status",
+          "type": "string"
+        },
+        "validation_reason": {
+          "title": "Validation Reason",
+          "type": "string"
+        },
+        "domain": {
+          "enum": [
+            "in_domain",
+            "out_of_domain",
+            "undetermined",
+            "not_applicable"
+          ],
+          "title": "Domain",
+          "type": "string"
+        },
+        "domain_reason": {
+          "title": "Domain Reason",
+          "type": "string"
+        },
+        "coverage": {
+          "$ref": "#/$defs/Coverage"
+        },
+        "assessment_status": {
+          "enum": [
+            "computed",
+            "observed",
+            "not_assessed",
+            "needs_review"
+          ],
+          "title": "Assessment Status",
+          "type": "string"
+        },
+        "execution_status": {
+          "enum": [
+            "succeeded",
+            "failed",
+            "unavailable",
+            "unsupported_input"
+          ],
+          "title": "Execution Status",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id",
+        "input_sha256",
+        "field_id",
+        "quantity",
+        "value",
+        "units",
+        "evidence_category",
+        "method_id",
+        "method_version",
+        "implementation_fidelity",
+        "fidelity_record",
+        "validation_status",
+        "validation_reason",
+        "domain",
+        "domain_reason",
+        "coverage",
+        "assessment_status",
+        "execution_status",
+        "reason"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "HistoricalArtifact": {
+      "additionalProperties": false,
+      "properties": {
+        "contract_version": {
+          "const": "3.0.0",
+          "default": "3.0.0",
+          "title": "Contract Version",
+          "type": "string"
+        },
+        "run_id": {
+          "pattern": "^[a-f0-9]{32}$",
+          "title": "Run Id",
+          "type": "string"
+        },
+        "input_identity": {
+          "$ref": "#/$defs/HistoricalInputIdentity"
+        },
+        "chemical_identities": {
+          "items": {
+            "$ref": "#/$defs/HistoricalChemicalIdentity"
+          },
+          "title": "Chemical Identities",
+          "type": "array"
+        },
+        "outputs": {
+          "items": {
+            "$ref": "#/$defs/HistoricalEvidence"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "manifest": {
+          "$ref": "#/$defs/HistoricalManifest"
+        },
+        "scientific_release": {
+          "const": "blocked",
+          "default": "blocked",
+          "title": "Scientific Release",
+          "type": "string"
+        },
+        "sensitive_intake": {
+          "const": "blocked",
+          "default": "blocked",
+          "title": "Sensitive Intake",
+          "type": "string"
+        },
+        "audit_integrity": {
+          "const": "integrity_unverified",
+          "default": "integrity_unverified",
+          "title": "Audit Integrity",
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id",
+        "input_identity",
+        "chemical_identities",
+        "outputs",
+        "manifest"
+      ],
+      "title": "HistoricalArtifact",
+      "type": "object"
+    },
+    "HistoricalChemicalIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "input_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Input Sha256",
+          "type": "string"
+        },
+        "canonical_isomeric_smiles": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Canonical Isomeric Smiles"
+        },
+        "formal_charge": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Formal Charge"
+        },
+        "fragments": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Fragments"
+        },
+        "stereocenters": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Stereocenters",
+          "type": "array"
+        },
+        "policies": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Policies",
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "identified",
+            "unsupported_input",
+            "unavailable"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "input_sha256",
+        "canonical_isomeric_smiles",
+        "formal_charge",
+        "fragments",
+        "stereocenters",
+        "policies",
+        "status"
+      ],
+      "title": "HistoricalChemicalIdentity",
+      "type": "object"
+    },
+    "HistoricalCoverage": {
+      "additionalProperties": false,
+      "properties": {
+        "total": {
+          "minimum": 0,
+          "title": "Total",
+          "type": "integer"
+        },
+        "analyzed": {
+          "minimum": 0,
+          "title": "Analyzed",
+          "type": "integer"
+        },
+        "complete": {
+          "title": "Complete",
+          "type": "boolean"
+        },
+        "coordinate_system": {
+          "enum": [
+            "zero_based_half_open",
+            "molecule",
+            "not_applicable"
+          ],
+          "title": "Coordinate System",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "total",
+        "analyzed",
+        "complete",
+        "coordinate_system",
+        "reason"
+      ],
+      "title": "HistoricalCoverage",
+      "type": "object"
+    },
+    "HistoricalEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "pattern": "^[a-f0-9]{32}$",
+          "title": "Run Id",
+          "type": "string"
+        },
+        "input_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Input Sha256",
+          "type": "string"
+        },
+        "field_id": {
+          "title": "Field Id",
+          "type": "string"
+        },
+        "quantity": {
+          "title": "Quantity",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "units": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Units"
+        },
+        "evidence_category": {
+          "enum": [
+            "computed_descriptor",
+            "structural_rule_observation",
+            "unvalidated_heuristic",
+            "model_prediction",
+            "unverified_extraction"
+          ],
+          "title": "Evidence Category",
+          "type": "string"
+        },
+        "method_id": {
+          "title": "Method Id",
+          "type": "string"
+        },
+        "method_version": {
+          "title": "Method Version",
+          "type": "string"
+        },
+        "implementation_fidelity": {
+          "enum": [
+            "fixture_checked",
+            "not_verified"
+          ],
+          "title": "Implementation Fidelity",
+          "type": "string"
+        },
+        "fidelity_record": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Fidelity Record"
+        },
+        "validation_record": {
+          "default": null,
+          "title": "Validation Record",
+          "type": "null"
+        },
+        "validation_status": {
+          "enum": [
+            "not_available",
+            "not_applicable"
+          ],
+          "title": "Validation Status",
+          "type": "string"
+        },
+        "validation_reason": {
+          "title": "Validation Reason",
+          "type": "string"
+        },
+        "domain": {
+          "enum": [
+            "in_domain",
+            "out_of_domain",
+            "undetermined",
+            "not_applicable"
+          ],
+          "title": "Domain",
+          "type": "string"
+        },
+        "domain_reason": {
+          "title": "Domain Reason",
+          "type": "string"
+        },
+        "coverage": {
+          "$ref": "#/$defs/HistoricalCoverage"
+        },
+        "assessment_status": {
+          "enum": [
+            "computed",
+            "observed",
+            "not_assessed",
+            "needs_review"
+          ],
+          "title": "Assessment Status",
+          "type": "string"
+        },
+        "execution_status": {
+          "enum": [
+            "succeeded",
+            "failed",
+            "unavailable",
+            "unsupported_input"
+          ],
+          "title": "Execution Status",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id",
+        "input_sha256",
+        "field_id",
+        "quantity",
+        "value",
+        "units",
+        "evidence_category",
+        "method_id",
+        "method_version",
+        "implementation_fidelity",
+        "fidelity_record",
+        "validation_status",
+        "validation_reason",
+        "domain",
+        "domain_reason",
+        "coverage",
+        "assessment_status",
+        "execution_status",
+        "reason"
+      ],
+      "title": "HistoricalEvidence",
+      "type": "object"
+    },
+    "HistoricalInputIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "request_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Request Sha256",
+          "type": "string"
+        },
+        "content_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Content Sha256",
+          "type": "string"
+        },
+        "polymer_type": {
+          "title": "Polymer Type",
+          "type": "string"
+        },
+        "record_count": {
+          "title": "Record Count",
+          "type": "integer"
+        },
+        "source": {
+          "$ref": "#/$defs/HistoricalSourceIdentity"
+        },
+        "records": {
+          "items": {
+            "$ref": "#/$defs/HistoricalRecord"
+          },
+          "title": "Records",
+          "type": "array"
+        },
+        "normalization_policy": {
+          "const": "ascii_case_and_layout_only_v1",
+          "default": "ascii_case_and_layout_only_v1",
+          "title": "Normalization Policy",
+          "type": "string"
+        }
+      },
+      "required": [
+        "request_sha256",
+        "content_sha256",
+        "polymer_type",
+        "record_count",
+        "source",
+        "records"
+      ],
+      "title": "HistoricalInputIdentity",
+      "type": "object"
+    },
+    "HistoricalManifest": {
+      "additionalProperties": false,
+      "properties": {
+        "code_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Code Sha256",
+          "type": "string"
+        },
+        "registry_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Registry Sha256",
+          "type": "string"
+        },
+        "dependency_lock_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Dependency Lock Sha256",
+          "type": "string"
+        },
+        "dependencies": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Dependencies",
+          "type": "object"
+        },
+        "python_version": {
+          "title": "Python Version",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Parameters",
+          "type": "object"
+        },
+        "random_seed": {
+          "default": null,
+          "title": "Random Seed",
+          "type": "null"
+        },
+        "model": {
+          "const": "none",
+          "default": "none",
+          "title": "Model",
+          "type": "string"
+        },
+        "external_destinations": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 0,
+          "title": "External Destinations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code_sha256",
+        "registry_sha256",
+        "dependency_lock_sha256",
+        "dependencies",
+        "python_version",
+        "parameters"
+      ],
+      "title": "HistoricalManifest",
+      "type": "object"
+    },
+    "HistoricalRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "record_id": {
+          "title": "Record Id",
+          "type": "string"
+        },
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "original_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Original Sha256",
+          "type": "string"
+        },
+        "normalized_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Normalized Sha256",
+          "type": "string"
+        },
+        "normalization": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Normalization",
+          "type": "array"
+        },
+        "source_offsets": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Source Offsets",
+          "type": "array"
+        }
+      },
+      "required": [
+        "record_id",
+        "sequence",
+        "original_sha256",
+        "normalized_sha256",
+        "normalization",
+        "source_offsets"
+      ],
+      "title": "HistoricalRecord",
+      "type": "object"
+    },
+    "HistoricalSourceIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "accession": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Accession"
+        },
+        "version": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Version"
+        },
+        "organism_taxon_id": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Organism Taxon Id"
+        },
+        "provenance": {
+          "const": "user_supplied_unverified",
+          "default": "user_supplied_unverified",
+          "title": "Provenance",
+          "type": "string"
+        },
+        "unknown_reason": {
+          "default": "User supplied; no verified source accession",
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Unknown Reason",
+          "type": "string"
+        }
+      },
+      "title": "HistoricalSourceIdentity",
+      "type": "object"
+    },
+    "InputIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "request_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Request Sha256",
+          "type": "string"
+        },
+        "content_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Content Sha256",
+          "type": "string"
+        },
+        "polymer_type": {
+          "title": "Polymer Type",
+          "type": "string"
+        },
+        "record_count": {
+          "title": "Record Count",
+          "type": "integer"
+        },
+        "source": {
+          "$ref": "#/$defs/SourceIdentity"
+        },
+        "records": {
+          "items": {
+            "$ref": "#/$defs/Record"
+          },
+          "title": "Records",
+          "type": "array"
+        },
+        "normalization_policy": {
+          "const": "ascii_case_and_layout_only_v1",
+          "default": "ascii_case_and_layout_only_v1",
+          "title": "Normalization Policy",
+          "type": "string"
+        }
+      },
+      "required": [
+        "request_sha256",
+        "content_sha256",
+        "polymer_type",
+        "record_count",
+        "source",
+        "records"
+      ],
+      "title": "InputIdentity",
+      "type": "object"
+    },
+    "Manifest": {
+      "additionalProperties": false,
+      "properties": {
+        "code_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Code Sha256",
+          "type": "string"
+        },
+        "registry_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Registry Sha256",
+          "type": "string"
+        },
+        "dependency_lock_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Dependency Lock Sha256",
+          "type": "string"
+        },
+        "installation_lock_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Installation Lock Sha256",
+          "type": "string"
+        },
+        "dependencies": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Dependencies",
+          "type": "object"
+        },
+        "python_version": {
+          "title": "Python Version",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Parameters",
+          "type": "object"
+        },
+        "random_seed": {
+          "default": null,
+          "title": "Random Seed",
+          "type": "null"
+        },
+        "model": {
+          "const": "none",
+          "default": "none",
+          "title": "Model",
+          "type": "string"
+        },
+        "external_destinations": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 0,
+          "title": "External Destinations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code_sha256",
+        "registry_sha256",
+        "dependency_lock_sha256",
+        "installation_lock_sha256",
+        "dependencies",
+        "python_version",
+        "parameters"
+      ],
+      "title": "Manifest",
+      "type": "object"
+    },
+    "Record": {
+      "additionalProperties": false,
+      "properties": {
+        "record_id": {
+          "title": "Record Id",
+          "type": "string"
+        },
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "original_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Original Sha256",
+          "type": "string"
+        },
+        "normalized_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Normalized Sha256",
+          "type": "string"
+        },
+        "normalization": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Normalization",
+          "type": "array"
+        },
+        "source_offsets": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Source Offsets",
+          "type": "array"
+        }
+      },
+      "required": [
+        "record_id",
+        "sequence",
+        "original_sha256",
+        "normalized_sha256",
+        "normalization",
+        "source_offsets"
+      ],
+      "title": "Record",
+      "type": "object"
+    },
+    "SourceIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "accession": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Accession"
+        },
+        "version": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Version"
+        },
+        "organism_taxon_id": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Organism Taxon Id"
+        },
+        "provenance": {
+          "const": "user_supplied_unverified",
+          "default": "user_supplied_unverified",
+          "title": "Provenance",
+          "type": "string"
+        },
+        "unknown_reason": {
+          "default": "User supplied; no verified source accession",
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Unknown Reason",
+          "type": "string"
+        }
+      },
+      "title": "SourceIdentity",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "contract_version": {
+      "default": "3.1.0",
+      "enum": [
+        "3.0.0",
+        "3.1.0"
+      ],
+      "title": "Contract Version",
+      "type": "string"
+    },
+    "run_id": {
+      "pattern": "^[a-f0-9]{32}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "queued",
+        "running",
+        "succeeded",
+        "failed",
+        "cancelled"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "request_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Request Sha256",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "attempts": {
+      "title": "Attempts",
+      "type": "integer"
+    },
+    "error_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Error Code"
+    },
+    "artifact_sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Artifact Sha256"
+    },
+    "artifact": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/CurrentArtifact"
+        },
+        {
+          "$ref": "#/$defs/HistoricalArtifact"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Artifact"
+    }
+  },
+  "required": [
+    "run_id",
+    "status",
+    "request_sha256",
+    "created_at",
+    "attempts",
+    "error_code",
+    "artifact_sha256",
+    "artifact"
+  ],
+  "title": "RunView",
+  "type": "object"
+}

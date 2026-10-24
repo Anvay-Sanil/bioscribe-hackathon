@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "count": 23,
+  "checks": [
+    "Eight computed inputs with ordered request binding",
+    "All disabled predictions remain null",
+    "Every example has its own canonical conformer",
+    "Unknown molecule never gets a substitute conformer",
+    "Unsupported graph never gets a conformer",
+    "Conformer text hashes match",
+    "Budget produces exact cardinality",
+    "Smaller budget is a prefix",
+    "Scores ascending",
+    "Stable ties use input hashes",
+    "Invalid budgets abstain",
+    "Unsupported rows withhold entire selection",
+    "Missing scores withhold entire selection",
+    "Duplicate canonical identities withhold selection",
+    "Incomplete coverage has no numeric score",
+    "Export binds selection to exact source run",
+    "Bad budget cannot produce selected export rows",
+    "Wrong field identity is rejected on import",
+    "Reassuring prediction is rejected on import",
+    "Synthetic budget100 passes the accepted parser",
+    "Synthetic budget10 passes the accepted parser",
+    "Synthetic unknown passes the accepted parser",
+    "Learning parser and filter copies unchanged"
+  ]
+}

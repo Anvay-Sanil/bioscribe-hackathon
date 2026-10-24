@@ -1,0 +1,30 @@
+{
+  "scope": "Preserved application and scientific-study artifact hashes",
+  "checks": [
+    {
+      "ledger": "docs/PHASE_3_VERIFICATION.json",
+      "checked": 78,
+      "mismatches": []
+    },
+    {
+      "ledger": "docs/PHASE_4_VERIFICATION.json",
+      "checked": 15,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/preparation-verification.json",
+      "checked": 18,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/design-v0.2/verification.json",
+      "checked": 12,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/design-v0.3/verification.json",
+      "checked": 7,
+      "mismatches": []
+    }
+  ]
+}

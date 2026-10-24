@@ -1,0 +1,110 @@
+{
+  "snapshot_id": "bioscribe-public-compounds-1",
+  "scope": "compound identity only; no assay outcomes",
+  "identity_policy": "Exact isomeric graph; preserve charge, fragments, tautomer and isotopes",
+  "units_policy": "Source properties retained as raw evidence; not silently substituted for local calculations",
+  "records": [
+    {
+      "source": "PubChem",
+      "identifier": "2244",
+      "label": "aspirin",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/property/IsomericSMILES,InChIKey,MolecularFormula,MolecularWeight/JSON",
+      "filename": "pubchem-2244.json",
+      "raw_sha256": "9b9e052120c7f63b4ab6bcf090e08b331e5d4ca0d0b60927ab936e13037d7ec2",
+      "retrieved_utc": "2026-10-23T09:48:58.294193+00:00",
+      "headers": {
+        "date": "Fri, 23 Oct 2026 09:48:58 GMT",
+        "content-type": "application/json"
+      },
+      "source_version": "not supplied by compound endpoint; content-addressed retrieval snapshot",
+      "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+      "inchi_key": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+      "curation": "Exact identifier checked; compare local canonical graph. No biological labels imported."
+    },
+    {
+      "source": "ChEMBL",
+      "identifier": "CHEMBL25",
+      "label": "aspirin",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/molecule/CHEMBL25.json",
+      "filename": "chembl-CHEMBL25.json",
+      "raw_sha256": "5f75bda96b839f6eb5e3a3febd8c686ddffdbcbdd90e87c2a7cf28eb677a1e52",
+      "retrieved_utc": "2026-10-23T09:49:01.466055+00:00",
+      "headers": {
+        "content-type": "application/json",
+        "date": "Fri, 23 Oct 2026 09:49:01 GMT"
+      },
+      "source_version": "not supplied by compound endpoint; content-addressed retrieval snapshot",
+      "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+      "inchi_key": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+      "curation": "Exact identifier checked; compare local canonical graph. No biological labels imported."
+    },
+    {
+      "source": "PubChem",
+      "identifier": "2519",
+      "label": "caffeine",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2519/property/IsomericSMILES,InChIKey,MolecularFormula,MolecularWeight/JSON",
+      "filename": "pubchem-2519.json",
+      "raw_sha256": "382459c9ab51300d24bb1f76677b64caecea025e178e46cb2f01e935b32cb935",
+      "retrieved_utc": "2026-10-23T09:49:02.204648+00:00",
+      "headers": {
+        "date": "Fri, 23 Oct 2026 09:49:02 GMT",
+        "content-type": "application/json"
+      },
+      "source_version": "not supplied by compound endpoint; content-addressed retrieval snapshot",
+      "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+      "inchi_key": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+      "curation": "Exact identifier checked; compare local canonical graph. No biological labels imported."
+    },
+    {
+      "source": "ChEMBL",
+      "identifier": "CHEMBL113",
+      "label": "caffeine",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/molecule/CHEMBL113.json",
+      "filename": "chembl-CHEMBL113.json",
+      "raw_sha256": "fe0b0ac38412a5ecec0ea73601f53997e1edd1976ad7016f52558101b8232bf7",
+      "retrieved_utc": "2026-10-23T09:49:04.657025+00:00",
+      "headers": {
+        "content-type": "application/json",
+        "date": "Fri, 23 Oct 2026 09:49:04 GMT"
+      },
+      "source_version": "not supplied by compound endpoint; content-addressed retrieval snapshot",
+      "smiles": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+      "inchi_key": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+      "curation": "Exact identifier checked; compare local canonical graph. No biological labels imported."
+    },
+    {
+      "source": "PubChem",
+      "identifier": "1983",
+      "label": "acetaminophen",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1983/property/IsomericSMILES,InChIKey,MolecularFormula,MolecularWeight/JSON",
+      "filename": "pubchem-1983.json",
+      "raw_sha256": "21e1ec1f79c899fd28c692fe1947a769efd7ed05700fa45a9a2ca915ae0ba269",
+      "retrieved_utc": "2026-10-23T09:49:05.519826+00:00",
+      "headers": {
+        "date": "Fri, 23 Oct 2026 09:49:05 GMT",
+        "content-type": "application/json"
+      },
+      "source_version": "not supplied by compound endpoint; content-addressed retrieval snapshot",
+      "smiles": "CC(=O)NC1=CC=C(C=C1)O",
+      "inchi_key": "RZVAJINKPMORJF-UHFFFAOYSA-N",
+      "curation": "Exact identifier checked; compare local canonical graph. No biological labels imported."
+    },
+    {
+      "source": "ChEMBL",
+      "identifier": "CHEMBL112",
+      "label": "acetaminophen",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/molecule/CHEMBL112.json",
+      "filename": "chembl-CHEMBL112.json",
+      "raw_sha256": "bc2c736b96a7cf943bc585a8913b4702bff7fa80910db612c9415e0d72e5d8a4",
+      "retrieved_utc": "2026-10-23T09:49:09.160394+00:00",
+      "headers": {
+        "content-type": "application/json",
+        "date": "Fri, 23 Oct 2026 09:49:09 GMT"
+      },
+      "source_version": "not supplied by compound endpoint; content-addressed retrieval snapshot",
+      "smiles": "CC(=O)Nc1ccc(O)cc1",
+      "inchi_key": "RZVAJINKPMORJF-UHFFFAOYSA-N",
+      "curation": "Exact identifier checked; compare local canonical graph. No biological labels imported."
+    }
+  ]
+}

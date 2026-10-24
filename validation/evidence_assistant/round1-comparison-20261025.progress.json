@@ -1,0 +1,132 @@
+{
+  "status": "running",
+  "started_utc": "2026-10-24T20:25:08.156549+00:00",
+  "protocol": {
+    "version": "draft-comparison/0.2.0",
+    "model": {
+      "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+      "nominal_parameter_count": 500000000,
+      "license": "Apache-2.0",
+      "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+      "file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "bytes": 491400032,
+      "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+      "endpoint": "http://127.0.0.1:8092/v1/chat/completions",
+      "local_alias": "bioscribe-qwen25-05b",
+      "runtime_release": "b11856",
+      "context_limit": 8192,
+      "use": "Experimental passage interpretations and separately versioned provisional CPU baseline. Does not replace historical 4B results."
+    },
+    "prompt_sha256": "deeda503a7b4ebe1c5c2823d556e2b5ef15adc939f8d6173f30f0093071a04e0",
+    "dataset": {
+      "status": "provisional_unreviewed",
+      "claims": 150,
+      "source_records": 30,
+      "source_groups": 19,
+      "corpus_sha256": "5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65",
+      "claims_sha256": "f6dea38e601214ca1735cf31c38b7ed484670ab8263920edf1845ebfe99ce0ef",
+      "proposed_labels_sha256": "69230d2a941292644f032fa2cd09316824815d6e3b17cfbe2969205141d09728",
+      "label_counts": {
+        "supported": 30,
+        "contradicted": 30,
+        "insufficient_evidence": 60,
+        "out_of_scope": 30
+      },
+      "limitations": [
+        "Template-generated challenge set, not a representative independent benchmark",
+        "Labels drafted after implementation and not independently adjudicated",
+        "No protected holdout or source-group split assigned",
+        "Repeated source records and publications are dependent",
+        "No real retracted-paper claim in this 150-row draft; retraction handling has synthetic software fixtures only",
+        "No inferential performance or calibrated-confidence claim"
+      ]
+    },
+    "batch_size": 5,
+    "retrieval_k_per_claim": 8,
+    "cache_prompt": false,
+    "max_output_tokens_per_claim": 130,
+    "timeout_seconds_per_batch": 90,
+    "code_sha256": {
+      "validation/evidence_assistant/round1.py": "f75b9190495c207e8a10a1a172ed263be0711c19e1957d4979fb3b46310118ac",
+      "backend/evidence_assistant/compact_model.py": "08f67b87aaf0aba760da12182ac645db253cf36763a483c8390e2f5cfe2690ca",
+      "backend/evidence_assistant/engine.py": "f8ecdb9fb839568ca1354084e95e9b551793be70fd62f193a97a3cb76ba083b0",
+      "backend/evidence_assistant/corpus.py": "1fbddae7e5f7694baec7e8bf5342d4b74d483ce461963a01c36db63f585ac576",
+      "backend/evidence_assistant/schemas.py": "6db83978fdb40b7ea88ad65998017e9d5c6fbc2c310cf2a56c1edd6c347b78ba",
+      "validation/evidence_assistant/evaluate.py": "092afef4b96af15bc2bc56b2d559cda1596e83f202b663c6885e2dec4b9e2020"
+    },
+    "purpose": "Complete engineering rehearsal on developer-exposed, unreviewed template labels; no scientific qualification",
+    "fairness": "Same frozen corpus/retriever; baseline receives per-claim top 8; deterministic system additionally enforces exact record identity. Shared batch context permits cross-claim context; no gold labels supplied.",
+    "historical_results": "Existing 4B baseline failures and cached longer-budget success remain separate historical receipts."
+  },
+  "protocol_sha256": "4a446bf9e5f3b80aeac1b8448c186fdf56ea9752577d435d65cd6d10486ab295",
+  "predictions": {
+    "EA-001": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-002": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-003": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-004": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-005": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-006": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-007": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-008": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-009": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-010": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    }
+  },
+  "attempts": [
+    {
+      "claim_ids": [
+        "EA-001",
+        "EA-002",
+        "EA-003",
+        "EA-004",
+        "EA-005"
+      ],
+      "started_utc": "2026-10-24T20:25:08.156549+00:00",
+      "status": "failed",
+      "error_type": "ValueError",
+      "seconds": 53.703
+    },
+    {
+      "claim_ids": [
+        "EA-006",
+        "EA-007",
+        "EA-008",
+        "EA-009",
+        "EA-010"
+      ],
+      "started_utc": "2026-10-24T20:26:01.854272+00:00",
+      "status": "failed",
+      "error_type": "ValueError",
+      "seconds": 63.219
+    }
+  ]
+}

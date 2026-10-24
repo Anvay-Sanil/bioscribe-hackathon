@@ -1,0 +1,80 @@
+{
+  "recorded_at": "2026-10-24T19:27:10.814Z",
+  "status": "passed",
+  "count": 18,
+  "checks": [
+    {
+      "name": "valid four-verdict recorded review",
+      "status": "passed"
+    },
+    {
+      "name": "expected input attribution",
+      "status": "passed"
+    },
+    {
+      "name": "missing research aid label",
+      "status": "passed"
+    },
+    {
+      "name": "invented confidence",
+      "status": "passed"
+    },
+    {
+      "name": "false confidence qualification",
+      "status": "passed"
+    },
+    {
+      "name": "missing source metadata",
+      "status": "passed"
+    },
+    {
+      "name": "unsafe source destination",
+      "status": "passed"
+    },
+    {
+      "name": "unapproved source destination",
+      "status": "passed"
+    },
+    {
+      "name": "wrong source span",
+      "status": "passed"
+    },
+    {
+      "name": "evidence removed",
+      "status": "passed"
+    },
+    {
+      "name": "computed evidence promoted to activity",
+      "status": "passed"
+    },
+    {
+      "name": "retracted evidence promoted to support",
+      "status": "passed"
+    },
+    {
+      "name": "assay publication status marked inapplicable",
+      "status": "passed"
+    },
+    {
+      "name": "assay evidence relabelled as computation",
+      "status": "passed"
+    },
+    {
+      "name": "abstention basis promoted to decisive verdict",
+      "status": "passed"
+    },
+    {
+      "name": "clinical verdict promoted to supported",
+      "status": "passed"
+    },
+    {
+      "name": "review trace relabelled",
+      "status": "passed"
+    },
+    {
+      "name": "missing review trace",
+      "status": "passed"
+    }
+  ],
+  "scope": "Client decoder contracts only; no scientific qualification or browser interaction"
+}

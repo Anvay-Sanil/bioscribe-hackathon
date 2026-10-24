@@ -1,0 +1,401 @@
+{
+  "scope": "Packaging integrity, not authenticated authorship or scientific validation",
+  "files": [
+    {
+      "path": "00-START-HERE.md",
+      "bytes": 2747,
+      "sha256": "60549840fcdf1e67ae9ae7b6cac47a7920eb3471b5962786da5f69189d590753",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "01-story/CLAIMS_AND_EVIDENCE.md",
+      "bytes": 3682,
+      "sha256": "f3297eb04d56df5e58117baa6f1faf3b32172234bc94b6a7e1d1fd2d631bf0ef",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "01-story/JUDGE_QA.md",
+      "bytes": 3436,
+      "sha256": "d6ad7d9f471b2892473243475da8393874701ef7ed511aa47e57467c6ae9f5ba",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "01-story/MASTER_BRIEF.md",
+      "bytes": 5134,
+      "sha256": "daed705a6136a03090a1c66aae2acdf2b4cf27b6b18b8387407a85c8bcbd1683",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "01-story/MASTER_BRIEF.txt",
+      "bytes": 5134,
+      "sha256": "daed705a6136a03090a1c66aae2acdf2b4cf27b6b18b8387407a85c8bcbd1683",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "01-story/PPT_GENERATION_PROMPT.txt",
+      "bytes": 2666,
+      "sha256": "1ba7a3eafe6e4d8ac7da9ebffb65b5c9f59ac3a7085ce7cd9543f12cdddaaf8e",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "01-story/SLIDE_CONTENT.md",
+      "bytes": 5082,
+      "sha256": "3903a12ebad396354094ca54b46af041b9021ff2a630d1d0240db25d267771a8",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "01-story/SOURCES_AND_ATTRIBUTION.md",
+      "bytes": 1799,
+      "sha256": "2251ae567f0714df3974d8908b33858c2333919a4f62fe270806286d9699eae5",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "01-story/SPEAKER_NOTES.md",
+      "bytes": 4725,
+      "sha256": "29738cf21d858cd7d6d137e93705e2700760b8d9ec1c0ac77aef7cf4f2cc0120",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "02-official-problem/HM01_EXACT_TEXT.md",
+      "bytes": 1294,
+      "sha256": "54a90277f1f0b4a3924f5a3d20ba909bd582621ad9a9b434c1d8164d86f80e33",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "02-official-problem/Problem_Statements_hypn.pptx",
+      "bytes": 81757,
+      "sha256": "3f9150529fe294c578b4f53db3f5841596c4ef0e16dc03b77624b00b317580a4",
+      "source": "user-supplied official deck"
+    },
+    {
+      "path": "03-visuals/architecture.mmd",
+      "bytes": 466,
+      "sha256": "d772ce450cdb17dea07e1a3349457e364d265fd5d4465ee891451b4ad6f3fd92",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "03-visuals/ASSET_INDEX.md",
+      "bytes": 2253,
+      "sha256": "9c79f90241da64848e3d8e0b0e8667a3b787470c82d3f16d7b4995c3165c9c66",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "03-visuals/BRAND_GUIDE.md",
+      "bytes": 1238,
+      "sha256": "e275d132687215a2aec3addc0fec3e8e4f852ffb351d59f060f7f653b34021cd",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "03-visuals/current/aspirin-3d.jpg",
+      "bytes": 27799,
+      "sha256": "bd9eb120143fc532df30c33965e7ea7d183d7ffb7afd87291eba0e57b289d614",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "03-visuals/current/evidence-overview.jpg",
+      "bytes": 34243,
+      "sha256": "dab5420a7ef62686534afa82f24901ec6434108c26c45421b6ac05555cb5930f",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "03-visuals/current/invalid-input.jpg",
+      "bytes": 26220,
+      "sha256": "38c70051afc8a8a8ca5a5b8385b368fba7169d7dc65e3b44ddb0b15a416b202d",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "03-visuals/current/missing-evidence.jpg",
+      "bytes": 20812,
+      "sha256": "7dde175cc76181499235b33b97439bf09d756ae1aca5b33282a14843b0122db0",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "03-visuals/current-workflow.mmd",
+      "bytes": 333,
+      "sha256": "8e35d5be0586809dd7f385e8d6da24f7fb973752f6cdd4bd2071a394854eb903",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "03-visuals/historical/experiment-challenges.jpg",
+      "bytes": 43725,
+      "sha256": "2d8f8717f1b9a5437e9c37a25afcecce7718e4f0828bab458447f298643d50c5",
+      "source": "hackathon/experiment-challenges/challenges.jpg"
+    },
+    {
+      "path": "03-visuals/historical/replay-proof.jpg",
+      "bytes": 43788,
+      "sha256": "13e0b28f59daacdab272b797848c7422c32990c78f2f60a867b4af71165f7fd1",
+      "source": "hackathon/evidence-lab/replay-proof.jpg"
+    },
+    {
+      "path": "03-visuals/historical/run-comparison.jpg",
+      "bytes": 29890,
+      "sha256": "461f24fa223edbf6481a5a2eb01d2141e9d9ab4dbf91ec27dc0b6c7726f1954b",
+      "source": "hackathon/judging-upgrade/run-changes.jpg"
+    },
+    {
+      "path": "03-visuals/proposed-decision-workflow.mmd",
+      "bytes": 297,
+      "sha256": "5cec4c51b5c226218074f19620c01fcd10b26dbbc2bb04923f8134b6338b936e",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "03-visuals/visual-assets.json",
+      "bytes": 901,
+      "sha256": "90898671e63f5626ab8ade4a3216b48bb4cd20c105b69e9f6c1a5c7e39924985",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "04-evidence/earlier-backend/all-backend-tests.xml",
+      "bytes": 28610,
+      "sha256": "6b008cd02e636af788d3c0c773209b9764fd1b95c0aa0c62c827f0575bb73d3c",
+      "source": "hackathon/evidence-lab/all-backend-tests.xml"
+    },
+    {
+      "path": "04-evidence/earlier-backend/linux-tests.xml",
+      "bytes": 6378,
+      "sha256": "0e7642a3bc3c6b453f4a9650c7efad7e641a729a00c640c1b433b8d54975aa3d",
+      "source": "hackathon/evidence-lab/linux-tests.xml"
+    },
+    {
+      "path": "04-evidence/earlier-backend/portability.json",
+      "bytes": 2384,
+      "sha256": "8ce08b412ef6b554eb6d15399f9c73d9cefc792cc62c166a7055a0d67f8176a8",
+      "source": "hackathon/evidence-lab/portability.json"
+    },
+    {
+      "path": "04-evidence/earlier-backend/VERIFICATION.json",
+      "bytes": 4209,
+      "sha256": "b8ec79fbda15501b788211f0de79f066575394c4c5db64a478244249faba086b",
+      "source": "hackathon/evidence-lab/VERIFICATION.json"
+    },
+    {
+      "path": "04-evidence/latest-feature/browser-checks.json",
+      "bytes": 1703,
+      "sha256": "7e5c80377e0579a14e445349e32f9a4cacf3b72b3afc7742fdb9c091ed1a3adb",
+      "source": "hackathon/experiment-challenges/browser-checks.json"
+    },
+    {
+      "path": "04-evidence/latest-feature/live-checks.json",
+      "bytes": 3243,
+      "sha256": "457e24994e679c5e2fb60bda5a708fa43d19fbad8786cd53a3dd849785dbd5b1",
+      "source": "hackathon/experiment-challenges/live-checks.json"
+    },
+    {
+      "path": "04-evidence/latest-feature/software-checks.json",
+      "bytes": 3772,
+      "sha256": "b200317cf369b6435c6543f3f7d78b0e53896b5ccd4b56a99c68f5e4aab1ef7e",
+      "source": "hackathon/experiment-challenges/software-checks.json"
+    },
+    {
+      "path": "04-evidence/latest-feature/VERIFICATION.json",
+      "bytes": 887,
+      "sha256": "b82b5df152ff23631daf98cf69748acffae2ba1e8f04be44b4afffa74f04f491",
+      "source": "hackathon/experiment-challenges/VERIFICATION.json"
+    },
+    {
+      "path": "04-evidence/worked-comparison/comparison-tests.xml",
+      "bytes": 3270,
+      "sha256": "780de48e54076a9054213b5983c2969319ccffbb4e2e28a18c46570f53d86dc5",
+      "source": "hackathon/judging-upgrade/comparison-tests.xml"
+    },
+    {
+      "path": "04-evidence/worked-comparison/observations.json",
+      "bytes": 163767,
+      "sha256": "78ba29826de35f02b1782619e00520b679193e6c4ecd6242c0ad62a67e396e6d",
+      "source": "bioscribe-ai/src/lib/phase3/worked-comparison.json"
+    },
+    {
+      "path": "04-evidence/worked-comparison/VERIFICATION.json",
+      "bytes": 1116,
+      "sha256": "677a940561b0ab43c9c3dc25f0fd9ef543d99aac01fac553ccd686415eac4736",
+      "source": "hackathon/judging-upgrade/VERIFICATION.json"
+    },
+    {
+      "path": "05-demo/budget-one-run.json",
+      "bytes": 96340,
+      "sha256": "03d5d524eb5423c1478c1c8be90a01657424f25b69d4b157ef5380d92c88049a",
+      "source": "bioscribe-ai/public/evidence-lab/budget-one-run.json"
+    },
+    {
+      "path": "05-demo/challenge-run.json",
+      "bytes": 130283,
+      "sha256": "42eb26309aa977c24edc6fd6f33b0339e2e14ff24c27085ae061cb470b9ec2e3",
+      "source": "bioscribe-ai/public/evidence-lab/challenge-run.json"
+    },
+    {
+      "path": "05-demo/challenge-source-run.json",
+      "bytes": 101471,
+      "sha256": "2023a3259333e8aa0151e40ffd9fddb0813eba94e4c25b27894b27a4aaa662e9",
+      "source": "bioscribe-ai/public/evidence-lab/challenge-source-run.json"
+    },
+    {
+      "path": "05-demo/DEMO_SCRIPT.md",
+      "bytes": 2432,
+      "sha256": "38c3edfadc96aff3c300aebfd3237de5fea259c6f9ac16675417a2646087b19a",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "05-demo/full-report.html",
+      "bytes": 42385,
+      "sha256": "cf475567db10bf5613b1f3af1ab54c6061911a6ea6b6799fcaeac6e524269bc2",
+      "source": "hackathon/evidence-lab/full-report.html"
+    },
+    {
+      "path": "05-demo/recorded-challenge-capsule.json",
+      "bytes": 654193,
+      "sha256": "0846cbfe5ad9bfb851ef7b979114ec312ec46bdc2900e86b23ddaa16c7dfcb65",
+      "source": "hackathon/experiment-challenges/browser-capsule.json"
+    },
+    {
+      "path": "05-demo/reference-run.json",
+      "bytes": 88201,
+      "sha256": "e6fcadc5264265a5d379414f46df8cfa08872a302ab9400512c93d8feebcdbb9",
+      "source": "bioscribe-ai/public/evidence-lab/reference-run.json"
+    },
+    {
+      "path": "06-technical/ARCHITECTURE_NOTES.md",
+      "bytes": 2079,
+      "sha256": "741f25c97d4ee38ab6b36c4617cb48571dba7fb38543b33dd06815cfcfc9de38",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "06-technical/engine-source.py",
+      "bytes": 16092,
+      "sha256": "d03faaf5b46e019944e0390b0c2293873caf139929902a4c15dcaa7fe7a1967a",
+      "source": "backend/provenance_lab/engine.py"
+    },
+    {
+      "path": "06-technical/EXPERIMENT_CHALLENGES.md",
+      "bytes": 9347,
+      "sha256": "808f5290c43839ac19982edfc6a1e03ada4c81086950feaabccbb8fa99b90fd9",
+      "source": "hackathon/experiment-challenges/README.md"
+    },
+    {
+      "path": "06-technical/frontend-package.json",
+      "bytes": 1838,
+      "sha256": "ec8113fe76d4f6c4489da4fd772fef38e1bc7050ed6a07390d7c84ac4a310231",
+      "source": "bioscribe-ai/package.json"
+    },
+    {
+      "path": "06-technical/frozen-references/chembl-CHEMBL112.json",
+      "bytes": 15018,
+      "sha256": "bc2c736b96a7cf943bc585a8913b4702bff7fa80910db612c9415e0d72e5d8a4",
+      "source": "backend/provenance_lab/references/chembl-CHEMBL112.json"
+    },
+    {
+      "path": "06-technical/frozen-references/chembl-CHEMBL113.json",
+      "bytes": 7494,
+      "sha256": "fe0b0ac38412a5ecec0ea73601f53997e1edd1976ad7016f52558101b8232bf7",
+      "source": "backend/provenance_lab/references/chembl-CHEMBL113.json"
+    },
+    {
+      "path": "06-technical/frozen-references/chembl-CHEMBL25.json",
+      "bytes": 11498,
+      "sha256": "5f75bda96b839f6eb5e3a3febd8c686ddffdbcbdd90e87c2a7cf28eb677a1e52",
+      "source": "backend/provenance_lab/references/chembl-CHEMBL25.json"
+    },
+    {
+      "path": "06-technical/frozen-references/pubchem-1983.json",
+      "bytes": 261,
+      "sha256": "21e1ec1f79c899fd28c692fe1947a769efd7ed05700fa45a9a2ca915ae0ba269",
+      "source": "backend/provenance_lab/references/pubchem-1983.json"
+    },
+    {
+      "path": "06-technical/frozen-references/pubchem-2244.json",
+      "bytes": 263,
+      "sha256": "9b9e052120c7f63b4ab6bcf090e08b331e5d4ca0d0b60927ab936e13037d7ec2",
+      "source": "backend/provenance_lab/references/pubchem-2244.json"
+    },
+    {
+      "path": "06-technical/frozen-references/pubchem-2519.json",
+      "bytes": 270,
+      "sha256": "382459c9ab51300d24bb1f76677b64caecea025e178e46cb2f01e935b32cb935",
+      "source": "backend/provenance_lab/references/pubchem-2519.json"
+    },
+    {
+      "path": "06-technical/frozen-references/snapshot.json",
+      "bytes": 5356,
+      "sha256": "925ed991cb73115dcb8468738dc489538d4f3e0541db7e9e29bbbb9a00a30ef5",
+      "source": "backend/provenance_lab/references/snapshot.json"
+    },
+    {
+      "path": "06-technical/IMPLEMENTATION.md",
+      "bytes": 11158,
+      "sha256": "b557c83268bde8a47f446c006139c50cde96dc3488964c12dc8d2eacd0058cb3",
+      "source": "hackathon/evidence-lab/IMPLEMENTATION.md"
+    },
+    {
+      "path": "06-technical/LabPackage.schema.json",
+      "bytes": 16012,
+      "sha256": "21722b7dbb8aa762dc62a7d99666b13cdd95a127ada9550e62f78d0856d13b47",
+      "source": "bioscribe-ai/src/lib/phase3/LabPackage.schema.json"
+    },
+    {
+      "path": "06-technical/requirements-phase3.lock",
+      "bytes": 496,
+      "sha256": "ae4b09ee9910ec3bbfcde31d922d24184ed188bdc128218288156e43815c998b",
+      "source": "backend/requirements-phase3.lock"
+    },
+    {
+      "path": "06-technical/schema-source.py",
+      "bytes": 7054,
+      "sha256": "b7d1ea90ede4f0c5afe023dddfad5883d9189ea05c3ddc6224020d5fcc325d1e",
+      "source": "backend/provenance_lab/schemas.py"
+    },
+    {
+      "path": "07-roadmap/inventory.py",
+      "bytes": 1733,
+      "sha256": "ed7b731063150af3a258caaa4dd2f9e8400d8268e2625e6a6f9d62989791a23f",
+      "source": "docs/innovation-audit-2026-10-24/inventory.py"
+    },
+    {
+      "path": "07-roadmap/probe-results.json",
+      "bytes": 1755,
+      "sha256": "e62e7a0bd477bbba22b775a4799819421a444d4052043b7ac87c80e46a7ed6e2",
+      "source": "docs/innovation-audit-2026-10-24/probe-results.json"
+    },
+    {
+      "path": "07-roadmap/probe.py",
+      "bytes": 4147,
+      "sha256": "f81a2c4dad38131e90c6844f43fa913253ec3308205c9e1731d3a05dc227cf24",
+      "source": "docs/innovation-audit-2026-10-24/probe.py"
+    },
+    {
+      "path": "07-roadmap/RESEARCH_AND_ROADMAP.md",
+      "bytes": 37671,
+      "sha256": "afc478aa26edd1cb494e6df1034f63173be7d6f73fa3ec4eda27dcd895ed8627",
+      "source": "docs/innovation-audit-2026-10-24/RESEARCH_AND_ROADMAP.md"
+    },
+    {
+      "path": "07-roadmap/ROADMAP_ONLY.md",
+      "bytes": 1100,
+      "sha256": "d12a35cb2aacbef94bee124f783fc8661bd842c79a64ce8a295461b35e43fc39",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "07-roadmap/source-inventory.json",
+      "bytes": 69176,
+      "sha256": "13dc934bf8ab06e82c6cf57d44648d1ddf6c9a8c1b41c20b6f68e5ba924e95e8",
+      "source": "docs/innovation-audit-2026-10-24/source-inventory.json"
+    },
+    {
+      "path": "ALL_PRESENTATION_CONTENT.txt",
+      "bytes": 26211,
+      "sha256": "d8b3f17fe38b176faaafbd82ff61a33b1d4c6038366de7f0127c281e77b9c8b1",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "PACKAGE_CHECKS.json",
+      "bytes": 474,
+      "sha256": "47bcdb19f2c9ff01d1eecd1c459fe96a1db648c57960039d098d87df4425664d",
+      "source": "prepared for this presentation pack"
+    },
+    {
+      "path": "TEAM_DETAILS_TO_FILL.md",
+      "bytes": 816,
+      "sha256": "39497b395914523a1968a2b07c390ac9050cfdb4a442455f4c9e4b590f8b4eb1",
+      "source": "prepared for this presentation pack"
+    }
+  ]
+}

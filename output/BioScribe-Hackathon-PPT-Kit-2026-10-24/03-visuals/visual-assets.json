@@ -1,0 +1,44 @@
+[
+  {
+    "path": "03-visuals/current/aspirin-3d.jpg",
+    "width": 611,
+    "height": 674,
+    "format": "JPEG"
+  },
+  {
+    "path": "03-visuals/current/evidence-overview.jpg",
+    "width": 611,
+    "height": 674,
+    "format": "JPEG"
+  },
+  {
+    "path": "03-visuals/current/invalid-input.jpg",
+    "width": 611,
+    "height": 674,
+    "format": "JPEG"
+  },
+  {
+    "path": "03-visuals/current/missing-evidence.jpg",
+    "width": 611,
+    "height": 674,
+    "format": "JPEG"
+  },
+  {
+    "path": "03-visuals/historical/experiment-challenges.jpg",
+    "width": 611,
+    "height": 674,
+    "format": "JPEG"
+  },
+  {
+    "path": "03-visuals/historical/replay-proof.jpg",
+    "width": 821,
+    "height": 676,
+    "format": "JPEG"
+  },
+  {
+    "path": "03-visuals/historical/run-comparison.jpg",
+    "width": 311,
+    "height": 636,
+    "format": "JPEG"
+  }
+]

@@ -1,0 +1,1927 @@
+{
+  "scope": "Source-file inventory only; hashes are correspondence checks, not code review completion or authorship. Excludes environments, private runtime state, generated packages and all study outcomes.",
+  "files": [
+    {
+      "path": "backend/api_advanced.py",
+      "lines": 500,
+      "sha256": "a9560c48be1dbfe477f085348467c280677eca1822d2cd9928d99565a1633bb2",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/api_enhanced.py",
+      "lines": 503,
+      "sha256": "06fe46ea2f3b710b22a2ca909cdbfdf19c415c118404a2f9f77a12faba25ec57",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/api_genuine.py",
+      "lines": 407,
+      "sha256": "1f76a455623ebca24912f8107d640a2f8a745bfd69b8ee93d51764302ddce7fa",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/api_phase3.py",
+      "lines": 6,
+      "sha256": "4d9468aee9c957ceecaa9d4f0c7e5703268e16a70e2be6513806a6d8e34ace68",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/api_unified.py",
+      "lines": 1912,
+      "sha256": "1b0d13feb1315480408d308860099c3413b0508b6ac17aa07627c56db6e6876c",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/api_v4_frontier.py",
+      "lines": 816,
+      "sha256": "7525db1d2c789ed61ca4a150e38c471b47a2613cdbf5857e7d24741b639d5cf3",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/compliance_endpoints.py",
+      "lines": 414,
+      "sha256": "458c79e0ef2d3d27d9666bc4fbe1ea26541614512761434536f8f7ac67388537",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/config.py",
+      "lines": 139,
+      "sha256": "96678d8176ee802302a860c72a0eb21b250a6b5e8f109c8f0d332fd5c4fdab57",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/enterprise_compliance.py",
+      "lines": 428,
+      "sha256": "d6630b02c0044d577fb1ef4ad2da1a2bf0abcbd5e8fa34cd67d57be6d12f44cc",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/enterprise_features.py",
+      "lines": 565,
+      "sha256": "2e34623d15555684c026ad77c43bb16e2aaab1b8d917eef3c1514289b1d86abc",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/laboratory_docking_engine.py",
+      "lines": 682,
+      "sha256": "615a34ee60707d2b0dcd9d3236210aafa9242ca7028be41c402212361e9386d5",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/main.py",
+      "lines": 659,
+      "sha256": "b99fbffc71824b25d0c9c45d3e33ed14daec1e345d7e5d96dcbde71911f536bc",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/main_demo.py",
+      "lines": 578,
+      "sha256": "be59f4361d1c6810895d5393e5a28802eb612780baa48520b3b383731b584dab",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/main_enterprise.py",
+      "lines": 868,
+      "sha256": "7bb842edd58f7e95d8e0d866d3c7ffb85480f03dd7b90364e6bf517e550ffc98",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/main_enterprise_endpoints.py",
+      "lines": 189,
+      "sha256": "0a5c6aa371afb934a871cefdebcf46a1f3b4e683178ca3f7ce0d31f541f73518",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/main_perfect.py",
+      "lines": 364,
+      "sha256": "842f2fdf2ef57bec81059854947470350b2e9d3b58b62cc923e183d62ee3f739",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/main_real.py",
+      "lines": 808,
+      "sha256": "d4e6aa5c9d9932da105a1d3821c31e3ddb712e03fa2f9651a2ba883beb537d02",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/start.py",
+      "lines": 82,
+      "sha256": "3b4dfb50bebf16322663528caabc9b1dff53cb32bce47efcc22ace653e9d3d63",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/__init__.py",
+      "lines": 3,
+      "sha256": "9c5d21ed2939f9737727c79ea856d19483675e15c54e02692bab69f696696cb5",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/api.py",
+      "lines": 171,
+      "sha256": "00daf52ca56e2524ed2ec543bab6a854127acce5e55e6b4b5dbccfdd65cbe6a0",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/auth.py",
+      "lines": 47,
+      "sha256": "18a1610bb586f4530761ea389d42f05d3eef27d56bd712330e69e8848b24843f",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/checkpoint_service.py",
+      "lines": 71,
+      "sha256": "0c34c50bcd183728985d0383e4cbcf3e4bf75d113e56811f78eb89b1b42525e5",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/checkpoints.py",
+      "lines": 39,
+      "sha256": "5611afa8e195ec041705a777fdfb14f786d9bd194ee27744a1c10ded2758958c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/compute.py",
+      "lines": 154,
+      "sha256": "272cf9230e135bb1b25d34ef70acf75fe3e5455d9e2232c52ff729b1fc657644",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/config.py",
+      "lines": 38,
+      "sha256": "527f9160750585152e212fc0d92e44a08b8afeb44e0e85acc6717cc47d353c6d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/identity.py",
+      "lines": 76,
+      "sha256": "516e7df65cd1c9dec110c7e520efb8d3e2589889b03e586dea821bb7cb823ed7",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/metrics.py",
+      "lines": 95,
+      "sha256": "44bf8224367a75dfeddaa70aa721ef2dc972c87ba733cfde1351441266f39ce3",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/provenance.py",
+      "lines": 22,
+      "sha256": "6d17474cdeb9cfeb46327527e2107d2a71ba6afb1e4c3a350b87f1edb012769d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/registry.py",
+      "lines": 86,
+      "sha256": "5f9d0a0d3037684f6706e11df1feca7b083a3b87625b992f27a79c50e9d2104a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/schemas.py",
+      "lines": 242,
+      "sha256": "7ac1069fe572ccfa549033f80c1b5b41d444377e2d594d3acdef66c1b7e1a80d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/store.py",
+      "lines": 202,
+      "sha256": "21b4b5c8ded5224047d8f05898330eb4832e4a95a6a47c03c645a849c11cb65c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/bioscribe/worker.py",
+      "lines": 101,
+      "sha256": "9aa356137deb96e60720a0cebbe45b393878a4ac9a8565accd78d1a0ddf5c828",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/database/__init__.py",
+      "lines": 1,
+      "sha256": "c99a37e66bb13ce5ac7a64cb5387cbe2d07e00d2bf8239d939636af7e00832c1",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/database/mongodb.py",
+      "lines": 404,
+      "sha256": "df95a4f7699e4271551d016c31c188a6f6b765949d7b3c8205665613b74bce86",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/engines/__init__.py",
+      "lines": 16,
+      "sha256": "c330355e81d4fec9a915f7347d9b19861f2bacb34cccb801b98c5b13be3a9fa2",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/engines/admet_engine.py",
+      "lines": 337,
+      "sha256": "ae71acac3cf17d22ec8d4ba4377d953b00da08572f1d6b3d422282624b599ef2",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/engines/docking_engine.py",
+      "lines": 264,
+      "sha256": "39fbdbe2cf3e8c8cbd4472fd06cdcdcda4615e2e6c25375ba01dfc55a53fec90",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/engines/molecule_engine.py",
+      "lines": 547,
+      "sha256": "8f3058ea5694ad093d7c667b386fcb7ee9f0ac75f98067a7fa869de7beb2c326",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/engines/protein_engine.py",
+      "lines": 544,
+      "sha256": "f7011f101f80953408914236a9cbfc8db9deb99c14269c656840dd5fd33a6f87",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/models/__init__.py",
+      "lines": 1,
+      "sha256": "aada37244563d43898da9a83e247451a7e5400318a61b961f2f4282a157d2f3e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/advanced_docking.py",
+      "lines": 662,
+      "sha256": "27ba497f1789499121ac04eb200cab6c8a0e8b3c0e89f8d314241e532a233c40",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/advanced_features.py",
+      "lines": 424,
+      "sha256": "1d47e3e6988ff08af4dd037f9894a30e6c3aa8a025fb6f13b61cc60c76b7af0d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/ai_molecular_engine.py",
+      "lines": 524,
+      "sha256": "a4be5bff99468c002c5f7a786a02064f88b4ab54520bc6eff13a44a59527b990",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/ai_target_discovery.py",
+      "lines": 364,
+      "sha256": "7e239a2887a5884b4ed6a1a3d725ee92eba8c7335b51604bee655aea4379aaf2",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/atomnet_models.py",
+      "lines": 352,
+      "sha256": "ee90f5a29e00e69e890a6dea4b3427c1e7f7d1c567ea4f92ed9d740d2ed2fda4",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/atomnet_xai.py",
+      "lines": 881,
+      "sha256": "85d4242c94b988976db51bdba56ebde7e840bf5e376aa640494c9990f5219948",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/collaborative_platform.py",
+      "lines": 356,
+      "sha256": "b4be9fd8fe9d1d5f7a7c29392e86e5cbfeff5cfbad73c37c1ced34ea00311243",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/cutting_edge_features.py",
+      "lines": 762,
+      "sha256": "5f8e6c9314a5db2b15f0b107cc52dbddae06c1ff8f1bef52900e929872366c15",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/docking.py",
+      "lines": 396,
+      "sha256": "85e3a2c5b3f040bffa935a97614a52a1bc1af8a2cb9795ba8bf733111496cabc",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/docking_simple.py",
+      "lines": 424,
+      "sha256": "3b1389ae9b53742d0bbba246ecc8169a39b9201d93a766d9ea4de7439458ee04",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/drug_combinations.py",
+      "lines": 178,
+      "sha256": "1ee5ad40f7915abf89703ec2780d04009c932eb3c2d44065275b8cf43c669736",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/drug_generator.py",
+      "lines": 294,
+      "sha256": "664e271840a988fb68ae053cabfd22e9bb1ed561b4df4d11e456d29561c99184",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/drug_generator_simple.py",
+      "lines": 285,
+      "sha256": "5aafb483dc08d7a46d367ca1663ccc3608127d83e357ed7a59d3ba1ad60c9f3b",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/enhanced_protein_predictor.py",
+      "lines": 277,
+      "sha256": "51e3bc752418b63337791fc2548eadc53a0b7d82fce4da61c6a8dcb800ca6fbe",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/explainable_ai.py",
+      "lines": 330,
+      "sha256": "931fce271250a5b6c3ab13312da20b5bed47515db3f8e4201d5318ec021cca7e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/frontier_features.py",
+      "lines": 755,
+      "sha256": "9e4438b23fad1c1e7846c70a6a7a277a3bd092602f39a81115e2d760bab3b724",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/high_throughput_docking.py",
+      "lines": 352,
+      "sha256": "48bcdf14166b8f5169aaf7ec49679656c2e6314d56cacf69a745f205940f798e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/multi_model_drug_generator.py",
+      "lines": 384,
+      "sha256": "d2b36d29321556141d45fba9e209dd4994c080d82e290ad69626e0e1e58df9ca",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/multi_omics_integration.py",
+      "lines": 335,
+      "sha256": "da0ff9325b8115cdd6ed2120740db38ff5b908e62702b24f7d47a432a9a3eb0d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/multimodal_foundation.py",
+      "lines": 541,
+      "sha256": "4ceaf249a2367bd0c3cc16fadb84cf84dd8ef18b5c7609a8e6f24b3e49bae723",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/no_code_workflow.py",
+      "lines": 434,
+      "sha256": "30133b81d0d5e01dbf0b39fb435a21added1cdfcb8d12d2c45506caabd41905e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/novel_chemistry.py",
+      "lines": 129,
+      "sha256": "7c6e2966a8e00791d92a0161e056d62f0d88d1b98a4554c699201abce6ca885d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/patient_stratification.py",
+      "lines": 197,
+      "sha256": "fd5314c9e6b6df60e469eb34c218aef11d008810bd832a5710afadc2af0d90e7",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/protein.py",
+      "lines": 204,
+      "sha256": "10f80047513b5960cc27ff1ccfc7eecd5f5e1091e36de86bacc4a54330d0b61d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/quantum_conformational.py",
+      "lines": 517,
+      "sha256": "7bcdffbb1e346a1736662a71c6cfcdc0450fb17e9f0f969a6fb677bcdeb44605",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/report_generator.py",
+      "lines": 718,
+      "sha256": "5020a7f1d7968b50aa62bcdfe953d8bcfee299c53fd9336f60248e791a7ca9d2",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/temporal_dynamics.py",
+      "lines": 438,
+      "sha256": "5b9926f8c0d779c24c24d477d7c06a36b89d6c09da0b74bad7b7eb014c80de50",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/models/temporal_dynamics_md.py",
+      "lines": 639,
+      "sha256": "0d2cafdaad556e650f61b190b53ef0ad7ccd0999611d2a700856198eee48ba72",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/provenance_lab/__init__.py",
+      "lines": 1,
+      "sha256": "1488ef4588070bbbff56a01002d43e172c4f1e1186272fd8e860a946424c6a31",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/provenance_lab/__main__.py",
+      "lines": 36,
+      "sha256": "9486d2eef99ec2f6aba8b614440c1e8c8b0fb37e2ff679fecd53802a072e5795",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/provenance_lab/engine.py",
+      "lines": 260,
+      "sha256": "d03faaf5b46e019944e0390b0c2293873caf139929902a4c15dcaa7fe7a1967a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/provenance_lab/routes.py",
+      "lines": 52,
+      "sha256": "e6823616c1ddd8fcc7ce072c592de50d00aa47b5f23ffe6f85e0b87b5d475e07",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/provenance_lab/runner.py",
+      "lines": 57,
+      "sha256": "d8e3ad9ada727faa34eeb750ba9fbd7dc3ea746f5bd5965bfa96b46765e2f341",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/provenance_lab/schemas.py",
+      "lines": 154,
+      "sha256": "b7d1ea90ede4f0c5afe023dddfad5883d9189ea05c3ddc6224020d5fcc325d1e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/provenance_lab/storage.py",
+      "lines": 117,
+      "sha256": "2a5f8a3b6f4c2588ba68d5bd14c711e64badc5f63f85589c4b322a1fbe337ca1",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/routers/__init__.py",
+      "lines": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/routers/atomnet_router.py",
+      "lines": 876,
+      "sha256": "541a36b99d14798df77f310549f2a8d706f5df09a74ca44411f40dbd092504c4",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/routers/benchmark_router.py",
+      "lines": 118,
+      "sha256": "b8e7c64e2a4eed12e9749e02e1101561305445b080d54cad9dbfac354c7ebf13",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/routers/enterprise_router.py",
+      "lines": 527,
+      "sha256": "176ff107cbe9e0b8d9f04dffa9604d065fae9b676ba5036d1e7a934e499b007b",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/scripts/browser_fixture.py",
+      "lines": 38,
+      "sha256": "47bc1783726d672300573df75469243d32c4e9df21ce1bc8ffeb02829c6d445d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/scripts/contain_legacy.py",
+      "lines": 24,
+      "sha256": "3e1f4689d17761020cbc5e9dc3bd1070c6aab12205c089098199b09d7506d5d7",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/scripts/generate_contract.py",
+      "lines": 49,
+      "sha256": "992ff5acdcb3a4046fd6a91f83265250d3bafd4802caf0754153f179ab00569c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/scripts/quarantine_ui.py",
+      "lines": 23,
+      "sha256": "ddd69f8a8cc5c81c8f1d2a851c6a52ae9d649051fcc604a49743a6392cb17787",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/scripts/startup_smoke.py",
+      "lines": 82,
+      "sha256": "3b6aad45dbec91015357bb90e465917453d27b02e681d4aa5328c374dae98f6a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/__init__.py",
+      "lines": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/atomnet_demo_data.py",
+      "lines": 308,
+      "sha256": "0034196ce7a5801ed91c1464efdb4c70c58a62a15b8a544eef20d3c4cb4e3187",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/atomnet_fair.py",
+      "lines": 603,
+      "sha256": "8ae3d5269f9d1f6733aee22b4ee2ff0dcfbef4aa1596c4ca8583d49e856ce7cc",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/benchmark_service.py",
+      "lines": 268,
+      "sha256": "4bbdd61c67b666efa9ebe116cf53ee26d461c4244f00db9cc811da694d573258",
+      "legacy_entry_guard": true
+    },
+    {
+      "path": "backend/services/file_upload_service.py",
+      "lines": 346,
+      "sha256": "bb04a9a3fb849446d3a324d8c506f8eed75039a06279ca4ec9af39ef7f0d1dad",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/mock_atomnet.py",
+      "lines": 372,
+      "sha256": "3b840f78ec316dea89f2ef86d74c30a945bc2544564ba8a011597584d1a43550",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/partner_templates.py",
+      "lines": 241,
+      "sha256": "cb418eabe013a5a0d74ab6db008f56f071a34bfcfa577a49bbabffcf06a86309",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/real_ai_analysis.py",
+      "lines": 588,
+      "sha256": "88048c007128458b4e48f1da65a5aacf0b14139d35e56333927ba34fe4f00c90",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/real_data_services.py",
+      "lines": 443,
+      "sha256": "6d3b4fb2151454e6e862c0f1782ad022cdf515e4fabe83be38d45a47bd1961d0",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/real_docking_service.py",
+      "lines": 388,
+      "sha256": "19a89b3e78261cb48db0df4988ced2edb7bbc616ea78a1344919767cd11cfe5a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/real_drug_generation.py",
+      "lines": 553,
+      "sha256": "9c7ea003b971db8dd189a3a01204c31388fc138aca907dba08f92bb5f81c55b7",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/real_interaction_analysis.py",
+      "lines": 424,
+      "sha256": "f0a37e442c8648b77da4e3ab0e1a1fe4ff3df1719a498b64f83c1b72dc8ca80e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/services/screening_engines.py",
+      "lines": 493,
+      "sha256": "53b44c1af948a4cca3597d1065fbecdcb290a8152a1ebc2495807ffc33b6b59e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests/__init__.py",
+      "lines": 1,
+      "sha256": "e120d2e42207c1ef4f8ba20462602e34324a701f25b0c50a2d01ce6f5ce1a4d5",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests/test_api.py",
+      "lines": 186,
+      "sha256": "0c5ddcf1668dbbc3ae30a929cd2847c218244a21446143d0cbe1047fb0da60d1",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests/test_atomnet.py",
+      "lines": 297,
+      "sha256": "19c3413df5acef877c669479eb7f3a476253c956dea86d50d1c80f41318fa7dc",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_lab/test_engine.py",
+      "lines": 128,
+      "sha256": "b8b0b6f1f9b0dce99dd94bf0bb3364b33e87c242feebaf1e2adc200777e31e4e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_lab/test_jobs.py",
+      "lines": 101,
+      "sha256": "ec2cea9983398bbe76eb6b2a25997adf16c8c1bde008912fdb3ef52c38fd6a52",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/conftest.py",
+      "lines": 24,
+      "sha256": "1d100716ab166356db3935e08d0f700b194f6abda530748c0aec514f72132d50",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/test_api_store.py",
+      "lines": 115,
+      "sha256": "9537cd2f663ff22a509b8e519dc06b690cbb6fdc855eb8b47d8dfa2648283a1d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/test_checkpoints.py",
+      "lines": 77,
+      "sha256": "ce8a1d6b9436f36ae0605b67677aeca200f30b3d9f6f7ca3523f3aa74e98d749",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/test_contract.py",
+      "lines": 62,
+      "sha256": "e6e15617a50fa7ea7b7e3c946849e41e3f688eaae9ff6dd01ad370abc7a5f62a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/test_identity.py",
+      "lines": 49,
+      "sha256": "c10fb9f83877bf638b5a93803716d632dafc6acfaa5f627edd6e4b385c7184b2",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/test_limits_and_integrity.py",
+      "lines": 84,
+      "sha256": "c02711088550a141aa5bca40a808894cdad39f07119e4533b22e867aaccd4fbd",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/test_methods.py",
+      "lines": 80,
+      "sha256": "39a86fd2397fa636ff1347f005a608a103e3c0253f54c3a95dca6c2ace587f9a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/test_metrics.py",
+      "lines": 75,
+      "sha256": "b0e3580b5f993b2c7330d1c8c9d66dde49bd5e0516f32e7571bae3c116e12d32",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/test_reference_pattern.py",
+      "lines": 36,
+      "sha256": "222de7e11162f1c66637335640d09cdeb1d4cce587168a15428fbb500a93b617",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/test_sentinel_binding.py",
+      "lines": 135,
+      "sha256": "10d94818e2b97b245ede29fffbd2f8217f52a7ea16dfb91291f0a35e77e68909",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "backend/tests_phase3/test_sentinel_molecules.py",
+      "lines": 98,
+      "sha256": "0ad50dfbf4135a67f733e3e209be7db398e6d9cfd94dddcda87ac481915d6cbc",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/middleware.ts",
+      "lines": 10,
+      "sha256": "a649b21b50deccf7cf1cf090d34a5b70352f7fe12281964504b860cb82ff5937",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/globals.css",
+      "lines": 869,
+      "sha256": "0fdf381c1ef1d53ee6bfdfe9a87e24447b00dfa5b5e0d5cbd1acbbafe8b049dd",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/layout.tsx",
+      "lines": 9,
+      "sha256": "f1096f6d49d7bb66da6f191d541a7cbbae97e45bfe3ac0b53a39d8c55e618634",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/page.tsx",
+      "lines": 2,
+      "sha256": "8630f7ac19de85fa8aaff0503247f0d146f25d038456068c9f2ce7a71f9a8631",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/scholar-theme.css",
+      "lines": 433,
+      "sha256": "f27172ee10524acdf46d1ac88770856f5f005ef8f14b124fa4dee9c88112bd36",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/workbench-theme.css",
+      "lines": 27,
+      "sha256": "890693a4b52b73d00cc4be72275b2964302990f62fe819325f7533e7ba90d376",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/dashboard/page.tsx",
+      "lines": 66,
+      "sha256": "8dfa04af50794b2bf5baef2adcba4794fe0a2ebbc95b0f7822b6503832629a31",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/evidence/evidence.css",
+      "lines": 10,
+      "sha256": "ffa8bf68540edb6d673580d76816a5c7b6141694abd6a5ab3ddf3fd7ab4b9a2e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/evidence/page.tsx",
+      "lines": 4,
+      "sha256": "cd0f3137a48a566fcf3db17c84c2550af0965fa026bdb9cef462023857f02769",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/molecules/page.tsx",
+      "lines": 12,
+      "sha256": "9aac0603345cbe2791abea421173bf616c15fb2aaff3494594e1aedae736e9ac",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/pipeline/new/page.tsx",
+      "lines": 2,
+      "sha256": "f8eeb5db4c8e562d0cf51f0ac2b983ce9fd96693be888b4cb4f828beb97a7782",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/proof/page.tsx",
+      "lines": 30,
+      "sha256": "aa6c5606b0d78d6bf2fa7caa556c8010adaa461bc8ef3d5247ae32cd7bc8b807",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/results/[id]/page.tsx",
+      "lines": 5,
+      "sha256": "861e73f397be6a2750157b564d4f3f8611667680d7a5cd2884ebecc00e18cd54",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/app/scholar/layout.tsx",
+      "lines": 19,
+      "sha256": "01887c8a82a024398bf8a679df325d6f5c6376d5a1461f688140833fec297d27",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ADMETPredictionPanel.tsx",
+      "lines": 261,
+      "sha256": "e1adb4b8c1bd8aa4e5dfb9671fd3a95068be06d59c944cb4ffb7af3d59cc0239",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/AIChemistAssistant.tsx",
+      "lines": 268,
+      "sha256": "ff22a7ebf44f510f07c4fd6724dce2afb949849f525271bf30ca159a6aff6d1a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/AIEnhancedWorkflow.tsx",
+      "lines": 452,
+      "sha256": "508f55fa52811360bd5ea56a0cf181e48b45f3b78929f238d568027f486369f2",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/AILabPartner.tsx",
+      "lines": 275,
+      "sha256": "7d41852da93e687052e0e7f91aea360b3959c92deb9a6b6ea7cfea0e733ca6fa",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ActiveLearningPanel.tsx",
+      "lines": 398,
+      "sha256": "8c410fcf786201f8b82affb4c9410da6950ba2044f2c4812a2b641bf32a12514",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Advanced3DVisualization.tsx",
+      "lines": 2014,
+      "sha256": "dbc6a796d99f240fb6b72a11340861d54a4b15545ff66052cd5cde54a404d3ad",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/AdvancedFeatureResults.tsx",
+      "lines": 256,
+      "sha256": "ed43cba0b46450a63ed199a4284090a8b52f64e6617d6c8760b60fbaeea4594e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/AdvancedFeaturesModal.tsx",
+      "lines": 537,
+      "sha256": "797ef0254bf0be739fe53b298e18eebb74632a9ffa467e81fb42e7a0978c6f74",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/AdverseEventPredictor.tsx",
+      "lines": 313,
+      "sha256": "f8b3ccd5de703340dc86bd1775b1786068b70bf6c8d18a6c607d61e3f8a82f1e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/AtomNet3DViewer.tsx",
+      "lines": 575,
+      "sha256": "3beee509772fae528e7a4f1c3733659e5761ba5a5b96f6b340df744bb1f92a03",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/AtomNetBackground.tsx",
+      "lines": 141,
+      "sha256": "667fc8dbb09f2b398679994487cd0a3d4c46a2d8bba55ad43e51a328b872718c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/AtomNetShowcase.tsx",
+      "lines": 193,
+      "sha256": "024b292020cdb747ec1d7152149d7f216327aed7f1c5374c5b4e607ba3cddb65",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/AtomNetXAIPanel.tsx",
+      "lines": 607,
+      "sha256": "e1474b202151a53a2002e8f936bccb01eeb7f0c034f8c1fc02ad7e9f3dd0ae15",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/BioScribeWorkflow.tsx",
+      "lines": 629,
+      "sha256": "0046ca3595c6760aa19d408019ac6fe75215f3406aa98ca9d401c58afd62e1b3",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/CROIntegration.tsx",
+      "lines": 437,
+      "sha256": "db522d8843ff6125b55eb243def4a8d36f9619ee2c9a170f0132affa6b118405",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ClinicalEvidenceDashboard.tsx",
+      "lines": 380,
+      "sha256": "b65cd189b82b26c9df161dde1b76c236797cb67ac70783b28078173787369435",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/CollaborationOverlay.tsx",
+      "lines": 158,
+      "sha256": "f30b7bed72d946af6a1d833d1fd8efd0faca86ad56c71ff2bec8fcc57e305445",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/CommandPalette.tsx",
+      "lines": 124,
+      "sha256": "c65277fe6a7cd01d6b0a7b25341da7a66e0de49a69ca11e7d5fc2eeb2d23b576",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ComprehensiveWorkbench.tsx",
+      "lines": 619,
+      "sha256": "6cce4016ceaf07430552a69a1137df78ce0c8576c65777368ccb981bbe244548",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ConclusionPage.tsx",
+      "lines": 326,
+      "sha256": "645a5e6027b5aa280deb0db88f1476dd0603e030908ae44419b4465d7f983121",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/DeNovoDesigner.tsx",
+      "lines": 373,
+      "sha256": "5712ae17086febd4e06f895894f546ea950b47492c62d4c750ab8cfa6d8b10f1",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/DrugInteractionChecker.tsx",
+      "lines": 321,
+      "sha256": "cd7e670f75c66fa45284eca99bd24e98a0a5768f107b309b70efe80e1594fb26",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Enhanced3DViewer.tsx",
+      "lines": 298,
+      "sha256": "3551e86c7aea8e632dc79776316cc3ae48ea1ec60010927c7178a590285868a7",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/EnhancedExecutiveResults.tsx",
+      "lines": 544,
+      "sha256": "397fc5edd8f84601eb964a95e60a7dea5028685e7014c5ca4ee5ed5508f25d5b",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/EnhancedWorkflow.tsx",
+      "lines": 401,
+      "sha256": "4a4d26e568d4674815bd324665b87f8179ae78b3396ce4e4f9a88e44f3a255b8",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/EnterpriseLayout.tsx",
+      "lines": 164,
+      "sha256": "9b74bc0f1fb38a3387dc5e305b67338bd0db292d80b122bdc3a37042318f2502",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/EnterpriseWorkflow.tsx",
+      "lines": 431,
+      "sha256": "c94caffdc7f8f5274c0c7c945c7b468f61d36bd31e53fe61dc9574ab992f12db",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ExecutiveReportGenerator.tsx",
+      "lines": 229,
+      "sha256": "d8dca4ac6f2aa355aa38051c2ed972b788e6369b1724e454ebb5473371272a7c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ExecutiveResults.tsx",
+      "lines": 611,
+      "sha256": "fd84a41dce70aca262f7b59a9aa1df085e44f4d4d49d06a4dde28d2c97cb79bf",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ExplainabilityPanel.tsx",
+      "lines": 135,
+      "sha256": "858afe6588a27c38769c614af33ad48640d3f09f1e4c9ff7013f14fa31e42623",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/FeatureShowcase.tsx",
+      "lines": 111,
+      "sha256": "3a60365c5ff1348847d79e9dadc964bd57fe443e98c9d60b78c5640a13fd52ea",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/GlobalBioScribeAssistant.tsx",
+      "lines": 250,
+      "sha256": "94956f36952dfa475cf1246e48488791199a1988e37de136245b7d8c63425b0a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Hero3D.tsx",
+      "lines": 75,
+      "sha256": "8cea0978a20658100d20cf545f2e8d29165ce27955f6a3a88d9c381288653b23",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/HighThroughputScreening.tsx",
+      "lines": 386,
+      "sha256": "9733c62f0d234f2b34a84fa041076c3dda0c817df6f4781b2f9a0da3f5c2468f",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Interactive3DCallouts.tsx",
+      "lines": 288,
+      "sha256": "c0066d30e433eeba39b6cb1acd04550a402665876a7a72c1446b9f8e17108bf6",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/KnowledgeGraph.tsx",
+      "lines": 365,
+      "sha256": "f403eadb17fe52b2adb0033e908a479232188ee1d7a24d4fdf59beaa2606cb5a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/LandingPage.tsx",
+      "lines": 500,
+      "sha256": "547597cc317fa53bd896e45b166f1184626289ea9683c7243295426737c52474",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/LiteratureExplorer.tsx",
+      "lines": 435,
+      "sha256": "4b0c960e45ed452d3ff0f3c6ccb05b25d694131cc67c30515e9d09d0d399ea38",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/MainNavigation.tsx",
+      "lines": 174,
+      "sha256": "db7724179b46423c20738feabb6ed7ae87bf5c4a3c2cff8a78fbf7d2dd0194a9",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/MolecularViewer.tsx",
+      "lines": 737,
+      "sha256": "0c4a6e825a2dcbddb200bc3ab702ded54a49b6feef7b0655e4025a7411dd5064",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/MolecularViewer3D.tsx",
+      "lines": 396,
+      "sha256": "13e0eab6ba36faa8c585629443e1978d398741761b446a050af98c2aebab81a1",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/PharmacogenomicsPanel.tsx",
+      "lines": 270,
+      "sha256": "7189c490df93d2dc0a61e1ad56c7390169f2721be53d8523490ed9b71cac7f14",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3EvidenceLab.tsx",
+      "lines": 138,
+      "sha256": "186321524404034402229c62996d6c981d7e27dd9038eded4c902a1aee61a920",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3ExperimentChallenges.tsx",
+      "lines": 41,
+      "sha256": "c96e5252e58893dc36d7676fbdda35ea261adc69cbeee1c0fefa570133a3375c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3Explorer.tsx",
+      "lines": 84,
+      "sha256": "d9621cbf2b1fcf9bbc3456cf04d84092b98758b3768698cd41a80a6d28fdd825",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3MoleculeViewer.tsx",
+      "lines": 67,
+      "sha256": "263689812bde8a55e09258d49875363a19189d888b798302672cf2315bd0d0ec",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3Results.tsx",
+      "lines": 77,
+      "sha256": "aec030e526898c6ee61bd058423872590389605134512088f9c30481bae58fd3",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3RunChanges.tsx",
+      "lines": 30,
+      "sha256": "760b6e34bdd05978aa76bef1e6e391753d112b675c4d29ac68d98b21da99d7c7",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3Workbench.tsx",
+      "lines": 93,
+      "sha256": "a2463969ae76badacf06ee2cccd4666fd8e45c748a0bcfdb3e03f213fd2c7144",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ProfessionalLayout.tsx",
+      "lines": 224,
+      "sha256": "aa77722049175a395ced48982c9dbc27595e37eb4ba80c414935189cdd18d346",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ProfessionalMolecularViewer.tsx",
+      "lines": 797,
+      "sha256": "f4dc2c10b9b14ff81c4eff3ab969c421605a028732cc14cbbf3d828325f85986",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ProfessionalWorkflow.tsx",
+      "lines": 374,
+      "sha256": "54f53375b127d21fe943a6018a972636417688b93d10bcbe30ade22d04498246",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/Realistic3DMolecularViewer.tsx",
+      "lines": 475,
+      "sha256": "bdf9b96133f6825a8971c0094cd7834f93aac28fb4f8b872d9eeb4e13fb6f50f",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/RetrosynthesisPlanner.tsx",
+      "lines": 449,
+      "sha256": "073519f6b48578774af8b9c329986795dedc3bcf587e6dadf14bf57ece50b270",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/SafetySignalMonitor.tsx",
+      "lines": 322,
+      "sha256": "9b276c488cbb67ce10dc39fb80501e2b631900528cc1279728331d8d283a1252",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ScientificMolecularViewer.tsx",
+      "lines": 520,
+      "sha256": "9b8ec311d82106c32316778908eba6e6c9efc983b759378cb684d32f0633ef9c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ScientificReport.tsx",
+      "lines": 603,
+      "sha256": "2c191ec25be8d496576a842d1ac8e15c459ce18e5367ba016c8dadd362816e8a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ScientificWorkbench.tsx",
+      "lines": 574,
+      "sha256": "f0bbbd246f27d31682dfe64bc54d779eefd573d8e3def0c6700c45b38367be16",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ScreeningShowcase.tsx",
+      "lines": 220,
+      "sha256": "432a89caa9ba770d46a80803cb580ad440db85e9975a6dc6361e15ce20521a0b",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/SimpleWorkbench.tsx",
+      "lines": 356,
+      "sha256": "baff2bba0520800fd64dd1a9349787930a12bc5141ea05548063a8be85af472c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/SmartExplanationSystem.tsx",
+      "lines": 395,
+      "sha256": "7cc78fd00e899130096b092472def72a0babddebf2d1565c0a2cac908215a3eb",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/UltimateMolecularViewer.tsx",
+      "lines": 674,
+      "sha256": "a7740293ebc4416faca728e6fbb4c63200bb046bee6b8487c89e90570af05990",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/UltraRealistic3DViewer.tsx",
+      "lines": 1682,
+      "sha256": "896ae12101ecac83e72ca5aabb834007715d4ed653f277504d857eea6b3d41a6",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/UnifiedWorkflow.tsx",
+      "lines": 1660,
+      "sha256": "aae0ef3dff26e1c92cedc940f610a4c03e18328158c4c1779e9e431ccaa78f2a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/UploadWizardModal.tsx",
+      "lines": 871,
+      "sha256": "db9510039054ad03846d37edaa22c470ae16f4c588214454d5ce464c6551ae77",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/WetLabSimulation.tsx",
+      "lines": 148,
+      "sha256": "f2964ea82657e13530c696d36ab1a0902e9301f07c8df645e721bad2a9dc9aba",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/WorkspaceManager.tsx",
+      "lines": 413,
+      "sha256": "987ac074fdd8103efeeb015b5dd0d6ee78a13c88c1ab9d923ebb3a16175bcf50",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/WorldClass3DViewer.tsx",
+      "lines": 1380,
+      "sha256": "3db853d5403391442e18fca0fd8c0416a41216d56bcce125aca9ce8cb23b254c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/AIProfessor.tsx",
+      "lines": 89,
+      "sha256": "9f647337ad71c4386fa5553f1250699b784408bbbae054deb2fdd84ceee8a11b",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/CareerPassport.tsx",
+      "lines": 291,
+      "sha256": "3d53a68e080c67d1987d6c99ebaa2ba8d7a889101887a752d9f141d7f4f1d248",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/CertificateGenerator.tsx",
+      "lines": 153,
+      "sha256": "cff66b9dbdbd53cc3755c13c161ee4f6136739d870aff38f81991d5ef75183cf",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/DiscoveryQuiz.tsx",
+      "lines": 298,
+      "sha256": "a63c8859c3234d416944cc9ed2f9fa4ede187cc353c998d2045de943c688e8b9",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/DiscoverySubmission.tsx",
+      "lines": 207,
+      "sha256": "0c1ec647b9cfe52646b168db5daa3e38ac62aae617d4b1bb82423bbc29ff5aa1",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/DrHouseMode.tsx",
+      "lines": 376,
+      "sha256": "b1b88945eada46a986690770409dd03f77a94b77c736597ecfcd0f92ae2f9cc6",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/EmergencyRoom.tsx",
+      "lines": 541,
+      "sha256": "7478109b3d41e483682dd1239f969d98e2942bd8b1b8f43d3f034e2bd7bb85ca",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/ExplanationCard.tsx",
+      "lines": 192,
+      "sha256": "4e9e6a2f94e1f7b568fc4c1aa509ca2249f6db13408fc324623b1f63efcce8ab",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/HoloViewer.tsx",
+      "lines": 353,
+      "sha256": "d6eb3df01b231a4c19b3330e583e27e40aad53704ae0631995c1319b1be0a58c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/JarvisVoiceControl.tsx",
+      "lines": 251,
+      "sha256": "767ae112a27f5bc252117993e395c6f0ff0ca19366da77e85daea0f6c988a03f",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/MetaverseLab.tsx",
+      "lines": 251,
+      "sha256": "d623c90c196b510cc9252261f4caa5900e34b670413fb72665a822eef8745ca2",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/MinecraftMoleculeBuilder.tsx",
+      "lines": 277,
+      "sha256": "bf3fafaff36bc48ed95489694b5e14aa8532bcc489d6a7cf35870fac3f4c137a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/OrganSafety.tsx",
+      "lines": 243,
+      "sha256": "9d3c67f03d0803c6875f8705bf95dae6c4f8016cbc40993f6ac1e7fa729c0697",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/PolypharmacySandbox.tsx",
+      "lines": 368,
+      "sha256": "0de2d957a56367be0e53529aca3d8fe407543d114e526437f6f114f669b00f51",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/ScholarNavigation.tsx",
+      "lines": 216,
+      "sha256": "f83dc328119cf9984cf59cfac0a323648e14d1686c26a16366e02a33e99bcba9",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/scholar/TeamCodeBlue.tsx",
+      "lines": 666,
+      "sha256": "f20bd3dfec6599b70c43cc25b7e4a8b0b74b4b8aae5e73f052aa7d82d48f80d7",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/tabs/DockingTab.tsx",
+      "lines": 450,
+      "sha256": "3d5513b76b69dd5a4ae1ab06cd99e72bdcd6398b3fa6381ddf835918805ce11f",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/tabs/DrugGenerationTab.tsx",
+      "lines": 362,
+      "sha256": "a2b14d924c5e4958906c41193ed70ad4fc5134c5e90436b6513a00f7ad242f74",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/tabs/ProteinInputTab.tsx",
+      "lines": 497,
+      "sha256": "b11156e9604b40416ce1f5c74363293ee20b1c4c0d34f839a0dbacf36a11be70",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/tabs/VisualizationTab.tsx",
+      "lines": 627,
+      "sha256": "ab8ca292d57a452b08007e706922f85b259d136dab1396a02d3a94b82d273b56",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/avatar.tsx",
+      "lines": 48,
+      "sha256": "e7f5b814742d4462fb86401fbbfa65563118af433959b102e1e42e7f9108e133",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/badge.tsx",
+      "lines": 46,
+      "sha256": "f41c11fc13e9a1f1b849349cb51b137ddd27de0a17c5339675c789d58f556cc4",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/button.tsx",
+      "lines": 60,
+      "sha256": "8116b8529db6dc4e3c04bd5ebdd223a38535dcc737830d12ec4b290433d469d8",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/card.tsx",
+      "lines": 92,
+      "sha256": "2040cdff27cd1ed771e0ebbd15abcd73d31f2f1e4be6664bd6816fffd2a87476",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/dialog.tsx",
+      "lines": 143,
+      "sha256": "491a87bfae8f28773624d353bf56b9288d0852413e814d508e0d086dc7b06edb",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/input.tsx",
+      "lines": 25,
+      "sha256": "22192a97fc2d532e5e6f935d0e2f2c87f9e0034a1586159b45a53d0b029b82f2",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/label.tsx",
+      "lines": 26,
+      "sha256": "2eac8fbb04002c42b0fbc4062d20d131e421796eaf65c37d2049e29e42ecbc5a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/progress.tsx",
+      "lines": 31,
+      "sha256": "e7a89220fb49e18d6613956781cfd5eb38d5da36379e93f5fc90ccec127dc871",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/scroll-area.tsx",
+      "lines": 48,
+      "sha256": "edbaecbc4f5cb6e16ecb39d3678d81b26e1a968dfc273dbb77821de3c8626377",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/select.tsx",
+      "lines": 187,
+      "sha256": "862cfaa5049684ac2fc72d0402a32deab08e5930517fdb789fb94f080ba2eb27",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/separator.tsx",
+      "lines": 31,
+      "sha256": "995c54f1c5c688f712a675fe35d55bcada2b31dba561dcc71553a1ad601e59ec",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/slider.tsx",
+      "lines": 28,
+      "sha256": "0f965c8a38f9c6275c07dbc72028d7d4d3062a9f16e239f56ddd2775e2845ee6",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/table.tsx",
+      "lines": 107,
+      "sha256": "76189c0de9db06f808e24ad427d23ba922b6deee74c88d89bfe151dc20b62d60",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/tabs.tsx",
+      "lines": 66,
+      "sha256": "e8469e599381cf021ce751c27cca3d8cb06440a45665ca9c2ef2efb0acef1fd9",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/components/ui/textarea.tsx",
+      "lines": 24,
+      "sha256": "e988ed61d99caee435886f508920e5bf3fa04bd196b652aa2b84acae16268f09",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/contexts/CollaborationContext.tsx",
+      "lines": 145,
+      "sha256": "a008a542b3f6ff45a931599211837ea116e54bf27bb6dd0a3976db473eefdf5b",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/lib/SocraticEngine.ts",
+      "lines": 288,
+      "sha256": "e33193f744a3e5e8972f1e34c71a80e706dc78b631c66f049255f89afb04c06f",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/lib/api.ts",
+      "lines": 386,
+      "sha256": "91ce3a0cf3e184e217c206d51109ab6dc64fa2f7194930468969747e65a98462",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/lib/utils.ts",
+      "lines": 6,
+      "sha256": "7c8c3dfc0cdd370d44932828eb067ef771c8fe7996693221d5d4b90af6d54f2d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/client.ts",
+      "lines": 84,
+      "sha256": "3839a5499c3b50beb08829ce31b0513bfca9810f5e446b4f651cc22366d59a28",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/contract.ts",
+      "lines": 116,
+      "sha256": "7333532d7d8d29696cd83e1d6b81478f2d181397825cb1b9003a5d25d2ba1659",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/explorer.ts",
+      "lines": 58,
+      "sha256": "bfed69d49459b5e08fee297c81a9646b1bde908795805a9dbea91555c4b4ace2",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/lab-challenge-runner.ts",
+      "lines": 43,
+      "sha256": "b8f4a1464380f020251522218fb6027ce829b3d1f3e18f87415abc0062259419",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/lab-challenges.ts",
+      "lines": 109,
+      "sha256": "243f317f9d30c15f1d342d27c4de46287f6370d50d81d871c72cc7e10169d952",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/lab-diff.ts",
+      "lines": 66,
+      "sha256": "8c90107857f75747d7b3a77d55ea9de1d8adb85e6b7db652204800a17a34a488",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/lab.ts",
+      "lines": 105,
+      "sha256": "c86491f8626bd77f29bdcb9f3b6293ef5603600689ce1aee14e996c793ff8135",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/stores/CrowdsourcedCuresStore.ts",
+      "lines": 91,
+      "sha256": "1575c2151f466a88a8b49dbe0ccf830f34356f25bb81b3886aa5e8249daa4c04",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/stores/GamificationStore.ts",
+      "lines": 232,
+      "sha256": "798ad40d26a5d2db730bec87e0b0f5dea93d6d27569a30c6215af362d9b8b83d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/src/types/3dmol.d.ts",
+      "lines": 7,
+      "sha256": "6d42059e972c9bc6cbbc013e73d07e783b7106f90f004554419a7c85be928369",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/page.tsx",
+      "lines": 5,
+      "sha256": "89b45effc30324ee37cdb972b60c5bc98e328e310f3d6b66ac6fa95c493a621c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/admet/page.tsx",
+      "lines": 40,
+      "sha256": "6a0b7bc24479e45b3e8956a383171b752dcdbd163660c12e3ccfefc1e30c0f98",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/atomnet/page.tsx",
+      "lines": 558,
+      "sha256": "cd6e5a4b3ec946d33a5fb2a92af62d17b773e65127cf0ce5142fd622debbd79a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/atomnet/[projectId]/page.tsx",
+      "lines": 616,
+      "sha256": "3cf7ecdba10f5198643c455f94dcb9c1648b2c73ff53d749e4d58ef8399ca71a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/atomnet/templates/page.tsx",
+      "lines": 293,
+      "sha256": "a59fefb713c5702ec588fc5ba8489f92f5b355994b89e821d7f625f5fe621cbf",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/batch/page.tsx",
+      "lines": 278,
+      "sha256": "963dc9a7ca00ddfdf4c65c3979781ffe9c3101d1c43b9cf451ec701ba0744661",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/benchmarks/engines/page.tsx",
+      "lines": 768,
+      "sha256": "7f1051d9db6e1cda41dba4dca32db31ff594f66118dc2cb49b9cf36586cfed3c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/clinical-safety/page.tsx",
+      "lines": 98,
+      "sha256": "42dd8f49dd37abad996e018f83542249721cdc1cf5c873e70c90936898ac8958",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/cro/page.tsx",
+      "lines": 205,
+      "sha256": "61731550e7d3ec83566d76536cc2d0337ec3f143368562759a1ee3cc7010afd5",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/dashboard/page.tsx",
+      "lines": 229,
+      "sha256": "6b14631f4026fb711aa8b9681e4d3dd0a03ae207315a8d0167b5fc935c148fe9",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/design/page.tsx",
+      "lines": 114,
+      "sha256": "d0472eab3f78c9c5c79a8728d2f3b602ff42754736507864e4544fdc8fd4b3c6",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enhanced/page.tsx",
+      "lines": 9,
+      "sha256": "26bd1ee2c53948f209a0374e16f0fb2ddb62c51043f7b7aa71d319af362a61db",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enterprise/causal-validation/page.tsx",
+      "lines": 128,
+      "sha256": "6d3f68d1b7dd8e6abdbc9057296d0ff2d5b53fd4bad50e8075c5c339fec5a3f1",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enterprise/clinical-trials/page.tsx",
+      "lines": 112,
+      "sha256": "d3f80ddaf5f481333f4d92e9b3fd9ef435e43ec96023e27c83ffd889cc35daea",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enterprise/crispr-design/page.tsx",
+      "lines": 96,
+      "sha256": "1d67d94003be620f6aa0a5bf7a732ecd2fbd2a972a005d9c43ca4aa27c98619e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enterprise/drug-combinations/page.tsx",
+      "lines": 190,
+      "sha256": "7491f69193853045f708f408b1bdd1e1cf3cb25dd385c63b334f6744aec57a70",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enterprise/md-simulation/page.tsx",
+      "lines": 111,
+      "sha256": "ba369688d41b9703b36c0ec383fac84292fb9aaba1eb1f3d8080f182d0747e15",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enterprise/mrna-therapeutics/page.tsx",
+      "lines": 121,
+      "sha256": "e0656e6eb3584a9bb6d24aee5a99184a7e03cc6fbc1b614151692fbf0377221e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enterprise/novel-molecules/page.tsx",
+      "lines": 325,
+      "sha256": "36f475ef1c4ccb66db229d9ae5f5ff31546b81b636be2fc79f06ebb02d57319f",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enterprise/patient-stratification/page.tsx",
+      "lines": 372,
+      "sha256": "9222f848146ca110f4b5ec5661d4f23c6eb4a6817b1a758ebbbaf799f1ca9262",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enterprise/rna-aptamers/page.tsx",
+      "lines": 92,
+      "sha256": "f31d3f7a42f7ff72ba40868e8f08ccf86e96b320aca8c200c653a0aa64ac2ef2",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/enterprise/target-discovery/page.tsx",
+      "lines": 308,
+      "sha256": "c759bacac898de7abc8a0db0e478436724098642c5ea5fb61d50844105192454",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/literature/page.tsx",
+      "lines": 205,
+      "sha256": "fc386b9743913c49232c49520f12b8cd2c642a0c06f800be4c56e857bc81de5e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/page.tsx",
+      "lines": 336,
+      "sha256": "425d14a927cc8f259ad75e0ec1e8d67c16b7d2ddd7687017d0f8070a71a47c1c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/career-passport/page.tsx",
+      "lines": 13,
+      "sha256": "eb1fcceda1d25b11448f01026bea6d81676ba53bbac94b8336371dde33efba67",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/discovery-quiz/page.tsx",
+      "lines": 5,
+      "sha256": "a0ce96a6970d6a98a09e62383e8b728659b25e64f4c612d8ec3eb744cdd5818d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/dr-house/page.tsx",
+      "lines": 13,
+      "sha256": "d551af3c7140d09a87735952ae4cfa076b8ff630b24b373746f9f951556c5807",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/emergency-room/page.tsx",
+      "lines": 5,
+      "sha256": "fdf9f6784100b42244fc4e8f92baeb9f01cff092e111f0d703372291eff6df7f",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/holo-view/page.tsx",
+      "lines": 5,
+      "sha256": "35c9f398a34187eb5bdf01b938656ddb56694b72b30ca3e4e6065ab44666b3fc",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/jarvis/page.tsx",
+      "lines": 5,
+      "sha256": "e3aa71aa7ffd5509593037d171de2a292482fccacaa06d26b45acc79bb563839",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/metaverse-lab/page.tsx",
+      "lines": 5,
+      "sha256": "dd5dcfc341f9a5bd07dea563b7a2f01ef451acbb39f67b270d53ce8453573fcb",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/molecule-builder/page.tsx",
+      "lines": 5,
+      "sha256": "c412b8e943445fff502cb830e2aacb8efa1554d9129c6bb26ab2bf9dfd06eee3",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/organ-safety/page.tsx",
+      "lines": 5,
+      "sha256": "0bae6b0484260f0ecf169471ee59eb6d4bf1c97bf4f69796c5a25b43bcea46df",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/polypharmacy-sandbox/page.tsx",
+      "lines": 5,
+      "sha256": "533dbdb66ded6312d75e018841393df06c7990b0a64de87b07f7f78fdcebb28c",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/scholar/team-code-blue/page.tsx",
+      "lines": 13,
+      "sha256": "fed33003fd25de4bd1eadf733c58491ab27e27ef70b330aba52e437e43f2fedc",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/screen/page.tsx",
+      "lines": 40,
+      "sha256": "82db5dd34878ac3c28577677c3ae7f692140683407a4856cfccf9711aece5e65",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/screening/page.tsx",
+      "lines": 496,
+      "sha256": "4fbfac7aa31246f0ce65485507e4f13f7055299fb5d07e388b591a5afd7e6793",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/legacy-ui/app/workspaces/page.tsx",
+      "lines": 123,
+      "sha256": "fc6604f48c8d65ef2939d61a61f03b27fd73e58aa5fb06b4b5d3124784d3710f",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/scripts/evidence-lab-check.cjs",
+      "lines": 53,
+      "sha256": "1eb1ea25a77c93dd9c6e0fffd8363c82b03d2be84522491505fbb1ad24886b5b",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/scripts/experiment-challenges-check.cjs",
+      "lines": 48,
+      "sha256": "cb9c5e1c8a76cd5e60a7561b411d3d1c4fe0cb6353d314bc95470ad5bc8e52bb",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/scripts/experiment-challenges-live.cjs",
+      "lines": 21,
+      "sha256": "b509ff0bcd07ba803c8f0a433dace86df4456ca30f78832712922d9c9ef2f59d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/scripts/hackathon-check.cjs",
+      "lines": 50,
+      "sha256": "09072e83de8876e588f4a75451ae04fa289c89245d82a6a0783051cbd47ee391",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/scripts/hm01-check.cjs",
+      "lines": 28,
+      "sha256": "d58cc07842a4ffacc91d75889ec7da5f14bf8f21061ad3f770a7e5794b31aa11",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/scripts/judging-upgrade-check.cjs",
+      "lines": 44,
+      "sha256": "d40e5f8ffaa650292a889618293bf1a5e938d733ca4bca233dd6f95fa3aec880",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "bioscribe-ai/scripts/phase3-contract-check.cjs",
+      "lines": 53,
+      "sha256": "68ab81ee5a12e10bcde8d6020bce68cf4870f6f2a16fd4aa54f03e9e217d8a22",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "validation/phase4/__init__.py",
+      "lines": 1,
+      "sha256": "3aaf3be7c7050ce8893cb8470544101a88b85eddbcfa3ec9409ba03afcc46ccc",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "validation/phase4/contracts.py",
+      "lines": 181,
+      "sha256": "26180455a18624a74d54fc69475daf3d67a9825f9966e58f447fec685d565c9e",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "validation/phase4/preflight.py",
+      "lines": 157,
+      "sha256": "1556e190c6be88b48d29d340fd982014321091f61b0b892f127379fe6846d7c8",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "validation/phase4/tests/test_preflight.py",
+      "lines": 234,
+      "sha256": "1d9782f7b13fbe12e2cebc4b634b1abd3cdd8261fae8aee78b064caa266671c7",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/__init__.py",
+      "lines": 1,
+      "sha256": "3e912f4376787627aeb57cab1366a93f72644356de6eebc5a3d66407d24d0a53",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/replay.py",
+      "lines": 216,
+      "sha256": "ec4317a8080d5b3a78d25bfbfdce839739a9cd3855d39145038fac9dc8ed7bc8",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/demonstration/build_explanation.py",
+      "lines": 68,
+      "sha256": "a0bf3d24aacdc9f52099a6bfec9e71e6350864df46850a122752e8e62b0c3589",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/demonstration/rehearse.cjs",
+      "lines": 99,
+      "sha256": "782a99aa688bf6006b58461fbfc3eab83dff642585dc5c1d354f5ee72225909d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/tests/test_replay.py",
+      "lines": 205,
+      "sha256": "b6d2d659bb4ac00e0fc319c4d649a509e9a9bf57b4a6e729cb931e85408791dd",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/viewer/filters.js",
+      "lines": 17,
+      "sha256": "beae7be45927cbf8078f44a9f91aef69cec2fd3554cbf0b15768985fbbea6f0a",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/viewer/report.js",
+      "lines": 119,
+      "sha256": "3f31dd7629ad5e50073282ecf49fde8856e1c67aa2f1c6b48ea470e4e6a68521",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/viewer/viewer.css",
+      "lines": 79,
+      "sha256": "9773ee147a5624aa11721f1ac05760037abc0876bb0e13f1775d0a4683a165a1",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/viewer/viewer.js",
+      "lines": 94,
+      "sha256": "cc3a49857dee43d93f6cc395dce4ccded4634be9d10a76a34145a832060e783d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/viewer/tests/browser-check.cjs",
+      "lines": 152,
+      "sha256": "9e80758c2f419df02e1c7d29f3220d9ba349b0a6e831ba6b6571f4ca2dc41f6d",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/viewer/tests/filters.test.cjs",
+      "lines": 79,
+      "sha256": "3cf2028944f6199d709244ab9109163572c1ded3806929e6e0404f391146fa35",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "learning/viewer/tests/report.test.cjs",
+      "lines": 159,
+      "sha256": "b33631936d8cef4de7c6e02917027a87af64d49e095db49ab14c05291418e8df",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/build_evidence_lab.py",
+      "lines": 24,
+      "sha256": "4ff83e2f9351d1e30bf16e6aac84e3e467d826e852489c57d1de0b96c9018725",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/build_examples.py",
+      "lines": 106,
+      "sha256": "0ff8538c464d7702a4b23597555e05adc74be87c106a363ed072e82dceeefc35",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/freeze_compound_records.py",
+      "lines": 60,
+      "sha256": "807a3c55197a7ce3f873554516a9e69abde3d78e404180306f406b37e1e08cf7",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/preflight.py",
+      "lines": 65,
+      "sha256": "70373677dfac5d5294e97ce14f0c708fe0cc2cd80db127719c83d4abc4e1cfa7",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/record-evidence-verification.cjs",
+      "lines": 33,
+      "sha256": "4bad336503a297a67ed59f15a0a4a347bc63c62ba3b11daa615fc55a6e056935",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/start-demo.ps1",
+      "lines": 56,
+      "sha256": "c47274fccaf87a2c46d3a9e97bb51202ee872c6e39cf0b6f226b09774c1c2556",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/verify-portable.ps1",
+      "lines": 23,
+      "sha256": "9789e4d88767d6727bd82318ed996f03882d4c0b4a3a1cb0830eb09f3151ea84",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/verify_assets.py",
+      "lines": 34,
+      "sha256": "271dc3d7ecf580e872c1fda9bb44a6c5d6e21355364183a0c9c6ce8f35eb5939",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/experiment-challenges/build_fixtures.py",
+      "lines": 42,
+      "sha256": "c88b8a6d2f476bbcbd25811dbaf51cb536f038444ab0cbde1e9eba64984efed8",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/hm01/probe.py",
+      "lines": 187,
+      "sha256": "7cb14a54b696278ee0d781cd5cd54249e74d5f45c6d050cb3792d74396f00452",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/judging-upgrade/baseline.py",
+      "lines": 20,
+      "sha256": "e91bdd7680b9b1f63b40d8b4e698497a17512e515e355906bcea026824e68075",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/judging-upgrade/build_comparison.py",
+      "lines": 66,
+      "sha256": "089d050d66c01cecc3174c4ada1270fb91d5ee8d04a3ff2e4b81c1e8c04c02ce",
+      "legacy_entry_guard": false
+    },
+    {
+      "path": "hackathon/judging-upgrade/test_comparison.py",
+      "lines": 65,
+      "sha256": "7b212238460baf20ce139f0c5ba071ce0eef89b62f9e2db3966c954050a202ae",
+      "legacy_entry_guard": false
+    }
+  ],
+  "summary": {
+    "source_files": 318,
+    "source_lines": 83836,
+    "guard_marked_files": 17,
+    "by_tree": {
+      "backend": 113,
+      "bioscribe-ai/src": 131,
+      "bioscribe-ai/legacy-ui": 38,
+      "bioscribe-ai/scripts": 7,
+      "validation/phase4": 4,
+      "learning": 12,
+      "hackathon": 13
+    }
+  }
+}

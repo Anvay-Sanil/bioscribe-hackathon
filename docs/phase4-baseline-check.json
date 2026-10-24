@@ -1,0 +1,8 @@
+{
+  "source": "docs/PHASE_3_VERIFICATION.json",
+  "ledger_sha256": "39a2ad7d62ba964061784aff18a128ea0bfbc6dca9396d63afaa34f665eaa94c",
+  "checked": 78,
+  "matched": 78,
+  "mismatches": [],
+  "meaning": "Byte correspondence with accepted Phase 3 ledger; not authorship, a new test run or scientific validation"
+}

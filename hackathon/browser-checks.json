@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-23",
+  "status": "passed_for_observed_scope",
+  "browser": "Codex in-app browser, localhost:3000",
+  "checks": [
+    "Empty explorer displays no invented report or molecular findings",
+    "Recorded example loads eight molecules and a conspicuous recorded-source label",
+    "Caffeine selection updates identity, calculated values and conformer label",
+    "Space-filling representation and rotate/stop controls work",
+    "Searching ethanol displays one of eight molecules while the full-library shortlist persists",
+    "Changing selection budget to two retains the first two ranks",
+    "Full run JSON download matches the example run ID and artifact hash; eight molecules retained",
+    "Contradictory imported predictive value is rejected and previous results disappear",
+    "Fresh authenticated public four-molecule submission completes and displays an integrated explorer",
+    "Results-to-comparison and comparison-to-explorer navigation works",
+    "Budget 10 shows invented positives 2/10 versus 1/10 and 120 rows",
+    "Unknown-label example removes selections and comparisons and retains all 120 rows",
+    "Unknown filter returns only alkane-028; clear restores the library",
+    "Budget 100 shows invented positives 14/100 in both rankings and 120 rows",
+    "Final molecule switching uses one canvas; desktop document width stays within 1280-pixel viewport"
+  ],
+  "live_run_id": "f44509c0ced44eacb241ee1edec24eca",
+  "limitations": [
+    "Shortlist export contents checked in software; a second browser download was not repeated",
+    "Print/PDF output and mobile layout were not verified",
+    "No independent biological performance evaluation",
+    "Browser source labels do not authenticate imported files"
+  ]
+}

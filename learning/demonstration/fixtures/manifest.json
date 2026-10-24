@@ -1,0 +1,29 @@
+{
+  "source": "learning/exercises/budget-and-unknown/budget-10-result.json",
+  "source_sha256": "9cef4617a749498edf6bb32e0351a484de697d247219fda522e965861e72b0e1",
+  "derivation": "Each fixture changes exactly one declared field; original export preserved",
+  "fixtures": [
+    {
+      "file": "invalid-heuristic-status.json",
+      "purpose": "Deliberately invalid synthetic metadata fixture; never a new or authenticated run",
+      "record_id": "alkane-001",
+      "field": "heuristic",
+      "property": "assessment_status",
+      "original_value": "computed",
+      "invalid_value": "not_assessed",
+      "json_pointer": "/rows/0/chemistry/heuristic/assessment_status",
+      "sha256": "2d2254b38b70aa15d986ced06c2e24d92152a837f43a9b82c1590829e8086672"
+    },
+    {
+      "file": "invalid-molecular-weight-units.json",
+      "purpose": "Deliberately invalid synthetic metadata fixture; never a new or authenticated run",
+      "record_id": "alkane-001",
+      "field": "molecular_weight",
+      "property": "units",
+      "original_value": "g/mol",
+      "invalid_value": "kg/mol",
+      "json_pointer": "/rows/0/chemistry/molecular_weight/units",
+      "sha256": "7b07e20f6f40a27682db92d59d0ccf1d0d6fa064b3d30ba9e0d1a51d2c65a393"
+    }
+  ]
+}

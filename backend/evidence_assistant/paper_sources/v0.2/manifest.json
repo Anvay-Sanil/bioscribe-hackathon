@@ -1,0 +1,39 @@
+{
+  "version": "paper-sources/0.1.0",
+  "files": {
+    "12873516.json": "2a79dc1e2841a1e3fa8099c701851de2d671efd24b620c863207a4dc9ea72cfc",
+    "12951113.json": "cbfba177fe17d970e05e001f10866d140eef084f6f63ea390b86fefb3048c968",
+    "18260613.json": "93ed456ecda347cba2ffe55e4e4c67bde5d72a8092a41083528e0411bfa545b9",
+    "8568814.json": "9ac0b7c415b8bebb7d53da9107629a4a0b86b5b59ad9cfa3e1631872fb4a8db3",
+    "9435909.json": "7a88c9b0fabb4b2ab45176bb80a54ac9a2e5bca037de8d147b640214cb2071b6"
+  },
+  "acquisition": [
+    {
+      "pmid": "12873516",
+      "status": "acquired",
+      "reason": null
+    },
+    {
+      "pmid": "12951113",
+      "status": "acquired",
+      "reason": null
+    },
+    {
+      "pmid": "18260613",
+      "status": "acquired",
+      "reason": null
+    },
+    {
+      "pmid": "8568814",
+      "status": "acquired",
+      "reason": null
+    },
+    {
+      "pmid": "9435909",
+      "status": "acquired",
+      "reason": null
+    }
+  ],
+  "scope": "Bounded explicitly acquired PubMed abstracts, not full text or an exhaustive literature search.",
+  "licensing": "Public bibliographic/abstract metadata; original publisher rights may apply. No open full-text licence is inferred."
+}

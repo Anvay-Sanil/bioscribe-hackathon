@@ -1,0 +1,91 @@
+Browser tab: 2, Title: "BioScribe · Molecular Workbench", URL: "http://localhost:3000/evidence".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 133
+~					31 button Analyze molecules
+~				35 button Three reference compounds Six frozen PubChem & ChEMBL records
+~				38 button Break the input 12 records: syntax, stereo & missingness
+~				44 button Open replay package
+~			136 container Molecule evidence
++				137 text RECOMPUTED BY LOCAL WORKER
++				138 heading A clear view of your library, Value: 2
++					139 text A clear view of your library
++				140 text 3
++				141 text RECORDS
++				142 text 3
++				143 text IDENTIFIED
++				144 text 0
++				145 text REJECTED
++				146 text field (settable) Search molecules
++				147 pop up button (collapsed, settable) Description: Evidence filter, Value: All records, Secondary Actions: Expand
++					148 menu
++						149 (selected) All records
++						150 Rejected inputs
++						151 Identity warnings
++						152 Frozen references
++				153 text Showing  3  of  3
++				154 container Molecule list
++					155 checkbox Aspirin CC(=O)Oc1ccccc1C(=O)O Graph identified, Value: 1
++						156 text Aspirin
++						157 text CC(=O)Oc1ccccc1C(=O)O
++						158 text Graph identified
++					159 checkbox Caffeine Cn1c(=O)c2c(ncn2C)n(C)c1=O Graph identified, Value: 0
++						160 text Caffeine
++						161 text Cn1c(=O)c2c(ncn2C)n(C)c1=O
++						162 text Graph identified
++					163 checkbox Acetaminophen CC(=O)Nc1ccc(O)cc1 Graph identified, Value: 0
++						164 text Acetaminophen
++						165 text CC(=O)Nc1ccc(O)cc1
++						166 text Graph identified
++				167 heading Aspirin, Value: 3
++					168 text Aspirin
++				169 text CC(=O)Oc1ccccc1C(=O)O
++				170 text Graph identified
++				171 tab group Molecule details
++					172 tab (selectable, settable, boolean) Properties, Value: 0
++					173 tab (selectable, settable, boolean) Identity, Value: 0
++					174 tab (selectable, settable, boolean) References, Value: 0
++					175 tab (selected, settable, boolean) 3D view, Value: 1
++				176 container 3D molecule
++					177 container
++						178 container Computed 3D conformer of Aspirin
++						179 text Drag to rotate · Scroll to zoom
++					180 container
++						181 text Representation 
++						182 pop up button (collapsed, settable) Description: 3D representation, Value: Ball & stick, Secondary Actions: Expand
++							183 menu
++								184 (disabled) Ball & stick
++								185 (disabled) Sticks
++								186 (disabled) Space filling
++					187 button Rotate
++					188 button Reset view
++					189 container
++						190 text Illustrative computed conformer · not an experimental structure or docking pose.  RDKit ETKDGv3 + UFF, 2025.03.3; seed 20261023; converged. Unspecified stereochemistry remains unspecified.
++			191 container Descriptor comparison
++				192 heading Compare the selection, Value: 2
++					193 text Compare the selection
++				194 container
++					195 text Saved budget:  2  · filters never alter the library
++				196 text Unvalidated orderings
++				197 heading Descriptor distance · ascending, Value: 3
++					198 text Descriptor distance · ascending
++				199 text 1 Caffeine 2 Aspirin
++				200 heading QED · descending, Value: 3
++					201 text QED · descending
++				202 text 1 Acetaminophen 2 Aspirin
++				203 text No biological labels, hit rates or performance claims. Missing records are never dropped to improve a comparison. Change the budget in a new run to compare selections.
++			204 container Replay verification
++				205 text The reproducibility test
++				206 heading Same inputs. Same engine. Same result., Value: 2
++					207 text Same inputs. Same engine. Same result.
++				208 text Exact replay matched
++				209 text Export original inputs, frozen records, source and dependency identities in one package. Recompute with the matching installed engine and compare the complete scientific payload at its declared precision.
++				210 text SCIENTIFIC RESULT · SHA-256
++				211 text 59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7
++				212 text RECOMPUTED RESULT · SHA-256
++				213 text 59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7
++				214 button Export replay package
++				215 button Recompute & compare
++				216 button Print report
++				217 container
++					218 text Fresh local recomputation matched.  Checksums do not authenticate authorship. Historical engines are never silently upgraded.
+The focused UI element is 1 AXWebArea BioScribe · Molecular Workbench, URL: localhost:3000/evidence

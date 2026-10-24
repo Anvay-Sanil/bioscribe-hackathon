@@ -1,0 +1,173 @@
+{
+  "design_id": "BS-RANK-001",
+  "design_version": "0.2",
+  "status": "proposed_not_frozen",
+  "basis": "User-specified ALDH1A1 utility design; appointments and custody expressly unresolved",
+  "scientific_assessment": "not_assessed",
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "protocol_freeze": "blocked",
+  "confirmatory_label_access": "blocked",
+  "preregistration_receipt": null,
+  "target": {
+    "name": "human ALDH1A1",
+    "uniprot": "P00352",
+    "taxon_id": 9606,
+    "uniprot_entry_version": 234,
+    "uniprot_sequence_version": 2,
+    "reference_length": 501,
+    "reference_sequence_sha256": "3643038221afeedeeb244b74f19a4aba11f4c038262b9d8460260d2b476ded7f",
+    "assay_description_target_accession": "AAP35567.1",
+    "reference_sequences_equal": true,
+    "experimental_construct_identity": null
+  },
+  "assay": {
+    "aid": 1030,
+    "requested_version": 1,
+    "requested_revision": 1,
+    "requested_url": "https://pubchem.ncbi.nlm.nih.gov/bioassay/1030/version/1.1",
+    "retrieved_description_version": 2,
+    "retrieved_description_revision": 1,
+    "requested_version_verified": false,
+    "record_acceptance": "blocked_pending_version_and_construct_verification"
+  },
+  "endpoint": {
+    "claim": "retrieval of recorded assay-positive compounds in the studied eligible population",
+    "ac50_max_micromolar": 10.0,
+    "maximum_inhibition_min_percent": 50.0,
+    "requires_quality_controlled_inhibitory_concentration_response": true,
+    "source_field_sign_qc_mapping": null,
+    "unknown_policy": "Inconclusive and unresolved optical interference remain unknown, never negative",
+    "not_claimed": [
+      "confirmed enzyme inhibition",
+      "selectivity",
+      "therapeutic usefulness",
+      "binding affinity",
+      "safety",
+      "pharmacokinetics"
+    ]
+  },
+  "decision": {
+    "selection_budget": 100,
+    "distinct_compounds": true,
+    "population": "one frozen eligible library; membership and unknown-label estimand require review",
+    "follow_up": "independent dose-response and orthogonal confirmation",
+    "initial_evaluation": "retrospective recovery of recorded assay positives"
+  },
+  "candidate": {
+    "method_id": "prioritization_heuristic",
+    "method_version": "1.1.0",
+    "direction": "ascending",
+    "formula": "abs(MW-350)/350 + abs(TPSA-75)/75",
+    "input_policy": "plain_smiles_concrete_graph/1.1.0",
+    "source_manifest": "../source-manifest.json",
+    "retuning_permitted": false
+  },
+  "qed_comparator": {
+    "implementation": "rdkit.Chem.QED.qed(mol, w=QED.WEIGHT_MEAN)",
+    "rdkit_version": "2025.03.3",
+    "direction": "descending",
+    "weights": {
+      "MW": 0.66,
+      "ALOGP": 0.46,
+      "HBA": 0.05,
+      "HBD": 0.61,
+      "PSA": 0.06,
+      "ROTB": 0.65,
+      "AROM": 0.48,
+      "ALERTS": 0.95
+    },
+    "source_file": "references/rdkit-QED-2025.03.3.py",
+    "source_sha256": "e465598a522df115865546b9dd2fc72e882753053230706166862406e479e0e2"
+  },
+  "tie_break": {
+    "version": "BS-RANK-001/tie/v1",
+    "entity_key": "sha256(UTF8(pinned_RDKit_canonical_isomeric_SMILES))",
+    "tie_key": "sha256(ASCII(BS-RANK-001/tie/v1) || 0x00 || ASCII(entity_key))",
+    "order": "unrounded method score, ascending tie_key, ascending entity_key",
+    "label_independent": true,
+    "tie_expansion": false,
+    "implementation_status": "specified_not_implemented_in_study_evaluator"
+  },
+  "random_comparator": {
+    "sampling": "uniform without replacement, exactly 100 from same eligible population",
+    "primary_reference": "expected yield = 100*A/N",
+    "single_random_draw_used_for_gate": false,
+    "variance": "100*(A/N)*(1-A/N)*(N-100)/(N-1)",
+    "empirical_execution": false
+  },
+  "co_primary_gates": [
+    {
+      "metric": "precision_heuristic_minus_precision_QED",
+      "units": "proportion",
+      "bound": "one_sided_lower",
+      "confidence_level": 0.95,
+      "operator": ">=",
+      "threshold": 0.05,
+      "rationale": "User-proposed minimum five additional assay positives per 100 selected"
+    },
+    {
+      "metric": "precision_heuristic_divided_by_population_positive_fraction",
+      "units": "dimensionless_enrichment",
+      "bound": "one_sided_lower",
+      "confidence_level": 0.95,
+      "operator": ">=",
+      "threshold": 2.0,
+      "rationale": "User-proposed minimum twice expected random yield"
+    }
+  ],
+  "joint_decision": "both gates must pass; marginal bounds are not asserted simultaneous 95% intervals",
+  "inference": {
+    "finite_library_point_quantities": "deterministic when all labels are known",
+    "inferential_population": null,
+    "paired_scaffold_cluster_interval_method": null,
+    "minimum_independent_units": null,
+    "sample_size": null,
+    "power_target": null,
+    "power_justification": null,
+    "coverage_threshold": null,
+    "subgroup_definitions_and_thresholds": null,
+    "status": "blocked_pending_statistical_review"
+  },
+  "data": {
+    "raw_assay_release": null,
+    "empirical_dataset_frozen": false,
+    "source_level_adjudication": null,
+    "actual_leakage_analysis": null,
+    "LIT_PCBA_role": "candidate starting point only; no labels or population imported",
+    "test_outcome_rows_accessed": false,
+    "candidate_scores_computed": false
+  },
+  "appointments": {
+    "independent_data_custodian": null,
+    "scientific_owner": null,
+    "independent_statistical_reviewer": null,
+    "required_for_each": [
+      "name",
+      "affiliation",
+      "conflicts",
+      "explicit acceptance"
+    ]
+  },
+  "custody": {
+    "repository_location": null,
+    "administrator": null,
+    "demonstrated_controls": null,
+    "required_controls": [
+      "institutional approval",
+      "administration outside developer/service privileges",
+      "separate label-access permissions",
+      "protected timestamped receipts",
+      "version retention",
+      "access logging"
+    ]
+  },
+  "prohibited_adaptation": [
+    "retrospective target switching",
+    "candidate retuning",
+    "outcome-driven tie-break",
+    "post hoc reduction of margins",
+    "unrecorded changes to assay version"
+  ],
+  "trusted_freeze_claim": false
+}

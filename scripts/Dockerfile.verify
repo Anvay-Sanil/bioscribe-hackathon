@@ -1,0 +1,5 @@
+# Verification tools only; the application image remains smaller.
+FROM bioscribe-integrity:20261025
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends git
+USER bioscribe

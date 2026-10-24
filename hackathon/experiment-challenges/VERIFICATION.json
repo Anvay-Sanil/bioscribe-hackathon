@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-10-24T06:55:06.841Z",
+  "method": "bioscribe-experiment-challenges/1.0.0",
+  "new_software_checks": 34,
+  "existing_client_checks": 113,
+  "total_client_checks": 147,
+  "browser_checkpoints": 11,
+  "live_integration": {
+    "jobs": 7,
+    "expected_behaviors": 6,
+    "status": "passed",
+    "request_bound_receipts": true
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "lint": "passed",
+  "evidence_first_load_kb": 216,
+  "scientific_assessment": "not_assessed",
+  "user_value": "untested",
+  "global_novelty": "not_established",
+  "not_repeated": [
+    "full backend suite",
+    "Linux suite",
+    "cold start",
+    "clean install",
+    "second physical machine",
+    "production-server browser test"
+  ],
+  "limits": {
+    "jobs": 7,
+    "molecules_per_job": 16,
+    "suite_seconds": 240,
+    "job_poll_seconds": 45,
+    "capsule_bytes": 16000000
+  }
+}

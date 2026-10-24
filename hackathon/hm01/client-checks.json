@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "count": 8,
+  "checks": [
+    "Mixed-input export decodes with all four input positions",
+    "Malformed ring produces no visible numeric molecular weight",
+    "Dummy graph produces no visible numeric molecular weight",
+    "Unsupported rows cannot inherit an example conformer",
+    "Valid ethanol has real computed fields",
+    "Mixed library blocks the whole shortlist without silently dropping rows",
+    "Abstaining shortlist export retains all source evidence",
+    "Equivalent canonical identities block duplicate selection"
+  ],
+  "scope": "Existing client contract and explorer guards; does not close HM-01 missing-capability gates"
+}

@@ -1,0 +1,29 @@
+# BioScribe AI - Genuine Computation Dependencies
+# These are the actual libraries used. No bloat, no unused ML frameworks.
+
+# Core Framework
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.5.0
+
+# Scientific Computing
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Bioinformatics & Chemistry (the real workhorses)
+biopython>=1.81
+rdkit-pypi>=2023.9.1
+
+# HTTP Client (for optional UniProt queries)
+requests>=2.31.0
+aiohttp>=3.9.0
+httpx>=0.25.0
+
+# File uploads
+python-multipart>=0.0.6
+
+# Async support
+aiofiles>=23.2.0
+
+# CORS and utilities
+python-dotenv>=1.0.0

@@ -1,0 +1,23 @@
+{
+  "status": "provisional_unreviewed",
+  "claims": 150,
+  "source_records": 30,
+  "source_groups": 19,
+  "corpus_sha256": "5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65",
+  "claims_sha256": "f6dea38e601214ca1735cf31c38b7ed484670ab8263920edf1845ebfe99ce0ef",
+  "proposed_labels_sha256": "69230d2a941292644f032fa2cd09316824815d6e3b17cfbe2969205141d09728",
+  "label_counts": {
+    "supported": 30,
+    "contradicted": 30,
+    "insufficient_evidence": 60,
+    "out_of_scope": 30
+  },
+  "limitations": [
+    "Template-generated challenge set, not a representative independent benchmark",
+    "Labels drafted after implementation and not independently adjudicated",
+    "No protected holdout or source-group split assigned",
+    "Repeated source records and publications are dependent",
+    "No real retracted-paper claim in this 150-row draft; retraction handling has synthetic software fixtures only",
+    "No inferential performance or calibrated-confidence claim"
+  ]
+}

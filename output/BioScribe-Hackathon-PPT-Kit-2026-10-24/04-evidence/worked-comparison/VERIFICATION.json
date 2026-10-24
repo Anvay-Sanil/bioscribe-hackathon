@@ -1,0 +1,48 @@
+{
+  "recorded_at": "2026-10-23T19:15:36.650Z",
+  "scope": "Public-data hackathon implementation improvement; user value untested",
+  "python": {
+    "passed": 21,
+    "report": "comparison-tests.xml"
+  },
+  "client": {
+    "new": 30,
+    "lab": 35,
+    "contract": 25,
+    "hackathon": 23,
+    "total": 113
+  },
+  "browser": {
+    "passed": 10,
+    "report": "browser-checks.json"
+  },
+  "production_build": {
+    "status": "passed",
+    "command": "cd bioscribe-ai; npm run build",
+    "evidence_first_load_kb": 210,
+    "proof_first_load_kb": 159
+  },
+  "typecheck": "passed",
+  "lint": "passed",
+  "local_launcher_preflight": {
+    "status": "passed",
+    "report": "preflight-result.json"
+  },
+  "not_repeated": [
+    "historical full backend suite",
+    "Linux checks",
+    "clean install",
+    "cold start",
+    "production-server browser test",
+    "second physical machine"
+  ],
+  "scientific_assessment": "not_assessed",
+  "user_value": "untested",
+  "score": "not_assigned",
+  "blocked": [
+    "scientific release",
+    "sensitive-data intake",
+    "independent custody",
+    "production deployment"
+  ]
+}

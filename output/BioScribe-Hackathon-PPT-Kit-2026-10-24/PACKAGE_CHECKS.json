@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-24T12:39:48.021844+00:00",
+  "scope": "Presentation source-pack checks only; application suites not rerun",
+  "copied_source_files": 40,
+  "copy_hashes_match": true,
+  "screenshots_verified": 7,
+  "json_documents_parse": true,
+  "recorded_counts_match_source": true,
+  "credential_filename_check": "passed",
+  "credential_pattern_check": "passed",
+  "private_runtime_or_study_outcomes_included": false,
+  "new_computation_jobs": 0
+}

@@ -1,0 +1,10 @@
+{
+  "status": "unfilled_not_reviewed",
+  "claims": 150,
+  "claims_sha256": "f6dea38e601214ca1735cf31c38b7ed484670ab8263920edf1845ebfe99ce0ef",
+  "files": {
+    "reviewer-A-blank.csv": "922528c8b9cf672d418423c7136e530e158d575ee6164650fb991ca3ed6329d7",
+    "reviewer-B-blank.csv": "922528c8b9cf672d418423c7136e530e158d575ee6164650fb991ca3ed6329d7"
+  },
+  "scope": "Initial blank forms only. Hashes will change when reviewers enter annotations. No appointments or independent review inferred."
+}

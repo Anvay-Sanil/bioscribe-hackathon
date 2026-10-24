@@ -1,0 +1,43 @@
+{
+  "scope": "Preparation only; no application or accepted framework changes",
+  "baseline_checks": [
+    {
+      "ledger": "docs/PHASE_3_VERIFICATION.json",
+      "ledger_sha256": "39a2ad7d62ba964061784aff18a128ea0bfbc6dca9396d63afaa34f665eaa94c",
+      "checked": 78,
+      "mismatches": []
+    },
+    {
+      "ledger": "docs/PHASE_4_VERIFICATION.json",
+      "ledger_sha256": "e0494760a7e50dc457b40d5f2bc396206e250bd689de4a4ab1a1ef144cd4a7fc",
+      "checked": 15,
+      "mismatches": []
+    }
+  ],
+  "snapshot_files_verified": 15,
+  "new_tests_run": false,
+  "reason_no_new_tests": "No executable implementation changed; metadata and byte-copy checks performed",
+  "empirical_evaluation": "not_run",
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "file_sha256": {
+    "candidate.json": "e9fe266a4c6b6bb19ee31b2ad5004905521e71903ae0e87939ba326fc7073c9d",
+    "method-source/backend/bioscribe/__init__.py": "9c5d21ed2939f9737727c79ea856d19483675e15c54e02692bab69f696696cb5",
+    "method-source/backend/bioscribe/api.py": "a05323926aa0794835e1b6699e6c981a31cb1155ad3717891aece82dfd34d612",
+    "method-source/backend/bioscribe/auth.py": "18a1610bb586f4530761ea389d42f05d3eef27d56bd712330e69e8848b24843f",
+    "method-source/backend/bioscribe/checkpoint_service.py": "0c34c50bcd183728985d0383e4cbcf3e4bf75d113e56811f78eb89b1b42525e5",
+    "method-source/backend/bioscribe/checkpoints.py": "5611afa8e195ec041705a777fdfb14f786d9bd194ee27744a1c10ded2758958c",
+    "method-source/backend/bioscribe/compute.py": "272cf9230e135bb1b25d34ef70acf75fe3e5455d9e2232c52ff729b1fc657644",
+    "method-source/backend/bioscribe/config.py": "527f9160750585152e212fc0d92e44a08b8afeb44e0e85acc6717cc47d353c6d",
+    "method-source/backend/bioscribe/identity.py": "516e7df65cd1c9dec110c7e520efb8d3e2589889b03e586dea821bb7cb823ed7",
+    "method-source/backend/bioscribe/metrics.py": "44bf8224367a75dfeddaa70aa721ef2dc972c87ba733cfde1351441266f39ce3",
+    "method-source/backend/bioscribe/provenance.py": "6d17474cdeb9cfeb46327527e2107d2a71ba6afb1e4c3a350b87f1edb012769d",
+    "method-source/backend/bioscribe/registry.py": "5f9d0a0d3037684f6706e11df1feca7b083a3b87625b992f27a79c50e9d2104a",
+    "method-source/backend/bioscribe/schemas.py": "7ac1069fe572ccfa549033f80c1b5b41d444377e2d594d3acdef66c1b7e1a80d",
+    "method-source/backend/bioscribe/store.py": "21b4b5c8ded5224047d8f05898330eb4832e4a95a6a47c03c645a849c11cb65c",
+    "method-source/backend/bioscribe/worker.py": "0f765f6fa95072ee79007fb4d8778593bf15e02e6f4075b9d78a826fe9993eed",
+    "method-source/backend/requirements-phase3.lock": "ae4b09ee9910ec3bbfcde31d922d24184ed188bdc128218288156e43815c998b",
+    "README.md": "f183959950eab06f431427f46547c3c4d4c0eedd7b73eb10847c05c575274bc9",
+    "source-manifest.json": "6bd395a9c7807eadfbb7fe050594bef93049c6dd9bcad2ccb67ab62f31f0b8f6"
+  }
+}

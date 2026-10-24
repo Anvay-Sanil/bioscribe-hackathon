@@ -1,0 +1,32 @@
+const writeCheckOutput=require('./check-output.cjs');
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),Module=require('node:module'),ts=require('typescript');
+const root=path.resolve(__dirname,'..');
+const filename=path.join(root,'src/lib/phase3/assistant.ts');
+const m=new Module(filename,module);m.filename=filename;m.paths=Module._nodeModulePaths(path.dirname(filename));
+m._compile(ts.transpileModule(fs.readFileSync(filename,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020,esModuleInterop:true}}).outputText,filename);
+const {decodeReview}=m.exports;
+const sample=JSON.parse(fs.readFileSync(path.join(root,'public/evidence-assistant/example.json'),'utf8'));
+const checks=[];
+function pass(name,fn){fn();checks.push({name,status:'passed'});}
+function rejected(name,fn){pass(name,()=>{const clone=structuredClone(sample);fn(clone);assert.throws(()=>decodeReview(clone));});}
+pass('valid four-verdict recorded review',()=>assert.equal(decodeReview(sample).statements.length,4));
+pass('expected input attribution',()=>assert.throws(()=>decodeReview(sample,'different claim')));
+rejected('missing research aid label',r=>delete r.research_aid_label);
+rejected('invented confidence',r=>r.statements[0].confidence=.99);
+rejected('false confidence qualification',r=>r.statements[0].confidence_status='calibrated');
+rejected('missing source metadata',r=>delete r.statements[0].citations[0].source_sha256);
+rejected('unsafe source destination',r=>r.statements[0].citations[0].url='javascript:alert(1)');
+rejected('unapproved source destination',r=>r.statements[0].citations[0].url='https://example.com/');
+rejected('wrong source span',r=>r.statements[0].start=2);
+rejected('evidence removed',r=>r.statements[0].citations=r.statements[0].citations.filter(c=>c.role!=='supports'));
+rejected('computed evidence promoted to activity',r=>r.statements[0].citations[0].kind='run_record');
+rejected('retracted evidence promoted to support',r=>r.statements[0].citations[0].retraction_status='retracted_or_linked_retraction');
+rejected('assay publication status marked inapplicable',r=>r.statements[0].citations[0].retraction_status='not_applicable');
+rejected('assay evidence relabelled as computation',r=>r.statements[0].category='computed_property');
+rejected('abstention basis promoted to decisive verdict',r=>r.statements[0].decision_basis='abstention');
+rejected('clinical verdict promoted to supported',r=>r.statements[3].verdict='supported');
+rejected('review trace relabelled',r=>r.statements[0].citations.find(c=>c.role==='assessment_trace').source_id='review:'+'0'.repeat(32));
+rejected('missing review trace',r=>r.statements[0].citations=r.statements[0].citations.filter(c=>c.role!=='assessment_trace'));
+const result={recorded_at:new Date().toISOString(),status:'passed',count:checks.length,checks,scope:'Client decoder contracts only; no scientific qualification or browser interaction'};
+writeCheckOutput(path.join(root,'../docs/evidence-assistant-client-checks.json'),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify(result,null,2));

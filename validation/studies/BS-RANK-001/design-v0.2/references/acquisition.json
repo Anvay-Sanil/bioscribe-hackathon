@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://rest.uniprot.org/uniprotkb/P00352.json",
+    "file": "uniprot-P00352.json",
+    "sha256": "e03a1bf6d3d96bff2110460e9bbae25463a8bf5c6250226245b2877354677561",
+    "bytes": 95656,
+    "retrieved_at_utc": "2026-10-16T19:29:55.746452+00:00",
+    "headers": {
+      "Date": "Fri, 16 Oct 2026 19:29:55 GMT",
+      "X-UniProt-Release": "2026_03",
+      "X-UniProt-Release-Date": "02-September-2026"
+    },
+    "scope": "target or assay description metadata only; not measurement data"
+  },
+  {
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1030/description/JSON",
+    "file": "pubchem-AID1030-description.json",
+    "sha256": "fd6fbc1c65c0957b1a737d33c1fa8e6bf89e81eaf103437ac53d64bb1902e2c9",
+    "bytes": 22104,
+    "retrieved_at_utc": "2026-10-16T19:29:57.337108+00:00",
+    "headers": {
+      "Date": "Fri, 16 Oct 2026 19:29:56 GMT"
+    },
+    "scope": "target or assay description metadata only; not measurement data"
+  }
+]

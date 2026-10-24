@@ -1,0 +1,111 @@
+{
+  "recorded_at": "2026-10-23T18:34:13.896Z",
+  "scope": "HM-01 public-data Evidence Lab; implementation and reproducibility, not predictive validation",
+  "backend_windows": {
+    "command": "cd backend; ../.phase3-venv/Scripts/python.exe -m pytest tests_phase3 tests_lab -q --junitxml=../hackathon/evidence-lab/all-backend-tests.xml",
+    "tests": 234,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 67.538,
+    "evidence": "all-backend-tests.xml",
+    "warning": "One Starlette/AnyIO deprecation warning"
+  },
+  "backend_linux": {
+    "command": "Docker network-none read-only nonroot image, /tmp database, python -m pytest /tests -q -p no:cacheprovider --junitxml=/out/linux-tests.xml; full command in IMPLEMENTATION.md",
+    "tests": 61,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 7.601,
+    "evidence": "linux-tests.xml",
+    "warning": "One Starlette/AnyIO deprecation warning"
+  },
+  "client": {
+    "command": "cd bioscribe-ai; node scripts/evidence-lab-check.cjs",
+    "count": 35,
+    "status": "passed",
+    "evidence": "client-checks.json"
+  },
+  "existing_client_checks": [
+    {
+      "command": "npm run test:contract",
+      "count": 25,
+      "status": "passed"
+    },
+    {
+      "command": "npm run test:hackathon",
+      "count": 23,
+      "status": "passed"
+    }
+  ],
+  "frontend": [
+    {
+      "command": "npm run lint",
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "status": "passed"
+    },
+    {
+      "command": "npm run build",
+      "status": "passed",
+      "route": "/evidence",
+      "first_load_js": "207 kB",
+      "notes": "Final build includes full-library HTML report and visible-filter selection fix"
+    }
+  ],
+  "browser": {
+    "count": 16,
+    "evidence": "browser-checks.json",
+    "live_run_id": "4c520acad078468c8c686d0229053e7f",
+    "replay_run_id": "cdb429b3925745c691a1be8a3e554bd7",
+    "export": "browser-export.json",
+    "report": "full-report.html",
+    "scope": "Observed browser rehearsal via the running application; recorded examples explicitly distinguished from fresh jobs"
+  },
+  "portability": {
+    "status": "passed",
+    "evidence": "portability.json",
+    "image": "sha256:455456c6aaf2ef6628def62b2da081aa37541b0a3a0ed95af8468808c5c2478c",
+    "scope": "Two operating-system environments on one physical host; not a universal any-machine guarantee",
+    "scientific_sha256": [
+      {
+        "case": "reference",
+        "sha256": "59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7"
+      },
+      {
+        "case": "challenge",
+        "sha256": "dd4692c1bdbf7ba76066b24906e5fce733f0eac0ddd789dd45730081ae689b30"
+      }
+    ]
+  },
+  "reference_snapshot": {
+    "records": 6,
+    "compounds": 3,
+    "sources": [
+      "PubChem",
+      "ChEMBL"
+    ],
+    "scope": "Compound identity only; no assay outcomes",
+    "location": "backend/provenance_lab/references",
+    "version_identity": "Content-addressed retrieval snapshot; immutable upstream release version not supplied by compound endpoints"
+  },
+  "resolved_execution_issues": [
+    "Initial new pytest collection used reserved request parameter; renamed, then 61 checks passed.",
+    "Initial Linux suite used a non-writable root-owned test mount; rerun with /tmp database passed.",
+    "Approval-review usage interruption delayed two commands; both subsequently executed."
+  ],
+  "remaining_gates": [
+    "Scientific/predictive validation not assessed; no affinity, toxicity or PK predictions",
+    "Sensitive-data intake and production deployment blocked",
+    "Independent protected audit/checkpoint administration and authenticated source authorship not established",
+    "No universal machine/architecture portability claim: two OS environments on one physical host",
+    "Matching installed engine required; unknown historical versions refuse replay",
+    "Original v3 exports are not silently upgraded to lab-1.0.0",
+    "Snapshot intentionally covers three compounds; comprehensive chemical/database coverage not established",
+    "Fresh Windows npm clean installation not repeated"
+  ],
+  "study": "Blocked ALDH1A1 protocol and outcome-access restrictions unchanged"
+}

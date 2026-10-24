@@ -1,0 +1,10 @@
+# Public, non-sensitive local development only. No production/compliance claim.
+services:
+  api:
+    build: .
+    ports: ["127.0.0.1:8000:8000"]
+    volumes: ["./phase3-runtime:/app/backend/data"]
+  worker:
+    build: .
+    command: ["python", "-m", "bioscribe.worker"]
+    volumes: ["./phase3-runtime:/app/backend/data"]

@@ -1,0 +1,257 @@
+{
+  "$defs": {
+    "Citation": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "assay_record",
+            "paper_passage",
+            "run_record"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "supports",
+            "contradicts",
+            "context",
+            "excluded",
+            "assessment_trace"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "locator": {
+          "title": "Locator",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Url"
+        },
+        "source_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Source Sha256",
+          "type": "string"
+        },
+        "excerpt": {
+          "title": "Excerpt",
+          "type": "string"
+        },
+        "retraction_status": {
+          "title": "Retraction Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "kind",
+        "role",
+        "locator",
+        "url",
+        "source_sha256",
+        "excerpt",
+        "retraction_status"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "PaperStatement": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "start": {
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "title": "End",
+          "type": "integer"
+        },
+        "verdict": {
+          "enum": [
+            "supported",
+            "contradicted",
+            "insufficient_evidence",
+            "out_of_scope"
+          ],
+          "title": "Verdict",
+          "type": "string"
+        },
+        "interpretation": {
+          "const": "experimental_model_interpretation",
+          "default": "experimental_model_interpretation",
+          "title": "Interpretation",
+          "type": "string"
+        },
+        "confidence": {
+          "default": null,
+          "title": "Confidence",
+          "type": "null"
+        },
+        "confidence_status": {
+          "const": "not_calibrated",
+          "default": "not_calibrated",
+          "title": "Confidence Status",
+          "type": "string"
+        },
+        "requires_review": {
+          "const": true,
+          "default": true,
+          "title": "Requires Review",
+          "type": "boolean"
+        },
+        "reason_code": {
+          "title": "Reason Code",
+          "type": "string"
+        },
+        "citations": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "minItems": 1,
+          "title": "Citations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text",
+        "start",
+        "end",
+        "verdict",
+        "interpretation",
+        "confidence",
+        "confidence_status",
+        "requires_review",
+        "reason_code",
+        "citations"
+      ],
+      "title": "PaperStatement",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "research_aid_label": {
+      "const": "Research aid, not a prediction of efficacy or safety.",
+      "default": "Research aid, not a prediction of efficacy or safety.",
+      "title": "Research Aid Label",
+      "type": "string"
+    },
+    "run_id": {
+      "pattern": "^[a-f0-9]{32}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "text": {
+      "title": "Text",
+      "type": "string"
+    },
+    "input_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Input Sha256",
+      "type": "string"
+    },
+    "snapshot_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Snapshot Sha256",
+      "type": "string"
+    },
+    "created_utc": {
+      "title": "Created Utc",
+      "type": "string"
+    },
+    "statements": {
+      "items": {
+        "$ref": "#/$defs/PaperStatement"
+      },
+      "maxItems": 3,
+      "minItems": 1,
+      "title": "Statements",
+      "type": "array"
+    },
+    "disagreements": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Disagreements",
+      "type": "array"
+    },
+    "excluded_sources": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Excluded Sources",
+      "type": "array"
+    },
+    "model": {
+      "additionalProperties": true,
+      "title": "Model",
+      "type": "object"
+    },
+    "scientific_assessment": {
+      "const": "not_assessed",
+      "default": "not_assessed",
+      "title": "Scientific Assessment",
+      "type": "string"
+    },
+    "scope": {
+      "title": "Scope",
+      "type": "string"
+    },
+    "contract_version": {
+      "const": "paper-review/0.2.0",
+      "default": "paper-review/0.2.0",
+      "title": "Contract Version",
+      "type": "string"
+    },
+    "method": {
+      "const": "bounded_paper_interpretation/0.2.0",
+      "default": "bounded_paper_interpretation/0.2.0",
+      "title": "Method",
+      "type": "string"
+    },
+    "implementation_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Implementation Sha256",
+      "type": "string"
+    }
+  },
+  "required": [
+    "research_aid_label",
+    "run_id",
+    "text",
+    "input_sha256",
+    "snapshot_sha256",
+    "created_utc",
+    "statements",
+    "disagreements",
+    "excluded_sources",
+    "model",
+    "scientific_assessment",
+    "scope",
+    "contract_version",
+    "method",
+    "implementation_sha256"
+  ],
+  "title": "PaperReview",
+  "type": "object"
+}

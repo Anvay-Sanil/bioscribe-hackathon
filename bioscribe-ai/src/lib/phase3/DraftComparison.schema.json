@@ -1,0 +1,301 @@
+{
+  "$defs": {
+    "ConfidenceBin": {
+      "additionalProperties": false,
+      "properties": {
+        "lower": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Lower",
+          "type": "number"
+        },
+        "upper": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Upper",
+          "type": "number"
+        },
+        "n": {
+          "maximum": 150,
+          "minimum": 0,
+          "title": "N",
+          "type": "integer"
+        },
+        "draft_label_agreement": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Draft Label Agreement"
+        },
+        "mean_self_report": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Mean Self Report"
+        }
+      },
+      "required": [
+        "lower",
+        "upper",
+        "n",
+        "draft_label_agreement",
+        "mean_self_report"
+      ],
+      "title": "ConfidenceBin",
+      "type": "object"
+    },
+    "ConfidenceDiagnostics": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "const": "uncalibrated_provisional_labels",
+          "title": "Status",
+          "type": "string"
+        },
+        "n": {
+          "maximum": 150,
+          "minimum": 0,
+          "title": "N",
+          "type": "integer"
+        },
+        "bins": {
+          "items": {
+            "$ref": "#/$defs/ConfidenceBin"
+          },
+          "maxItems": 10,
+          "minItems": 10,
+          "title": "Bins",
+          "type": "array"
+        },
+        "correctness_brier": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Correctness Brier"
+        },
+        "ece_10_bins": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ece 10 Bins"
+        },
+        "interpretation": {
+          "title": "Interpretation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "n",
+        "bins",
+        "correctness_brier",
+        "ece_10_bins",
+        "interpretation"
+      ],
+      "title": "ConfidenceDiagnostics",
+      "type": "object"
+    },
+    "MetricSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "expected_count": {
+          "const": 150,
+          "title": "Expected Count",
+          "type": "integer"
+        },
+        "evaluated": {
+          "maximum": 150,
+          "minimum": 0,
+          "title": "Evaluated",
+          "type": "integer"
+        },
+        "missing_or_invalid": {
+          "maximum": 150,
+          "minimum": 0,
+          "title": "Missing Or Invalid",
+          "type": "integer"
+        },
+        "accuracy_all_expected": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Accuracy All Expected"
+        },
+        "false_supported_count": {
+          "maximum": 150,
+          "minimum": 0,
+          "title": "False Supported Count",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "expected_count",
+        "evaluated",
+        "missing_or_invalid",
+        "accuracy_all_expected",
+        "false_supported_count"
+      ],
+      "title": "MetricSummary",
+      "type": "object"
+    },
+    "SystemSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "enum": [
+            "Record checker",
+            "0.5B baseline: first attempts",
+            "0.5B baseline: after technical recovery"
+          ],
+          "title": "Name",
+          "type": "string"
+        },
+        "metrics": {
+          "$ref": "#/$defs/MetricSummary"
+        }
+      },
+      "required": [
+        "name",
+        "metrics"
+      ],
+      "title": "SystemSummary",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "const": "available",
+      "default": "available",
+      "title": "Status",
+      "type": "string"
+    },
+    "research_aid_label": {
+      "const": "Research aid, not a prediction of efficacy or safety.",
+      "default": "Research aid, not a prediction of efficacy or safety.",
+      "title": "Research Aid Label",
+      "type": "string"
+    },
+    "dataset_status": {
+      "const": "provisional_unreviewed",
+      "default": "provisional_unreviewed",
+      "title": "Dataset Status",
+      "type": "string"
+    },
+    "scientific_assessment": {
+      "const": "not_assessed",
+      "default": "not_assessed",
+      "title": "Scientific Assessment",
+      "type": "string"
+    },
+    "calibration_status": {
+      "const": "not_calibrated",
+      "default": "not_calibrated",
+      "title": "Calibration Status",
+      "type": "string"
+    },
+    "baseline_beaten": {
+      "default": null,
+      "title": "Baseline Beaten",
+      "type": "null"
+    },
+    "claim_count": {
+      "const": 150,
+      "default": 150,
+      "title": "Claim Count",
+      "type": "integer"
+    },
+    "source_report_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Source Report Sha256",
+      "type": "string"
+    },
+    "claims_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Claims Sha256",
+      "type": "string"
+    },
+    "labels_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Labels Sha256",
+      "type": "string"
+    },
+    "model": {
+      "additionalProperties": true,
+      "title": "Model",
+      "type": "object"
+    },
+    "systems": {
+      "items": {
+        "$ref": "#/$defs/SystemSummary"
+      },
+      "maxItems": 3,
+      "minItems": 2,
+      "title": "Systems",
+      "type": "array"
+    },
+    "confidence_diagnostics": {
+      "$ref": "#/$defs/ConfidenceDiagnostics"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "status",
+    "research_aid_label",
+    "dataset_status",
+    "scientific_assessment",
+    "calibration_status",
+    "baseline_beaten",
+    "claim_count",
+    "source_report_sha256",
+    "claims_sha256",
+    "labels_sha256",
+    "model",
+    "systems",
+    "confidence_diagnostics",
+    "limitations"
+  ],
+  "title": "DraftSummary",
+  "type": "object"
+}

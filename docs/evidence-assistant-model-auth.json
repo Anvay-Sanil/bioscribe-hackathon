@@ -1,0 +1,9 @@
+{
+  "key_contents_recorded": false,
+  "scope": "Loopback model gateway rejects unauthenticated requests and does not allow the tested unrelated origin",
+  "status": "passed",
+  "unauthenticated_status": 401,
+  "access_control_allow_origin": "http://localhost:3000",
+  "unapproved_origin": "https://example.com",
+  "recorded_utc": "2026-10-24T18:27:37.0277341Z"
+}

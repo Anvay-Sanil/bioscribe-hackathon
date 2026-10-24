@@ -1,0 +1,171 @@
+{
+  "worksheet_version": "BS-RANK-001/descriptive-report/0.3",
+  "artifact_kind": "unpopulated_design_worksheet_not_runtime_contract",
+  "design_version": "0.3",
+  "analysis_type": "descriptive_fixed_library_replay",
+  "execution_status": "not_run",
+  "scientific_assessment": "not_assessed",
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "deployment": "blocked",
+  "evidence_category": "unvalidated_heuristic",
+  "method": {
+    "id": "prioritization_heuristic",
+    "version": "1.1.0",
+    "validation_record": null
+  },
+  "assay": {
+    "aid": 1030,
+    "proposed_version": 2,
+    "proposed_revision": 1,
+    "raw_outcome_version_binding": null,
+    "experimental_construct_verification": null
+  },
+  "provenance": {
+    "dataset_manifest_sha256": null,
+    "source_release_identity": null,
+    "source_adjudication_sha256": null,
+    "candidate_source_manifest_sha256": null,
+    "environment_lock_sha256": null,
+    "scoring_and_selection_receipt": null,
+    "label_receipt": null,
+    "protected_protocol_receipt": null,
+    "authorized_unblinding_record": null
+  },
+  "population_and_coverage": {
+    "declared_library_definition": null,
+    "source_record_count": null,
+    "excluded_record_count": null,
+    "eligible_unique_compounds_N": null,
+    "adjudicated_positives_A": null,
+    "adjudicated_negatives": null,
+    "unknown_labels": null,
+    "candidate_scored_count": null,
+    "qed_scored_count": null,
+    "domain_decision": null,
+    "attrition_record": null
+  },
+  "selections": {
+    "budget_each": 100,
+    "candidate_selected_count": null,
+    "qed_selected_count": null,
+    "candidate_selection_sha256": null,
+    "qed_selection_sha256": null,
+    "shared_compounds_o": null
+  },
+  "counts": {
+    "candidate_hits_h": null,
+    "qed_hits_q": null,
+    "additional_hits_h_minus_q": null
+  },
+  "exact_conditional_metrics": {
+    "candidate_precision": {
+      "numerator": null,
+      "denominator": null,
+      "display_decimal": null,
+      "status": "not_run"
+    },
+    "qed_precision": {
+      "numerator": null,
+      "denominator": null,
+      "display_decimal": null,
+      "status": "not_run"
+    },
+    "precision_difference": {
+      "numerator": null,
+      "denominator": null,
+      "display_decimal": null,
+      "status": "not_run"
+    },
+    "expected_random_hits": {
+      "numerator": null,
+      "denominator": null,
+      "display_decimal": null,
+      "status": "not_run"
+    },
+    "expected_random_precision": {
+      "numerator": null,
+      "denominator": null,
+      "display_decimal": null,
+      "status": "not_run"
+    },
+    "enrichment_vs_expected_random": {
+      "numerator": null,
+      "denominator": null,
+      "display_decimal": null,
+      "status": "not_run"
+    }
+  },
+  "metric_scope": "Fixed declared library conditional on its fully adjudicated labels and identities; no biological truth or generalization established",
+  "operational_point_comparisons": [
+    {
+      "metric": "precision_heuristic_minus_precision_QED",
+      "operator": ">=",
+      "threshold": 0.05,
+      "exact_integer_rule": "h-q >= 5",
+      "status": "not_run",
+      "qualifies_candidate": false
+    },
+    {
+      "metric": "precision_heuristic_divided_by_population_positive_fraction",
+      "operator": ">=",
+      "threshold": 2.0,
+      "exact_integer_rule": "h*N >= 200*A with A>0",
+      "status": "not_run",
+      "qualifies_candidate": false
+    }
+  ],
+  "descriptive_conclusion": null,
+  "measurement_and_label_uncertainty": {
+    "status": "not_assessed",
+    "assay_variability": null,
+    "label_error_assessment": null,
+    "supporting_records": null
+  },
+  "inferential_qualification": {
+    "status": "not_assessed",
+    "gate_status": "unmet",
+    "population_and_model": null,
+    "interval_procedure": null,
+    "power_justification": null,
+    "gates": [
+      {
+        "metric": "precision_heuristic_minus_precision_QED",
+        "units": "proportion",
+        "bound": "one_sided_lower",
+        "confidence_level": 0.95,
+        "operator": ">=",
+        "threshold": 0.05,
+        "rationale": "User-proposed minimum five additional assay positives per 100 selected",
+        "observed_lower_bound": null,
+        "assessment_status": "not_assessed",
+        "gate_status": "unmet"
+      },
+      {
+        "metric": "precision_heuristic_divided_by_population_positive_fraction",
+        "units": "dimensionless_enrichment",
+        "bound": "one_sided_lower",
+        "confidence_level": 0.95,
+        "operator": ">=",
+        "threshold": 2.0,
+        "rationale": "User-proposed minimum twice expected random yield",
+        "observed_lower_bound": null,
+        "assessment_status": "not_assessed",
+        "gate_status": "unmet"
+      }
+    ],
+    "point_comparisons_can_satisfy_gates": false,
+    "rule": "Only a separately justified, prospectively fixed and reviewed inferential analysis could assess these gates; a descriptive replay does not qualify"
+  },
+  "template_rules": [
+    "Null means not measured, never zero; no outcome entries exist in this template",
+    "Execution statuses: not_run, incomplete, insufficient_evidence, or complete after prerequisites; none imply qualification",
+    "Point comparison statuses after eligible analysis: met, not_met, undefined; not_run until execution",
+    "Unknown labels block complete replay, never become negative or silently leave the population",
+    "A=0 makes enrichment undefined; preserve zero-hit counts and do not invent a ratio",
+    "N<100, failed scoring or selections not exactly 100 cannot produce a complete replay",
+    "Report rational numerators and denominators with integer comparison rules before display rounding",
+    "No confidence interval, p-value, or zero-width interval is generated by this worksheet",
+    "No runtime enforcement, evaluator implementation, qualification or scientific approval is supplied by this template"
+  ]
+}

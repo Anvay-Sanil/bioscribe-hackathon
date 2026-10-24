@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "recorded_date_local": "2026-10-24",
+  "timezone": "Asia/Calcutta",
+  "method": "Observed interactions in the in-app browser via computer-use tools; assertions recorded from visible UI state",
+  "url": "http://localhost:3000/evidence-assistant",
+  "live_run_id": "8a6dcc35165b4d80a28c63dd357fe5a1",
+  "unit_conversion_run_id": "b3ea56d5f15b4240b33c27fb1b043a3b",
+  "model_unavailable_run_id": "19f43202a4be4b389ac642c9dccd285f",
+  "checks": [
+    {"name": "Research-aid label and uncalibrated-confidence notice visible", "status": "passed"},
+    {"name": "Recorded example visibly labelled no fresh computation", "status": "passed"},
+    {"name": "Local token file loaded and authenticated capability connection returned four examples", "status": "passed"},
+    {"name": "Fresh persisted review displays four statements and a saved review identifier", "status": "passed"},
+    {"name": "Exact 26000 nM claim supported by named record, changed 26 nM claim contradicted", "status": "passed"},
+    {"name": "Broad receptor activity abstains and safety claim is out of scope", "status": "passed"},
+    {"name": "Expanded citation shows exact activity, endpoint, units, source locator, hash and publication status", "status": "passed"},
+    {"name": "Differing assay values retain separate contexts and source citations", "status": "passed"},
+    {"name": "Browser export downloaded and verified equal to authenticated saved output", "status": "passed", "evidence": "evidence-assistant-browser-export.verification.json"},
+    {"name": "Changing claim text clears previous review and export", "status": "passed"},
+    {"name": "Fresh 26 uM claim agrees with 26000 nM cited record", "status": "passed"},
+    {"name": "Changing model option clears previous review", "status": "passed"},
+    {"name": "Claim, consent, model and credential controls disabled while review is pending", "status": "passed"},
+    {"name": "Unavailable local model reported explicitly; record comparison remains independently identified", "status": "passed"},
+    {"name": "Changing credentials clears review and prior connected indicator", "status": "passed"},
+    {"name": "Invalid token produces explicit access error and no verdicts", "status": "passed"},
+    {"name": "Recorded demonstration remains accessible after authentication failure and clears error", "status": "passed"}
+  ],
+  "screenshot": "evidence-assistant-browser.png",
+  "limitations": [
+    "Software interaction checks, not independent user testing or biological validation",
+    "Model-unavailable case predates successful installation; no inference success implied by this receipt",
+    "No arbitrary paper-passage entailment or 150-claim model comparison verified in these browser checks"
+  ]
+}

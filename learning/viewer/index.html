@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>BioScribe · Learning report viewer</title>
+  <link rel="stylesheet" href="viewer.css">
+  <script src="report.js" defer></script>
+  <script src="filters.js" defer></script>
+  <script src="viewer.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><span class="brand"><span class="brand-mark" aria-hidden="true">B</span> BioScribe <span class="brand-context">/ Learning</span></span><span class="local-badge">Local file viewer</span></header>
+  <main>
+    <div class="intro"><p class="eyebrow">MOLECULAR RANKING EXERCISE</p><h1>Explore your report.</h1><p class="intro-copy">See what was calculated, what was selected, and what remains unknown.</p></div>
+    <aside class="synthetic-banner"><strong>Synthetic learning data</strong><span>All outcome labels are invented. These comparisons demonstrate software behavior, with no biological-performance claim.</span></aside>
+    <section class="file-panel" aria-label="Open a report">
+      <div><h2>Open a saved report</h2><p id="file-help">Choose a learning replay JSON file. It stays in this browser; nothing is uploaded.</p></div>
+      <div class="file-actions"><label class="button" for="report-file">Open report JSON</label><input id="report-file" class="file-input" type="file" accept=".json,application/json" aria-describedby="file-help"><button id="clear-report" class="button secondary" type="button">Clear</button></div>
+    </section>
+    <p id="load-message" class="load-message" role="status" aria-live="polite">No report loaded. Start with budget-10-result.json, then open budget-10-unknown-result.json.</p>
+    <p id="load-error" class="error-message" role="alert" hidden></p>
+    <div class="summary-grid" aria-label="Report summary">
+      <section class="summary-card"><h2>Selection budget</h2><p id="budget-value" class="summary-value">Not assessed</p><span>Per ranking method</span></section>
+      <section class="summary-card"><h2>Report status</h2><p id="status-value" class="summary-value status-value">Not assessed</p><span id="status-detail">Open a report to begin</span></section>
+      <section class="summary-card"><h2>Scored molecules</h2><p id="scored-value" class="summary-value">Not assessed</p><span id="scored-detail">Input coverage</span></section>
+    </div>
+    <div class="section-heading"><div><p class="eyebrow">TWO ORDERINGS, ONE LIBRARY</p><h2>Selections</h2></div><p>Invented positives describe test labels only.</p></div>
+    <div class="selection-grid">
+      <section class="selection-card"><div class="selection-heading"><h3>Descriptor heuristic</h3><span class="method-tag">Lower score first</span></div><p class="selection-count" id="heuristic-count">Not assessed</p><p class="muted">Invented positives / selected molecules</p><p id="heuristic-unavailable" class="unavailable">Not assessed</p><ol id="heuristic-selection" class="selection-list" aria-label="Heuristic selection"></ol></section>
+      <section class="selection-card"><div class="selection-heading"><h3>QED ordering</h3><span class="method-tag">Higher score first</span></div><p class="selection-count" id="qed-count">Not assessed</p><p class="muted">Invented positives / selected molecules</p><p id="qed-unavailable" class="unavailable">Not assessed</p><ol id="qed-selection" class="selection-list" aria-label="QED selection"></ol></section>
+    </div>
+    <section aria-labelledby="comparison-heading"><div class="section-heading"><div><p class="eyebrow">CONDITIONAL ON INVENTED LABELS</p><h2 id="comparison-heading">Outcome comparisons</h2></div></div><div class="comparison-grid"><div class="metric-card"><h3>Precision difference</h3><p id="difference-value">Not assessed</p><span>Heuristic minus QED</span></div><div class="metric-card"><h3>Expected random positives</h3><p id="random-value">Not assessed</p><span>Same budget and library</span></div><div class="metric-card"><h3>Enrichment over random</h3><p id="enrichment-value">Not assessed</p><span>Undefined when no labels are positive</span></div></div></section>
+    <section class="molecule-section" aria-labelledby="molecule-heading">
+      <div class="section-heading"><div><p class="eyebrow">CALCULATIONS REMAIN VISIBLE</p><h2 id="molecule-heading">Molecule calculations</h2></div><p id="molecule-caption" role="status" aria-live="polite" aria-atomic="true">No molecules loaded</p></div>
+      <p id="unknown-note" class="unknown-note" hidden></p>
+      <div class="table-controls" role="group" aria-label="Filter molecule table">
+        <div class="search-control"><label for="molecule-search">Search molecules</label><input id="molecule-search" type="search" placeholder="Molecule ID or canonical SMILES" maxlength="2048" aria-controls="molecule-rows" aria-describedby="filter-help" disabled></div>
+        <div class="label-control"><label for="label-filter">Invented label</label><select id="label-filter" aria-controls="molecule-rows" disabled><option value="all">All labels</option><option value="positive">Invented positive</option><option value="negative">Invented negative</option><option value="unknown">Unknown</option></select></div>
+        <button id="clear-filters" class="button secondary" type="button" disabled>Clear filters</button>
+      </div>
+      <p id="filter-help" class="filter-help">Filters affect this table only. IDs ignore case; SMILES matching is literal and case-sensitive.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Molecules matching table filters; scroll to explore"><table><caption class="sr-only">Molecular calculations and invented labels for the matching input rows</caption><thead><tr><th scope="col">Molecule</th><th scope="col">Canonical SMILES</th><th scope="col">MW (g/mol)</th><th scope="col">TPSA (Å²)</th><th scope="col">Heuristic</th><th scope="col">QED</th><th scope="col">Invented label</th></tr></thead><tbody id="molecule-rows"></tbody></table><p id="molecule-empty" class="table-empty">Your molecular calculations will appear here.</p></div>
+    </section>
+    <footer>BioScribe learning · Local inspection only · Scientific assessment: Not assessed</footer>
+  </main>
+</body>
+</html>

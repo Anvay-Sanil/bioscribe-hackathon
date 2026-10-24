@@ -1,0 +1,284 @@
+{
+  "design_id": "BS-RANK-001",
+  "design_version": "0.3",
+  "status": "proposed_not_frozen",
+  "basis": "User-authorized prospective adoption of returned assay 2.1 metadata and descriptive fixed-library replay; qualification confidence-bound gates preserved",
+  "scientific_assessment": "not_assessed",
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "protocol_freeze": "blocked",
+  "confirmatory_label_access": "blocked",
+  "preregistration_receipt": null,
+  "target": {
+    "name": "human ALDH1A1",
+    "uniprot": "P00352",
+    "taxon_id": 9606,
+    "uniprot_entry_version": 234,
+    "uniprot_sequence_version": 2,
+    "reference_length": 501,
+    "reference_sequence_sha256": "3643038221afeedeeb244b74f19a4aba11f4c038262b9d8460260d2b476ded7f",
+    "assay_description_target_accession": "AAP35567.1",
+    "reference_sequences_equal": true,
+    "experimental_construct_identity": null
+  },
+  "assay": {
+    "aid": 1030,
+    "adopted_version": 2,
+    "adopted_revision": 1,
+    "adoption_scope": "prospective_proposed_design_only",
+    "amendment_date_local": "2026-10-17",
+    "timezone": "Asia/Calcutta",
+    "reason": "Explicitly choose the returned verified description identity before any study outcome access; no performance-driven change",
+    "authorization_basis": "User permitted explicit prospective adoption of verified 2.1 as an alternative to authenticating historical 1.1",
+    "returned_description_identity_verified": true,
+    "description_sources": [
+      {
+        "path": "../design-v0.2/references/pubchem-AID1030-description.json",
+        "sha256": "fd6fbc1c65c0957b1a737d33c1fa8e6bf89e81eaf103437ac53d64bb1902e2c9"
+      },
+      {
+        "path": "../design-v0.2/references/pubchem-requested-v1.1-returned-v2.1-description.json",
+        "sha256": "fd6fbc1c65c0957b1a737d33c1fa8e6bf89e81eaf103437ac53d64bb1902e2c9"
+      }
+    ],
+    "prior_request": {
+      "version": 1,
+      "revision": 1,
+      "authenticated": false,
+      "disposition": "retained_as_history_not_selected_for_this_design"
+    },
+    "raw_outcome_release_identity": null,
+    "raw_outcome_version_binding": "not_verified",
+    "record_acceptance": "blocked_pending_raw_version_binding_construct_and_curation",
+    "fallback_or_version_pooling_permitted": false,
+    "independently_protected_amendment_receipt": null
+  },
+  "endpoint": {
+    "claim": "Descriptive recovery of recorded assay positives within one fixed eligible library, conditional on its adjudicated labels; no inferential qualification",
+    "ac50_max_micromolar": 10.0,
+    "maximum_inhibition_min_percent": 50.0,
+    "requires_quality_controlled_inhibitory_concentration_response": true,
+    "source_field_sign_qc_mapping": null,
+    "unknown_policy": "Unknown is never negative. Any unresolved label in the declared library blocks complete descriptive replay; no dropping, reranking or denominator change. Partial-information analysis requires a separate prospective design.",
+    "not_claimed": [
+      "confirmed enzyme inhibition",
+      "selectivity",
+      "therapeutic usefulness",
+      "binding affinity",
+      "safety",
+      "pharmacokinetics"
+    ]
+  },
+  "decision": {
+    "selection_budget": 100,
+    "distinct_compounds": true,
+    "population": "one declared fixed eligible library with fully adjudicated binary labels; membership, suitability and curation remain unapproved and unfrozen",
+    "follow_up": "independent dose-response and orthogonal confirmation",
+    "initial_evaluation": "descriptive_fixed_library_replay"
+  },
+  "candidate": {
+    "method_id": "prioritization_heuristic",
+    "method_version": "1.1.0",
+    "direction": "ascending",
+    "formula": "abs(MW-350)/350 + abs(TPSA-75)/75",
+    "input_policy": "plain_smiles_concrete_graph/1.1.0",
+    "source_manifest": "../source-manifest.json",
+    "retuning_permitted": false
+  },
+  "qed_comparator": {
+    "implementation": "rdkit.Chem.QED.qed(mol, w=QED.WEIGHT_MEAN)",
+    "rdkit_version": "2025.03.3",
+    "direction": "descending",
+    "weights": {
+      "MW": 0.66,
+      "ALOGP": 0.46,
+      "HBA": 0.05,
+      "HBD": 0.61,
+      "PSA": 0.06,
+      "ROTB": 0.65,
+      "AROM": 0.48,
+      "ALERTS": 0.95
+    },
+    "source_file": "../design-v0.2/references/rdkit-QED-2025.03.3.py",
+    "source_sha256": "e465598a522df115865546b9dd2fc72e882753053230706166862406e479e0e2"
+  },
+  "tie_break": {
+    "version": "BS-RANK-001/tie/v1",
+    "entity_key": "sha256(UTF8(pinned_RDKit_canonical_isomeric_SMILES))",
+    "tie_key": "sha256(ASCII(BS-RANK-001/tie/v1) || 0x00 || ASCII(entity_key))",
+    "order": "unrounded method score, ascending tie_key, ascending entity_key",
+    "label_independent": true,
+    "tie_expansion": false,
+    "implementation_status": "specified_not_implemented_in_study_evaluator"
+  },
+  "random_comparator": {
+    "sampling": "uniform without replacement, exactly 100 from same eligible population",
+    "primary_reference": "expected yield = 100*A/N",
+    "single_random_draw_used_for_gate": false,
+    "variance": "100*(A/N)*(1-A/N)*(N-100)/(N-1)",
+    "empirical_execution": false,
+    "variance_interpretation": "Variability of a random selection policy conditional on N and A, never a confidence bound for deterministic H/Q performance"
+  },
+  "co_primary_gates": [
+    {
+      "metric": "precision_heuristic_minus_precision_QED",
+      "units": "proportion",
+      "bound": "one_sided_lower",
+      "confidence_level": 0.95,
+      "operator": ">=",
+      "threshold": 0.05,
+      "rationale": "User-proposed minimum five additional assay positives per 100 selected"
+    },
+    {
+      "metric": "precision_heuristic_divided_by_population_positive_fraction",
+      "units": "dimensionless_enrichment",
+      "bound": "one_sided_lower",
+      "confidence_level": 0.95,
+      "operator": ">=",
+      "threshold": 2.0,
+      "rationale": "User-proposed minimum twice expected random yield"
+    }
+  ],
+  "joint_decision": "Both inferential gates must pass under a prospectively reviewed model and procedure; operational point comparisons never discharge them; marginal bounds are not asserted simultaneous 95% intervals",
+  "inference": {
+    "finite_library_point_quantities": "exact conditional on the complete adjudicated labels and declared identities; label errors and assay variability remain separate uncertainties",
+    "inferential_population": null,
+    "estimand": null,
+    "sampling_or_measurement_model": null,
+    "independent_units_and_dependence": null,
+    "interval_method": null,
+    "mandatory_scaffold_cluster_method": false,
+    "clustering_policy": "only if justified by the reviewer-defined population, model and actual dependence; no scaffold independence assumption",
+    "method_calibration": null,
+    "minimum_independent_units": null,
+    "sample_size": null,
+    "power_target": null,
+    "power_justification": null,
+    "coverage_threshold": null,
+    "subgroup_definitions_and_thresholds": null,
+    "multiplicity_policy": null,
+    "lower_confidence_bounds": {
+      "precision_difference_vs_QED": null,
+      "enrichment_vs_expected_uniform_random": null
+    },
+    "assessment_status": "not_assessed",
+    "qualification_gates": "unmet",
+    "status": "blocked_pending_statistical_review",
+    "outcome_exposure_policy": "A library exposed by descriptive replay cannot later be represented as untouched holdout for a plan chosen after its results"
+  },
+  "data": {
+    "raw_assay_release": null,
+    "empirical_dataset_frozen": false,
+    "source_level_adjudication": null,
+    "actual_leakage_analysis": null,
+    "LIT_PCBA_role": "candidate starting point only; no labels or population imported",
+    "test_outcome_rows_accessed": false,
+    "candidate_scores_computed": false,
+    "descriptive_replay_performed": false
+  },
+  "appointments": {
+    "independent_data_custodian": null,
+    "scientific_owner": null,
+    "independent_statistical_reviewer": null,
+    "required_for_each": [
+      "name",
+      "affiliation",
+      "conflicts",
+      "explicit acceptance"
+    ]
+  },
+  "custody": {
+    "repository_location": null,
+    "administrator": null,
+    "demonstrated_controls": null,
+    "required_controls": [
+      "institutional approval",
+      "administration outside developer/service privileges",
+      "separate label-access permissions",
+      "protected timestamped receipts",
+      "version retention",
+      "access logging"
+    ]
+  },
+  "prohibited_adaptation": [
+    "retrospective target switching",
+    "candidate retuning",
+    "outcome-driven tie-break",
+    "post hoc reduction of margins",
+    "unrecorded changes to assay version",
+    "substituting operational point comparisons for confidence-bound qualification",
+    "claiming an outcome-exposed replay library as untouched holdout for a later chosen inferential plan"
+  ],
+  "trusted_freeze_claim": false,
+  "supersedes": {
+    "prior_design": "../design-v0.2/design-decisions.json",
+    "prior_design_sha256": "40a49496ea860d3fc63741f3be6608d89371bfe96fe8998d24b93b5e40e1d1bc",
+    "scope": [
+      "proposed assay version",
+      "initial analysis mode",
+      "premature mandatory scaffold-cluster inference",
+      "complete replay requires fully adjudicated labels"
+    ]
+  },
+  "descriptive_outcome_access": "blocked",
+  "confirmatory_evaluation": "blocked",
+  "deployment": "blocked",
+  "descriptive_replay": {
+    "implementation_status": "specified_not_implemented_in_study_evaluator",
+    "execution_status": "not_run",
+    "assessment_scope": "exact_conditional_on_fixed_library_identities_and_adjudicated_labels",
+    "complete_replay_preconditions": [
+      "all custody, construct, label mapping, dataset qualification and freeze prerequisites met",
+      "N >= 100 distinct eligible compounds in one common approved library",
+      "candidate and QED computation succeed for every library member under the fixed policy",
+      "every library member has an adjudicated binary label",
+      "each deterministic selection contains exactly 100 distinct compounds",
+      "tested selector and evaluator with fixed label-independent tie-break and identity receipts"
+    ],
+    "definitions": {
+      "N": "library size",
+      "A": "library assay positives",
+      "h": "candidate top-100 assay positives",
+      "q": "QED top-100 assay positives",
+      "o": "selection overlap count"
+    },
+    "quantities": {
+      "candidate_hits": "h",
+      "qed_hits": "q",
+      "additional_hits": "h-q",
+      "candidate_precision": "h/100",
+      "qed_precision": "q/100",
+      "precision_difference": "(h-q)/100",
+      "expected_random_hits": "100*A/N",
+      "expected_random_precision": "A/N",
+      "enrichment": "h*N/(100*A), defined only if A>0"
+    },
+    "operational_point_comparisons": [
+      {
+        "metric": "precision_heuristic_minus_precision_QED",
+        "operator": ">=",
+        "threshold": 0.05,
+        "exact_integer_rule": "h-q >= 5",
+        "status": "not_run",
+        "qualifies_candidate": false
+      },
+      {
+        "metric": "precision_heuristic_divided_by_population_positive_fraction",
+        "operator": ">=",
+        "threshold": 2.0,
+        "exact_integer_rule": "h*N >= 200*A with A>0",
+        "status": "not_run",
+        "qualifies_candidate": false
+      }
+    ],
+    "if_both_point_comparisons_met": "operational point margins met in this fixed library, conditional on the adjudicated labels; inferential qualification remains unmet",
+    "unknown_labels": "block_complete_replay_as_insufficient_evidence; retain counts, no negative imputation, silent exclusion, reranking or denominator change",
+    "zero_population_positives": "report descriptive zero hits; enrichment undefined; enrichment comparison cannot be met",
+    "incomplete_selection_or_scoring": "incomplete; no separate complete-case pools or late replacements",
+    "counts_and_rational_values_before_rounding": true,
+    "confidence_intervals_or_p_values": "not_applicable_without_a_separately_justified_inferential_model",
+    "zero_width_interval_allowed": false,
+    "measurement_or_label_accuracy_established": false,
+    "upgrades_qualification": false
+  }
+}

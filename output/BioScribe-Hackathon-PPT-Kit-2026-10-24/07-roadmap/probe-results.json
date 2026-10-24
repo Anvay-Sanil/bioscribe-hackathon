@@ -1,0 +1,53 @@
+{
+  "scope": "Read-only local probes; no full-suite rerun, study outcomes or application edits",
+  "scientific_assessment": "not_assessed",
+  "notation_sensitive_tie": {
+    "observed": true,
+    "interpretation": "Documented current policy, not an incorrect descriptor; equivalent spelling can change a tied selection",
+    "witness": {
+      "before": [
+        "C[C@H](O)C(=O)O",
+        "C[C@@H](O)C(=O)O"
+      ],
+      "after": [
+        "C([C@H](C)O)(=O)O",
+        "C[C@@H](O)C(=O)O"
+      ],
+      "unchanged_identity_hashes": [
+        "10cad58d142bfbf9651ac23fe0fdf342d15ccfcd3441c45eddc30c081708f792",
+        "bd82b487c207161b93164990958c2326291ca7cbd072382864046ec7a28fb5f9"
+      ],
+      "equal_distance": 0.97556762,
+      "before_selected_index": 0,
+      "after_selected_index": 1,
+      "tie_break": "input_sha256_then_index"
+    }
+  },
+  "backend_metadata_defaults": {
+    "observed": true,
+    "removed_fields": [
+      "method",
+      "implementation_fidelity",
+      "validation_record",
+      "predictive_validation"
+    ],
+    "restored_to_identical_package": true,
+    "fresh_replay_status": "matched",
+    "required_property_fields": [
+      "quantity",
+      "value",
+      "units",
+      "availability",
+      "assessment_status",
+      "evidence_category",
+      "domain",
+      "coverage",
+      "reason"
+    ],
+    "interpretation": "Backend reconstructs constant metadata; differs from strict original-document completeness in the browser. No fabricated numerical result or predictive validation demonstrated."
+  },
+  "exact_repeat_on_same_runtime": {
+    "observed": true,
+    "result_sha256": "e3bb7b936f10e4db0fd2c5c1cdeb1c5341f7cd95a1f0577657adde496511df3d"
+  }
+}

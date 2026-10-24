@@ -1,0 +1,11 @@
+flowchart TD
+    UI[Next.js and React interface] --> API[FastAPI and strict schemas]
+    API --> DB[Owner-scoped SQLite jobs]
+    DB --> W[Bounded subprocess worker]
+    REF[Frozen local PubChem and ChEMBL records] --> W
+    ENV[Approved source and dependency bundle] --> W
+    W --> R[RDKit descriptors and typed evidence]
+    R --> DB
+    DB --> UI
+    UI --> EXP[HTML report and JSON package]
+    EXP --> REP[Fresh replay with matching trusted engine]

@@ -1,0 +1,2117 @@
+{
+  "snapshot": "evidence-assistant-sources/0.1.0",
+  "created_utc": "2026-10-24T17:38:20.894005+00:00",
+  "records": [
+    {
+      "source_id": "chembl-activity:189032",
+      "kind": "assay_record",
+      "activity_id": "189032",
+      "molecule_id": "CHEMBL113",
+      "molecule_name": "caffeine",
+      "assay_id": "CHEMBL649104",
+      "target_id": "CHEMBL318",
+      "target_name": "Adenosine receptor A1",
+      "organism": "Rattus norvegicus",
+      "endpoint": "Ki",
+      "value": "26000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Ability to inhibit binding of [3H]CHA to adenosine A1 receptor in rat brain cortical membranes.",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9435909+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "9435909",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "9435909",
+          "source": "MED",
+          "title": "Synthesis and structure-activity relationships of 3,7-dimethyl-1-propargylxanthine derivatives, A2A-selective adenosine receptor antagonists.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-189032.json",
+      "raw_sha256": "21839f81ea8b403e1be4727d6569d0417fc727b73a699c3fec35affdc3f208da",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189032.json"
+    },
+    {
+      "source_id": "chembl-activity:189033",
+      "kind": "assay_record",
+      "activity_id": "189033",
+      "molecule_id": "CHEMBL113",
+      "molecule_name": "caffeine",
+      "assay_id": "CHEMBL646353",
+      "target_id": "CHEMBL302",
+      "target_name": "Adenosine receptor A2a",
+      "organism": "Rattus norvegicus",
+      "endpoint": "Ki",
+      "value": "16000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Ability to inhibit binding of [3H]NECA to Adenosine A2A receptor in rat brain striatal membranes",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9435909+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "9435909",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "9435909",
+          "source": "MED",
+          "title": "Synthesis and structure-activity relationships of 3,7-dimethyl-1-propargylxanthine derivatives, A2A-selective adenosine receptor antagonists.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-189033.json",
+      "raw_sha256": "0f8992b3d08ffc798edfced2b1d9aed12db69f7b7130f460013ce5668cdc28f0",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189033.json"
+    },
+    {
+      "source_id": "chembl-activity:189034",
+      "kind": "assay_record",
+      "activity_id": "189034",
+      "molecule_id": "CHEMBL113",
+      "molecule_name": "caffeine",
+      "assay_id": "CHEMBL646352",
+      "target_id": "CHEMBL302",
+      "target_name": "Adenosine receptor A2a",
+      "organism": "Rattus norvegicus",
+      "endpoint": "Ki",
+      "value": "22000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Ability to inhibit binding of [3H]-CGS- 21680 to adenosine A2A receptor in rat brain striatal membranes.",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9435909+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "9435909",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "9435909",
+          "source": "MED",
+          "title": "Synthesis and structure-activity relationships of 3,7-dimethyl-1-propargylxanthine derivatives, A2A-selective adenosine receptor antagonists.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-189034.json",
+      "raw_sha256": "70350ac2f23f7a64a94591ec288e8b4ffef96eca21ce37ceb3f6fd133ea9ff37",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189034.json"
+    },
+    {
+      "source_id": "chembl-activity:231261",
+      "kind": "assay_record",
+      "activity_id": "231261",
+      "molecule_id": "CHEMBL113",
+      "molecule_name": "caffeine",
+      "assay_id": "CHEMBL636768",
+      "target_id": "CHEMBL318",
+      "target_name": "Adenosine receptor A1",
+      "organism": "Rattus norvegicus",
+      "endpoint": "Ki",
+      "value": "29000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Binding affinity against Adenosine A1 receptor in rat brain membrane, using [3H]N6-cyclohexyladenosine as the radioligand",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A2795597+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "2795597",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "2795597",
+          "source": "MED",
+          "title": "Linear and proximal benzo-separated alkylated xanthines as adenosine-receptor antagonists.",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-231261.json",
+      "raw_sha256": "38d3c6146394ce94b1ae526f3bf4022e3f08a7bd62d9d8bb318db47f0204a6cd",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/231261.json"
+    },
+    {
+      "source_id": "chembl-activity:231262",
+      "kind": "assay_record",
+      "activity_id": "231262",
+      "molecule_id": "CHEMBL113",
+      "molecule_name": "caffeine",
+      "assay_id": "CHEMBL649876",
+      "target_id": "CHEMBL2094117",
+      "target_name": "Adenosine A2 receptor",
+      "organism": "Rattus norvegicus",
+      "endpoint": "Ki",
+      "value": "48000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Binding affinity against Adenosine A2 receptor in rat brain membrane, using [3H]-NECA as the radioligand.",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A2795597+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "2795597",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "2795597",
+          "source": "MED",
+          "title": "Linear and proximal benzo-separated alkylated xanthines as adenosine-receptor antagonists.",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-231262.json",
+      "raw_sha256": "a7eeb698f3214a9ba12a216ea49dc0cfe10debf198ef31e84f53b5da624a5ef7",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/231262.json"
+    },
+    {
+      "source_id": "chembl-activity:328437",
+      "kind": "assay_record",
+      "activity_id": "328437",
+      "molecule_id": "CHEMBL113",
+      "molecule_name": "caffeine",
+      "assay_id": "CHEMBL644769",
+      "target_id": "CHEMBL2094117",
+      "target_name": "Adenosine A2 receptor",
+      "organism": "Rattus norvegicus",
+      "endpoint": "Ki",
+      "value": "27000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of [3H]5'-(N-ethylcarbamoyl)-adenosine binding to Adenosine A2 receptor in rat striatal membranes in the presence of 50 nM cyclopentyladenosine",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A1992150+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "1992150",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "1992150",
+          "source": "MED",
+          "title": "8-(Dicyclopropylmethyl)-1,3-dipropylxanthine: a potent and selective adenosine A1 antagonist with renal protective and diuretic activities.",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-328437.json",
+      "raw_sha256": "e5309d2cb43ec648cbc6cb035cb27b8b25b345743ffab253b9b031a0a8bcce08",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/328437.json"
+    },
+    {
+      "source_id": "chembl-activity:331346",
+      "kind": "assay_record",
+      "activity_id": "331346",
+      "molecule_id": "CHEMBL113",
+      "molecule_name": "caffeine",
+      "assay_id": "CHEMBL683310",
+      "target_id": "CHEMBL2605",
+      "target_name": "Adenosine receptor A2a",
+      "organism": "Cavia porcellus",
+      "endpoint": "Ki",
+      "value": "80000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Antagonist binding of N6-cyclohexyl-[3H]-adenosine to guinea pig brain",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A6279840+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "6279840",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "6279840",
+          "source": "MED",
+          "title": "Adenosine receptors: targets for future drugs.",
+          "pubTypeList": {
+            "pubType": [
+              "Review",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-331346.json",
+      "raw_sha256": "3b3b0a5bc481dbaab2a878ef12715d6c1de06b19c3cb1920f11e13d36cc23871",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/331346.json"
+    },
+    {
+      "source_id": "chembl-activity:331347",
+      "kind": "assay_record",
+      "activity_id": "331347",
+      "molecule_id": "CHEMBL113",
+      "molecule_name": "caffeine",
+      "assay_id": "CHEMBL798538",
+      "target_id": "CHEMBL2111386",
+      "target_name": "Adenosine receptor",
+      "organism": "Rattus norvegicus",
+      "endpoint": "Ki",
+      "value": "40000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Antagonist binding of N6-cyclohexyl-[3H]-adenosine to rat brain",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A6279840+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "6279840",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "6279840",
+          "source": "MED",
+          "title": "Adenosine receptors: targets for future drugs.",
+          "pubTypeList": {
+            "pubType": [
+              "Review",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-331347.json",
+      "raw_sha256": "b08355ea09c5d12af240e4264e6dfb0c0091f085a23685ae2fbe55ae8a74e096",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/331347.json"
+    },
+    {
+      "source_id": "chembl-activity:88326",
+      "kind": "assay_record",
+      "activity_id": "88326",
+      "molecule_id": "CHEMBL25",
+      "molecule_name": "aspirin",
+      "assay_id": "CHEMBL762032",
+      "target_id": "CHEMBL612545",
+      "target_name": "Unchecked",
+      "organism": null,
+      "endpoint": "IC50",
+      "value": "34600.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibitory concentration required against Arachidonic acid (100 uM) induced platelet aggregatory activity",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A12873516+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "12873516",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "12873516",
+          "source": "MED",
+          "title": "Antiplatelet activity of benzylisoquinoline derivatives oxidized by cerium(IV) ammonium nitrate.",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-88326.json",
+      "raw_sha256": "c084fb3e165aba0d6c39eafe7919528dbfbfb1f7162b2ddd3c8b5c0f79ee066d",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/88326.json"
+    },
+    {
+      "source_id": "chembl-activity:88327",
+      "kind": "assay_record",
+      "activity_id": "88327",
+      "molecule_id": "CHEMBL25",
+      "molecule_name": "aspirin",
+      "assay_id": "CHEMBL762033",
+      "target_id": "CHEMBL612545",
+      "target_name": "Unchecked",
+      "organism": null,
+      "endpoint": "IC50",
+      "value": "34900.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "In vitro inhibition of Collagen (10 ug/mL) induced platelet aggregatory activity.",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A12873516+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "12873516",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "12873516",
+          "source": "MED",
+          "title": "Antiplatelet activity of benzylisoquinoline derivatives oxidized by cerium(IV) ammonium nitrate.",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-88327.json",
+      "raw_sha256": "ff436dee7173ac725e2281361f559a3c6034a6ee20a4c4ba53cd27b163758048",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/88327.json"
+    },
+    {
+      "source_id": "chembl-activity:91852",
+      "kind": "assay_record",
+      "activity_id": "91852",
+      "molecule_id": "CHEMBL25",
+      "molecule_name": "aspirin",
+      "assay_id": "CHEMBL760085",
+      "target_id": "CHEMBL230",
+      "target_name": "Prostaglandin G/H synthase 2",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "62500.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibitory concentration in DMSO with purified human Prostaglandin G/H synthase 2 (COX-2)",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9822550+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "9822550",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "9822550",
+          "source": "MED",
+          "title": "Covalent modification of cyclooxygenase-2 (COX-2) by 2-acetoxyphenyl alkyl sulfides, a new class of selective COX-2 inactivators.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, U.S. Gov't, P.H.S.",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-91852.json",
+      "raw_sha256": "7f757e20f0a8ca08c81211684b0d14299fd3993e4bcf8af3da54c5d70ec71b96",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/91852.json"
+    },
+    {
+      "source_id": "chembl-activity:91853",
+      "kind": "assay_record",
+      "activity_id": "91853",
+      "molecule_id": "CHEMBL25",
+      "molecule_name": "aspirin",
+      "assay_id": "CHEMBL764258",
+      "target_id": "CHEMBL2949",
+      "target_name": "Prostaglandin G/H synthase 1",
+      "organism": "Ovis aries",
+      "endpoint": "IC50",
+      "value": "12500.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibitory concentration in DMSO with purified ovine Prostaglandin G/H synthase 1 (COX-1).",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9822550+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "9822550",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "9822550",
+          "source": "MED",
+          "title": "Covalent modification of cyclooxygenase-2 (COX-2) by 2-acetoxyphenyl alkyl sulfides, a new class of selective COX-2 inactivators.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, U.S. Gov't, P.H.S.",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-91853.json",
+      "raw_sha256": "f8922c17f40adf7127d186ef6e68d5f64ffe442033176ad9ab03a3544b4590cb",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/91853.json"
+    },
+    {
+      "source_id": "chembl-activity:392578",
+      "kind": "assay_record",
+      "activity_id": "392578",
+      "molecule_id": "CHEMBL25",
+      "molecule_name": "aspirin",
+      "assay_id": "CHEMBL768981",
+      "target_id": "CHEMBL374",
+      "target_name": "Oryctolagus cuniculus",
+      "organism": "Oryctolagus cuniculus",
+      "endpoint": "IC50",
+      "value": "16000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "In vitro antiplatelet activity against arachidonic acid induced malondialdehyde production",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A8164261+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "8164261",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "8164261",
+          "source": "MED",
+          "title": "Antiplatelet agents based on cyclooxygenase inhibition without ulcerogenesis. Evaluation and synthesis of 4,5-bis(4-methoxyphenyl)-2-substituted-thiazoles.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-392578.json",
+      "raw_sha256": "03353593253066088817ded2d297a75bea0821170c0d9d1d050d914f402a2472",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/392578.json"
+    },
+    {
+      "source_id": "chembl-activity:513632",
+      "kind": "assay_record",
+      "activity_id": "513632",
+      "molecule_id": "CHEMBL25",
+      "molecule_name": "aspirin",
+      "assay_id": "CHEMBL761741",
+      "target_id": "CHEMBL372",
+      "target_name": "Homo sapiens",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "20000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "In vitro inhibitory activity on platelet aggregation induced by arachidonic acid (AA)",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A11212091+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "11212091",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "11212091",
+          "source": "MED",
+          "title": "Synthesis of 4-alkoxy-2-phenylquinoline derivatives as potent antiplatelet agents.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-513632.json",
+      "raw_sha256": "d3fea34e67544fa4da8216a3d1dd6727cae3e152160c4f16c8206fad3abf26d9",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/513632.json"
+    },
+    {
+      "source_id": "chembl-activity:515159",
+      "kind": "assay_record",
+      "activity_id": "515159",
+      "molecule_id": "CHEMBL25",
+      "molecule_name": "aspirin",
+      "assay_id": "CHEMBL696979",
+      "target_id": "CHEMBL2093869",
+      "target_name": "Integrin alpha-IIb/beta-3",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "5000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of arachidonic acid-induced platelet aggregation",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A7837237+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "7837237",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "7837237",
+          "source": "MED",
+          "title": "Novel thiazole-based heterocycles as selective inhibitors of fibrinogen-mediated platelet aggregation.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-515159.json",
+      "raw_sha256": "f30eeb57acd1afd1a0098d72d0578a85b4640b200d2e946e22c85fb9fbec0942",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/515159.json"
+    },
+    {
+      "source_id": "chembl-activity:597862",
+      "kind": "assay_record",
+      "activity_id": "597862",
+      "molecule_id": "CHEMBL25",
+      "molecule_name": "aspirin",
+      "assay_id": "CHEMBL760548",
+      "target_id": "CHEMBL369",
+      "target_name": "Cavia porcellus",
+      "organism": "Cavia porcellus",
+      "endpoint": "IC50",
+      "value": "48000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "In vitro antiplatelet activity against guinea pig platelet rich plasma aggregated by collagen",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A11378363+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "11378363",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "11378363",
+          "source": "MED",
+          "title": "Synthesis and pharmacological evaluation of 2,5-cycloamino-5H-[1]benzopyrano[4,3-d]pyrimidines endowed with in vitro antiplatelet activity.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-597862.json",
+      "raw_sha256": "c8b1aeea69dc4e1eeccf3111094266141838c86f975e53f1319bc64bc6795b77",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/597862.json"
+    },
+    {
+      "source_id": "chembl-activity:2108574",
+      "kind": "assay_record",
+      "activity_id": "2108574",
+      "molecule_id": "CHEMBL112",
+      "molecule_name": "acetaminophen",
+      "assay_id": "CHEMBL931167",
+      "target_id": "CHEMBL364",
+      "target_name": "Plasmodium falciparum",
+      "organism": "Plasmodium falciparum",
+      "endpoint": "IC50",
+      "value": "86700.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Antiparasitic activity against chloroquine-resistant Plasmodium falciparum K1",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A18260613+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "18260613",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "18260613",
+          "source": "MED",
+          "title": "Antimalarial dual drugs based on potent inhibitors of glutathione reductase from Plasmodium falciparum.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-2108574.json",
+      "raw_sha256": "08088c92a98f5070a651e0479594c17d07cb1adb629158ac7fa94a0d80a557da",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/2108574.json"
+    },
+    {
+      "source_id": "chembl-activity:2172299",
+      "kind": "assay_record",
+      "activity_id": "2172299",
+      "molecule_id": "CHEMBL112",
+      "molecule_name": "acetaminophen",
+      "assay_id": "CHEMBL933689",
+      "target_id": "CHEMBL261",
+      "target_name": "Carbonic anhydrase 1",
+      "organism": "Homo sapiens",
+      "endpoint": "Ki",
+      "value": "10000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of human carbonic anhydrase 1 by stopped-flow CO2 hydrase assay",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A18501600+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "18501600",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "18501600",
+          "source": "MED",
+          "title": "Carbonic anhydrase inhibitors: Inhibition of the new membrane-associated isoform XV with phenols.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-2172299.json",
+      "raw_sha256": "3409e0328236550396abde25938c09b8db60355ae8f79ef05d96623dc7485166",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/2172299.json"
+    },
+    {
+      "source_id": "chembl-activity:2172309",
+      "kind": "assay_record",
+      "activity_id": "2172309",
+      "molecule_id": "CHEMBL112",
+      "molecule_name": "acetaminophen",
+      "assay_id": "CHEMBL933690",
+      "target_id": "CHEMBL205",
+      "target_name": "Carbonic anhydrase 2",
+      "organism": "Homo sapiens",
+      "endpoint": "Ki",
+      "value": "6200.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of human carbonic anhydrase 2 by stopped-flow CO2 hydrase assay",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A18501600+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "18501600",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "18501600",
+          "source": "MED",
+          "title": "Carbonic anhydrase inhibitors: Inhibition of the new membrane-associated isoform XV with phenols.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-2172309.json",
+      "raw_sha256": "079020eea3643f8917b5ea71e82fbbf0e0330d6b2071e600e5e3c5a47450532c",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/2172309.json"
+    },
+    {
+      "source_id": "chembl-activity:2172320",
+      "kind": "assay_record",
+      "activity_id": "2172320",
+      "molecule_id": "CHEMBL112",
+      "molecule_name": "acetaminophen",
+      "assay_id": "CHEMBL933691",
+      "target_id": "CHEMBL5973",
+      "target_name": "Carbonic anhydrase 15",
+      "organism": "Mus musculus",
+      "endpoint": "Ki",
+      "value": "9230.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of mouse recombinant carbonic anhydrase 15 by stopped-flow CO2 hydrase assay",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A18501600+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "18501600",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "18501600",
+          "source": "MED",
+          "title": "Carbonic anhydrase inhibitors: Inhibition of the new membrane-associated isoform XV with phenols.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-2172320.json",
+      "raw_sha256": "2879309b93625b1af1e7932d456fd48061d39bc0fc9695e18576fcfee2084855",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/2172320.json"
+    },
+    {
+      "source_id": "chembl-activity:2460301",
+      "kind": "assay_record",
+      "activity_id": "2460301",
+      "molecule_id": "CHEMBL112",
+      "molecule_name": "acetaminophen",
+      "assay_id": "CHEMBL958743",
+      "target_id": "CHEMBL4550",
+      "target_name": "Arachidonate 5-lipoxygenase-activating protein",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "44000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of FLAP",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A18459759+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "18459759",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "18459759",
+          "source": "MED",
+          "title": "Microsomal prostaglandin E2 synthase-1 (mPGES-1): a novel anti-inflammatory therapeutic target.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-2460301.json",
+      "raw_sha256": "5296c05cb4c25b414800fdf84b37427ab71f218cdade6ee7980be8f954193d99",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/2460301.json"
+    },
+    {
+      "source_id": "chembl-activity:2460352",
+      "kind": "assay_record",
+      "activity_id": "2460352",
+      "molecule_id": "CHEMBL112",
+      "molecule_name": "acetaminophen",
+      "assay_id": "CHEMBL958753",
+      "target_id": "CHEMBL613416",
+      "target_name": "Blood",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "44000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of LPS-stimulated PGE2 production in human whole blood",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A18459759+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "18459759",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "18459759",
+          "source": "MED",
+          "title": "Microsomal prostaglandin E2 synthase-1 (mPGES-1): a novel anti-inflammatory therapeutic target.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-2460352.json",
+      "raw_sha256": "f471d7400f9a2b0e41ed49de4c70fe4cfe7946d9eb0ce6168749e10533b2e722",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/2460352.json"
+    },
+    {
+      "source_id": "chembl-activity:2460353",
+      "kind": "assay_record",
+      "activity_id": "2460353",
+      "molecule_id": "CHEMBL112",
+      "molecule_name": "acetaminophen",
+      "assay_id": "CHEMBL958758",
+      "target_id": "CHEMBL613416",
+      "target_name": "Blood",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "94000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of LPS-stimulated TBX2 production in human whole blood",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A18459759+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "18459759",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "18459759",
+          "source": "MED",
+          "title": "Microsomal prostaglandin E2 synthase-1 (mPGES-1): a novel anti-inflammatory therapeutic target.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-2460353.json",
+      "raw_sha256": "599be7f6f39fdb95550ad2e54dbe8ab2b5e7e39f60c6e0c3ba4db2f5e5fa9f01",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/2460353.json"
+    },
+    {
+      "source_id": "chembl-activity:2572978",
+      "kind": "assay_record",
+      "activity_id": "2572978",
+      "molecule_id": "CHEMBL112",
+      "molecule_name": "acetaminophen",
+      "assay_id": "CHEMBL981121",
+      "target_id": "CHEMBL2186",
+      "target_name": "Carbonic anhydrase 13",
+      "organism": "Mus musculus",
+      "endpoint": "Ki",
+      "value": "30300.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of mouse carbonic anhydrase 13 by stopped-flow CO2 hydration assay",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A18579385+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "18579385",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "18579385",
+          "source": "MED",
+          "title": "Carbonic anhydrase inhibitors: inhibition of mammalian isoforms I-XIV with a series of substituted phenols including paracetamol and salicylic acid.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-2572978.json",
+      "raw_sha256": "66b6116f72c44bf5a9a42d7d68be1554bccb078180a3f9ca8e91d50fdc1c2dae",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/2572978.json"
+    },
+    {
+      "source_id": "chembl-activity:242732",
+      "kind": "assay_record",
+      "activity_id": "242732",
+      "molecule_id": "CHEMBL521",
+      "molecule_name": "ibuprofen",
+      "assay_id": "CHEMBL762598",
+      "target_id": "CHEMBL2111349",
+      "target_name": "Prostaglandin G/H synthase (cyclooxygenase)",
+      "organism": "Mus musculus",
+      "endpoint": "IC50",
+      "value": "220.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of PGE-2 production in 3T3 (murine fibroblast) cell culture.",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A8568814+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "8568814",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "8568814",
+          "source": "MED",
+          "title": "Dibenzoxepinone hydroxylamines and hydroxamic acids: dual inhibitors of cyclooxygenase and 5-lipoxygenase with potent topical antiinflammatory activity.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-242732.json",
+      "raw_sha256": "b3f03b821efeb9ae10043a637a2d4328f5f839bf2dbd705b5169cf57ab8eacb8",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/242732.json"
+    },
+    {
+      "source_id": "chembl-activity:348013",
+      "kind": "assay_record",
+      "activity_id": "348013",
+      "molecule_id": "CHEMBL521",
+      "molecule_name": "ibuprofen",
+      "assay_id": "CHEMBL766949",
+      "target_id": "CHEMBL4334",
+      "target_name": "Prostaglandin-H2 D-isomerase",
+      "organism": "Mus musculus",
+      "endpoint": "IC50",
+      "value": "13000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Concentration required to inhibit 50% activity of prostaglandin synthetase was determined in vitro in mouse brain microsomes",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A1900533+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "1900533",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "1900533",
+          "source": "MED",
+          "title": "Antinociceptive (aminoalkyl)indoles.",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-348013.json",
+      "raw_sha256": "aaf93dbb2f9a02ee1b103506829b5f97508ae8668f513afdca7d3f3fa6938c94",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/348013.json"
+    },
+    {
+      "source_id": "chembl-activity:490365",
+      "kind": "assay_record",
+      "activity_id": "490365",
+      "molecule_id": "CHEMBL521",
+      "molecule_name": "ibuprofen",
+      "assay_id": "CHEMBL764146",
+      "target_id": "CHEMBL2949",
+      "target_name": "Prostaglandin G/H synthase 1",
+      "organism": "Ovis aries",
+      "endpoint": "IC50",
+      "value": "1060.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Reversible competitive inhibition of prostaglandin G/H synthase 1",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A14741265+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "14741265",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "14741265",
+          "source": "MED",
+          "title": "Manipulation of kinetic profiles in 2-aryl propionic acid cyclooxygenase inhibitors.",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Research Support, U.S. Gov't, P.H.S.",
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-490365.json",
+      "raw_sha256": "49fa4db9128012620dbdd83065d2f0e3292485a1012a7e126bfccd5982fe1f49",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/490365.json"
+    },
+    {
+      "source_id": "chembl-activity:557523",
+      "kind": "assay_record",
+      "activity_id": "557523",
+      "molecule_id": "CHEMBL521",
+      "molecule_name": "ibuprofen",
+      "assay_id": "CHEMBL764147",
+      "target_id": "CHEMBL2949",
+      "target_name": "Prostaglandin G/H synthase 1",
+      "organism": "Ovis aries",
+      "endpoint": "IC50",
+      "value": "9000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Tested for inhibitory activity against Prostaglandin G/H synthase 1 from ovine",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A7562922+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "7562922",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "7562922",
+          "source": "MED",
+          "title": "Antiinflammatory 4,5-diarylpyrroles. 2. Activity as a function of cyclooxygenase-2 inhibition.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-557523.json",
+      "raw_sha256": "1c3d3092a78f27b4044c62ea8517a6e37784239cc1e8c9a446adbdfce98d6e69",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/557523.json"
+    },
+    {
+      "source_id": "chembl-activity:557524",
+      "kind": "assay_record",
+      "activity_id": "557524",
+      "molecule_id": "CHEMBL521",
+      "molecule_name": "ibuprofen",
+      "assay_id": "CHEMBL769654",
+      "target_id": "CHEMBL230",
+      "target_name": "Prostaglandin G/H synthase 2",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "8000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Tested for inhibitory activity against Prostaglandin G/H synthase 2 from human",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A7562922+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "7562922",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "7562922",
+          "source": "MED",
+          "title": "Antiinflammatory 4,5-diarylpyrroles. 2. Activity as a function of cyclooxygenase-2 inhibition.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-557524.json",
+      "raw_sha256": "ac20ff9f18fc5f08e05b5780a1c83dac79783ca15062a23d935ec2fc97a6021d",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/557524.json"
+    },
+    {
+      "source_id": "chembl-activity:792824",
+      "kind": "assay_record",
+      "activity_id": "792824",
+      "molecule_id": "CHEMBL521",
+      "molecule_name": "ibuprofen",
+      "assay_id": "CHEMBL765856",
+      "target_id": "CHEMBL221",
+      "target_name": "Prostaglandin G/H synthase 1",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "6300.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Compound was evaluated for inhibition of Prostaglandin G/H synthase 1",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "publication_status_unknown",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "pmid": null,
+        "metadata": {}
+      },
+      "raw_file": "raw/activity-792824.json",
+      "raw_sha256": "d524f4f81abe45a1ac3dc42ac777708590bd75bc72bab34eb71508484f5c1ee0",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/792824.json"
+    },
+    {
+      "source_id": "chembl-activity:844010",
+      "kind": "assay_record",
+      "activity_id": "844010",
+      "molecule_id": "CHEMBL521",
+      "molecule_name": "ibuprofen",
+      "assay_id": "CHEMBL762444",
+      "target_id": "CHEMBL2095157",
+      "target_name": "Cyclooxygenase",
+      "organism": "Rattus norvegicus",
+      "endpoint": "IC50",
+      "value": "2000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of Prostaglandin G/H synthase in intact RBL-1 cell line",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A2115586+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "2115586",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "2115586",
+          "source": "MED",
+          "title": "Nonsteroidal antiinflammatory drug hydroxamic acids. Dual inhibitors of both cyclooxygenase and 5-lipoxygenase.",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-844010.json",
+      "raw_sha256": "510c17c5e18d24d12a2bdd905d189930855085783f3c2dfded82350c9083d4a6",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/844010.json"
+    },
+    {
+      "source_id": "chembl-activity:917298",
+      "kind": "assay_record",
+      "activity_id": "917298",
+      "molecule_id": "CHEMBL521",
+      "molecule_name": "ibuprofen",
+      "assay_id": "CHEMBL618060",
+      "target_id": "CHEMBL312",
+      "target_name": "Polyunsaturated fatty acid 5-lipoxygenase",
+      "organism": "Rattus norvegicus",
+      "endpoint": "IC50",
+      "value": "14000.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibitory activity against 5-lipoxygenase catalysis (5-LO) in sonicated rat basophilic leukemia cell lysate",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9057869+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "9057869",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "9057869",
+          "source": "MED",
+          "title": "Nonsteroidal anti-inflammatory drugs as scaffolds for the design of 5-lipoxygenase inhibitors.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-917298.json",
+      "raw_sha256": "b74185a4dfb45e8ab97ad4807d8bb12b39e9c0405b2b45d7af06ea8631f0d052",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/917298.json"
+    },
+    {
+      "source_id": "chembl-activity:388530",
+      "kind": "assay_record",
+      "activity_id": "388530",
+      "molecule_id": "CHEMBL941",
+      "molecule_name": "imatinib",
+      "assay_id": "CHEMBL846551",
+      "target_id": "CHEMBL2111414",
+      "target_name": "Tyrosine-protein kinase ABL",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "40.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of Abl tyrosine kinase",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A12951113+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "12951113",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "12951113",
+          "source": "MED",
+          "title": "Synthesis of pyrimidinopyridine-triazene conjugates targeted to abl tyrosine kinase.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-388530.json",
+      "raw_sha256": "13a5d13e4732c7aa1b8fea2c68b9b7e029f7f325a0cfd3baa60e20fd4902fcbc",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/388530.json"
+    },
+    {
+      "source_id": "chembl-activity:388531",
+      "kind": "assay_record",
+      "activity_id": "388531",
+      "molecule_id": "CHEMBL941",
+      "molecule_name": "imatinib",
+      "assay_id": "CHEMBL705013",
+      "target_id": "CHEMBL385",
+      "target_name": "K562",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "110.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Cytotoxic effect in K562 cells",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A12951113+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "12951113",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "12951113",
+          "source": "MED",
+          "title": "Synthesis of pyrimidinopyridine-triazene conjugates targeted to abl tyrosine kinase.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-388531.json",
+      "raw_sha256": "81434a033ab8e3e59318f8fe60a1e92807c0f0025a5cbc5363fc3d3a48a59649",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/388531.json"
+    },
+    {
+      "source_id": "chembl-activity:394752",
+      "kind": "assay_record",
+      "activity_id": "394752",
+      "molecule_id": "CHEMBL941",
+      "molecule_name": "imatinib",
+      "assay_id": "CHEMBL700211",
+      "target_id": "CHEMBL385",
+      "target_name": "K562",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "400.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibitory activity against human K562 cells growth using MTT assay",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A14552760+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "14552760",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "14552760",
+          "source": "MED",
+          "title": "Identification of novel inhibitors of BCR-ABL tyrosine kinase via virtual screening.",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-394752.json",
+      "raw_sha256": "0ef4d309a8e9275837c72665936f1525b5634e712dc413725075a0c346420c6e",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/394752.json"
+    },
+    {
+      "source_id": "chembl-activity:884643",
+      "kind": "assay_record",
+      "activity_id": "884643",
+      "molecule_id": "CHEMBL941",
+      "molecule_name": "imatinib",
+      "assay_id": "CHEMBL763440",
+      "target_id": "CHEMBL1913",
+      "target_name": "Platelet-derived growth factor receptor beta",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "240.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of wild type Platelet-derived growth factor receptor beta phosphorylation in CHO cells",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A12166950+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "12166950",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "12166950",
+          "source": "MED",
+          "title": "Identification of orally active, potent, and selective 4-piperazinylquinazolines as antagonists of the platelet-derived growth factor receptor tyrosine kinase family.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-884643.json",
+      "raw_sha256": "c82119663870c998758d404a0a9bf3acc3a4ce59e96260123aaad4a8bbbc864f",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/884643.json"
+    },
+    {
+      "source_id": "chembl-activity:884644",
+      "kind": "assay_record",
+      "activity_id": "884644",
+      "molecule_id": "CHEMBL941",
+      "molecule_name": "imatinib",
+      "assay_id": "CHEMBL766073",
+      "target_id": "CHEMBL1936",
+      "target_name": "Mast/stem cell growth factor receptor Kit",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "260.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of chimeric PDGF receptor with c-kit cytoplasmic domain phosphorylation in CHO cells",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A12166950+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "12166950",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "12166950",
+          "source": "MED",
+          "title": "Identification of orally active, potent, and selective 4-piperazinylquinazolines as antagonists of the platelet-derived growth factor receptor tyrosine kinase family.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-884644.json",
+      "raw_sha256": "c23c97d6525e7868ec5a6526195261ffce61f28ccd92c7baf68b8eb5990a66a2",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/884644.json"
+    },
+    {
+      "source_id": "chembl-activity:884646",
+      "kind": "assay_record",
+      "activity_id": "884646",
+      "molecule_id": "CHEMBL941",
+      "molecule_name": "imatinib",
+      "assay_id": "CHEMBL766070",
+      "target_id": "CHEMBL1844",
+      "target_name": "Macrophage colony-stimulating factor 1 receptor",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "960.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of chimeric PDGF receptor with CSF-1R cytoplasmic domain phosphorylation in CHO cells",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "not_flagged_in_checked_snapshot",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A12166950+AND+SRC%3AMED&format=json&resultType=core",
+        "pmid": "12166950",
+        "provider": "Europe PMC MED metadata",
+        "metadata": {
+          "id": "12166950",
+          "source": "MED",
+          "title": "Identification of orally active, potent, and selective 4-piperazinylquinazolines as antagonists of the platelet-derived growth factor receptor tyrosine kinase family.",
+          "pubTypeList": {
+            "pubType": [
+              "Journal Article"
+            ]
+          },
+          "commentCorrectionList": null,
+          "isRetracted": null
+        },
+        "scope": "Retraction/concern flags in this response as of retrieval; absence of a flag is not proof of no retraction."
+      },
+      "raw_file": "raw/activity-884646.json",
+      "raw_sha256": "c26871296196247c6fb66312412a4883ce76bb1d98b99b6048d8df03a0ee5cc8",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/884646.json"
+    },
+    {
+      "source_id": "chembl-activity:909963",
+      "kind": "assay_record",
+      "activity_id": "909963",
+      "molecule_id": "CHEMBL941",
+      "molecule_name": "imatinib",
+      "assay_id": "CHEMBL846547",
+      "target_id": "CHEMBL1862",
+      "target_name": "Tyrosine-protein kinase ABL1",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "38.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of v-Abl tyrosine kinase.",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "publication_status_unknown",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "pmid": null,
+        "metadata": {}
+      },
+      "raw_file": "raw/activity-909963.json",
+      "raw_sha256": "bf8e5f22919b877303f44a72c40d1ebd5e0cbc93434c9a73c236a69a7e932be1",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/909963.json"
+    },
+    {
+      "source_id": "chembl-activity:909966",
+      "kind": "assay_record",
+      "activity_id": "909966",
+      "molecule_id": "CHEMBL941",
+      "molecule_name": "imatinib",
+      "assay_id": "CHEMBL765715",
+      "target_id": "CHEMBL2095189",
+      "target_name": "Platelet-derived growth factor receptor",
+      "organism": "Homo sapiens",
+      "endpoint": "IC50",
+      "value": "50.0",
+      "units": "nM",
+      "relation": "=",
+      "assay_description": "Inhibition of the platelet-derived growth factor receptor.",
+      "data_validity_comment": null,
+      "potential_duplicate": 0,
+      "publication_check": {
+        "status": "publication_status_unknown",
+        "checked_utc": "2026-10-24T17:38:20.894005+00:00",
+        "pmid": null,
+        "metadata": {}
+      },
+      "raw_file": "raw/activity-909966.json",
+      "raw_sha256": "c023037a27e01f682f574e338469100fcbf1b5cb63385d915f37de2ca0e80d3c",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity/909966.json"
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:0:molecular_weight",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "aspirin",
+      "endpoint": "molecular_weight",
+      "units": "g/mol",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "molecular_weight",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "g/mol",
+        "validation_record": null,
+        "value": 180.159
+      },
+      "locator": "/result/rows/0/properties/0",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:0:calculated_logp",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "aspirin",
+      "endpoint": "calculated_logp",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "calculated_logp",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 1.3101
+      },
+      "locator": "/result/rows/0/properties/1",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:0:tpsa",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "aspirin",
+      "endpoint": "tpsa",
+      "units": "angstrom^2",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "tpsa",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "angstrom^2",
+        "validation_record": null,
+        "value": 63.6
+      },
+      "locator": "/result/rows/0/properties/2",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:0:aromatic_heavy_atom_fraction",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "aspirin",
+      "endpoint": "aromatic_heavy_atom_fraction",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "aromatic_heavy_atom_fraction",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 0.46153846
+      },
+      "locator": "/result/rows/0/properties/3",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:0:qed",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "aspirin",
+      "endpoint": "qed",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "qed",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 0.5501218
+      },
+      "locator": "/result/rows/0/properties/4",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:0:descriptor_distance",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "aspirin",
+      "endpoint": "descriptor_distance",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "unvalidated_heuristic",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "descriptor_distance",
+        "reason": "Unvalidated target-independent descriptor distance; lower is closer to MW 350 and TPSA 75.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 0.63726
+      },
+      "locator": "/result/rows/0/properties/5",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:1:molecular_weight",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "caffeine",
+      "endpoint": "molecular_weight",
+      "units": "g/mol",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "molecular_weight",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "g/mol",
+        "validation_record": null,
+        "value": 194.194
+      },
+      "locator": "/result/rows/1/properties/0",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:1:calculated_logp",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "caffeine",
+      "endpoint": "calculated_logp",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "calculated_logp",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": -1.0293
+      },
+      "locator": "/result/rows/1/properties/1",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:1:tpsa",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "caffeine",
+      "endpoint": "tpsa",
+      "units": "angstrom^2",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "tpsa",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "angstrom^2",
+        "validation_record": null,
+        "value": 61.82
+      },
+      "locator": "/result/rows/1/properties/2",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:1:aromatic_heavy_atom_fraction",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "caffeine",
+      "endpoint": "aromatic_heavy_atom_fraction",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "aromatic_heavy_atom_fraction",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 0.64285714
+      },
+      "locator": "/result/rows/1/properties/3",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:1:qed",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "caffeine",
+      "endpoint": "qed",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "qed",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 0.53846283
+      },
+      "locator": "/result/rows/1/properties/4",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:1:descriptor_distance",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "caffeine",
+      "endpoint": "descriptor_distance",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "unvalidated_heuristic",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "descriptor_distance",
+        "reason": "Unvalidated target-independent descriptor distance; lower is closer to MW 350 and TPSA 75.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 0.62089333
+      },
+      "locator": "/result/rows/1/properties/5",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:2:molecular_weight",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "acetaminophen",
+      "endpoint": "molecular_weight",
+      "units": "g/mol",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "molecular_weight",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "g/mol",
+        "validation_record": null,
+        "value": 151.165
+      },
+      "locator": "/result/rows/2/properties/0",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:2:calculated_logp",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "acetaminophen",
+      "endpoint": "calculated_logp",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "calculated_logp",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 1.3506
+      },
+      "locator": "/result/rows/2/properties/1",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:2:tpsa",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "acetaminophen",
+      "endpoint": "tpsa",
+      "units": "angstrom^2",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "tpsa",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "angstrom^2",
+        "validation_record": null,
+        "value": 49.33
+      },
+      "locator": "/result/rows/2/properties/2",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:2:aromatic_heavy_atom_fraction",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "acetaminophen",
+      "endpoint": "aromatic_heavy_atom_fraction",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "aromatic_heavy_atom_fraction",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 0.54545455
+      },
+      "locator": "/result/rows/2/properties/3",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:2:qed",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "acetaminophen",
+      "endpoint": "qed",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "computed_descriptor",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "qed",
+        "reason": "Calculated descriptor; 8-decimal reporting precision, no biological assessment.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 0.5950262
+      },
+      "locator": "/result/rows/2/properties/4",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    },
+    {
+      "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:2:descriptor_distance",
+      "kind": "run_record",
+      "run_id": "a296b0b9910b415a8b2cf80953375dc8",
+      "molecule_name": "acetaminophen",
+      "endpoint": "descriptor_distance",
+      "units": "dimensionless",
+      "property": {
+        "assessment_status": "computed",
+        "availability": "computed",
+        "coverage": "complete",
+        "domain": "accepted_graph",
+        "evidence_category": "unvalidated_heuristic",
+        "implementation_fidelity": "software_fixture_checked",
+        "method": "bioscribe-evidence-lab/1.0.0",
+        "predictive_validation": "not_assessed",
+        "quantity": "descriptor_distance",
+        "reason": "Unvalidated target-independent descriptor distance; lower is closer to MW 350 and TPSA 75.",
+        "units": "dimensionless",
+        "validation_record": null,
+        "value": 0.91036667
+      },
+      "locator": "/result/rows/2/properties/5",
+      "raw_file": "raw/descriptor-run.json",
+      "raw_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "recorded_utc": "2026-10-24T18:38:09.169Z",
+  "scope": "Bounded molecular source-record research assistant; public-data workflow only",
+  "backend": {
+    "command": "cd backend; ../.phase3-venv/Scripts/python.exe -B -m pytest tests_phase3 tests_lab tests_assistant -q -p no:cacheprovider --junitxml=../docs/evidence-assistant-all-backend-tests.xml",
+    "status": "passed",
+    "tests": 300,
+    "seconds": 97.548,
+    "evidence": "docs/evidence-assistant-all-backend-tests.xml",
+    "warning": "One existing Starlette/AnyIO deprecation warning"
+  },
+  "assistant_regressions": {
+    "command": "Same full backend command; subset selected by testcase classname",
+    "status": "passed",
+    "tests": 66,
+    "evidence": "docs/evidence-assistant-all-backend-tests.xml",
+    "subset": "tests_assistant.*",
+    "note": "Included in full backend count; do not add counts"
+  },
+  "client": {
+    "command": "cd bioscribe-ai; node scripts/evidence-assistant-check.cjs",
+    "count": 18,
+    "status": "passed",
+    "evidence": "docs/evidence-assistant-client-checks.json"
+  },
+  "frontend": {
+    "command": "cd bioscribe-ai; npm.cmd run build",
+    "status": "passed",
+    "includes": [
+      "production compilation",
+      "lint",
+      "TypeScript checking",
+      "static generation"
+    ],
+    "evidence": "docs/evidence-assistant-build.txt"
+  },
+  "browser": {
+    "status": "passed",
+    "checks": 17,
+    "evidence": "docs/evidence-assistant-browser-checks.json",
+    "scope": "Observed local browser interactions, not independent user testing"
+  },
+  "browser_export": {
+    "recorded_utc": "2026-10-24T18:11:26.137511+00:00",
+    "status": "passed",
+    "run_id": "8a6dcc35165b4d80a28c63dd357fe5a1",
+    "export_sha256": "ed110af8d5b259ce183b94dbacfa9f1645ea1c18d4d7f1a8c11a5e6d605dbcaf",
+    "review_sha256": "33bbf35e0b75e552568ddbb55c206c738998b3c3e96fdbd0c03773b5297f9201",
+    "corpus_sha256": "5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65",
+    "checks": [
+      "fresh_review_not_recorded_example",
+      "strict_review_contract",
+      "authenticated_saved_record_succeeded",
+      "run_id_matches",
+      "export_equals_saved_output",
+      "frozen_corpus_matches"
+    ],
+    "scope": "Browser export corresponds to saved public-data review; no biological validation.",
+    "evidence": "docs/evidence-assistant-browser-export.json"
+  },
+  "final_live_api": {
+    "status": "passed",
+    "checks": 9,
+    "run_id": "beb67513209745baa5e0fcbfc286a23e",
+    "evidence": "docs/evidence-assistant-live-smoke.json"
+  },
+  "model_inference": {
+    "status": "passed",
+    "evidence": "docs/evidence-assistant-model-smoke.json"
+  },
+  "model_gateway": {
+    "status": "passed",
+    "unauthenticated_status": 401,
+    "evidence": "docs/evidence-assistant-model-auth.json"
+  },
+  "baseline_smoke": {
+    "status": "attempted",
+    "attempted": 5,
+    "valid": 0,
+    "failed": 5,
+    "timeout_seconds": 90,
+    "evidence": "docs/evidence-assistant-baseline-smoke.json"
+  },
+  "longer_budget_baseline_smoke": {
+    "status": "attempted",
+    "attempted": 1,
+    "valid": 1,
+    "timeout_seconds": 180,
+    "evidence": "docs/evidence-assistant-baseline-long-context-smoke.json"
+  },
+  "evaluation": {
+    "claims": 150,
+    "label_status": "provisional_unreviewed",
+    "independent_review": "not_done",
+    "full_comparison": "not_run",
+    "baseline_beaten": null,
+    "scientific_assessment": "not_assessed",
+    "evidence": "validation/evidence_assistant/provisional-report.json",
+    "warning": "Template/draft-label agreement is not biological accuracy or independent model qualification"
+  },
+  "external_benchmarks": {
+    "status": "source_assessed_not_imported",
+    "evidence": "validation/evidence_assistant/EXTERNAL_BENCHMARK_REVIEW.md"
+  },
+  "dependencies": {
+    "python_lock": "backend/requirements-phase3.lock",
+    "frontend_lock": "bioscribe-ai/package-lock.json",
+    "change": "Existing dependency locks unchanged by this extension; optional native model/runtime pinned separately"
+  },
+  "remaining_gates": [
+    "Arbitrary scientific paper-passage entailment not implemented",
+    "Semantic decomposition completeness unverified",
+    "Provisional claims are template-heavy and developer-exposed; no protected holdout",
+    "Independent scientific label, citation, retraction and scope adjudication absent",
+    "No independently validated confidence calibration",
+    "No complete fair 150-claim model comparison or demonstrated baseline win",
+    "Publication-status checks have bounded provider/as-of coverage; genuine retraction challenge evaluation absent",
+    "Fresh dependency clean-install, new Docker runtime and second-machine verification not repeated for this extension",
+    "Scientific release, sensitive-data intake and production deployment remain blocked"
+  ],
+  "study": "Existing blocked ALDH1A1 study remains separate and unchanged",
+  "research_aid_label": "Research aid, not a prediction of efficacy or safety."
+}

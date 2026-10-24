@@ -1,0 +1,133 @@
+{
+  "scope": "Current iteration source and evidence hashes; not authenticated provenance",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "48ae08817517db8a74de60e08a063b2140c3126a7034068c6b7a5fb91752ce5b"
+    },
+    {
+      "path": "hackathon/start-demo.ps1",
+      "sha256": "c47274fccaf87a2c46d3a9e97bb51202ee872c6e39cf0b6f226b09774c1c2556"
+    },
+    {
+      "path": "hackathon/preflight.py",
+      "sha256": "70373677dfac5d5294e97ce14f0c708fe0cc2cd80db127719c83d4abc4e1cfa7"
+    },
+    {
+      "path": "bioscribe-ai/src/components/MainNavigation.tsx",
+      "sha256": "db7724179b46423c20738feabb6ed7ae87bf5c4a3c2cff8a78fbf7d2dd0194a9"
+    },
+    {
+      "path": "bioscribe-ai/src/app/dashboard/page.tsx",
+      "sha256": "8dfa04af50794b2bf5baef2adcba4794fe0a2ebbc95b0f7822b6503832629a31"
+    },
+    {
+      "path": "bioscribe-ai/src/app/proof/page.tsx",
+      "sha256": "2c9296f1eb0ead26f041e62e08dd1286b4ef9dc7b55353e8ef591762a657193f"
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3EvidenceLab.tsx",
+      "sha256": "031920fbbf34be8ab2c517124be7534a1e667f3f0f601b9bb6477ea1bde8a038"
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3RunChanges.tsx",
+      "sha256": "760b6e34bdd05978aa76bef1e6e391753d112b675c4d29ac68d98b21da99d7c7"
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/lab.ts",
+      "sha256": "c86491f8626bd77f29bdcb9f3b6293ef5603600689ce1aee14e996c793ff8135"
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/lab-diff.ts",
+      "sha256": "8c90107857f75747d7b3a77d55ea9de1d8adb85e6b7db652204800a17a34a488"
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/worked-comparison.json",
+      "sha256": "78ba29826de35f02b1782619e00520b679193e6c4ecd6242c0ad62a67e396e6d"
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/LabPackage.schema.json",
+      "sha256": "21722b7dbb8aa762dc62a7d99666b13cdd95a127ada9550e62f78d0856d13b47"
+    },
+    {
+      "path": "bioscribe-ai/src/middleware.ts",
+      "sha256": "0c023359130664fd8f94638267aa018382dccbd87ae011e3019d7ad3e9146e66"
+    },
+    {
+      "path": "bioscribe-ai/scripts/judging-upgrade-check.cjs",
+      "sha256": "d40e5f8ffaa650292a889618293bf1a5e938d733ca4bca233dd6f95fa3aec880"
+    },
+    {
+      "path": "bioscribe-ai/public/evidence-lab/budget-one-run.json",
+      "sha256": "03d5d524eb5423c1478c1c8be90a01657424f25b69d4b157ef5380d92c88049a"
+    },
+    {
+      "path": "bioscribe-ai/public/evidence-lab/reference-run.json",
+      "sha256": "e6fcadc5264265a5d379414f46df8cfa08872a302ab9400512c93d8feebcdbb9"
+    },
+    {
+      "path": "bioscribe-ai/public/evidence-lab/challenge-run.json",
+      "sha256": "42eb26309aa977c24edc6fd6f33b0339e2e14ff24c27085ae061cb470b9ec2e3"
+    },
+    {
+      "path": "backend/requirements-phase3.lock",
+      "sha256": "ae4b09ee9910ec3bbfcde31d922d24184ed188bdc128218288156e43815c998b"
+    },
+    {
+      "path": "backend/provenance_lab/engine.py",
+      "sha256": "d03faaf5b46e019944e0390b0c2293873caf139929902a4c15dcaa7fe7a1967a"
+    },
+    {
+      "path": "backend/provenance_lab/schemas.py",
+      "sha256": "b7d1ea90ede4f0c5afe023dddfad5883d9189ea05c3ddc6224020d5fcc325d1e"
+    },
+    {
+      "path": "backend/provenance_lab/__init__.py",
+      "sha256": "1488ef4588070bbbff56a01002d43e172c4f1e1186272fd8e860a946424c6a31"
+    },
+    {
+      "path": "hackathon/judging-upgrade/baseline.py",
+      "sha256": "e91bdd7680b9b1f63b40d8b4e698497a17512e515e355906bcea026824e68075"
+    },
+    {
+      "path": "hackathon/judging-upgrade/browser-checks.json",
+      "sha256": "09a864aa410917ed322aebb5b156b895f7a7982d6c49691a475d1135c0078adc"
+    },
+    {
+      "path": "hackathon/judging-upgrade/build_comparison.py",
+      "sha256": "089d050d66c01cecc3174c4ada1270fb91d5ee8d04a3ff2e4b81c1e8c04c02ce"
+    },
+    {
+      "path": "hackathon/judging-upgrade/client-checks.json",
+      "sha256": "ecd03335c036d2e4311a67a8ab4a8d396271f3c950e0f966261fc8b6bc019272"
+    },
+    {
+      "path": "hackathon/judging-upgrade/comparison-tests.xml",
+      "sha256": "780de48e54076a9054213b5983c2969319ccffbb4e2e28a18c46570f53d86dc5"
+    },
+    {
+      "path": "hackathon/judging-upgrade/preflight-result.json",
+      "sha256": "90e83174be015b2853aebb7eb7ad09b9cde676e00cabc7500bf9e5c3224622ce"
+    },
+    {
+      "path": "hackathon/judging-upgrade/proof.jpg",
+      "sha256": "2bee3b2579cbe9f2b024f7766bd19be9b6b413517b056c904a89482f4b8ba591"
+    },
+    {
+      "path": "hackathon/judging-upgrade/README.md",
+      "sha256": "cb87b7135da264ade950e31bb81057f0d70c4096db8c51faa3d379700343f6e8"
+    },
+    {
+      "path": "hackathon/judging-upgrade/run-changes.jpg",
+      "sha256": "461f24fa223edbf6481a5a2eb01d2141e9d9ab4dbf91ec27dc0b6c7726f1954b"
+    },
+    {
+      "path": "hackathon/judging-upgrade/test_comparison.py",
+      "sha256": "7b212238460baf20ce139f0c5ba071ce0eef89b62f9e2db3966c954050a202ae"
+    },
+    {
+      "path": "hackathon/judging-upgrade/VERIFICATION.json",
+      "sha256": "677a940561b0ab43c9c3dc25f0fd9ef543d99aac01fac553ccd686415eac4736"
+    }
+  ]
+}

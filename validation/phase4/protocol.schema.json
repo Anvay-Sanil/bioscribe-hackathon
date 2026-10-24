@@ -1,0 +1,716 @@
+{
+  "$defs": {
+    "Artifacts": {
+      "additionalProperties": false,
+      "properties": {
+        "method_bundle": {
+          "$ref": "#/$defs/FileRef"
+        },
+        "environment_lock": {
+          "$ref": "#/$defs/FileRef"
+        },
+        "dataset_manifest": {
+          "$ref": "#/$defs/FileRef"
+        },
+        "split_manifest": {
+          "$ref": "#/$defs/FileRef"
+        },
+        "curation_log": {
+          "$ref": "#/$defs/FileRef"
+        },
+        "domain_definition": {
+          "$ref": "#/$defs/FileRef"
+        },
+        "statistical_analysis_plan": {
+          "$ref": "#/$defs/FileRef"
+        }
+      },
+      "required": [
+        "method_bundle",
+        "environment_lock",
+        "dataset_manifest",
+        "split_manifest",
+        "curation_log",
+        "domain_definition",
+        "statistical_analysis_plan"
+      ],
+      "title": "Artifacts",
+      "type": "object"
+    },
+    "Dataset": {
+      "additionalProperties": false,
+      "properties": {
+        "dataset_id": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Dataset Id",
+          "type": "string"
+        },
+        "source_release": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Source Release",
+          "type": "string"
+        },
+        "provenance_kind": {
+          "enum": [
+            "public_empirical",
+            "synthetic_software_fixture"
+          ],
+          "title": "Provenance Kind",
+          "type": "string"
+        },
+        "suitability_rationale": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Suitability Rationale",
+          "type": "string"
+        },
+        "license_and_permitted_use": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "License And Permitted Use",
+          "type": "string"
+        },
+        "selection_query_and_date": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Selection Query And Date",
+          "type": "string"
+        },
+        "inclusion_exclusion_policy": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Inclusion Exclusion Policy",
+          "type": "string"
+        },
+        "censored_missing_conflicting_labels": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Censored Missing Conflicting Labels",
+          "type": "string"
+        },
+        "replicate_aggregation_policy": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Replicate Aggregation Policy",
+          "type": "string"
+        }
+      },
+      "required": [
+        "dataset_id",
+        "source_release",
+        "provenance_kind",
+        "suitability_rationale",
+        "license_and_permitted_use",
+        "selection_query_and_date",
+        "inclusion_exclusion_policy",
+        "censored_missing_conflicting_labels",
+        "replicate_aggregation_policy"
+      ],
+      "title": "Dataset",
+      "type": "object"
+    },
+    "Domain": {
+      "additionalProperties": false,
+      "properties": {
+        "definition_version": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Definition Version",
+          "type": "string"
+        },
+        "fitting_population": {
+          "const": "development_only",
+          "title": "Fitting Population",
+          "type": "string"
+        },
+        "numerical_rules_and_thresholds": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Numerical Rules And Thresholds",
+          "type": "string"
+        },
+        "biological_and_assay_limits": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Biological And Assay Limits",
+          "type": "string"
+        },
+        "input_eligibility_distinction": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Input Eligibility Distinction",
+          "type": "string"
+        },
+        "unknown_or_outside_action": {
+          "const": "abstain",
+          "title": "Unknown Or Outside Action",
+          "type": "string"
+        },
+        "subgroup_and_shift_studies": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Subgroup And Shift Studies",
+          "type": "string"
+        }
+      },
+      "required": [
+        "definition_version",
+        "fitting_population",
+        "numerical_rules_and_thresholds",
+        "biological_and_assay_limits",
+        "input_eligibility_distinction",
+        "unknown_or_outside_action",
+        "subgroup_and_shift_studies"
+      ],
+      "title": "Domain",
+      "type": "object"
+    },
+    "Endpoint": {
+      "additionalProperties": false,
+      "properties": {
+        "quantity": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Quantity",
+          "type": "string"
+        },
+        "label_units": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Label Units",
+          "type": "string"
+        },
+        "prediction_units": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Prediction Units",
+          "type": "string"
+        },
+        "target_definition": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Target Definition",
+          "type": "string"
+        },
+        "organism_and_population": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Organism And Population",
+          "type": "string"
+        },
+        "assay_and_conditions": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Assay And Conditions",
+          "type": "string"
+        },
+        "label_transform": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Label Transform",
+          "type": "string"
+        },
+        "positive_class_definition": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Positive Class Definition",
+          "type": "string"
+        }
+      },
+      "required": [
+        "quantity",
+        "label_units",
+        "prediction_units",
+        "target_definition",
+        "organism_and_population",
+        "assay_and_conditions",
+        "label_transform",
+        "positive_class_definition"
+      ],
+      "title": "Endpoint",
+      "type": "object"
+    },
+    "FileRef": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "title": "FileRef",
+      "type": "object"
+    },
+    "Method": {
+      "additionalProperties": false,
+      "properties": {
+        "method_id": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Method Id",
+          "type": "string"
+        },
+        "version": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Version",
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "candidate_predictor",
+            "unvalidated_heuristic"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "input_policy_version": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Input Policy Version",
+          "type": "string"
+        },
+        "training_data_disclosure": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Training Data Disclosure",
+          "type": "string"
+        },
+        "stochastic_policy": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Stochastic Policy",
+          "type": "string"
+        }
+      },
+      "required": [
+        "method_id",
+        "version",
+        "category",
+        "input_policy_version",
+        "training_data_disclosure",
+        "stochastic_policy"
+      ],
+      "title": "Method",
+      "type": "object"
+    },
+    "MetricGate": {
+      "additionalProperties": false,
+      "properties": {
+        "metric_id": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Metric Id",
+          "type": "string"
+        },
+        "estimand_and_population": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Estimand And Population",
+          "type": "string"
+        },
+        "units": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Units",
+          "type": "string"
+        },
+        "bound": {
+          "enum": [
+            "lower_confidence_bound",
+            "upper_confidence_bound"
+          ],
+          "title": "Bound",
+          "type": "string"
+        },
+        "operator": {
+          "enum": [
+            ">=",
+            "<="
+          ],
+          "title": "Operator",
+          "type": "string"
+        },
+        "threshold": {
+          "title": "Threshold",
+          "type": "number"
+        },
+        "confidence_level": {
+          "exclusiveMaximum": 1,
+          "exclusiveMinimum": 0,
+          "title": "Confidence Level",
+          "type": "number"
+        },
+        "interval_method_and_resampling_unit": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Interval Method And Resampling Unit",
+          "type": "string"
+        },
+        "rationale": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "metric_id",
+        "estimand_and_population",
+        "units",
+        "bound",
+        "operator",
+        "threshold",
+        "confidence_level",
+        "interval_method_and_resampling_unit",
+        "rationale"
+      ],
+      "title": "MetricGate",
+      "type": "object"
+    },
+    "ReviewPlan": {
+      "additionalProperties": false,
+      "properties": {
+        "scientific_owner": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Scientific Owner",
+          "type": "string"
+        },
+        "independent_statistical_reviewer": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Independent Statistical Reviewer",
+          "type": "string"
+        },
+        "data_custodian": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Data Custodian",
+          "type": "string"
+        },
+        "label_adjudication_and_conflicts": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Label Adjudication And Conflicts",
+          "type": "string"
+        },
+        "holdout_access_and_freeze_procedure": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Holdout Access And Freeze Procedure",
+          "type": "string"
+        },
+        "trusted_checkpoint_and_authorship_procedure": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Trusted Checkpoint And Authorship Procedure",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scientific_owner",
+        "independent_statistical_reviewer",
+        "data_custodian",
+        "label_adjudication_and_conflicts",
+        "holdout_access_and_freeze_procedure",
+        "trusted_checkpoint_and_authorship_procedure"
+      ],
+      "title": "ReviewPlan",
+      "type": "object"
+    },
+    "SamplingPlan": {
+      "additionalProperties": false,
+      "properties": {
+        "unit_of_analysis": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Unit Of Analysis",
+          "type": "string"
+        },
+        "min_test_units": {
+          "exclusiveMinimum": 0,
+          "title": "Min Test Units",
+          "type": "integer"
+        },
+        "min_independent_groups": {
+          "exclusiveMinimum": 0,
+          "title": "Min Independent Groups",
+          "type": "integer"
+        },
+        "independence_group": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Independence Group",
+          "type": "string"
+        },
+        "min_positive_units": {
+          "minimum": 0,
+          "title": "Min Positive Units",
+          "type": "integer"
+        },
+        "min_negative_units": {
+          "minimum": 0,
+          "title": "Min Negative Units",
+          "type": "integer"
+        },
+        "sample_size_justification": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Sample Size Justification",
+          "type": "string"
+        },
+        "precision_or_power_target": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Precision Or Power Target",
+          "type": "string"
+        },
+        "multiplicity_policy": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Multiplicity Policy",
+          "type": "string"
+        },
+        "missingness_and_abstention_analysis": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Missingness And Abstention Analysis",
+          "type": "string"
+        }
+      },
+      "required": [
+        "unit_of_analysis",
+        "min_test_units",
+        "min_independent_groups",
+        "independence_group",
+        "min_positive_units",
+        "min_negative_units",
+        "sample_size_justification",
+        "precision_or_power_target",
+        "multiplicity_policy",
+        "missingness_and_abstention_analysis"
+      ],
+      "title": "SamplingPlan",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "phase4-protocol/1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "state": {
+      "const": "proposed",
+      "title": "State",
+      "type": "string"
+    },
+    "protocol_id": {
+      "maxLength": 8000,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Protocol Id",
+      "type": "string"
+    },
+    "protocol_version": {
+      "maxLength": 8000,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Protocol Version",
+      "type": "string"
+    },
+    "data_class": {
+      "const": "public_non_sensitive",
+      "title": "Data Class",
+      "type": "string"
+    },
+    "claim_type": {
+      "enum": [
+        "endpoint_prediction",
+        "ranking_utility"
+      ],
+      "title": "Claim Type",
+      "type": "string"
+    },
+    "task_type": {
+      "enum": [
+        "regression",
+        "binary_classification",
+        "ranking"
+      ],
+      "title": "Task Type",
+      "type": "string"
+    },
+    "intended_use": {
+      "maxLength": 8000,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Intended Use",
+      "type": "string"
+    },
+    "prohibited_uses": {
+      "items": {
+        "maxLength": 8000,
+        "minLength": 1,
+        "pattern": "\\S",
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Prohibited Uses",
+      "type": "array"
+    },
+    "endpoint": {
+      "$ref": "#/$defs/Endpoint"
+    },
+    "method": {
+      "$ref": "#/$defs/Method"
+    },
+    "dataset": {
+      "$ref": "#/$defs/Dataset"
+    },
+    "baselines_and_comparisons": {
+      "items": {
+        "maxLength": 8000,
+        "minLength": 1,
+        "pattern": "\\S",
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Baselines And Comparisons",
+      "type": "array"
+    },
+    "sampling": {
+      "$ref": "#/$defs/SamplingPlan"
+    },
+    "primary_gates": {
+      "items": {
+        "$ref": "#/$defs/MetricGate"
+      },
+      "minItems": 1,
+      "title": "Primary Gates",
+      "type": "array"
+    },
+    "secondary_analyses": {
+      "items": {
+        "maxLength": 8000,
+        "minLength": 1,
+        "pattern": "\\S",
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Secondary Analyses",
+      "type": "array"
+    },
+    "domain": {
+      "$ref": "#/$defs/Domain"
+    },
+    "split_strategy_and_rationale": {
+      "maxLength": 8000,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Split Strategy And Rationale",
+      "type": "string"
+    },
+    "required_disjoint_group_keys": {
+      "items": {
+        "maxLength": 8000,
+        "minLength": 1,
+        "pattern": "\\S",
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Required Disjoint Group Keys",
+      "type": "array"
+    },
+    "artifacts": {
+      "$ref": "#/$defs/Artifacts"
+    },
+    "review": {
+      "$ref": "#/$defs/ReviewPlan"
+    }
+  },
+  "required": [
+    "schema_version",
+    "state",
+    "protocol_id",
+    "protocol_version",
+    "data_class",
+    "claim_type",
+    "task_type",
+    "intended_use",
+    "prohibited_uses",
+    "endpoint",
+    "method",
+    "dataset",
+    "baselines_and_comparisons",
+    "sampling",
+    "primary_gates",
+    "secondary_analyses",
+    "domain",
+    "split_strategy_and_rationale",
+    "required_disjoint_group_keys",
+    "artifacts",
+    "review"
+  ],
+  "title": "Protocol",
+  "type": "object"
+}

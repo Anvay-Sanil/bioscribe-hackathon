@@ -1,0 +1,51 @@
+{
+  "recorded_at": "2026-10-23T19:14:17.410Z",
+  "scope": "Observed local in-app browser checks; no student participants",
+  "passed": 10,
+  "checks": [
+    {
+      "name": "Initial recorded example loads with three compounds and no fresh replay claim",
+      "status": "passed"
+    },
+    {
+      "name": "Navigation contains working destinations and no unavailable modules",
+      "status": "passed"
+    },
+    {
+      "name": "Budget-one import reports only budget change, three unique graph matches and unchanged descriptors",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid earlier package rejected and previous comparison removed",
+      "status": "passed"
+    },
+    {
+      "name": "Token loaded from local file and readiness confirms API, worker and authenticated token",
+      "status": "passed"
+    },
+    {
+      "name": "Fresh authenticated replay shows matching scientific hashes and exact replay indicator",
+      "status": "passed"
+    },
+    {
+      "name": "Changing active run clears the earlier comparison and its error",
+      "status": "passed"
+    },
+    {
+      "name": "Proof page shows all 24 observations and explicitly untested user value",
+      "status": "passed"
+    },
+    {
+      "name": "Proof page fits current narrow viewport without page-level horizontal overflow",
+      "status": "passed",
+      "caseRows": 24,
+      "pageWidth": 311,
+      "userValueText": true,
+      "viewportWidth": 311
+    },
+    {
+      "name": "Three-minute walkthrough link navigates to its named section",
+      "status": "passed"
+    }
+  ]
+}

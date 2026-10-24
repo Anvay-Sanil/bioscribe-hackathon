@@ -1,0 +1,1226 @@
+{
+  "statement": "HM-01 ProvenanceLab: Reproducible Molecule Analysis with Evidence Checks",
+  "timestamp_utc": "2026-10-23T09:33:29.362587+00:00",
+  "assessment": "partial_fit",
+  "scientific_assessment": "not_assessed",
+  "environment": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "executable": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\.phase3-venv\\Scripts\\python.exe"
+  },
+  "probe_counts": {
+    "pass": 25,
+    "fail": 7
+  },
+  "requirements": [
+    {
+      "requirement": "Reject malformed/unsupported inputs without invented numbers",
+      "status": "pass"
+    },
+    {
+      "requirement": "Precise input diagnostic categories and ambiguity flags",
+      "status": "partial"
+    },
+    {
+      "requirement": "Molecular identity under an explicit policy",
+      "status": "pass_scoped",
+      "scope": "Exact canonical graph identity; no parent/tautomer equivalence claim"
+    },
+    {
+      "requirement": "Calculate and compare descriptors reproducibly",
+      "status": "pass_scoped",
+      "scope": "Fixtures and repeatability on the current locked host"
+    },
+    {
+      "requirement": "Never silently fill missing values",
+      "status": "pass_scoped",
+      "scope": "Unsupported graphs and absent predictions stay unassessed; field completeness is a separate gap"
+    },
+    {
+      "requirement": "Separate not computed/not available/not applicable at property level",
+      "status": "partial"
+    },
+    {
+      "requirement": "Frozen PubChem and ChEMBL record snapshots",
+      "status": "unmet"
+    },
+    {
+      "requirement": "Exactly replay any historical run from an exported package",
+      "status": "partial"
+    },
+    {
+      "requirement": "Identical results on any machine",
+      "status": "unverified"
+    }
+  ],
+  "probes": [
+    {
+      "name": "reject_without_values:unclosed_ring",
+      "status": "pass",
+      "detail": {
+        "status": "unsupported_input",
+        "numeric_fields": 0
+      }
+    },
+    {
+      "name": "reject_without_values:invalid_valence",
+      "status": "pass",
+      "detail": {
+        "status": "unsupported_input",
+        "numeric_fields": 0
+      }
+    },
+    {
+      "name": "reject_without_values:whitespace_or_multiple_records",
+      "status": "pass",
+      "detail": {
+        "status": "unsupported_input",
+        "numeric_fields": 0
+      }
+    },
+    {
+      "name": "reject_without_values:dummy_atom",
+      "status": "pass",
+      "detail": {
+        "status": "unsupported_input",
+        "numeric_fields": 0
+      }
+    },
+    {
+      "name": "reject_without_values:unsupported_query_bond",
+      "status": "pass",
+      "detail": {
+        "status": "unsupported_input",
+        "numeric_fields": 0
+      }
+    },
+    {
+      "name": "reject_without_values:non_ascii",
+      "status": "pass",
+      "detail": {
+        "status": "unsupported_input",
+        "numeric_fields": 0
+      }
+    },
+    {
+      "name": "reject_without_values:atom_limit",
+      "status": "pass",
+      "detail": {
+        "status": "unsupported_input",
+        "numeric_fields": 0
+      }
+    },
+    {
+      "name": "reject_without_values:unsupported_annotation",
+      "status": "pass",
+      "detail": {
+        "status": "unsupported_input",
+        "numeric_fields": 0
+      }
+    },
+    {
+      "name": "precise_input_diagnostics",
+      "status": "fail",
+      "detail": {
+        "different_failure_classes": 8,
+        "different_reported_diagnostics": 1,
+        "observation": "Unsupported input is safely rejected, but distinct causes are collapsed."
+      }
+    },
+    {
+      "name": "identity:equivalent_atom_order",
+      "status": "pass",
+      "detail": {
+        "left": {
+          "input_sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa",
+          "canonical_isomeric_smiles": "CCO",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "right": {
+          "input_sha256": "9c7df1afdec070fdd6f48d7c84e85bb4bceea5bd9632911acace7baa14023726",
+          "canonical_isomeric_smiles": "CCO",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "canonical_identity_equal": true,
+        "expected_under_current_policy": true
+      }
+    },
+    {
+      "name": "identity:equivalent_aromatic_notation",
+      "status": "pass",
+      "detail": {
+        "left": {
+          "input_sha256": "13cad05ca8f49c509e5b7be8c67668484344ebf2b2d12b03b295f14d4b1c32d1",
+          "canonical_isomeric_smiles": "c1ccccc1",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "right": {
+          "input_sha256": "f597e5816a91b21d072c9b8f39605bc289cab6f9dcaea1bc08e1c8335eb2a8e1",
+          "canonical_isomeric_smiles": "c1ccccc1",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "canonical_identity_equal": true,
+        "expected_under_current_policy": true
+      }
+    },
+    {
+      "name": "identity:equivalent_fragment_order",
+      "status": "pass",
+      "detail": {
+        "left": {
+          "input_sha256": "589a7f6e9d345d2005dfb6453f463ce6e891ce09fb3976572810066a28289cb2",
+          "canonical_isomeric_smiles": "[Cl-].[Na+]",
+          "formal_charge": 0,
+          "fragments": 2,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "right": {
+          "input_sha256": "75be434ec1982f4169bcc68dff522d1ce80c4ed9f32bd5bd82d1768fc8a5ed44",
+          "canonical_isomeric_smiles": "[Cl-].[Na+]",
+          "formal_charge": 0,
+          "fragments": 2,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "canonical_identity_equal": true,
+        "expected_under_current_policy": true
+      }
+    },
+    {
+      "name": "identity:opposite_tetrahedral_stereo",
+      "status": "pass",
+      "detail": {
+        "left": {
+          "input_sha256": "cdd493ae9792059ac4e23090a7f5528a7b1315bea3ab6d199f7e9aefa120e10d",
+          "canonical_isomeric_smiles": "C[C@H](N)C(=O)O",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [
+            "1:S"
+          ],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "right": {
+          "input_sha256": "aace88e5596a08e3d212596993a36c31ae1bec329120a568f1e3872a83844761",
+          "canonical_isomeric_smiles": "C[C@@H](N)C(=O)O",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [
+            "1:R"
+          ],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "canonical_identity_equal": false,
+        "expected_under_current_policy": false
+      }
+    },
+    {
+      "name": "identity:unspecified_vs_specified_stereo",
+      "status": "pass",
+      "detail": {
+        "left": {
+          "input_sha256": "32e2a5e0e35fe4b4ca0c542366760146c2d744355adde3897c096569701da36d",
+          "canonical_isomeric_smiles": "CC(N)C(=O)O",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [
+            "1:?"
+          ],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "right": {
+          "input_sha256": "cdd493ae9792059ac4e23090a7f5528a7b1315bea3ab6d199f7e9aefa120e10d",
+          "canonical_isomeric_smiles": "C[C@H](N)C(=O)O",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [
+            "1:S"
+          ],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "canonical_identity_equal": false,
+        "expected_under_current_policy": false
+      }
+    },
+    {
+      "name": "identity:retain_protonation",
+      "status": "pass",
+      "detail": {
+        "left": {
+          "input_sha256": "b00014bedbaba3c96c5a7a9a3e5b442e4866a65e4668060e94657318f994bd8a",
+          "canonical_isomeric_smiles": "CC(=O)O",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "right": {
+          "input_sha256": "5549c0cf909db90386e725db83d29f22d58f5f845dd2f262a57a3c0e347d8af6",
+          "canonical_isomeric_smiles": "CC(=O)[O-]",
+          "formal_charge": -1,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "canonical_identity_equal": false,
+        "expected_under_current_policy": false
+      }
+    },
+    {
+      "name": "identity:retain_salts",
+      "status": "pass",
+      "detail": {
+        "left": {
+          "input_sha256": "5549c0cf909db90386e725db83d29f22d58f5f845dd2f262a57a3c0e347d8af6",
+          "canonical_isomeric_smiles": "CC(=O)[O-]",
+          "formal_charge": -1,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "right": {
+          "input_sha256": "7ac7ca4ef0c1ec27d59de9e5ea83bfbf7f0155d9bab00c9f603ca9e28ba28f1c",
+          "canonical_isomeric_smiles": "CC(=O)[O-].[Na+]",
+          "formal_charge": 0,
+          "fragments": 2,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "canonical_identity_equal": false,
+        "expected_under_current_policy": false
+      }
+    },
+    {
+      "name": "identity:retain_tautomers",
+      "status": "pass",
+      "detail": {
+        "left": {
+          "input_sha256": "110ce3a9aea7797d2bbdfe8879d52d03492bed3c8be5fb779691f39723ba9090",
+          "canonical_isomeric_smiles": "CC(C)=O",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "right": {
+          "input_sha256": "55b1d66a0e606863a3370d082c487e06b762bac2d3dc63b458dcc03659c18f55",
+          "canonical_isomeric_smiles": "C=C(C)O",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "canonical_identity_equal": false,
+        "expected_under_current_policy": false
+      }
+    },
+    {
+      "name": "identity:retain_isotopes",
+      "status": "pass",
+      "detail": {
+        "left": {
+          "input_sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa",
+          "canonical_isomeric_smiles": "CCO",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "right": {
+          "input_sha256": "a5f70e40f982d7864323ec10f6f106121b4d9042776ab6c2ce384794b08ab6dc",
+          "canonical_isomeric_smiles": "[13CH3]CO",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "canonical_identity_equal": false,
+        "expected_under_current_policy": false
+      }
+    },
+    {
+      "name": "tetrahedral_ambiguity_recorded",
+      "status": "pass",
+      "detail": {
+        "input_sha256": "32e2a5e0e35fe4b4ca0c542366760146c2d744355adde3897c096569701da36d",
+        "canonical_isomeric_smiles": "CC(N)C(=O)O",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [
+          "1:?"
+        ],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      }
+    },
+    {
+      "name": "double_bond_ambiguity_explicitly_recorded",
+      "status": "fail",
+      "detail": {
+        "identity": {
+          "input_sha256": "09fce66e68ac4dfdefe142b0d6766284c3c27c579c037a52ddd080a1891ea673",
+          "canonical_isomeric_smiles": "FC=CF",
+          "formal_charge": 0,
+          "fragments": 1,
+          "stereocenters": [],
+          "policies": [
+            "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+            "Isomeric canonical SMILES; isotopes retained",
+            "Formal charge preserved",
+            "All fragments retained; no parent/salt stripping",
+            "Tautomer and protonation state preserved; no pH assumed",
+            "Unspecified stereochemistry remains unspecified",
+            "RDKit sanitization and hydrogen representation v2025.03.3"
+          ],
+          "status": "identified"
+        },
+        "observation": "Unspecified double-bond geometry stays unspecified in SMILES; no explicit E/Z ambiguity item is emitted."
+      }
+    },
+    {
+      "name": "ethanol_fixed_descriptor_fixture",
+      "status": "pass",
+      "detail": {
+        "molecular_weight": 46.069,
+        "tpsa": 20.23,
+        "scope": "Software fixture only, not predictive accuracy"
+      }
+    },
+    {
+      "name": "mixed_library_preserves_all_rows",
+      "status": "pass",
+      "detail": [
+        "identified",
+        "unsupported_input",
+        "unsupported_input",
+        "identified"
+      ]
+    },
+    {
+      "name": "unassessed_predictions_never_imputed",
+      "status": "pass",
+      "detail": {
+        "prediction_fields": 60
+      }
+    },
+    {
+      "name": "invalid_rows_have_explicit_descriptor_status_records",
+      "status": "fail",
+      "detail": {
+        "observation": "Descriptor fields are absent for unsupported inputs, although row identity and policy abstentions are retained."
+      }
+    },
+    {
+      "name": "property_missingness_distinguishes_all_three_required_states",
+      "status": "fail",
+      "detail": {
+        "status_enums": {
+          "validation_status": [
+            "not_available",
+            "not_applicable"
+          ],
+          "assessment_status": [
+            "computed",
+            "observed",
+            "not_assessed",
+            "needs_review"
+          ],
+          "execution_status": [
+            "succeeded",
+            "failed",
+            "unavailable",
+            "unsupported_input"
+          ]
+        },
+        "not_computed_example": null,
+        "unavailable_example": {
+          "run_id": "cccccccccccccccccccccccccccccccc",
+          "input_sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa",
+          "field_id": "molecule.0.binding_affinity",
+          "quantity": "binding_affinity",
+          "value": null,
+          "units": null,
+          "evidence_category": "model_prediction",
+          "method_id": "assessment_policy",
+          "method_version": "1.0.0",
+          "implementation_fidelity": "fixture_checked",
+          "fidelity_record": "tests_phase3/test_contract.py",
+          "validation_record": null,
+          "validation_status": "not_available",
+          "validation_reason": "No endpoint-specific validation record",
+          "domain": "undetermined",
+          "domain_reason": "No supported predictive domain",
+          "coverage": {
+            "total": 1,
+            "analyzed": 0,
+            "complete": false,
+            "coordinate_system": "molecule",
+            "reason": "Not computed"
+          },
+          "assessment_status": "not_assessed",
+          "execution_status": "unavailable",
+          "reason": "Endpoint-specific validation unavailable"
+        },
+        "undefined_denominator_example": {
+          "run_id": "cccccccccccccccccccccccccccccccc",
+          "input_sha256": "ea7e44a64c7461517e4f9eb140658e1650e4fe580eaa6895de3a748fdaaf72df",
+          "field_id": "molecule.0.aromatic_heavy_atom_fraction",
+          "quantity": "aromatic_heavy_atom_fraction",
+          "value": null,
+          "units": "dimensionless",
+          "evidence_category": "computed_descriptor",
+          "method_id": "rdkit_descriptors",
+          "method_version": "1.1.0",
+          "implementation_fidelity": "fixture_checked",
+          "fidelity_record": "tests_phase3/test_methods.py::test_chemistry",
+          "validation_record": null,
+          "validation_status": "not_applicable",
+          "validation_reason": "No predictive claim",
+          "domain": "undetermined",
+          "domain_reason": "No supported predictive domain",
+          "coverage": {
+            "total": 1,
+            "analyzed": 0,
+            "complete": false,
+            "coordinate_system": "molecule",
+            "reason": "Not computed"
+          },
+          "assessment_status": "not_assessed",
+          "execution_status": "unsupported_input",
+          "reason": "Computed descriptor; not a predictive assessment"
+        },
+        "observation": "Broken-ring MW has no field record; unavailable affinity has an execution status; H2 aromatic-heavy-atom fraction is undefined but reports unsupported_input/undetermined. UI reduces absent numeric fields to Not assessed. Validation not_applicable is a different concept."
+      }
+    },
+    {
+      "name": "offline_same_environment_cross_process_exact_repeat",
+      "status": "pass",
+      "detail": {
+        "independent_processes": 3,
+        "artifact_sha256": [
+          "bc19cdcbc8e46db744da93ed4e1f81fe94eca8b1fd6ccc60dd06d38d74d66e8c",
+          "bc19cdcbc8e46db744da93ed4e1f81fe94eca8b1fd6ccc60dd06d38d74d66e8c",
+          "bc19cdcbc8e46db744da93ed4e1f81fe94eca8b1fd6ccc60dd06d38d74d66e8c"
+        ],
+        "scope": "One Windows host and locked interpreter; no cross-platform claim."
+      }
+    },
+    {
+      "name": "durable_retrieval_preserves_exact_artifact",
+      "status": "pass",
+      "detail": {
+        "run_id": "dde6ac671f1349bda6bafea719df14d7",
+        "artifact_sha256": "93dd53b03e3b1f3b51c11b64c5b3ec8113061721366fa1b5913b7d5c38d1976f"
+      }
+    },
+    {
+      "name": "persisted_source_registry_lock_verify",
+      "status": "pass",
+      "detail": {
+        "bundle_keys": [
+          "dependency_lock",
+          "methods",
+          "sources"
+        ],
+        "input_payload_in_bundle": false
+      }
+    },
+    {
+      "name": "manual_recompute_with_private_stored_request",
+      "status": "pass",
+      "detail": {
+        "scope": "Manual harness recomputation using private stored request and current installed runtime, not a product replay command."
+      }
+    },
+    {
+      "name": "export_is_self_contained_original_input_replay_package",
+      "status": "fail",
+      "detail": {
+        "export_keys": [
+          "contract_version",
+          "run_id",
+          "status",
+          "request_sha256",
+          "created_at",
+          "attempts",
+          "error_code",
+          "artifact_sha256",
+          "artifact"
+        ],
+        "canonical_first_smiles": "CCO",
+        "original_first_smiles": "OCC",
+        "observation": "Original spelling OCC is held only in the private job payload; export has CCO and the hash of OCC."
+      }
+    },
+    {
+      "name": "general_historical_replay_route",
+      "status": "fail",
+      "detail": [
+        "/docs",
+        "/docs/oauth2-redirect",
+        "/health/live",
+        "/health/ready",
+        "/openapi.json",
+        "/redoc",
+        "/v3/capabilities",
+        "/v3/runs",
+        "/v3/runs/{run_id}",
+        "/v3/runs/{run_id}/audit",
+        "/v3/runs/{run_id}/cancel",
+        "/v3/runs/{run_id}/export",
+        "/v3/runs/{run_id}/provenance"
+      ]
+    },
+    {
+      "name": "frozen_pubchem_and_chembl_compound_snapshot_used",
+      "status": "fail",
+      "detail": {
+        "active_demo_files": [
+          "bioscribe-ai\\public\\hackathon\\conformers.json",
+          "bioscribe-ai\\public\\hackathon\\example-request.json",
+          "bioscribe-ai\\public\\hackathon\\example-run.json"
+        ],
+        "source": {
+          "accession": null,
+          "version": null,
+          "organism_taxon_id": null,
+          "provenance": "user_supplied_unverified",
+          "unknown_reason": "User supplied; no verified source accession"
+        },
+        "observation": "Active demo is a local SMILES list, not source-ID-bound PubChem/ChEMBL compound records. Retained AID1030 study files are assay descriptions, not this workflow's compound snapshot."
+      }
+    }
+  ],
+  "invalid_input_diagnostics": [
+    {
+      "fixture_class": "unclosed_ring",
+      "input": "C1CC",
+      "status": "unsupported_input",
+      "distinct_reasons": [
+        "Input rejected by plain_smiles_concrete_graph/1.1.0; no molecular assessment",
+        "Unsupported molecular input; no rule scan performed"
+      ],
+      "descriptor_records": 0
+    },
+    {
+      "fixture_class": "invalid_valence",
+      "input": "C(C)(C)(C)(C)C",
+      "status": "unsupported_input",
+      "distinct_reasons": [
+        "Input rejected by plain_smiles_concrete_graph/1.1.0; no molecular assessment",
+        "Unsupported molecular input; no rule scan performed"
+      ],
+      "descriptor_records": 0
+    },
+    {
+      "fixture_class": "whitespace_or_multiple_records",
+      "input": "CCO C1OC1",
+      "status": "unsupported_input",
+      "distinct_reasons": [
+        "Input rejected by plain_smiles_concrete_graph/1.1.0; no molecular assessment",
+        "Unsupported molecular input; no rule scan performed"
+      ],
+      "descriptor_records": 0
+    },
+    {
+      "fixture_class": "dummy_atom",
+      "input": "*CC",
+      "status": "unsupported_input",
+      "distinct_reasons": [
+        "Input rejected by plain_smiles_concrete_graph/1.1.0; no molecular assessment",
+        "Unsupported molecular input; no rule scan performed"
+      ],
+      "descriptor_records": 0
+    },
+    {
+      "fixture_class": "unsupported_query_bond",
+      "input": "C~C",
+      "status": "unsupported_input",
+      "distinct_reasons": [
+        "Input rejected by plain_smiles_concrete_graph/1.1.0; no molecular assessment",
+        "Unsupported molecular input; no rule scan performed"
+      ],
+      "descriptor_records": 0
+    },
+    {
+      "fixture_class": "non_ascii",
+      "input": "CC\u041e",
+      "status": "unsupported_input",
+      "distinct_reasons": [
+        "Input rejected by plain_smiles_concrete_graph/1.1.0; no molecular assessment",
+        "Unsupported molecular input; no rule scan performed"
+      ],
+      "descriptor_records": 0
+    },
+    {
+      "fixture_class": "atom_limit",
+      "input": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "status": "unsupported_input",
+      "distinct_reasons": [
+        "Input rejected by plain_smiles_concrete_graph/1.1.0; no molecular assessment",
+        "Unsupported molecular input; no rule scan performed"
+      ],
+      "descriptor_records": 0
+    },
+    {
+      "fixture_class": "unsupported_annotation",
+      "input": "CCO |$C;C;O$|",
+      "status": "unsupported_input",
+      "distinct_reasons": [
+        "Input rejected by plain_smiles_concrete_graph/1.1.0; no molecular assessment",
+        "Unsupported molecular input; no rule scan performed"
+      ],
+      "descriptor_records": 0
+    }
+  ],
+  "identity_pairs": [
+    {
+      "case": "equivalent_atom_order",
+      "left": {
+        "input_sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa",
+        "canonical_isomeric_smiles": "CCO",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "right": {
+        "input_sha256": "9c7df1afdec070fdd6f48d7c84e85bb4bceea5bd9632911acace7baa14023726",
+        "canonical_isomeric_smiles": "CCO",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "canonical_identity_equal": true,
+      "expected_under_current_policy": true
+    },
+    {
+      "case": "equivalent_aromatic_notation",
+      "left": {
+        "input_sha256": "13cad05ca8f49c509e5b7be8c67668484344ebf2b2d12b03b295f14d4b1c32d1",
+        "canonical_isomeric_smiles": "c1ccccc1",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "right": {
+        "input_sha256": "f597e5816a91b21d072c9b8f39605bc289cab6f9dcaea1bc08e1c8335eb2a8e1",
+        "canonical_isomeric_smiles": "c1ccccc1",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "canonical_identity_equal": true,
+      "expected_under_current_policy": true
+    },
+    {
+      "case": "equivalent_fragment_order",
+      "left": {
+        "input_sha256": "589a7f6e9d345d2005dfb6453f463ce6e891ce09fb3976572810066a28289cb2",
+        "canonical_isomeric_smiles": "[Cl-].[Na+]",
+        "formal_charge": 0,
+        "fragments": 2,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "right": {
+        "input_sha256": "75be434ec1982f4169bcc68dff522d1ce80c4ed9f32bd5bd82d1768fc8a5ed44",
+        "canonical_isomeric_smiles": "[Cl-].[Na+]",
+        "formal_charge": 0,
+        "fragments": 2,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "canonical_identity_equal": true,
+      "expected_under_current_policy": true
+    },
+    {
+      "case": "opposite_tetrahedral_stereo",
+      "left": {
+        "input_sha256": "cdd493ae9792059ac4e23090a7f5528a7b1315bea3ab6d199f7e9aefa120e10d",
+        "canonical_isomeric_smiles": "C[C@H](N)C(=O)O",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [
+          "1:S"
+        ],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "right": {
+        "input_sha256": "aace88e5596a08e3d212596993a36c31ae1bec329120a568f1e3872a83844761",
+        "canonical_isomeric_smiles": "C[C@@H](N)C(=O)O",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [
+          "1:R"
+        ],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "canonical_identity_equal": false,
+      "expected_under_current_policy": false
+    },
+    {
+      "case": "unspecified_vs_specified_stereo",
+      "left": {
+        "input_sha256": "32e2a5e0e35fe4b4ca0c542366760146c2d744355adde3897c096569701da36d",
+        "canonical_isomeric_smiles": "CC(N)C(=O)O",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [
+          "1:?"
+        ],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "right": {
+        "input_sha256": "cdd493ae9792059ac4e23090a7f5528a7b1315bea3ab6d199f7e9aefa120e10d",
+        "canonical_isomeric_smiles": "C[C@H](N)C(=O)O",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [
+          "1:S"
+        ],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "canonical_identity_equal": false,
+      "expected_under_current_policy": false
+    },
+    {
+      "case": "retain_protonation",
+      "left": {
+        "input_sha256": "b00014bedbaba3c96c5a7a9a3e5b442e4866a65e4668060e94657318f994bd8a",
+        "canonical_isomeric_smiles": "CC(=O)O",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "right": {
+        "input_sha256": "5549c0cf909db90386e725db83d29f22d58f5f845dd2f262a57a3c0e347d8af6",
+        "canonical_isomeric_smiles": "CC(=O)[O-]",
+        "formal_charge": -1,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "canonical_identity_equal": false,
+      "expected_under_current_policy": false
+    },
+    {
+      "case": "retain_salts",
+      "left": {
+        "input_sha256": "5549c0cf909db90386e725db83d29f22d58f5f845dd2f262a57a3c0e347d8af6",
+        "canonical_isomeric_smiles": "CC(=O)[O-]",
+        "formal_charge": -1,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "right": {
+        "input_sha256": "7ac7ca4ef0c1ec27d59de9e5ea83bfbf7f0155d9bab00c9f603ca9e28ba28f1c",
+        "canonical_isomeric_smiles": "CC(=O)[O-].[Na+]",
+        "formal_charge": 0,
+        "fragments": 2,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "canonical_identity_equal": false,
+      "expected_under_current_policy": false
+    },
+    {
+      "case": "retain_tautomers",
+      "left": {
+        "input_sha256": "110ce3a9aea7797d2bbdfe8879d52d03492bed3c8be5fb779691f39723ba9090",
+        "canonical_isomeric_smiles": "CC(C)=O",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "right": {
+        "input_sha256": "55b1d66a0e606863a3370d082c487e06b762bac2d3dc63b458dcc03659c18f55",
+        "canonical_isomeric_smiles": "C=C(C)O",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "canonical_identity_equal": false,
+      "expected_under_current_policy": false
+    },
+    {
+      "case": "retain_isotopes",
+      "left": {
+        "input_sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa",
+        "canonical_isomeric_smiles": "CCO",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "right": {
+        "input_sha256": "a5f70e40f982d7864323ec10f6f106121b4d9042776ab6c2ce384794b08ab6dc",
+        "canonical_isomeric_smiles": "[13CH3]CO",
+        "formal_charge": 0,
+        "fragments": 1,
+        "stereocenters": [],
+        "policies": [
+          "plain_smiles_concrete_graph/1.1.0: no names, CXSMILES, whitespace, dummy/query atoms or query bonds",
+          "Isomeric canonical SMILES; isotopes retained",
+          "Formal charge preserved",
+          "All fragments retained; no parent/salt stripping",
+          "Tautomer and protonation state preserved; no pH assumed",
+          "Unspecified stereochemistry remains unspecified",
+          "RDKit sanitization and hydrogen representation v2025.03.3"
+        ],
+        "status": "identified"
+      },
+      "canonical_identity_equal": false,
+      "expected_under_current_policy": false
+    }
+  ],
+  "limitations": [
+    "No application code changed",
+    "No assay labels or external data fetched",
+    "Cross-platform execution not attempted",
+    "A fixed fixture is not an independent scientific property benchmark"
+  ]
+}

@@ -1,0 +1,555 @@
+{
+  "recorded_utc": "2026-10-24T19:51:27.172701+00:00",
+  "scope": "Five supplied integrity corrections; bounded software verification only",
+  "status": "passed_local_checks",
+  "contracts": {
+    "current_lab": "lab-1.1.0",
+    "current_molecular": "3.1.0",
+    "molecular_method": "1.2.0",
+    "historical_lab": "lab-1.0.0 preserved",
+    "historical_molecular": "3.0.0 preserved read/export"
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "status": "implemented_and_checked",
+      "change": "Canonical identity tie-breaking; installed historical replay engine; legacy UI notice",
+      "evidence": "72 seeded random-SMILES/shuffle trials across three budgets; exact historical replay"
+    },
+    {
+      "id": "F2",
+      "status": "implemented_and_checked",
+      "change": "Shared concrete-graph parser, canonical identity and rounded descriptor authority; explicit versioned schemas",
+      "evidence": "25 cross-contract sentinels, historical artifact equality and strict missing-metadata rejection"
+    },
+    {
+      "id": "F3",
+      "status": "implemented_and_checked_with_limits",
+      "change": "Frozen ChEMBL comparison plus explicit formula arithmetic",
+      "evidence": "Three compounds/four descriptors at two decimal precision; five formula-based molar-mass cases",
+      "limits": "ChEMBL shares RDKit. Formula arithmetic is independent of RDKit expected-value tables. No second toolkit or experimental predictive validation."
+    },
+    {
+      "id": "F4",
+      "status": "implemented_and_checked",
+      "change": "No newline conversion, hash-locked Python wheels, precise exclusions and copied-import audit",
+      "evidence": "Real autocrlf checkout, changed-wheel rejection, hash installation, 362 literal local imports, strict transfer and altered/deleted/extra file detection"
+    },
+    {
+      "id": "F5",
+      "status": "implemented_local_verification_passed_hosted_ci_pending",
+      "change": "Supported pytest discovery, unified verification and Ubuntu GitHub Actions workflow",
+      "evidence": "390 backend checks on Windows and Linux; 15 replay occurrences on each; seven client suites, typecheck, lint and build on Windows",
+      "limits": "Hosted workflow has not been pushed/run. Linux frontend clean install/build not executed locally."
+    }
+  ],
+  "verification": {
+    "windows_final_transfer": {
+      "started_utc": "2026-10-24T19:43:28.619873+00:00",
+      "status": "passed",
+      "scope": "full_application",
+      "steps": [
+        {
+          "name": "transfer_manifest",
+          "command": [
+            "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\clean-python\\Scripts\\python.exe",
+            "-B",
+            "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\output\\BioScribe-Hackathon-Transfer-20261024T194232Z\\VERIFY_TRANSFER.py",
+            "--root",
+            "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\output\\BioScribe-Hackathon-Transfer-20261024T194232Z"
+          ],
+          "returncode": 0,
+          "seconds": 0.609,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\transfer_manifest.txt"
+        },
+        {
+          "name": "python_install",
+          "command": [
+            "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\clean-python\\Scripts\\python.exe",
+            "-m",
+            "pip",
+            "install",
+            "--require-hashes",
+            "--only-binary=:all:",
+            "-r",
+            "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\output\\BioScribe-Hackathon-Transfer-20261024T194232Z\\source\\backend\\requirements-phase3-install.lock"
+          ],
+          "returncode": 0,
+          "seconds": 1.766,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\python_install.txt"
+        },
+        {
+          "name": "python_dependencies",
+          "command": [
+            "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\clean-python\\Scripts\\python.exe",
+            "-m",
+            "pip",
+            "check"
+          ],
+          "returncode": 0,
+          "seconds": 1.156,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\python_dependencies.txt"
+        },
+        {
+          "name": "npm_ci",
+          "command": [
+            "C:\\Program Files\\nodejs\\npm.cmd",
+            "ci"
+          ],
+          "returncode": 0,
+          "seconds": 164.359,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\npm_ci.txt"
+        },
+        {
+          "name": "backend_tests",
+          "command": [
+            "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\clean-python\\Scripts\\python.exe",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-p",
+            "no:cacheprovider",
+            "--junitxml=E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\backend-tests.xml"
+          ],
+          "returncode": 0,
+          "seconds": 141.688,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\backend_tests.txt"
+        },
+        {
+          "name": "typecheck",
+          "command": [
+            "C:\\Program Files\\nodejs\\npm.cmd",
+            "run",
+            "typecheck"
+          ],
+          "returncode": 0,
+          "seconds": 19.859,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\typecheck.txt"
+        },
+        {
+          "name": "lint",
+          "command": [
+            "C:\\Program Files\\nodejs\\npm.cmd",
+            "run",
+            "lint"
+          ],
+          "returncode": 0,
+          "seconds": 24.532,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\lint.txt"
+        },
+        {
+          "name": "phase3-contract-check",
+          "command": [
+            "C:\\Program Files\\nodejs\\node.EXE",
+            "scripts/phase3-contract-check.cjs"
+          ],
+          "returncode": 0,
+          "seconds": 1.563,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\phase3-contract-check.txt"
+        },
+        {
+          "name": "hackathon-check",
+          "command": [
+            "C:\\Program Files\\nodejs\\node.EXE",
+            "scripts/hackathon-check.cjs"
+          ],
+          "returncode": 0,
+          "seconds": 1.672,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\hackathon-check.txt"
+        },
+        {
+          "name": "evidence-lab-check",
+          "command": [
+            "C:\\Program Files\\nodejs\\node.EXE",
+            "scripts/evidence-lab-check.cjs"
+          ],
+          "returncode": 0,
+          "seconds": 1.969,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\evidence-lab-check.txt"
+        },
+        {
+          "name": "hm01-check",
+          "command": [
+            "C:\\Program Files\\nodejs\\node.EXE",
+            "scripts/hm01-check.cjs"
+          ],
+          "returncode": 0,
+          "seconds": 1.516,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\hm01-check.txt"
+        },
+        {
+          "name": "judging-upgrade-check",
+          "command": [
+            "C:\\Program Files\\nodejs\\node.EXE",
+            "scripts/judging-upgrade-check.cjs"
+          ],
+          "returncode": 0,
+          "seconds": 2.234,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\judging-upgrade-check.txt"
+        },
+        {
+          "name": "experiment-challenges-check",
+          "command": [
+            "C:\\Program Files\\nodejs\\node.EXE",
+            "scripts/experiment-challenges-check.cjs"
+          ],
+          "returncode": 0,
+          "seconds": 4.39,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\experiment-challenges-check.txt"
+        },
+        {
+          "name": "evidence-assistant-check",
+          "command": [
+            "C:\\Program Files\\nodejs\\node.EXE",
+            "scripts/evidence-assistant-check.cjs"
+          ],
+          "returncode": 0,
+          "seconds": 1.359,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\evidence-assistant-check.txt"
+        },
+        {
+          "name": "next_build",
+          "command": [
+            "C:\\Program Files\\nodejs\\npm.cmd",
+            "run",
+            "build"
+          ],
+          "returncode": 0,
+          "seconds": 51.125,
+          "log": "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\verification-output\\final-transfer\\next_build.txt"
+        }
+      ],
+      "scientific_assessment": "not_assessed",
+      "user_value": "untested",
+      "source_manifest": {
+        "status": "passed",
+        "files": 718,
+        "scope": "Current source byte correspondence; no authorship or scientific validation"
+      },
+      "local_imports": {
+        "status": "passed",
+        "literal_local_imports": 362,
+        "scope": "Literal local imports throughout src; dynamic resolution also checked by clean TypeScript/Next build"
+      },
+      "recorded_replays": [
+        {
+          "path": "bioscribe-ai/public/evidence-lab/budget-one-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "65447233e7f7a46598999b923c51cd254d77b0c9ae4b985a99e6721f42798168"
+        },
+        {
+          "path": "bioscribe-ai/public/evidence-lab/challenge-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "dd4692c1bdbf7ba76066b24906e5fce733f0eac0ddd789dd45730081ae689b30"
+        },
+        {
+          "path": "bioscribe-ai/public/evidence-lab/challenge-source-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "5905352b670eb7e53a19bdbc7aff5a12b41c532c0d3e5ba1487647ce49b2eb4f"
+        },
+        {
+          "path": "bioscribe-ai/public/evidence-lab/reference-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7"
+        },
+        {
+          "path": "bioscribe-ai/public/evidence-lab/v1.1-spelling-case.json",
+          "contract": "lab-1.1.0",
+          "result_sha256": "5a64bec6936f37e0bff2ae800e56b054d385149586af138d91150423e945147d"
+        },
+        {
+          "path": "presentation/05-demo/budget-one-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "65447233e7f7a46598999b923c51cd254d77b0c9ae4b985a99e6721f42798168"
+        },
+        {
+          "path": "presentation/05-demo/challenge-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "dd4692c1bdbf7ba76066b24906e5fce733f0eac0ddd789dd45730081ae689b30"
+        },
+        {
+          "path": "presentation/05-demo/challenge-source-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "5905352b670eb7e53a19bdbc7aff5a12b41c532c0d3e5ba1487647ce49b2eb4f"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/control",
+          "contract": "lab-1.0.0",
+          "result_sha256": "5905352b670eb7e53a19bdbc7aff5a12b41c532c0d3e5ba1487647ce49b2eb4f"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/trials/0/job/output/package",
+          "contract": "lab-1.0.0",
+          "result_sha256": "a5822fcdfb7855b740333c1ff3d1a873fbbb8d4604988114356a34956ebe22df"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/trials/1/job/output/package",
+          "contract": "lab-1.0.0",
+          "result_sha256": "046291ad8794d5be6a62824c6c29d2ee99dd7ce3bd345c30f8b09f1c20dbb4b4"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/trials/2/job/output/package",
+          "contract": "lab-1.0.0",
+          "result_sha256": "fb00ecf4e2dee59899eea7078089b53be7ebe759de36cf0110713cc5b212be65"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/trials/3/job/output/package",
+          "contract": "lab-1.0.0",
+          "result_sha256": "8cb24b8f5a35ac5f45db5d81140c258cab37e970c13ec70dca56c96402abedca"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/trials/4/job/output/package",
+          "contract": "lab-1.0.0",
+          "result_sha256": "659eecaba361ecabde507eab99d02463b0ee609eefedd9c96a3aa07de6d6e4f6"
+        },
+        {
+          "path": "presentation/05-demo/reference-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7"
+        }
+      ],
+      "source_manifest_after": {
+        "status": "passed",
+        "files": 718,
+        "scope": "Current source byte correspondence; no authorship or scientific validation"
+      },
+      "finished_utc": "2026-10-24T19:50:53.925037+00:00"
+    },
+    "linux_final_zip": {
+      "started_utc": "2026-10-24T19:43:28.186223+00:00",
+      "status": "passed",
+      "scope": "backend_only",
+      "steps": [
+        {
+          "name": "transfer_manifest",
+          "command": [
+            "/usr/local/bin/python",
+            "-B",
+            "/tmp/transfer/BioScribe-Hackathon-Transfer/VERIFY_TRANSFER.py",
+            "--root",
+            "/tmp/transfer/BioScribe-Hackathon-Transfer"
+          ],
+          "returncode": 0,
+          "seconds": 0.14,
+          "log": "/verification/transfer_manifest.txt"
+        },
+        {
+          "name": "backend_tests",
+          "command": [
+            "/usr/local/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-p",
+            "no:cacheprovider",
+            "--junitxml=/verification/backend-tests.xml"
+          ],
+          "returncode": 0,
+          "seconds": 38.142,
+          "log": "/verification/backend_tests.txt"
+        }
+      ],
+      "scientific_assessment": "not_assessed",
+      "user_value": "untested",
+      "source_manifest": {
+        "status": "passed",
+        "files": 718,
+        "scope": "Current source byte correspondence; no authorship or scientific validation"
+      },
+      "local_imports": {
+        "status": "passed",
+        "literal_local_imports": 362,
+        "scope": "Literal local imports throughout src; dynamic resolution also checked by clean TypeScript/Next build"
+      },
+      "recorded_replays": [
+        {
+          "path": "bioscribe-ai/public/evidence-lab/budget-one-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "65447233e7f7a46598999b923c51cd254d77b0c9ae4b985a99e6721f42798168"
+        },
+        {
+          "path": "bioscribe-ai/public/evidence-lab/challenge-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "dd4692c1bdbf7ba76066b24906e5fce733f0eac0ddd789dd45730081ae689b30"
+        },
+        {
+          "path": "bioscribe-ai/public/evidence-lab/challenge-source-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "5905352b670eb7e53a19bdbc7aff5a12b41c532c0d3e5ba1487647ce49b2eb4f"
+        },
+        {
+          "path": "bioscribe-ai/public/evidence-lab/reference-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7"
+        },
+        {
+          "path": "bioscribe-ai/public/evidence-lab/v1.1-spelling-case.json",
+          "contract": "lab-1.1.0",
+          "result_sha256": "5a64bec6936f37e0bff2ae800e56b054d385149586af138d91150423e945147d"
+        },
+        {
+          "path": "presentation/05-demo/budget-one-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "65447233e7f7a46598999b923c51cd254d77b0c9ae4b985a99e6721f42798168"
+        },
+        {
+          "path": "presentation/05-demo/challenge-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "dd4692c1bdbf7ba76066b24906e5fce733f0eac0ddd789dd45730081ae689b30"
+        },
+        {
+          "path": "presentation/05-demo/challenge-source-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "5905352b670eb7e53a19bdbc7aff5a12b41c532c0d3e5ba1487647ce49b2eb4f"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/control",
+          "contract": "lab-1.0.0",
+          "result_sha256": "5905352b670eb7e53a19bdbc7aff5a12b41c532c0d3e5ba1487647ce49b2eb4f"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/trials/0/job/output/package",
+          "contract": "lab-1.0.0",
+          "result_sha256": "a5822fcdfb7855b740333c1ff3d1a873fbbb8d4604988114356a34956ebe22df"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/trials/1/job/output/package",
+          "contract": "lab-1.0.0",
+          "result_sha256": "046291ad8794d5be6a62824c6c29d2ee99dd7ce3bd345c30f8b09f1c20dbb4b4"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/trials/2/job/output/package",
+          "contract": "lab-1.0.0",
+          "result_sha256": "fb00ecf4e2dee59899eea7078089b53be7ebe759de36cf0110713cc5b212be65"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/trials/3/job/output/package",
+          "contract": "lab-1.0.0",
+          "result_sha256": "8cb24b8f5a35ac5f45db5d81140c258cab37e970c13ec70dca56c96402abedca"
+        },
+        {
+          "path": "presentation/05-demo/recorded-challenge-capsule.json/trials/4/job/output/package",
+          "contract": "lab-1.0.0",
+          "result_sha256": "659eecaba361ecabde507eab99d02463b0ee609eefedd9c96a3aa07de6d6e4f6"
+        },
+        {
+          "path": "presentation/05-demo/reference-run.json",
+          "contract": "lab-1.0.0",
+          "result_sha256": "59dbfaeaa14b578dcefd58fde803d562cacff7b016ad8c688b244e6b54672bc7"
+        }
+      ],
+      "source_manifest_after": {
+        "status": "passed",
+        "files": 718,
+        "scope": "Current source byte correspondence; no authorship or scientific validation"
+      },
+      "finished_utc": "2026-10-24T19:44:07.290637+00:00"
+    },
+    "local_demo": {
+      "status": "passed",
+      "analysis_run": "99e7b8823a8c4b20b800ab67dee03c2e",
+      "replay_run": "5b303de78aae4936ab1cc95e2e77ca33",
+      "result_sha256": "5f66bc172ab2e92b69f6120ba11da9859bcfb6b1acdc7eae489e7b9e0b44416c",
+      "checks": [
+        "API and worker readiness",
+        "authenticated capabilities",
+        "fresh public computation",
+        "persisted export equality",
+        "fresh exact replay",
+        "evidence and proof HTTP routes"
+      ],
+      "scientific_assessment": "not_assessed",
+      "user_value": "untested",
+      "scope": "This local execution only; not a browser or cross-machine test."
+    }
+  },
+  "client_checks": {
+    "total": 179,
+    "suites": [
+      {
+        "path": "verification-output/final-transfer/client-generated/docs/evidence-assistant-client-checks.json",
+        "checks": 18,
+        "sha256": "08ed2a38c4fa1af92a65e545381d310b6d0d5b2d0193841240472f2c108af848"
+      },
+      {
+        "path": "verification-output/final-transfer/client-generated/docs/phase3-client-checks.json",
+        "checks": 27,
+        "sha256": "811d8bdb8ed715754198453a2acd1853e9c39a932d9ebbea64cfcc08c662aaec"
+      },
+      {
+        "path": "verification-output/final-transfer/client-generated/hackathon/evidence-lab/client-checks.json",
+        "checks": 39,
+        "sha256": "34c6b75c658220599d87b0c0c491eb046b97e97bc1e8007aabcb653d177e2e99"
+      },
+      {
+        "path": "verification-output/final-transfer/client-generated/hackathon/experiment-challenges/software-checks.json",
+        "checks": 34,
+        "sha256": "b200317cf369b6435c6543f3f7d78b0e53896b5ccd4b56a99c68f5e4aab1ef7e"
+      },
+      {
+        "path": "verification-output/final-transfer/client-generated/hackathon/hm01/client-checks.json",
+        "checks": 8,
+        "sha256": "4e81e9663235396b769bc02c21c1f1780e463711b749e5e43bcf980ccca9525b"
+      },
+      {
+        "path": "verification-output/final-transfer/client-generated/hackathon/judging-upgrade/client-checks.json",
+        "checks": 30,
+        "sha256": "ecd03335c036d2e4311a67a8ab4a8d396271f3c950e0f966261fc8b6bc019272"
+      },
+      {
+        "path": "verification-output/final-transfer/client-generated/hackathon/software-checks.json",
+        "checks": 23,
+        "sha256": "5e27a34b3b34b6443d91e83b0a30a1ea976915c94dc39cfb9a3d8e2f77d5f95c"
+      }
+    ]
+  },
+  "linux_environment": {
+    "image": "bioscribe-integrity-verify:20261025",
+    "image_build_digest": "sha256:e560bb0e2f2662d83df153626265d33d4aa8e4f500ae5bd97b52e1e5913d5a9e",
+    "python": "3.11.9",
+    "user": "1000:1000",
+    "network": "none",
+    "root_filesystem": "read_only",
+    "source": "Final ZIP mounted read-only, extracted to Linux /tmp tmpfs; no Windows source directory mount",
+    "install": "Production Dockerfile --require-hashes --only-binary=:all: succeeded before building verification image",
+    "entrypoint": "python -B -c \"import zipfile,subprocess,sys; zipfile.ZipFile('/input.zip').extractall('/tmp/transfer'); subprocess.run([sys.executable,'-B','/tmp/transfer/BioScribe-Hackathon-Transfer/source/scripts/verify.py','--backend-only','--output','/verification/final.json'],check=True)\""
+  },
+  "clean_install_scope": "The first transfer used a freshly created Python venv and fresh npm ci. The corrected transfer reused that exact Python environment with --require-hashes and pip check, and performed another fresh npm ci. Both full builds passed.",
+  "archive": {
+    "path": "output/BioScribe-Hackathon-Transfer-20261024T194232Z.zip",
+    "sha256": "ad45e9cadbb4dc17cc891494633a56009e211d7b761023b683408253bfce321b",
+    "bytes": 5990720,
+    "files": 798,
+    "source_manifest_files": 718,
+    "manifest_and_tamper_checks": "passed",
+    "note": "Frozen ZIP predates this final documentation receipt; it is unchanged. This is its separate verification sidecar."
+  },
+  "earlier_attempts": [
+    "Initial Windows invocation exposed Phase 4 import path and relative-output issues; corrected and rerun.",
+    "Initial local readiness timed out during cold route compilation; passing repeated readiness receipt is attached.",
+    "Windows first transfer passed 389 checks/build but omitted sibling presentation replay discovery; corrected, regression added and new ZIP verified.",
+    "Linux bind-mount attempt passed 389 checks but failed post-run source correspondence because two files changed during execution. Its final ZIP replacement passed 390 checks and both source guards.",
+    "A redundant Linux directory-copy attempt was stopped after it began copying installed dependencies; the successful replacement extracted the immutable ZIP."
+  ],
+  "remaining_gates": {
+    "scientific_release": "blocked",
+    "sensitive_data_intake": "blocked",
+    "deployment": "blocked",
+    "independently_reviewed_150_claim_evaluation": "not_assessed",
+    "predictive_validation": "not_assessed",
+    "user_value": "untested",
+    "new_browser_interaction_checks": "not_rerun",
+    "hosted_github_actions": "not_run",
+    "linux_frontend_build": "not_run",
+    "npm_audit": {
+      "reported_total": 22,
+      "moderate": 5,
+      "high": 14,
+      "critical": 3,
+      "scope": "npm ci audit across installed dependencies; exploitability not assessed; not remediated here"
+    }
+  },
+  "authenticity_limit": "Hashes establish byte correspondence only. No protected signature/checkpoint or new authorship guarantee is claimed."
+}

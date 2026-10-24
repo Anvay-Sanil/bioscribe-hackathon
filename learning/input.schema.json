@@ -1,0 +1,86 @@
+{
+  "$defs": {
+    "Molecule": {
+      "additionalProperties": false,
+      "properties": {
+        "record_id": {
+          "pattern": "^[A-Za-z0-9_-]{1,64}$",
+          "title": "Record Id",
+          "type": "string"
+        },
+        "smiles": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "title": "Smiles",
+          "type": "string"
+        },
+        "test_label": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Test Label"
+        }
+      },
+      "required": [
+        "record_id",
+        "smiles",
+        "test_label"
+      ],
+      "title": "Molecule",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "learning-library/1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "data_class": {
+      "const": "synthetic_software_fixture",
+      "title": "Data Class",
+      "type": "string"
+    },
+    "label_origin": {
+      "const": "fabricated_for_software_demonstration",
+      "title": "Label Origin",
+      "type": "string"
+    },
+    "dataset_id": {
+      "pattern": "^[A-Za-z0-9_-]{1,64}$",
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "selection_budget": {
+      "maximum": 128,
+      "minimum": 1,
+      "title": "Selection Budget",
+      "type": "integer"
+    },
+    "molecules": {
+      "items": {
+        "$ref": "#/$defs/Molecule"
+      },
+      "maxItems": 128,
+      "minItems": 1,
+      "title": "Molecules",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "data_class",
+    "label_origin",
+    "dataset_id",
+    "selection_budget",
+    "molecules"
+  ],
+  "title": "Library",
+  "type": "object"
+}

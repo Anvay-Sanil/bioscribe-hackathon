@@ -1,0 +1,94 @@
+{
+  "recorded_at_utc": "2026-10-17T12:43:39.191696+00:00",
+  "scope": "Independent project-based learning; local synthetic software replay only",
+  "user_scope_basis": "User clarified that BioScribe is an independent project-based learning project",
+  "formal_study": {
+    "id": "BS-RANK-001",
+    "changed": false,
+    "status": "blocked",
+    "outcomes_accessed": false
+  },
+  "scientific_assessment": "not_assessed",
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "production_deployment": "not_authorized",
+  "application_code_or_dependency_locks_changed": false,
+  "learning_code_added": true,
+  "new_dependencies": [],
+  "tests": {
+    "command": "& .phase3-clean/Scripts/python.exe -B -m pytest learning/tests -q -p no:cacheprovider --junitxml=learning/test-results.xml",
+    "exit_code": 0,
+    "passed": 37,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "junit": "test-results.xml"
+  },
+  "initial_test_attempt": {
+    "passed": 35,
+    "setup_teardown_errors": 2,
+    "cause": "The generated ID for one oversized JSON fixture exceeded the Windows environment-variable size limit used by pytest",
+    "correction": "Explicit short parameter IDs; final suite contains 37 passing checks including schema correspondence"
+  },
+  "standalone_demo": {
+    "command": "& .phase3-clean/Scripts/python.exe -B -m learning.replay learning/demo-input.json",
+    "exit_code": 0,
+    "input_rows": 120,
+    "selected_per_method": 100,
+    "label_origin": "fabricated_for_software_demonstration",
+    "report": "demo-result.json"
+  },
+  "baseline_checks": [
+    {
+      "ledger": "docs/PHASE_3_VERIFICATION.json",
+      "ledger_sha256": "39a2ad7d62ba964061784aff18a128ea0bfbc6dca9396d63afaa34f665eaa94c",
+      "checked": 78,
+      "mismatches": []
+    },
+    {
+      "ledger": "docs/PHASE_4_VERIFICATION.json",
+      "ledger_sha256": "e0494760a7e50dc457b40d5f2bc396206e250bd689de4a4ab1a1ef144cd4a7fc",
+      "checked": 15,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/preparation-verification.json",
+      "ledger_sha256": "da16b1bf855d50fa081263825e53a5844a9fa365bffd9d53758cc7c47a3f883b",
+      "checked": 18,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/design-v0.2/verification.json",
+      "ledger_sha256": "8f65224d1eab2fc9cf218c3f9924466eb65e9e4949a742c520074e65de349e09",
+      "checked": 12,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/design-v0.3/verification.json",
+      "ledger_sha256": "20bfeee43ac5cab6206eae86c791330d12a2139527e028f0581591ae5b2b0dbf",
+      "checked": 7,
+      "mismatches": []
+    }
+  ],
+  "prior_application_and_phase4_suites_rerun": false,
+  "fixture_derivation": "For n=1..120, SMILES is n repetitions of C; invented Boolean label is n modulo 7 equals zero. Selection budget is 100. This is deliberately artificial software data, not an assay library.",
+  "limitations": [
+    "No empirical assay performance or biological truth evaluated",
+    "No UI integration or scientific study execution",
+    "No independently protected audit custody or preregistration",
+    "Local CLI has bounded inputs but no hard process time/memory isolation",
+    "JSON reports are learning artifacts and cannot be published as authoritative application runs"
+  ],
+  "file_sha256": {
+    "__init__.py": "3e912f4376787627aeb57cab1366a93f72644356de6eebc5a3d66407d24d0a53",
+    "baseline-checks.json": "badb9507ba8fc89680917aa4b266b71b651e9ec06f4a10d11fd24f52c64635ee",
+    "demo-input.json": "2ade738eb1c7fd863f4181c4aff8b8c135ef489ce82baa16448cebf0fd029f15",
+    "demo-result.json": "6fc02c3170b16a997a9b9905a5da214b28dc3a603ab69a44e5aac32a9984e3ed",
+    "input.schema.json": "0b56de39469f2b3124284a2bb0534ab0ed2136be4cdc9af9ffa21a53ba97ba7b",
+    "README.md": "6c8ecf2418e84c8eb6f50e1809a598e589f54fb714f1f5b2946a5ac6bce16261",
+    "replay.py": "ec4317a8080d5b3a78d25bfbfdce839739a9cd3855d39145038fac9dc8ed7bc8",
+    "test-results.xml": "4b247a2152405f0d6d15144f34f331b9e95036e109a138523b0daa66ac9cc91c",
+    "tests/test_replay.py": "b6d2d659bb4ac00e0fc319c4d649a509e9a9bf57b4a6e729cb931e85408791dd"
+  },
+  "hash_meaning": "Local byte correspondence only, not authenticated approval or protected custody; ledger is not self-hashed"
+}

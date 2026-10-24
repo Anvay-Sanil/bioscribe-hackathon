@@ -1,0 +1,46 @@
+{
+  "client_date": "2026-10-18",
+  "client_timezone": "Asia/Calcutta",
+  "scope": "Standalone local viewer for the three saved synthetic learning reports",
+  "software_checks": {
+    "command": "node --test learning/viewer/tests/report.test.cjs",
+    "exit_code": 0,
+    "passed": 10
+  },
+  "browser_checks": {
+    "command": "node learning/viewer/tests/browser-check.cjs",
+    "browser_channel": "msedge",
+    "exit_code": 0,
+    "passed": 10,
+    "results": "verification/browser-checks.json",
+    "sandbox_note": "Initial browser launch could not run inside the Windows command sandbox. Completed browser checks ran outside that sandbox using installed headless Edge."
+  },
+  "acceptance": {
+    "budget_10_then_unknown": "passed",
+    "stale_selections_and_metrics_cleared_before_read_completion": true,
+    "all_120_rows_and_unchanged_calculations_retained": true,
+    "last_molecule_reachable_by_scrolling": true,
+    "synthetic_label_visible": true,
+    "unavailable_comparisons": "Not assessed"
+  },
+  "baseline_evidence": "verification/baseline-checks.json",
+  "application_and_study_artifact_hashes_checked": 130,
+  "application_code_or_locks_changed": false,
+  "scientific_study_changed": false,
+  "new_dependencies": [],
+  "http_requests_during_browser_check": 0,
+  "file_sha256": {
+    "index.html": "d7c7636d62da8bd796da8a3eb92e8811910173153b8657fa9e6e95f3c9366e90",
+    "README.md": "df7c7e4d0ae2e72b6c88f457876c38c7a79c43dd2e94e01753a75be3b7a32192",
+    "report.js": "0bf385d3f5fbe4f763047543854c24e95047e4c5f8364c7cea6b6153c5f0dde0",
+    "tests/browser-check.cjs": "2d7d61cc2be918a783834a3134b77ce8407da6fa50a1dc2c9d55b258b189b471",
+    "tests/report.test.cjs": "d81e8bd3e7224ac0a381a09c4b3fa0a1580d7f23b09368de8cb05a165de6aee0",
+    "verification/baseline-checks.json": "7036670d7508cd70e7c6894d1f221928e99a24845ca24c4424f51cb62e179f3b",
+    "verification/browser-checks.json": "97b56bfd0677bb1e2145c3d43a56afb061791e2ff5c05cbad1deb7391b35a2b4",
+    "verification/budget-10.png": "23cce60270466b1541ba46523b53ce168b1eefbd6a3fa7b0212c00191211cfde",
+    "verification/mobile.png": "4b742a247853b67dbc023533b6d07169a39c919259e1eb39771fcc2607a319bf",
+    "verification/unknown-label.png": "1dd8b04b5114f989548c4de441f39345dc3d6df1e5d46bdcf1015d2b0ec5c08a",
+    "viewer.css": "273cc40fc84cc093c14600114021f80f54af9145369e6742544f0ff532ba7f17",
+    "viewer.js": "15edae012283ca8dc4626a4d0dbfa2f85245ec7766c1ff6a6053e07b8e596984"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "scope": "This implementation and verification; hashes are not authorship signatures",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a213867b92f195e438bb33532ba275448045261788106b419a7141b83ea63817"
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/lab-challenges.ts",
+      "sha256": "243f317f9d30c15f1d342d27c4de46287f6370d50d81d871c72cc7e10169d952"
+    },
+    {
+      "path": "bioscribe-ai/src/lib/phase3/lab-challenge-runner.ts",
+      "sha256": "b8f4a1464380f020251522218fb6027ce829b3d1f3e18f87415abc0062259419"
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3ExperimentChallenges.tsx",
+      "sha256": "c96e5252e58893dc36d7676fbdda35ea261adc69cbeee1c0fefa570133a3375c"
+    },
+    {
+      "path": "bioscribe-ai/src/components/Phase3EvidenceLab.tsx",
+      "sha256": "186321524404034402229c62996d6c981d7e27dd9038eded4c902a1aee61a920"
+    },
+    {
+      "path": "bioscribe-ai/src/app/proof/page.tsx",
+      "sha256": "aa6c5606b0d78d6bf2fa7caa556c8010adaa461bc8ef3d5247ae32cd7bc8b807"
+    },
+    {
+      "path": "bioscribe-ai/src/middleware.ts",
+      "sha256": "a649b21b50deccf7cf1cf090d34a5b70352f7fe12281964504b860cb82ff5937"
+    },
+    {
+      "path": "bioscribe-ai/scripts/experiment-challenges-check.cjs",
+      "sha256": "cb9c5e1c8a76cd5e60a7561b411d3d1c4fe0cb6353d314bc95470ad5bc8e52bb"
+    },
+    {
+      "path": "bioscribe-ai/scripts/experiment-challenges-live.cjs",
+      "sha256": "b509ff0bcd07ba803c8f0a433dace86df4456ca30f78832712922d9c9ef2f59d"
+    },
+    {
+      "path": "bioscribe-ai/public/evidence-lab/challenge-source-run.json",
+      "sha256": "2023a3259333e8aa0151e40ffd9fddb0813eba94e4c25b27894b27a4aaa662e9"
+    },
+    {
+      "path": "hackathon/experiment-challenges/browser-capsule.json",
+      "sha256": "0846cbfe5ad9bfb851ef7b979114ec312ec46bdc2900e86b23ddaa16c7dfcb65"
+    },
+    {
+      "path": "hackathon/experiment-challenges/browser-checks.json",
+      "sha256": "7e5c80377e0579a14e445349e32f9a4cacf3b72b3afc7742fdb9c091ed1a3adb"
+    },
+    {
+      "path": "hackathon/experiment-challenges/build_fixtures.py",
+      "sha256": "c88b8a6d2f476bbcbd25811dbaf51cb536f038444ab0cbde1e9eba64984efed8"
+    },
+    {
+      "path": "hackathon/experiment-challenges/challenges.jpg",
+      "sha256": "2d8f8717f1b9a5437e9c37a25afcecce7718e4f0828bab458447f298643d50c5"
+    },
+    {
+      "path": "hackathon/experiment-challenges/invalid-capsule.json",
+      "sha256": "8eed95b3e283d07aa1007e3bdd8ee9ecc86f00a63c29347a0d291fe65261b95f"
+    },
+    {
+      "path": "hackathon/experiment-challenges/live-capsule.json",
+      "sha256": "dd35ce580a4c6c2292e44d371a5d3b9b4f669cf5ba39ff7f17907407eacbb845"
+    },
+    {
+      "path": "hackathon/experiment-challenges/live-checks.json",
+      "sha256": "457e24994e679c5e2fb60bda5a708fa43d19fbad8786cd53a3dd849785dbd5b1"
+    },
+    {
+      "path": "hackathon/experiment-challenges/README.md",
+      "sha256": "808f5290c43839ac19982edfc6a1e03ada4c81086950feaabccbb8fa99b90fd9"
+    },
+    {
+      "path": "hackathon/experiment-challenges/software-checks.json",
+      "sha256": "b200317cf369b6435c6543f3f7d78b0e53896b5ccd4b56a99c68f5e4aab1ef7e"
+    },
+    {
+      "path": "hackathon/experiment-challenges/test-fixtures.json",
+      "sha256": "497efcaee4cfcd24f4fe51b085d18b7957bedab2487e88eefa04815dcab34d73"
+    },
+    {
+      "path": "hackathon/experiment-challenges/VERIFICATION.json",
+      "sha256": "b82b5df152ff23631daf98cf69748acffae2ba1e8f04be44b4afffa74f04f491"
+    }
+  ]
+}

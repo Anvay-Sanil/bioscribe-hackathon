@@ -1,0 +1,126 @@
+{
+  "$defs": {
+    "SourceIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "accession": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Accession"
+        },
+        "version": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Version"
+        },
+        "organism_taxon_id": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Organism Taxon Id"
+        },
+        "provenance": {
+          "const": "user_supplied_unverified",
+          "default": "user_supplied_unverified",
+          "title": "Provenance",
+          "type": "string"
+        },
+        "unknown_reason": {
+          "default": "User supplied; no verified source accession",
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Unknown Reason",
+          "type": "string"
+        }
+      },
+      "title": "SourceIdentity",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "contract_version": {
+      "const": "3.1.0",
+      "default": "3.1.0",
+      "title": "Contract Version",
+      "type": "string"
+    },
+    "data_classification": {
+      "const": "public_non_sensitive",
+      "title": "Data Classification",
+      "type": "string"
+    },
+    "polymer_type": {
+      "enum": [
+        "protein",
+        "dna",
+        "rna",
+        "notes",
+        "molecule"
+      ],
+      "title": "Polymer Type",
+      "type": "string"
+    },
+    "content": {
+      "maxLength": 131072,
+      "title": "Content",
+      "type": "string"
+    },
+    "record_count": {
+      "maximum": 8,
+      "minimum": 0,
+      "title": "Record Count",
+      "type": "integer"
+    },
+    "source": {
+      "$ref": "#/$defs/SourceIdentity"
+    },
+    "molecules": {
+      "items": {
+        "maxLength": 2048,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 16,
+      "title": "Molecules",
+      "type": "array"
+    },
+    "analysis": {
+      "const": "descriptors_and_observations",
+      "default": "descriptors_and_observations",
+      "title": "Analysis",
+      "type": "string"
+    }
+  },
+  "required": [
+    "data_classification",
+    "polymer_type",
+    "content",
+    "record_count"
+  ],
+  "title": "RunRequest",
+  "type": "object"
+}

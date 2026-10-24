@@ -1,0 +1,72 @@
+{
+  "schema_version": "phase4-protocol/1.0.0",
+  "state": "proposed",
+  "protocol_id": "BS-RANK-001",
+  "protocol_version": "0.2",
+  "data_class": "public_non_sensitive",
+  "claim_type": "ranking_utility",
+  "task_type": "ranking",
+  "intended_use": "Select exactly 100 distinct compounds from one frozen eligible ALDH1A1 assay population for independent dose-response and orthogonal confirmation. Initial retrospective study assesses recorded assay-positive recovery only.",
+  "prohibited_uses": [
+    "Affinity, selectivity, therapeutic or safety claims",
+    "Sensitive-data intake",
+    "Confirmatory outcome access before verified custody and protocol freeze",
+    "Retrospective target switching or score retuning"
+  ],
+  "endpoint": {
+    "quantity": "retrieval of recorded quality-controlled inhibitory assay positives",
+    "label_units": "binary assay-positive status; unknown is separate",
+    "prediction_units": "dimensionless heuristic ordering",
+    "target_definition": "Human ALDH1A1 P00352; reference sequence version 2 matches AAP35567.1; actual assay construct remains unverified",
+    "organism_and_population": "Homo sapiens taxon 9606; eligible-library population not yet curated or frozen",
+    "assay_and_conditions": "PubChem AID 1030 requested version 1.1, propionaldehyde/NAD+ and NADH fluorescence. Both acquired descriptions identify version 2 revision 1; requested-version conditions not accepted.",
+    "label_transform": "AC50 in micromolar and maximum inhibition in percent require verified source field, sign, QC and unit mapping; unresolved",
+    "positive_class_definition": "QC inhibitory concentration response with AC50 <=10 micromolar AND maximum inhibition >=50 percent. Inconclusive or unresolved optical interference remains unknown."
+  },
+  "method": {
+    "method_id": "prioritization_heuristic",
+    "version": "1.1.0",
+    "category": "unvalidated_heuristic",
+    "input_policy_version": "plain_smiles_concrete_graph/1.1.0",
+    "training_data_disclosure": "No training routine in candidate; historical developer exposure must be disclosed, not assumed absent. Existing parameters remain unchanged.",
+    "stochastic_policy": "Deterministic ascending score. Label-independent canonical identity SHA256 tie-break specified in design-decisions.json; no score rounding or tie expansion."
+  },
+  "dataset": null,
+  "baselines_and_comparisons": [
+    "Descending RDKit 2025.3.3 QED.qed with WEIGHT_MEAN, same eligible population and exact budget 100",
+    "Uniform random selection without replacement; primary expected yield 100*A/N, not a selected random draw"
+  ],
+  "sampling": null,
+  "primary_gates": [
+    {
+      "metric_id": "precision_difference_vs_QED",
+      "estimand_and_population": "Difference in recorded positive yield per 100 from common frozen eligible pool; inferential population unresolved",
+      "units": "proportion",
+      "bound": "lower_confidence_bound",
+      "operator": ">=",
+      "threshold": 0.05,
+      "confidence_level": 0.95,
+      "interval_method_and_resampling_unit": null,
+      "rationale": "User-defined proposed minimum five additional assay positives per 100 selected"
+    },
+    {
+      "metric_id": "enrichment_vs_expected_uniform_random",
+      "estimand_and_population": "Heuristic precision divided by eligible-population positive fraction; inferential population unresolved",
+      "units": "dimensionless",
+      "bound": "lower_confidence_bound",
+      "operator": ">=",
+      "threshold": 2.0,
+      "confidence_level": 0.95,
+      "interval_method_and_resampling_unit": null,
+      "rationale": "User-defined proposed minimum twice expected random hit yield"
+    }
+  ],
+  "secondary_analyses": [
+    "Selection overlap, coverage, unknown-label attrition, series concentration and subgroup diagnostics; subgroup confirmatory rules unresolved"
+  ],
+  "domain": null,
+  "split_strategy_and_rationale": null,
+  "required_disjoint_group_keys": [],
+  "artifacts": null,
+  "review": null
+}

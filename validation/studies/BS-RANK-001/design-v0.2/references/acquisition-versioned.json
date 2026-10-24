@@ -1,0 +1,206 @@
+[
+  {
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1030/description/JSON?version=1.1",
+    "file": "pubchem-requested-v1.1-returned-v2.1-description.json",
+    "bytes": 22104,
+    "sha256": "fd6fbc1c65c0957b1a737d33c1fa8e6bf89e81eaf103437ac53d64bb1902e2c9",
+    "retrieved_at_utc": "2026-10-16T19:31:23.770561+00:00",
+    "summary": {
+      "aid": {
+        "id": 1030,
+        "version": 2
+      },
+      "revision": 1,
+      "name": "qHTS Assay for Inhibitors of Aldehyde Dehydrogenase 1 (ALDH1A1)",
+      "target": [
+        {
+          "name": "aldehyde dehydrogenase 1 family, member A1 [Homo sapiens]",
+          "mol_id": {
+            "protein_accession": "AAP35567.1"
+          },
+          "organism": {
+            "genome": 0,
+            "origin": 0,
+            "org": {
+              "taxname": "Homo sapiens",
+              "common": "human",
+              "db": [
+                {
+                  "db": "taxon",
+                  "tag": {
+                    "id": 9606
+                  }
+                }
+              ]
+            }
+          },
+          "descr": "human ALDH1A1"
+        }
+      ],
+      "protocol": [
+        "Buffer: 100 mM Hepes pH 7.5, 0.01% Tween 20.",
+        "",
+        "Reagents/Controls:",
+        "",
+        "[1] Buffer in columns 3 and 4 as negative control (no enzyme).",
+        "",
+        "[2] Substrate/cofactor solution: 1 mM NAD+ and 80 uM propionaldehyde (Sigma-Aldrich, St. Louis, MO) final concentrations dispensed throughout the plate.",
+        "",
+        "[3] Enzyme: 50 nM ALDH1A1 final concentration in columns 1, 2, 5-48. Column 1 is neutral (100% activity). ",
+        "",
+        "[4] Control: Pintool transfer of control inhibitor Bay 11-7085 (Lopac B5681 ) to column 2 of all assay plates. Two-fold, 16 pt dilution in duplicate: 5.75 uM - 0.175 nM.",
+        "",
+        "Assay Steps:",
+        "Three uL of enzyme were dispensed to 1536-well Greiner black solid bottom plates. Compounds (23 nL) were transferred via Kalypsys PinTool. The plates were incubated for 15 min at room temperature, and then 1 uL of substrate/cofactor solution was added to start the reaction. The plates were immediately transferred to and read twice on ViewLux High-throughput CCD imager (Perkin-Elmer) 20 minutes apart using 360 nm excitation and 450 nm emission fluorescence protocol. The fluorescence intensity difference between the second and the first time points was used to compute reaction progress."
+      ],
+      "results": [
+        {
+          "tid": 1,
+          "name": "Phenotype",
+          "description": [
+            "Indicates type of activity observed: inhibitor, activator, fluorescent, cytotoxic, inactive, or inconclusive."
+          ],
+          "type": 4
+        },
+        {
+          "tid": 2,
+          "name": "Potency",
+          "description": [
+            "Concentration at which compound exhibits half-maximal efficacy, AC50. Extrapolated AC50s also include the highest efficacy observed and the concentration of compound at which it was observed."
+          ],
+          "type": 1,
+          "unit": 5,
+          "ac": true
+        },
+        {
+          "tid": 3,
+          "name": "Efficacy",
+          "description": [
+            "Maximal efficacy of compound, reported as a percentage of control. These values are estimated based on fits of the Hill equation to the dose-response curves."
+          ],
+          "type": 1,
+          "unit": 15
+        },
+        {
+          "tid": 4,
+          "name": "Analysis Comment",
+          "description": [
+            "Annotation/notes on a particular compound's data or its analysis."
+          ],
+          "type": 4
+        },
+        {
+          "tid": 5,
+          "name": "Curve_Description",
+          "description": [
+            "A description of dose-response curve quality. A complete curve has two observed asymptotes; a partial curve may not have attained its second asymptote at the highest concentration tested. High efficacy curves exhibit efficacy greater than 80% of control. Partial efficacies are statistically significant, but below 80% of control."
+          ],
+          "type": 4
+        },
+        {
+          "tid": 6,
+          "name": "Fit_LogAC50",
+          "description": [
+            "The logarithm of the AC50 from a fit of the data to the Hill equation (calculated based on Molar Units)."
+          ],
+          "type": 1,
+          "unit": 254
+        },
+        {
+          "tid": 7,
+          "name": "Fit_HillSlope",
+          "description": [
+            "The Hill slope from a fit of the data to the Hill equation."
+          ],
+          "type": 1,
+          "unit": 254
+        },
+        {
+          "tid": 8,
+          "name": "Fit_R2",
+          "description": [
+            "R^2 fit value of the curve. Closer to 1.0 equates to better Hill equation fit."
+          ],
+          "type": 1,
+          "unit": 254
+        },
+        {
+          "tid": 9,
+          "name": "Fit_InfiniteActivity",
+          "description": [
+            "The asymptotic efficacy from a fit of the data to the Hill equation."
+          ],
+          "type": 1,
+          "unit": 15
+        },
+        {
+          "tid": 10,
+          "name": "Fit_ZeroActivity",
+          "description": [
+            "Efficacy at zero concentration of compound from a fit of the data to the Hill equation."
+          ],
+          "type": 1,
+          "unit": 15
+        },
+        {
+          "tid": 11,
+          "name": "Fit_CurveClass",
+          "description": [
+            "Numerical encoding of curve description for the fitted Hill equation."
+          ],
+          "type": 1,
+          "unit": 254
+        },
+        {
+          "tid": 12,
+          "name": "Excluded_Points",
+          "description": [
+            "Which dose-response titration points were excluded from analysis based on outlier analysis. Each number represents whether a titration point was (1) or was not (0) excluded, for the titration series going from smallest to highest compound concentrations."
+          ],
+          "type": 4
+        },
+        {
+          "tid": 13,
+          "name": "Max_Response",
+          "description": [
+            "Maximum activity observed for compound (usually at highest concentration tested)."
+          ],
+          "type": 1,
+          "unit": 15
+        },
+        {
+          "tid": 14,
+          "name": "Max_Read1",
+          "description": [
+            "Background read at highest tested concentration"
+          ],
+          "type": 1,
+          "unit": 15
+        },
+        {
+          "tid": 40,
+          "name": "Compound QC",
+          "description": [
+            "Source of compound QC"
+          ],
+          "type": 4
+        }
+      ]
+    },
+    "version_binding": "requested 1.1; returned aid.version 2, revision 1; NOT accepted as requested version"
+  },
+  {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=AAP35567.1&rettype=fasta&retmode=text",
+    "file": "NCBI-AAP35567.1.fasta",
+    "bytes": 580,
+    "sha256": "0fefcab3f171f653359de3d7a278d1ff0e2a93e6f4488c4435037981715fa5ef",
+    "retrieved_at_utc": "2026-10-16T19:31:25.142304+00:00",
+    "summary": {
+      "accession": "AAP35567.1",
+      "length": 501,
+      "sequence_sha256": "3643038221afeedeeb244b74f19a4aba11f4c038262b9d8460260d2b476ded7f",
+      "matches_uniprot_reference_sequence": true,
+      "warning": "Reference sequence correspondence does not prove experimental construct identity"
+    }
+  }
+]

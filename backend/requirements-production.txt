@@ -1,0 +1,101 @@
+# ============================================================================
+# BioScribe AI - Production Requirements
+# Industry-Grade Drug Discovery Platform
+# Python 3.11+
+# ============================================================================
+
+# Core Web Framework
+# ----------------------------------------------------------------------------
+fastapi==0.109.0              # Modern async web framework
+uvicorn[standard]==0.27.0     # ASGI server with performance extras
+pydantic==2.5.3               # Data validation with V2 performance
+pydantic-settings==2.1.0      # Environment-based configuration
+
+# Scientific Computing Core
+# ----------------------------------------------------------------------------
+numpy==1.26.3                 # Numerical computing foundation
+scipy==1.11.4                 # Scientific algorithms
+pandas==2.1.4                 # Data analysis and manipulation
+
+# Bioinformatics & Chemistry
+# ----------------------------------------------------------------------------
+biopython==1.83               # Protein sequence analysis
+rdkit==2023.9.4               # Molecular informatics (chemistry toolkit)
+biotite==0.39.0               # Structural bioinformatics
+
+# Machine Learning & AI
+# ----------------------------------------------------------------------------
+torch==2.1.2                  # Deep learning framework
+transformers==4.37.0          # HuggingFace models (ChemBERTa, MolT5)
+tokenizers==0.15.1            # Fast tokenization
+huggingface-hub==0.20.2       # Model hub integration
+sentence-transformers==2.3.1  # Semantic embeddings
+scikit-learn==1.4.0           # Classical ML algorithms
+
+# Molecular Docking & Simulation
+# ----------------------------------------------------------------------------
+openmm==8.1.1                 # Molecular dynamics simulation
+pdbfixer==1.9                 # PDB structure preparation
+prody==2.4.1                  # Protein dynamics analysis
+mdanalysis==2.7.0             # Trajectory analysis
+
+# Database & Caching
+# ----------------------------------------------------------------------------
+motor==3.3.2                  # Async MongoDB driver
+pymongo==4.6.1                # MongoDB Python driver
+redis==5.0.1                  # In-memory caching
+aioredis==2.0.1               # Async Redis client
+
+# HTTP & API Clients
+# ----------------------------------------------------------------------------
+httpx==0.26.0                 # Async HTTP client
+aiohttp==3.9.1                # Alternative async HTTP
+aiofiles==23.2.1              # Async file operations
+requests==2.31.0              # Synchronous HTTP (fallback)
+
+# Data Processing & Utilities
+# ----------------------------------------------------------------------------
+python-multipart==0.0.6       # Form data parsing
+jinja2==3.1.3                 # Template engine
+python-dotenv==1.0.0          # Environment variable management
+pyyaml==6.0.1                 # YAML configuration
+
+# Monitoring & Logging
+# ----------------------------------------------------------------------------
+python-json-logger==2.0.7     # Structured JSON logging
+prometheus-client==0.19.0     # Metrics collection
+sentry-sdk[fastapi]==1.39.2   # Error tracking
+
+# Security & Authentication
+# ----------------------------------------------------------------------------
+python-jose[cryptography]==3.3.0  # JWT tokens
+passlib[bcrypt]==1.7.4        # Password hashing
+python-multipart==0.0.6       # OAuth2 support
+
+# Testing & Quality Assurance
+# ----------------------------------------------------------------------------
+pytest==7.4.4                 # Testing framework
+pytest-asyncio==0.23.3        # Async test support
+pytest-cov==4.1.0             # Code coverage
+pytest-mock==3.12.0           # Mocking utilities
+httpx==0.26.0                 # API testing client
+
+# Code Quality & Linting
+# ----------------------------------------------------------------------------
+black==23.12.1                # Code formatting
+flake8==7.0.0                 # Linting
+mypy==1.8.0                   # Type checking
+isort==5.13.2                 # Import sorting
+pylint==3.0.3                 # Advanced linting
+
+# Documentation
+# ----------------------------------------------------------------------------
+mkdocs==1.5.3                 # Documentation generator
+mkdocs-material==9.5.3        # Material theme
+pdoc3==0.10.0                 # API documentation
+
+# Performance & Optimization
+# ----------------------------------------------------------------------------
+orjson==3.9.12                # Fast JSON serialization
+ujson==5.9.0                  # Ultra-fast JSON (fallback)
+cachetools==5.3.2             # Caching utilities

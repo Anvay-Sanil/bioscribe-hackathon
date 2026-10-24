@@ -1,0 +1,126 @@
+{
+  "scope": "Software checks only; user value untested",
+  "passed": 30,
+  "checks": [
+    {
+      "name": "Identical payload does not become a fresh replay",
+      "status": "passed"
+    },
+    {
+      "name": "Budget change keeps all three unique molecules and descriptors",
+      "status": "passed"
+    },
+    {
+      "name": "Challenge duplicates and rejected rows never pair by position",
+      "status": "passed"
+    },
+    {
+      "name": "Different compounds are not numeric comparisons",
+      "status": "passed"
+    },
+    {
+      "name": "Reordered library pairs by graph identity instead of row number",
+      "status": "passed"
+    },
+    {
+      "name": "Changed engine with consistent hashes withholds numeric comparison",
+      "status": "passed"
+    },
+    {
+      "name": "Changed snapshot disclosed even when molecular values agree",
+      "status": "passed"
+    },
+    {
+      "name": "Different run identifier alone does not imply changed scientific output",
+      "status": "passed"
+    },
+    {
+      "name": "Unexplained changed descriptors are flagged even with updated checksum",
+      "status": "passed"
+    },
+    {
+      "name": "Comparison rejects unbound inputs",
+      "status": "passed"
+    },
+    {
+      "name": "Comparison rejects numeric safety claim",
+      "status": "passed"
+    },
+    {
+      "name": "Comparison rejects missing method",
+      "status": "passed"
+    },
+    {
+      "name": "Comparison rejects wrong molecular identity",
+      "status": "passed"
+    },
+    {
+      "name": "Comparison rejects missing validation record",
+      "status": "passed"
+    },
+    {
+      "name": "Comparison rejects missing predictive status",
+      "status": "passed"
+    },
+    {
+      "name": "Comparison rejects missing result assessment",
+      "status": "passed"
+    },
+    {
+      "name": "Comparison rejects missing identity policy",
+      "status": "passed"
+    },
+    {
+      "name": "Comparison rejects missing tie-break",
+      "status": "passed"
+    },
+    {
+      "name": "Comparison rejects missing reference correspondence",
+      "status": "passed"
+    },
+    {
+      "name": "Local token trimming accepts newline only around a valid token",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed token file rejected 20",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed token file rejected 21",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed token file rejected 22",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed token file rejected 23",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed token file rejected 24",
+      "status": "passed"
+    },
+    {
+      "name": "No credential means no readiness request",
+      "status": "passed"
+    },
+    {
+      "name": "Worker not ready cannot become ready UI",
+      "status": "passed"
+    },
+    {
+      "name": "Rejected token cannot become connected UI",
+      "status": "passed"
+    },
+    {
+      "name": "Unexpected server contract rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Healthy worker plus authenticated supported API succeeds",
+      "status": "passed"
+    }
+  ]
+}

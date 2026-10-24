@@ -1,0 +1,1296 @@
+{
+  "created_utc": "2026-10-24T18:35:26.770571+00:00",
+  "dataset_status": "provisional_unreviewed",
+  "scientific_assessment": "not_assessed",
+  "qualification": "not_assessed",
+  "baseline_beaten": null,
+  "qualification_reason": "Independent label review, group split, frozen protocol and complete valid model comparison are required.",
+  "corpus_sha256": "5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65",
+  "claims_sha256": "f6dea38e601214ca1735cf31c38b7ed484670ab8263920edf1845ebfe99ce0ef",
+  "label_sha256": "69230d2a941292644f032fa2cd09316824815d6e3b17cfbe2969205141d09728",
+  "baseline_model": {
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "parameter_count": 4000000000,
+    "license": "Apache-2.0",
+    "model_card": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+    "quantization_provider": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+    "file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "bytes": 2497281120,
+    "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "runtime_release": "b11856",
+    "runtime_url": "https://github.com/ggml-org/llama.cpp/releases/download/b11856/llama-b11856-bin-win-cpu-x64.zip",
+    "model_url": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF/resolve/a06e946bb6b655725eafa393f4a9745d460374c9/Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "local_alias": "bioscribe-qwen3-4b",
+    "endpoint": "http://127.0.0.1:8091/v1/chat/completions",
+    "temperature": 0,
+    "seed": 1337,
+    "context_limit": 4096,
+    "use": "Unverified statement suggestions and frozen retrieval-plus-LLM baseline. It cannot independently establish scientific support."
+  },
+  "baseline_prompt_sha256": "935122f567fe4132f93e07797cf47f54a624a4d3965f61400ffbf32936ad5f01",
+  "ours_method": "bounded_exact_record_checker/0.1.0",
+  "ours": {
+    "expected_count": 150,
+    "evaluated": 150,
+    "missing_or_invalid": 0,
+    "accuracy": 1.0,
+    "accuracy_denominator": "Valid returned verdicts only; inspect accuracy_all_expected and missing_or_invalid too.",
+    "accuracy_all_expected": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "supported": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "gold_count": 30
+      },
+      "contradicted": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "gold_count": 30
+      },
+      "insufficient_evidence": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "gold_count": 60
+      },
+      "out_of_scope": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "gold_count": 30
+      }
+    },
+    "confusion": {
+      "supported": {
+        "supported": 30,
+        "contradicted": 0,
+        "insufficient_evidence": 0,
+        "out_of_scope": 0
+      },
+      "contradicted": {
+        "supported": 0,
+        "contradicted": 30,
+        "insufficient_evidence": 0,
+        "out_of_scope": 0
+      },
+      "insufficient_evidence": {
+        "supported": 0,
+        "contradicted": 0,
+        "insufficient_evidence": 60,
+        "out_of_scope": 0
+      },
+      "out_of_scope": {
+        "supported": 0,
+        "contradicted": 0,
+        "insufficient_evidence": 0,
+        "out_of_scope": 30
+      }
+    },
+    "decisive_coverage": 0.4,
+    "decisive_accuracy": 1.0,
+    "false_supported_count": 0,
+    "accuracy_by_confidence": [
+      {
+        "lower_inclusive": 0,
+        "upper": 0.5,
+        "upper_inclusive": false,
+        "n": 0,
+        "accuracy": null
+      },
+      {
+        "lower_inclusive": 0.5,
+        "upper": 0.7,
+        "upper_inclusive": false,
+        "n": 0,
+        "accuracy": null
+      },
+      {
+        "lower_inclusive": 0.7,
+        "upper": 0.85,
+        "upper_inclusive": false,
+        "n": 0,
+        "accuracy": null
+      },
+      {
+        "lower_inclusive": 0.85,
+        "upper": 0.95,
+        "upper_inclusive": false,
+        "n": 0,
+        "accuracy": null
+      },
+      {
+        "lower_inclusive": 0.95,
+        "upper": 1.0,
+        "upper_inclusive": true,
+        "n": 0,
+        "accuracy": null
+      }
+    ],
+    "confidence_unscored_count": 150,
+    "confidence_interpretation": "Model confidence is uncalibrated; no probability claim. Rule verdict confidence remains null.",
+    "uncertainty": "No inferential interval: dependent template/source groups and unreviewed labels."
+  },
+  "retrieval_plus_llm": {
+    "expected_count": 150,
+    "evaluated": 0,
+    "missing_or_invalid": 150,
+    "accuracy": null,
+    "accuracy_denominator": "Valid returned verdicts only; inspect accuracy_all_expected and missing_or_invalid too.",
+    "accuracy_all_expected": 0.0,
+    "macro_f1": null,
+    "per_class": {
+      "supported": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "gold_count": 0
+      },
+      "contradicted": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "gold_count": 0
+      },
+      "insufficient_evidence": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "gold_count": 0
+      },
+      "out_of_scope": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "gold_count": 0
+      }
+    },
+    "confusion": {
+      "supported": {
+        "supported": 0,
+        "contradicted": 0,
+        "insufficient_evidence": 0,
+        "out_of_scope": 0
+      },
+      "contradicted": {
+        "supported": 0,
+        "contradicted": 0,
+        "insufficient_evidence": 0,
+        "out_of_scope": 0
+      },
+      "insufficient_evidence": {
+        "supported": 0,
+        "contradicted": 0,
+        "insufficient_evidence": 0,
+        "out_of_scope": 0
+      },
+      "out_of_scope": {
+        "supported": 0,
+        "contradicted": 0,
+        "insufficient_evidence": 0,
+        "out_of_scope": 0
+      }
+    },
+    "decisive_coverage": 0.0,
+    "decisive_accuracy": null,
+    "false_supported_count": 0,
+    "accuracy_by_confidence": [
+      {
+        "lower_inclusive": 0,
+        "upper": 0.5,
+        "upper_inclusive": false,
+        "n": 0,
+        "accuracy": null
+      },
+      {
+        "lower_inclusive": 0.5,
+        "upper": 0.7,
+        "upper_inclusive": false,
+        "n": 0,
+        "accuracy": null
+      },
+      {
+        "lower_inclusive": 0.7,
+        "upper": 0.85,
+        "upper_inclusive": false,
+        "n": 0,
+        "accuracy": null
+      },
+      {
+        "lower_inclusive": 0.85,
+        "upper": 0.95,
+        "upper_inclusive": false,
+        "n": 0,
+        "accuracy": null
+      },
+      {
+        "lower_inclusive": 0.95,
+        "upper": 1.0,
+        "upper_inclusive": true,
+        "n": 0,
+        "accuracy": null
+      }
+    ],
+    "confidence_unscored_count": 0,
+    "confidence_interpretation": "Model confidence is uncalibrated; no probability claim. Rule verdict confidence remains null.",
+    "uncertainty": "No inferential interval: dependent template/source groups and unreviewed labels."
+  },
+  "baseline_status": "attempted",
+  "predictions": {
+    "ours": {
+      "EA-001": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:189032"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-002": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:189032"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-003": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-004": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-005": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-006": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:189033"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-007": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:189033"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-008": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-009": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-010": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-011": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:189034"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-012": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:189034"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-013": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-014": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-015": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-016": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:231261"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-017": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:231261"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-018": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-019": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-020": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-021": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:231262"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-022": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:231262"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-023": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-024": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-025": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-026": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:328437"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-027": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:328437"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-028": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-029": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-030": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-031": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:331346"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-032": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:331346"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-033": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-034": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-035": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-036": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:331347"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-037": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:331347"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-038": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-039": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-040": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-041": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:88326"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-042": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:88326"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-043": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-044": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-045": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-046": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:88327"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-047": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:88327"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-048": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-049": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-050": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-051": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:91852"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-052": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:91852"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-053": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-054": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-055": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-056": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:91853"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-057": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:91853"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-058": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-059": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-060": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-061": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:392578"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-062": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:392578"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-063": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-064": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-065": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-066": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:513632"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-067": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:513632"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-068": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-069": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-070": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-071": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:515159"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-072": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:515159"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-073": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-074": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-075": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-076": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:597862"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-077": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:597862"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-078": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-079": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-080": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-081": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2108574"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-082": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2108574"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-083": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-084": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-085": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-086": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2172299"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-087": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2172299"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-088": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-089": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-090": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-091": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2172309"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-092": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2172309"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-093": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-094": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-095": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-096": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2172320"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-097": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2172320"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-098": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-099": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-100": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-101": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2460301"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-102": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2460301"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-103": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-104": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-105": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-106": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2460352"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-107": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2460352"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-108": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-109": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-110": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-111": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2460353"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-112": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2460353"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-113": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-114": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-115": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-116": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2572978"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-117": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:2572978"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-118": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-119": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-120": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-121": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:242732"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-122": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:242732"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-123": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-124": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-125": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-126": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:348013"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-127": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:348013"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-128": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-129": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-130": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-131": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:490365"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-132": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:490365"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-133": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-134": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-135": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-136": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:557523"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-137": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:557523"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-138": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-139": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-140": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-141": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:557524"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-142": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:557524"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-143": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-144": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-145": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      },
+      "EA-146": {
+        "verdict": "supported",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:844010"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-147": {
+        "verdict": "contradicted",
+        "confidence": null,
+        "source_ids": [
+          "chembl-activity:844010"
+        ],
+        "reason": "exact_record_comparison"
+      },
+      "EA-148": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "identity_or_endpoint_mismatch"
+      },
+      "EA-149": {
+        "verdict": "insufficient_evidence",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "activity_requires_specific_experimental_context"
+      },
+      "EA-150": {
+        "verdict": "out_of_scope",
+        "confidence": null,
+        "source_ids": [],
+        "reason": "efficacy_or_safety_scope"
+      }
+    },
+    "baseline": {
+      "EA-001": {
+        "status": "failed",
+        "error_code": "model_unavailable_or_invalid_output"
+      },
+      "EA-002": {
+        "status": "failed",
+        "error_code": "model_unavailable_or_invalid_output"
+      },
+      "EA-003": {
+        "status": "failed",
+        "error_code": "model_unavailable_or_invalid_output"
+      },
+      "EA-004": {
+        "status": "failed",
+        "error_code": "model_unavailable_or_invalid_output"
+      },
+      "EA-005": {
+        "status": "failed",
+        "error_code": "model_unavailable_or_invalid_output"
+      }
+    }
+  },
+  "limitations": [
+    "Template-generated challenge set, not a representative independent benchmark",
+    "Labels drafted after implementation and not independently adjudicated",
+    "No protected holdout or source-group split assigned",
+    "Repeated source records and publications are dependent",
+    "No real retracted-paper claim in this 150-row draft; retraction handling has synthetic software fixtures only",
+    "No inferential performance or calibrated-confidence claim"
+  ]
+}

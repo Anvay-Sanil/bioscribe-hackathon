@@ -1,0 +1,131 @@
+{
+  "status": "passed",
+  "count": 31,
+  "checks": [
+    {
+      "name": "synthetic contract fixture remains explicitly experimental",
+      "status": "passed"
+    },
+    {
+      "name": "missing human-review requirement",
+      "status": "passed"
+    },
+    {
+      "name": "invented numerical confidence",
+      "status": "passed"
+    },
+    {
+      "name": "false calibration status",
+      "status": "passed"
+    },
+    {
+      "name": "wrong submitted text",
+      "status": "passed"
+    },
+    {
+      "name": "wrong snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "wrong statement span",
+      "status": "passed"
+    },
+    {
+      "name": "fabricated quote",
+      "status": "passed"
+    },
+    {
+      "name": "wrong quote offset",
+      "status": "passed"
+    },
+    {
+      "name": "wrong source identity",
+      "status": "passed"
+    },
+    {
+      "name": "wrong source hash",
+      "status": "passed"
+    },
+    {
+      "name": "descriptors cannot become paper evidence",
+      "status": "passed"
+    },
+    {
+      "name": "retracted source cannot support",
+      "status": "passed"
+    },
+    {
+      "name": "paper title cannot substantiate decisive verdict",
+      "status": "passed"
+    },
+    {
+      "name": "missing decisive passage",
+      "status": "passed"
+    },
+    {
+      "name": "wrong review trace",
+      "status": "passed"
+    },
+    {
+      "name": "clinical qualification cannot be asserted",
+      "status": "passed"
+    },
+    {
+      "name": "citation URL substitution",
+      "status": "passed"
+    },
+    {
+      "name": "human review cannot be disabled",
+      "status": "passed"
+    },
+    {
+      "name": "synthetic summary keeps every expected claim in denominator",
+      "status": "passed"
+    },
+    {
+      "name": "cannot assert benchmark win",
+      "status": "passed"
+    },
+    {
+      "name": "cannot assert calibrated probabilities",
+      "status": "passed"
+    },
+    {
+      "name": "cannot promote draft labels to reviewed",
+      "status": "passed"
+    },
+    {
+      "name": "cannot change expected count",
+      "status": "passed"
+    },
+    {
+      "name": "cannot omit expected outputs",
+      "status": "passed"
+    },
+    {
+      "name": "agreement cannot exceed valid outputs",
+      "status": "passed"
+    },
+    {
+      "name": "empty confidence bin cannot reassure",
+      "status": "passed"
+    },
+    {
+      "name": "confidence bins cannot double count",
+      "status": "passed"
+    },
+    {
+      "name": "confidence bins must be fixed and disjoint",
+      "status": "passed"
+    },
+    {
+      "name": "duplicate systems rejected",
+      "status": "passed"
+    },
+    {
+      "name": "missing evidence status rejected",
+      "status": "passed"
+    }
+  ],
+  "scope": "Synthetic software checks only; no scientific labels or live inference"
+}

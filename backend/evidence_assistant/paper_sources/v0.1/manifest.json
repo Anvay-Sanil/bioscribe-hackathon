@@ -1,0 +1,12 @@
+{
+  "version": "paper-sources/0.1.0",
+  "files": {
+    "11212091.json": "475859fa95b331e5ddcce6fc93657a72f973680ee3c5e23e808db62282f13f6b",
+    "11378363.json": "c7c22503c067aca82f71bba0b34d98ea58a5cbbb90a126f10da6d9f2827bb868",
+    "12166950.json": "2e6bd4b7c241a9a86be3d89d128caac627ebc181c9164312bf578e419017d252",
+    "12873516.json": "8b58afc7ebbce48082600f44389db0622cf3e807d26f0296bb637c4b69bd159b",
+    "12951113.json": "d9f5b1f1c90015dfd0ef377199a84543815904db2ae6c5dbb9d745b08709eb61"
+  },
+  "scope": "Five bounded PubMed abstracts linked to existing assay publications, not full text or an exhaustive literature search.",
+  "licensing": "Public bibliographic/abstract metadata; original publisher rights may apply. No open full-text licence is inferred."
+}

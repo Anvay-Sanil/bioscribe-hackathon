@@ -1,0 +1,489 @@
+{
+  "recorded_utc": "2026-10-24T18:36:57.433455+00:00",
+  "status": "passed",
+  "scope": "Live public-data software rehearsal; model suggestions unverified; no benchmark or biological qualification",
+  "run_id": "beb67513209745baa5e0fcbfc286a23e",
+  "review_sha256": "fd89eefbe07091829a6743167b03e52b2e81a2b55296a759a28e6898801eb3f8",
+  "model_requested": false,
+  "model": {
+    "id": null,
+    "status": "not_requested",
+    "used_for_verdict": false
+  },
+  "checks": [
+    "unit_conversion_support",
+    "changed_value_contradiction",
+    "unknown_publication_abstention",
+    "wrong_molecule_abstention",
+    "descriptors_cannot_establish_activity",
+    "safety_out_of_scope",
+    "exclusion_reason_visible",
+    "model_never_decides_verdict",
+    "qualified_clause_not_severed"
+  ],
+  "review": {
+    "contract_version": "evidence-assistant/0.1.0",
+    "research_aid_label": "Research aid, not a prediction of efficacy or safety.",
+    "run_id": "beb67513209745baa5e0fcbfc286a23e",
+    "input_sha256": "868f378db29519c24cbe9dfd9ebf3bc06b4438b19f367af9d3320a2ee71394d5",
+    "corpus_sha256": "5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65",
+    "created_utc": "2026-10-24T18:36:57.405701+00:00",
+    "text": "CHEMBL113 in activity 189032 has Ki = 26 uM.\nCHEMBL113 in activity 189032 has Ki = 26 nM.\nCHEMBL521 in activity 792824 has IC50 = 6300 nM.\nCHEMBL25 in activity 189032 has Ki = 26000 nM.\nQED proves that caffeine binds every protein.\nCaffeine is safe.\nCHEMBL113 in activity 189032 has Ki = 26000 nM but this is not true.",
+    "statements": [
+      {
+        "statement_id": "s1",
+        "text": "CHEMBL113 in activity 189032 has Ki = 26 uM.",
+        "start": 0,
+        "end": 44,
+        "category": "assay_observation",
+        "verdict": "supported",
+        "reason_code": "exact_record_comparison",
+        "explanation": "The statement agrees with this specific recorded value and units. This verdict concerns the record, not general biological activity, efficacy or safety.",
+        "citations": [
+          {
+            "source_id": "chembl-activity:189032",
+            "kind": "assay_record",
+            "role": "supports",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189032.json",
+            "source_sha256": "21839f81ea8b403e1be4727d6569d0417fc727b73a699c3fec35affdc3f208da",
+            "excerpt": "{\"activity_id\":189032,\"assay_chembl_id\":\"CHEMBL649104\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"26000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "review:beb67513209745baa5e0fcbfc286a23e",
+            "kind": "run_record",
+            "role": "assessment_trace",
+            "locator": "/statements/0",
+            "url": null,
+            "source_sha256": "00c15e2c45f54d8d5a127ab1ac416cd5ad5148d3dbfbb6d2097358dd2693a7ed",
+            "excerpt": "{\"corpus_sha256\":\"5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65\",\"reason_code\":\"exact_record_comparison\",\"retrieved_source_ids\":[\"chembl-activity:189032\",\"chembl-activity:231261\",\"chembl-activity:231262\",\"chembl-activity:189033\",\"chembl-activity:189034\",\"chembl-activity:328437\",\"chembl-activity:331346\",\"chembl-activity:331347\"],\"statement\":\"CHEMBL113 in activity 189032 has Ki = 26 uM.\"}",
+            "retraction_status": "not_applicable"
+          }
+        ],
+        "confidence": null,
+        "confidence_status": "not_calibrated",
+        "decision_basis": "exact_record_comparison",
+        "requires_review": false
+      },
+      {
+        "statement_id": "s2",
+        "text": "CHEMBL113 in activity 189032 has Ki = 26 nM.",
+        "start": 45,
+        "end": 89,
+        "category": "assay_observation",
+        "verdict": "contradicted",
+        "reason_code": "exact_record_comparison",
+        "explanation": "The statement disagrees with this specific recorded value and units. This verdict concerns the record, not general biological activity, efficacy or safety.",
+        "citations": [
+          {
+            "source_id": "chembl-activity:189032",
+            "kind": "assay_record",
+            "role": "contradicts",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189032.json",
+            "source_sha256": "21839f81ea8b403e1be4727d6569d0417fc727b73a699c3fec35affdc3f208da",
+            "excerpt": "{\"activity_id\":189032,\"assay_chembl_id\":\"CHEMBL649104\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"26000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "review:beb67513209745baa5e0fcbfc286a23e",
+            "kind": "run_record",
+            "role": "assessment_trace",
+            "locator": "/statements/1",
+            "url": null,
+            "source_sha256": "20b39bc84e36899fa6582657ecddf5e42e0ba281df5e62b82c5dd0e885bd0fe7",
+            "excerpt": "{\"corpus_sha256\":\"5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65\",\"reason_code\":\"exact_record_comparison\",\"retrieved_source_ids\":[\"chembl-activity:189032\",\"chembl-activity:231261\",\"chembl-activity:231262\",\"chembl-activity:189033\",\"chembl-activity:189034\",\"chembl-activity:328437\",\"chembl-activity:331346\",\"chembl-activity:331347\"],\"statement\":\"CHEMBL113 in activity 189032 has Ki = 26 nM.\"}",
+            "retraction_status": "not_applicable"
+          }
+        ],
+        "confidence": null,
+        "confidence_status": "not_calibrated",
+        "decision_basis": "exact_record_comparison",
+        "requires_review": false
+      },
+      {
+        "statement_id": "s3",
+        "text": "CHEMBL521 in activity 792824 has IC50 = 6300 nM.",
+        "start": 90,
+        "end": 138,
+        "category": "assay_observation",
+        "verdict": "insufficient_evidence",
+        "reason_code": "publication_status_unknown",
+        "explanation": "The matching record is excluded by the evidence-quality or publication-status policy. It cannot support or contradict this claim.",
+        "citations": [
+          {
+            "source_id": "chembl-activity:792824",
+            "kind": "assay_record",
+            "role": "excluded",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/792824.json",
+            "source_sha256": "d524f4f81abe45a1ac3dc42ac777708590bd75bc72bab34eb71508484f5c1ee0",
+            "excerpt": "{\"activity_id\":792824,\"assay_chembl_id\":\"CHEMBL765856\",\"molecule_chembl_id\":\"CHEMBL521\",\"standard_relation\":\"=\",\"standard_type\":\"IC50\",\"standard_units\":\"nM\",\"standard_value\":\"6300.0\"}",
+            "retraction_status": "publication_status_unknown"
+          },
+          {
+            "source_id": "review:beb67513209745baa5e0fcbfc286a23e",
+            "kind": "run_record",
+            "role": "assessment_trace",
+            "locator": "/statements/2",
+            "url": null,
+            "source_sha256": "e03e5c5a1f0138ae5ca6a88385644fcb394f74334b623e429abedd2d21990000",
+            "excerpt": "{\"corpus_sha256\":\"5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65\",\"reason_code\":\"publication_status_unknown\",\"retrieved_source_ids\":[\"chembl-activity:792824\",\"chembl-activity:242732\",\"chembl-activity:490365\",\"chembl-activity:557523\",\"chembl-activity:557524\",\"chembl-activity:348013\",\"chembl-activity:844010\",\"chembl-activity:917298\"],\"statement\":\"CHEMBL521 in activity 792824 has IC50 = 6300 nM.\"}",
+            "retraction_status": "not_applicable"
+          }
+        ],
+        "confidence": null,
+        "confidence_status": "not_calibrated",
+        "decision_basis": "abstention",
+        "requires_review": true
+      },
+      {
+        "statement_id": "s4",
+        "text": "CHEMBL25 in activity 189032 has Ki = 26000 nM.",
+        "start": 139,
+        "end": 185,
+        "category": "assay_observation",
+        "verdict": "insufficient_evidence",
+        "reason_code": "identity_or_endpoint_mismatch",
+        "explanation": "The cited activity belongs to a different molecule or endpoint; its value is not transferable to this statement.",
+        "citations": [
+          {
+            "source_id": "chembl-activity:189032",
+            "kind": "assay_record",
+            "role": "context",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189032.json",
+            "source_sha256": "21839f81ea8b403e1be4727d6569d0417fc727b73a699c3fec35affdc3f208da",
+            "excerpt": "{\"activity_id\":189032,\"assay_chembl_id\":\"CHEMBL649104\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"26000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "review:beb67513209745baa5e0fcbfc286a23e",
+            "kind": "run_record",
+            "role": "assessment_trace",
+            "locator": "/statements/3",
+            "url": null,
+            "source_sha256": "007a33f4993f0954a5a389e6efad79baa93c1a5c654476cda40fc461bb049511",
+            "excerpt": "{\"corpus_sha256\":\"5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65\",\"reason_code\":\"identity_or_endpoint_mismatch\",\"retrieved_source_ids\":[\"chembl-activity:189032\",\"chembl-activity:91852\",\"chembl-activity:91853\",\"chembl-activity:189033\",\"chembl-activity:189034\",\"chembl-activity:2172299\",\"chembl-activity:2172309\",\"chembl-activity:2172320\"],\"statement\":\"CHEMBL25 in activity 189032 has Ki = 26000 nM.\"}",
+            "retraction_status": "not_applicable"
+          }
+        ],
+        "confidence": null,
+        "confidence_status": "not_calibrated",
+        "decision_basis": "abstention",
+        "requires_review": true
+      },
+      {
+        "statement_id": "s5",
+        "text": "QED proves that caffeine binds every protein.",
+        "start": 186,
+        "end": 231,
+        "category": "activity",
+        "verdict": "insufficient_evidence",
+        "reason_code": "activity_requires_specific_experimental_context",
+        "explanation": "A general activity statement requires experimental context and adequate direct evidence. Computed molecular properties cannot establish activity; no activity conclusion was inferred.",
+        "citations": [
+          {
+            "source_id": "run:a296b0b9910b415a8b2cf80953375dc8:row:1:qed",
+            "kind": "run_record",
+            "role": "context",
+            "locator": "/result/rows/1/properties/4",
+            "url": null,
+            "source_sha256": "866cf8f533aa04b22d73fcdbdd61462b6e251f4b5232ccb6cf57fd5fd0104d2d",
+            "excerpt": "{\"assessment_status\":\"computed\",\"availability\":\"computed\",\"coverage\":\"complete\",\"domain\":\"accepted_graph\",\"evidence_category\":\"computed_descriptor\",\"implementation_fidelity\":\"software_fixture_checked\",\"method\":\"bioscribe-evidence-lab/1.0.0\",\"predictive_validation\":\"not_assessed\",\"quantity\":\"qed\",\"reason\":\"Calculated descriptor; 8-decimal reporting precision, no biological assessment.\",\"units\":\"dimensionless\",\"validation_record\":null,\"value\":0.53846283}",
+            "retraction_status": "not_applicable"
+          },
+          {
+            "source_id": "chembl-activity:189032",
+            "kind": "assay_record",
+            "role": "context",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189032.json",
+            "source_sha256": "21839f81ea8b403e1be4727d6569d0417fc727b73a699c3fec35affdc3f208da",
+            "excerpt": "{\"activity_id\":189032,\"assay_chembl_id\":\"CHEMBL649104\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"26000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "chembl-activity:189033",
+            "kind": "assay_record",
+            "role": "context",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189033.json",
+            "source_sha256": "0f8992b3d08ffc798edfced2b1d9aed12db69f7b7130f460013ce5668cdc28f0",
+            "excerpt": "{\"activity_id\":189033,\"assay_chembl_id\":\"CHEMBL646353\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"16000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "review:beb67513209745baa5e0fcbfc286a23e",
+            "kind": "run_record",
+            "role": "assessment_trace",
+            "locator": "/statements/4",
+            "url": null,
+            "source_sha256": "1bf40089eef3295378c5c73ba59ab463bfdbea5c15ce1d2238cfcda96e75915a",
+            "excerpt": "{\"corpus_sha256\":\"5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65\",\"reason_code\":\"activity_requires_specific_experimental_context\",\"retrieved_source_ids\":[\"run:a296b0b9910b415a8b2cf80953375dc8:row:1:qed\",\"chembl-activity:189032\",\"chembl-activity:189033\",\"chembl-activity:189034\",\"chembl-activity:231261\",\"chembl-activity:231262\",\"chembl-activity:2460301\",\"chembl-activity:328437\"],\"statement\":\"QED proves that caffeine binds every protein.\"}",
+            "retraction_status": "not_applicable"
+          }
+        ],
+        "confidence": null,
+        "confidence_status": "not_calibrated",
+        "decision_basis": "abstention",
+        "requires_review": true
+      },
+      {
+        "statement_id": "s6",
+        "text": "Caffeine is safe.",
+        "start": 232,
+        "end": 249,
+        "category": "efficacy_or_safety",
+        "verdict": "out_of_scope",
+        "reason_code": "efficacy_or_safety_scope",
+        "explanation": "This research assistant does not assess treatment efficacy, clinical safety or dosing.",
+        "citations": [
+          {
+            "source_id": "chembl-activity:189032",
+            "kind": "assay_record",
+            "role": "context",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189032.json",
+            "source_sha256": "21839f81ea8b403e1be4727d6569d0417fc727b73a699c3fec35affdc3f208da",
+            "excerpt": "{\"activity_id\":189032,\"assay_chembl_id\":\"CHEMBL649104\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"26000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "chembl-activity:189033",
+            "kind": "assay_record",
+            "role": "context",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189033.json",
+            "source_sha256": "0f8992b3d08ffc798edfced2b1d9aed12db69f7b7130f460013ce5668cdc28f0",
+            "excerpt": "{\"activity_id\":189033,\"assay_chembl_id\":\"CHEMBL646353\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"16000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "chembl-activity:189034",
+            "kind": "assay_record",
+            "role": "context",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189034.json",
+            "source_sha256": "70350ac2f23f7a64a94591ec288e8b4ffef96eca21ce37ceb3f6fd133ea9ff37",
+            "excerpt": "{\"activity_id\":189034,\"assay_chembl_id\":\"CHEMBL646352\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"22000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "review:beb67513209745baa5e0fcbfc286a23e",
+            "kind": "run_record",
+            "role": "assessment_trace",
+            "locator": "/statements/5",
+            "url": null,
+            "source_sha256": "fccb8788d9ee07955e7514aeb9ef1e703898cfae700eae1bd7353a8e3abb1259",
+            "excerpt": "{\"corpus_sha256\":\"5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65\",\"reason_code\":\"efficacy_or_safety_scope\",\"retrieved_source_ids\":[\"chembl-activity:189032\",\"chembl-activity:189033\",\"chembl-activity:189034\",\"chembl-activity:231261\",\"chembl-activity:231262\",\"chembl-activity:328437\",\"chembl-activity:331346\",\"chembl-activity:331347\"],\"statement\":\"Caffeine is safe.\"}",
+            "retraction_status": "not_applicable"
+          }
+        ],
+        "confidence": null,
+        "confidence_status": "not_calibrated",
+        "decision_basis": "scope_policy",
+        "requires_review": true
+      },
+      {
+        "statement_id": "s7",
+        "text": "CHEMBL113 in activity 189032 has Ki = 26000 nM but this is not true.",
+        "start": 250,
+        "end": 318,
+        "category": "unparsed",
+        "verdict": "insufficient_evidence",
+        "reason_code": "unresolved_statement",
+        "explanation": "This statement is outside the implemented exact-record grammar. Review its meaning and scope; no scientific conclusion was inferred.",
+        "citations": [
+          {
+            "source_id": "chembl-activity:189032",
+            "kind": "assay_record",
+            "role": "context",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189032.json",
+            "source_sha256": "21839f81ea8b403e1be4727d6569d0417fc727b73a699c3fec35affdc3f208da",
+            "excerpt": "{\"activity_id\":189032,\"assay_chembl_id\":\"CHEMBL649104\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"26000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "chembl-activity:189033",
+            "kind": "assay_record",
+            "role": "context",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189033.json",
+            "source_sha256": "0f8992b3d08ffc798edfced2b1d9aed12db69f7b7130f460013ce5668cdc28f0",
+            "excerpt": "{\"activity_id\":189033,\"assay_chembl_id\":\"CHEMBL646353\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"16000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "chembl-activity:189034",
+            "kind": "assay_record",
+            "role": "context",
+            "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189034.json",
+            "source_sha256": "70350ac2f23f7a64a94591ec288e8b4ffef96eca21ce37ceb3f6fd133ea9ff37",
+            "excerpt": "{\"activity_id\":189034,\"assay_chembl_id\":\"CHEMBL646352\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"22000.0\"}",
+            "retraction_status": "not_flagged_in_checked_snapshot"
+          },
+          {
+            "source_id": "review:beb67513209745baa5e0fcbfc286a23e",
+            "kind": "run_record",
+            "role": "assessment_trace",
+            "locator": "/statements/6",
+            "url": null,
+            "source_sha256": "37d3dfe2fdceb660b93d697c7cb929e971778bea262ff9c7de15ee1cfa46a2b6",
+            "excerpt": "{\"corpus_sha256\":\"5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65\",\"reason_code\":\"unresolved_statement\",\"retrieved_source_ids\":[\"chembl-activity:189032\",\"chembl-activity:189033\",\"chembl-activity:189034\",\"chembl-activity:231261\",\"chembl-activity:231262\",\"chembl-activity:328437\",\"chembl-activity:331346\",\"chembl-activity:331347\"],\"statement\":\"CHEMBL113 in activity 189032 has Ki = 26000 nM but this is not true.\"}",
+            "retraction_status": "not_applicable"
+          }
+        ],
+        "confidence": null,
+        "confidence_status": "not_calibrated",
+        "decision_basis": "abstention",
+        "requires_review": true
+      }
+    ],
+    "decomposition": {
+      "all_text_retained": true,
+      "method": "span_preserving_bounded_rules/0.1.0",
+      "semantic_completeness": "not_established",
+      "unresolved_clauses_require_review": true
+    },
+    "disagreements": [
+      {
+        "endpoint": "Ki",
+        "interpretation": "Different recorded values across assays; experimental contexts may differ. No averaging or universal biological contradiction is inferred.",
+        "molecule_id": "CHEMBL113",
+        "observations": [
+          {
+            "assay_description": "Binding affinity against Adenosine A2 receptor in rat brain membrane, using [3H]-NECA as the radioligand.",
+            "assay_id": "CHEMBL649876",
+            "citation": {
+              "excerpt": "{\"activity_id\":231262,\"assay_chembl_id\":\"CHEMBL649876\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"48000.0\"}",
+              "kind": "assay_record",
+              "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+              "retraction_status": "not_flagged_in_checked_snapshot",
+              "role": "context",
+              "source_id": "chembl-activity:231262",
+              "source_sha256": "a7eeb698f3214a9ba12a216ea49dc0cfe10debf198ef31e84f53b5da624a5ef7",
+              "url": "https://www.ebi.ac.uk/chembl/api/data/activity/231262.json"
+            },
+            "value": "48000.0"
+          },
+          {
+            "assay_description": "Inhibition of [3H]5'-(N-ethylcarbamoyl)-adenosine binding to Adenosine A2 receptor in rat striatal membranes in the presence of 50 nM cyclopentyladenosine",
+            "assay_id": "CHEMBL644769",
+            "citation": {
+              "excerpt": "{\"activity_id\":328437,\"assay_chembl_id\":\"CHEMBL644769\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"27000.0\"}",
+              "kind": "assay_record",
+              "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+              "retraction_status": "not_flagged_in_checked_snapshot",
+              "role": "context",
+              "source_id": "chembl-activity:328437",
+              "source_sha256": "e5309d2cb43ec648cbc6cb035cb27b8b25b345743ffab253b9b031a0a8bcce08",
+              "url": "https://www.ebi.ac.uk/chembl/api/data/activity/328437.json"
+            },
+            "value": "27000.0"
+          }
+        ],
+        "organism": "Rattus norvegicus",
+        "target_id": "CHEMBL2094117",
+        "units": "nM"
+      },
+      {
+        "endpoint": "Ki",
+        "interpretation": "Different recorded values across assays; experimental contexts may differ. No averaging or universal biological contradiction is inferred.",
+        "molecule_id": "CHEMBL113",
+        "observations": [
+          {
+            "assay_description": "Ability to inhibit binding of [3H]NECA to Adenosine A2A receptor in rat brain striatal membranes",
+            "assay_id": "CHEMBL646353",
+            "citation": {
+              "excerpt": "{\"activity_id\":189033,\"assay_chembl_id\":\"CHEMBL646353\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"16000.0\"}",
+              "kind": "assay_record",
+              "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+              "retraction_status": "not_flagged_in_checked_snapshot",
+              "role": "context",
+              "source_id": "chembl-activity:189033",
+              "source_sha256": "0f8992b3d08ffc798edfced2b1d9aed12db69f7b7130f460013ce5668cdc28f0",
+              "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189033.json"
+            },
+            "value": "16000.0"
+          },
+          {
+            "assay_description": "Ability to inhibit binding of [3H]-CGS- 21680 to adenosine A2A receptor in rat brain striatal membranes.",
+            "assay_id": "CHEMBL646352",
+            "citation": {
+              "excerpt": "{\"activity_id\":189034,\"assay_chembl_id\":\"CHEMBL646352\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"22000.0\"}",
+              "kind": "assay_record",
+              "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+              "retraction_status": "not_flagged_in_checked_snapshot",
+              "role": "context",
+              "source_id": "chembl-activity:189034",
+              "source_sha256": "70350ac2f23f7a64a94591ec288e8b4ffef96eca21ce37ceb3f6fd133ea9ff37",
+              "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189034.json"
+            },
+            "value": "22000.0"
+          }
+        ],
+        "organism": "Rattus norvegicus",
+        "target_id": "CHEMBL302",
+        "units": "nM"
+      },
+      {
+        "endpoint": "Ki",
+        "interpretation": "Different recorded values across assays; experimental contexts may differ. No averaging or universal biological contradiction is inferred.",
+        "molecule_id": "CHEMBL113",
+        "observations": [
+          {
+            "assay_description": "Ability to inhibit binding of [3H]CHA to adenosine A1 receptor in rat brain cortical membranes.",
+            "assay_id": "CHEMBL649104",
+            "citation": {
+              "excerpt": "{\"activity_id\":189032,\"assay_chembl_id\":\"CHEMBL649104\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"26000.0\"}",
+              "kind": "assay_record",
+              "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+              "retraction_status": "not_flagged_in_checked_snapshot",
+              "role": "context",
+              "source_id": "chembl-activity:189032",
+              "source_sha256": "21839f81ea8b403e1be4727d6569d0417fc727b73a699c3fec35affdc3f208da",
+              "url": "https://www.ebi.ac.uk/chembl/api/data/activity/189032.json"
+            },
+            "value": "26000.0"
+          },
+          {
+            "assay_description": "Binding affinity against Adenosine A1 receptor in rat brain membrane, using [3H]N6-cyclohexyladenosine as the radioligand",
+            "assay_id": "CHEMBL636768",
+            "citation": {
+              "excerpt": "{\"activity_id\":231261,\"assay_chembl_id\":\"CHEMBL636768\",\"molecule_chembl_id\":\"CHEMBL113\",\"standard_relation\":\"=\",\"standard_type\":\"Ki\",\"standard_units\":\"nM\",\"standard_value\":\"29000.0\"}",
+              "kind": "assay_record",
+              "locator": "/activity/standard_value (with standard_type, standard_relation, standard_units and assay_chembl_id)",
+              "retraction_status": "not_flagged_in_checked_snapshot",
+              "role": "context",
+              "source_id": "chembl-activity:231261",
+              "source_sha256": "38d3c6146394ce94b1ae526f3bf4022e3f08a7bd62d9d8bb318db47f0204a6cd",
+              "url": "https://www.ebi.ac.uk/chembl/api/data/activity/231261.json"
+            },
+            "value": "29000.0"
+          }
+        ],
+        "organism": "Rattus norvegicus",
+        "target_id": "CHEMBL318",
+        "units": "nM"
+      }
+    ],
+    "excluded_sources": [
+      {
+        "reason": "publication_status_unknown",
+        "source_id": "chembl-activity:792824"
+      }
+    ],
+    "model": {
+      "id": null,
+      "status": "not_requested",
+      "used_for_verdict": false
+    },
+    "evidence_scope": "Frozen ChEMBL assay records and recorded BioScribe computations. Publication flags checked as-of snapshot; refresh required after 30 days. No exhaustive literature search or clinical interpretation.",
+    "scientific_assessment": "not_assessed",
+    "benchmark_status": "provisional_unreviewed"
+  }
+}

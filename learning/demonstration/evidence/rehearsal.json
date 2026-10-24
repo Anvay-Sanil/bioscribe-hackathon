@@ -1,0 +1,46 @@
+{
+  "purpose": "Synthetic learning demonstration only",
+  "fixture_checks": 2,
+  "valid_exports_accepted": 3,
+  "browser_steps_passed": 7,
+  "steps": [
+    {
+      "name": "01-budget-100",
+      "observation": "120 scored; 100 selected per method; both invented-positive counts 14/100",
+      "screenshot": "01-budget-100.png"
+    },
+    {
+      "name": "02-budget-10",
+      "observation": "120 scored; 10 selected per method; invented positives 2/10 vs 1/10",
+      "screenshot": "02-budget-10.png"
+    },
+    {
+      "name": "03-unknown-label",
+      "observation": "All 120 calculations retained; selections and comparisons Not assessed",
+      "screenshot": "03-unknown-label.png"
+    },
+    {
+      "name": "04-find-alkane-028",
+      "observation": "Only alkane-028 displayed; report-level comparisons remain Not assessed",
+      "screenshot": "04-find-alkane-028.png"
+    },
+    {
+      "name": "05-restore-all",
+      "observation": "All 120 rows restored; comparisons still Not assessed",
+      "screenshot": "05-restore-all.png"
+    },
+    {
+      "name": "06-heuristic-rejected",
+      "observation": "Rejected heuristic.assessment_status=not_assessed; previous values cleared",
+      "screenshot": "06-heuristic-rejected.png"
+    },
+    {
+      "name": "07-molecular_weight-rejected",
+      "observation": "Rejected molecular_weight.units=kg/mol; previous values cleared",
+      "screenshot": "07-molecular_weight-rejected.png"
+    }
+  ],
+  "browserErrors": [],
+  "httpRequests": [],
+  "execution": "Automated headless Edge rehearsal; no human presentation or interactive in-app rerun claimed"
+}

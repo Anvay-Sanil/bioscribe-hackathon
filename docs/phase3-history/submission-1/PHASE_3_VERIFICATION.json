@@ -1,0 +1,209 @@
+{
+  "recorded_at_utc": "2026-10-16T13:53:35.814785+00:00",
+  "user_date": "2026-10-16",
+  "user_timezone": "Asia/Calcutta",
+  "scope": "Phase 3 constrained public-data implementation; no scientific validation or production certification",
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "environment": {
+    "platform": "Windows",
+    "python": "3.11.9",
+    "node": "22.20.0",
+    "npm": "10.9.3"
+  },
+  "backend_tests": {
+    "tests": "108",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "28.254",
+    "timestamp": "2026-10-16T01:10:13.826499+05:30"
+  },
+  "commands": [
+    {
+      "cwd": ".",
+      "command": "python -m venv .phase3-clean",
+      "exit_code": 0,
+      "result": "Independent clean Python environment created"
+    },
+    {
+      "cwd": ".",
+      "command": "& .phase3-clean/Scripts/python.exe -m pip install -r backend/requirements-phase3.lock",
+      "exit_code": 0,
+      "result": "Clean installation completed from full resolved lock"
+    },
+    {
+      "cwd": ".",
+      "command": "& .phase3-clean/Scripts/python.exe -m pip check",
+      "exit_code": 0,
+      "result": "No broken requirements found; repeated after final changes"
+    },
+    {
+      "cwd": "backend",
+      "command": "& ../.phase3-clean/Scripts/python.exe -m scripts.generate_contract",
+      "exit_code": 0,
+      "result": "All five generated artifacts reproduce byte-for-byte on regeneration"
+    },
+    {
+      "cwd": "backend",
+      "command": "& ../.phase3-clean/Scripts/python.exe -m pytest tests_phase3 -q --override-ini addopts= --override-ini faulthandler_timeout=60 --junitxml=../docs/phase3-verification.xml",
+      "exit_code": 0,
+      "result": "108 passed, 1 Starlette/AnyIO deprecation warning in 28.38s",
+      "artifact": "docs/phase3-verification.xml"
+    },
+    {
+      "cwd": "backend",
+      "command": "& ../.phase3-clean/Scripts/python.exe -m scripts.startup_smoke",
+      "exit_code": 0,
+      "result": [
+        "API startup",
+        "worker readiness",
+        "queued run survives API kill",
+        "real spawned computation",
+        "run/export identity",
+        "API and worker restart preserve artifact"
+      ],
+      "artifact": "docs/phase3-startup.json"
+    },
+    {
+      "cwd": "bioscribe-ai",
+      "command": "npm.cmd run lint",
+      "exit_code": 0,
+      "result": "Supported application scope passed"
+    },
+    {
+      "cwd": "bioscribe-ai",
+      "command": "npm.cmd run typecheck",
+      "exit_code": 0,
+      "result": "Supported application scope passed"
+    },
+    {
+      "cwd": "bioscribe-ai",
+      "command": "npm.cmd run build",
+      "exit_code": 0,
+      "result": "Final source compiled; lint, types, page generation and trace collection completed",
+      "routes": [
+        "/",
+        "/_not-found",
+        "/pipeline/new",
+        "/results/[id]"
+      ]
+    },
+    {
+      "cwd": "bioscribe-ai",
+      "command": "npm.cmd run test:contract",
+      "exit_code": 0,
+      "result": {
+        "status": "passed",
+        "checks": 24,
+        "scope": "Generated JSON Schema plus client semantic decoder; synthetic persisted API/export fixture"
+      },
+      "artifact": "docs/phase3-client-checks.json"
+    },
+    {
+      "cwd": ".phase3-frontend-clean",
+      "command": "npm.cmd ci --no-audit --no-fund",
+      "exit_code": 0,
+      "result": "638 packages installed from copied repository package-lock.json; no vulnerability audit claimed"
+    },
+    {
+      "cwd": ".phase3-frontend-clean",
+      "command": "npm.cmd run build",
+      "exit_code": 0,
+      "result": "Isolated clean dependency installation build passed before the final field-scope refinement. Final refinement built in the primary frontend checkout using the same lock."
+    },
+    {
+      "cwd": ".",
+      "command": "git diff --check -- . ':!bioscribe-ai/src/components/tabs/DockingTab.tsx' ':!bioscribe-ai/src/lib/api.ts'",
+      "exit_code": 0,
+      "result": "Tracked changes pass whitespace check after excluding two preserved pre-existing modified files; LF/CRLF informational warnings retained. Untracked files are outside Git diff scope."
+    }
+  ],
+  "browser": {
+    "prior_manual_check": "passed",
+    "report": "docs/phase3-browser-checks.json",
+    "scope": "Real local API/worker and production UI; public synthetic input. Performed before final field-scope decoder refinement.",
+    "final_manual_rerun": "not_executed",
+    "reason": "Automatic approval review failed because its usage limit was reached. The requested local fixture-service launch did not execute; this was not an unsafe-action determination."
+  },
+  "unmet_gates": [
+    "Independent audit checkpoint deployment, protected administration and integration with live run-event acknowledgements",
+    "Sensitive deployment transport/storage/backups, retention, key lifecycle, host/network egress and regulatory applicability decisions",
+    "ESOL reference fidelity; disabled rather than represented as implemented",
+    "Positive predictive-validation registry and endpoint-specific evaluation; all predictive outputs remain disabled",
+    "Complete below/at/above resource-boundary and network fault suite, OS quotas and capacity qualification",
+    "Linux/Docker execution and dependency vulnerability qualification",
+    "Final manual browser rerun after field-scope refinement"
+  ],
+  "known_nonpassing_attempts": [
+    "Historical sandbox runtime stall in Windows local socket setup; interrupted, not counted",
+    "Sandbox SWC path-access failure; approved production build subsequently passed",
+    "Intermediate test fixture lacked a molecule for new cross-scope assertions; fixture corrected before final 108-test run",
+    "Unscoped git diff --check finds pre-existing whitespace in retired DockingTab.tsx and src/lib/api.ts; preserved, not silently reported clean"
+  ],
+  "file_sha256": {
+    "backend/bioscribe/__init__.py": "9c5d21ed2939f9737727c79ea856d19483675e15c54e02692bab69f696696cb5",
+    "backend/bioscribe/api.py": "a05323926aa0794835e1b6699e6c981a31cb1155ad3717891aece82dfd34d612",
+    "backend/bioscribe/auth.py": "18a1610bb586f4530761ea389d42f05d3eef27d56bd712330e69e8848b24843f",
+    "backend/bioscribe/checkpoint_service.py": "0c34c50bcd183728985d0383e4cbcf3e4bf75d113e56811f78eb89b1b42525e5",
+    "backend/bioscribe/checkpoints.py": "5611afa8e195ec041705a777fdfb14f786d9bd194ee27744a1c10ded2758958c",
+    "backend/bioscribe/compute.py": "465f107a61e9d834e3f4c8fba0da91b33f0e22933d793a868a9341923b2e2991",
+    "backend/bioscribe/config.py": "527f9160750585152e212fc0d92e44a08b8afeb44e0e85acc6717cc47d353c6d",
+    "backend/bioscribe/identity.py": "516e7df65cd1c9dec110c7e520efb8d3e2589889b03e586dea821bb7cb823ed7",
+    "backend/bioscribe/metrics.py": "7c9aa7bd5004d844128de1841ff31a699647707bd26e52b2ef067f1b3fde65c9",
+    "backend/bioscribe/provenance.py": "6d17474cdeb9cfeb46327527e2107d2a71ba6afb1e4c3a350b87f1edb012769d",
+    "backend/bioscribe/registry.py": "c891aa198ab1c91793ecf1d095c169c68fe35c845bbfae55fb9dd46938527fc8",
+    "backend/bioscribe/schemas.py": "7ac1069fe572ccfa549033f80c1b5b41d444377e2d594d3acdef66c1b7e1a80d",
+    "backend/bioscribe/store.py": "bd415096bebb43af6bf6c8ff1f7da745b00b4e4bdde0e8a8140dc3deff3dcbaf",
+    "backend/bioscribe/worker.py": "d29eba16ba7054fc4f8f589dff2d420b6a89ef448546268cbeb2c40f1acc2e45",
+    "backend/requirements-phase3.in": "8079cadc020b4a4f41b28d00b6f315866c176ce8aa214d79a388e8a2dcab3b73",
+    "backend/requirements-phase3.lock": "ae4b09ee9910ec3bbfcde31d922d24184ed188bdc128218288156e43815c998b",
+    "backend/scripts/browser_fixture.py": "47bc1783726d672300573df75469243d32c4e9df21ce1bc8ffeb02829c6d445d",
+    "backend/scripts/contain_legacy.py": "3e1f4689d17761020cbc5e9dc3bd1070c6aab12205c089098199b09d7506d5d7",
+    "backend/scripts/generate_contract.py": "992ff5acdcb3a4046fd6a91f83265250d3bafd4802caf0754153f179ab00569c",
+    "backend/scripts/quarantine_ui.py": "ddd69f8a8cc5c81c8f1d2a851c6a52ae9d649051fcc604a49743a6392cb17787",
+    "backend/scripts/startup_smoke.py": "3b6aad45dbec91015357bb90e465917453d27b02e681d4aa5328c374dae98f6a",
+    "backend/tests_phase3/conftest.py": "1d100716ab166356db3935e08d0f700b194f6abda530748c0aec514f72132d50",
+    "backend/tests_phase3/test_api_store.py": "9537cd2f663ff22a509b8e519dc06b690cbb6fdc855eb8b47d8dfa2648283a1d",
+    "backend/tests_phase3/test_checkpoints.py": "ce8a1d6b9436f36ae0605b67677aeca200f30b3d9f6f7ca3523f3aa74e98d749",
+    "backend/tests_phase3/test_contract.py": "e6e15617a50fa7ea7b7e3c946849e41e3f688eaae9ff6dd01ad370abc7a5f62a",
+    "backend/tests_phase3/test_identity.py": "c10fb9f83877bf638b5a93803716d632dafc6acfaa5f627edd6e4b385c7184b2",
+    "backend/tests_phase3/test_limits_and_integrity.py": "c02711088550a141aa5bca40a808894cdad39f07119e4533b22e867aaccd4fbd",
+    "backend/tests_phase3/test_methods.py": "39a86fd2397fa636ff1347f005a608a103e3c0253f54c3a95dca6c2ace587f9a",
+    "backend/tests_phase3/test_metrics.py": "ed5ae8fb57f724aa377a063885235beb21a4eff786359be4d021328c4c923a06",
+    "backend/tests_phase3/test_reference_pattern.py": "222de7e11162f1c66637335640d09cdeb1d4cce587168a15428fbb500a93b617",
+    "bioscribe-ai/next.config.ts": "c764df829a3be1447b731434dc0768ff6dd1323f1bdc404e8f70a9f237b842fc",
+    "bioscribe-ai/package-lock.json": "14a4a826799139d16eab903746df3e38dce0b1e5bc4539272298d4ccec93c895",
+    "bioscribe-ai/package.json": "f50a91175d5029876de64995622034f0b98c8229af0a72a0b9715431db53f453",
+    "bioscribe-ai/scripts/phase3-contract-check.cjs": "dbe6e67204f4117976f8a882826e2c7a199c876c0d4c87db1fd2ee5597385408",
+    "bioscribe-ai/src/app/layout.tsx": "04c6f40c49020226ce1297fc0bdecb127a2c8318e304f8a613dd708045989d78",
+    "bioscribe-ai/src/app/page.tsx": "c18646d4e7f04486b32a7f7f040354307d49c46a8fbb8bf066a0070c6d33b394",
+    "bioscribe-ai/src/app/pipeline/new/page.tsx": "f8eeb5db4c8e562d0cf51f0ac2b983ce9fd96693be888b4cb4f828beb97a7782",
+    "bioscribe-ai/src/app/results/[id]/page.tsx": "861e73f397be6a2750157b564d4f3f8611667680d7a5cd2884ebecc00e18cd54",
+    "bioscribe-ai/src/components/Phase3Results.tsx": "c08cdbca1a4f8ad776623de08142ec7062c88d180feda6155302f8fd5ecda2a2",
+    "bioscribe-ai/src/components/Phase3Workbench.tsx": "4013e7959de9e43c988408bd83573a2381a70281e1486b4ff843ae29638294bc",
+    "bioscribe-ai/src/lib/phase3/client.ts": "3839a5499c3b50beb08829ce31b0513bfca9810f5e446b4f651cc22366d59a28",
+    "bioscribe-ai/src/lib/phase3/contract.ts": "7333532d7d8d29696cd83e1d6b81478f2d181397825cb1b9003a5d25d2ba1659",
+    "bioscribe-ai/src/lib/phase3/methods.json": "866844436c483e11673498ca3d1e55be23819bef28a5bdcb4ee0c281586ffd1d",
+    "bioscribe-ai/src/lib/phase3/RunRequest.schema.json": "2cf8b24f144e7c4893f1b93fb4c78925faaab9c2d564a9d143e92db93273d3f2",
+    "bioscribe-ai/src/lib/phase3/RunView.schema.json": "ccd6fc9d405aeeb37770fb2068b4d8b8ae0decdcee14dc846846d31106f4332c",
+    "bioscribe-ai/src/middleware.ts": "3c48a1aafb25bd48e43b83b143abe967778b3f15013a422e75b21efb5eac6cb7",
+    "bioscribe-ai/tsconfig.json": "3d35371cb06a9c40c632cea307e00b8981b6b294c8e1cdc34281779f3a397e25",
+    "docker-compose.yml": "84a1498c70402580d0af4d3d8a958ef230e0900ba691e81a3605506ebb0ec4aa",
+    "Dockerfile": "e42476234fdd38432b1131af915d8af6c821c643ba9c638647d3933923cd6ac1",
+    "docs/phase3-browser-checks.json": "8ebd9d6bab443f5b445a279b8c7de346d9630da264e7400372eb0b775dbbf211",
+    "docs/phase3-browser-export.json": "5f61f6a221f019f7937e54ad30f894193f6cb6f56cc5976132693d1bc52f7bc3",
+    "docs/phase3-browser.jpg": "855f5f7d42307276f6172b80c4c0fb73b3872991312772d754f48973a9ae96c3",
+    "docs/phase3-client-checks.json": "de6d52a19b21b79154b8d11a2d4f0f66b8f5579292b89f00fabfdd92b318ab90",
+    "docs/phase3-example-run.json": "4a323d0c4cf98be3276f852d193211244b86b229bc8c9d8689acead0bc61c6fa",
+    "docs/phase3-startup.json": "6a5063df33771deb31758543d90e5a7666b3bf61e41743ec746594e500549b1a",
+    "docs/phase3-verification.xml": "f40459a068b02bf2433378493e24e20fa69c727caf8b981eb298d1809ebe7617",
+    "docs/PHASE_2_GAP_DIAGNOSTIC.md": "f62ca22906a775e537f58b8e629be237e0ba30d414dbd517aaeb0dacba7d6cf1",
+    "docs/PHASE_3_OPENAPI.json": "35253b0acc64f7d75dd5487f4d7e9752701b97ccb98853d8eb32f3432e9ab7cd",
+    "start-backend.ps1": "6e190376d7a77e64f180386e244fcb766ed332e82ac2247f0214d69e6fd72eac",
+    "start-worker.ps1": "86d374fc49d23598b7383def6b60a5ba138a7edadc397a3b925899a33ceeb20b",
+    "README.md": "820d0b05c519168cfc466947f0a76974555b4d6b22e1a195b6597094543d771b",
+    "docs/PHASE_3_IMPLEMENTATION.md": "5d34af1183d471583cf3b304f94d50b9d014f830f1b529aabddc6cb11483712e"
+  },
+  "integrity_note": "This local ledger binds the submitted files by checksum. It is neither independently anchored nor authenticated proof of authorship. Command records describe observed executions, not a test runner."
+}

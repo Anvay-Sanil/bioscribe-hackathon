@@ -1,0 +1,49 @@
+# Core Framework
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+
+# Scientific Computing
+numpy==1.24.3
+scipy==1.11.4
+pandas==2.0.3
+
+# Bioinformatics & Chemistry
+biopython==1.81
+rdkit-pypi==2023.9.1
+biotite==0.39.0
+
+# AI/ML Models
+torch==2.1.0
+transformers==4.35.2
+tokenizers==0.15.0
+huggingface-hub==0.19.4
+sentence-transformers==2.2.2
+
+# Protein Structure & Analysis
+pymol-open-source==3.0.0
+prody==2.4.1
+mdanalysis==2.6.1
+
+# Molecular Docking (lightweight alternatives)
+openmm==8.0.0
+pdbfixer==1.9
+
+# Real-Time Data Integration
+aiohttp==3.9.1
+aiofiles==23.2.1
+httpx==0.25.2
+
+# Database & Storage
+motor==3.3.2
+pymongo==4.6.0
+redis==5.0.1
+
+# Utilities
+requests==2.31.0
+python-multipart==0.0.6
+jinja2==3.1.2
+
+# Development
+pytest==7.4.3
+pytest-asyncio==0.21.1

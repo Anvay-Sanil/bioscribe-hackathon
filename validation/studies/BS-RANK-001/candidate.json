@@ -1,0 +1,84 @@
+{
+  "dossier_id": "BS-RANK-001",
+  "status": "proposed_candidate_not_completed_protocol",
+  "method_id": "prioritization_heuristic",
+  "method_version": "1.1.0",
+  "registry_record": {
+    "version": "1.1.0",
+    "reference": "BioScribe descriptor distance heuristic v1; no affinity reference",
+    "algorithm": "abs(MW-350)/350 + abs(TPSA-75)/75; lower is nearer chosen descriptor targets",
+    "parameters": {
+      "mw_target": 350,
+      "tpsa_target": 75
+    },
+    "assumptions": "unvalidated dimensionless ordering; target independent; not docking or binding energy",
+    "fidelity": "fixture_checked",
+    "fixture": "tests_phase3/test_methods.py::test_heuristic",
+    "predictive_validation": null,
+    "validation_status": "not_available",
+    "owner": "BioScribe maintainers",
+    "scientific_review": "not_performed",
+    "input_policy": {
+      "id": "plain_smiles_concrete_graph",
+      "version": "1.1.0",
+      "parser": "RDKit 2025.03.3 SmilesParserParams",
+      "parameters": {
+        "parseName": false,
+        "allowCXSMILES": false,
+        "sanitize": true,
+        "removeHs": true
+      },
+      "text": "One nonempty ASCII SMILES string without whitespace/control characters; no names or CXSMILES; no trimming or repair",
+      "graph": "Nonempty sanitized graph within the atom limit; no atomic-number-zero, query atoms or query bonds",
+      "identity": "Retain fragments, formal charges, isotopes and specified/unspecified stereochemistry; no salt stripping or tautomer/protonation adjustment",
+      "interpretation": "Syntactic/concrete-graph eligibility only; not endpoint-specific predictive validation",
+      "reference": "https://www.rdkit.org/docs/RDKit_Book.html#reading-molecule-names",
+      "fixture": "tests_phase3/test_sentinel_molecules.py"
+    },
+    "outputs": {
+      "descriptor_distance": {
+        "units": "dimensionless",
+        "shape": "nonnegative",
+        "field_suffix": "prioritization_heuristic"
+      }
+    }
+  },
+  "input_policy": {
+    "id": "plain_smiles_concrete_graph",
+    "version": "1.1.0",
+    "parser": "RDKit 2025.03.3 SmilesParserParams",
+    "parameters": {
+      "parseName": false,
+      "allowCXSMILES": false,
+      "sanitize": true,
+      "removeHs": true
+    },
+    "text": "One nonempty ASCII SMILES string without whitespace/control characters; no names or CXSMILES; no trimming or repair",
+    "graph": "Nonempty sanitized graph within the atom limit; no atomic-number-zero, query atoms or query bonds",
+    "identity": "Retain fragments, formal charges, isotopes and specified/unspecified stereochemistry; no salt stripping or tautomer/protonation adjustment",
+    "interpretation": "Syntactic/concrete-graph eligibility only; not endpoint-specific predictive validation",
+    "reference": "https://www.rdkit.org/docs/RDKit_Book.html#reading-molecule-names",
+    "fixture": "tests_phase3/test_sentinel_molecules.py"
+  },
+  "claim_type": "ranking_utility",
+  "task_type": "ranking",
+  "ranking_direction": "lower",
+  "scientific_assessment": "not_assessed",
+  "validation_record": null,
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "target_endpoint_population_and_assay": null,
+  "intended_experimental_decision": null,
+  "minimum_useful_benefit": null,
+  "dataset_manifest": null,
+  "leakage_analysis": null,
+  "scientific_owner": null,
+  "independent_statistical_reviewer": null,
+  "data_custodian": null,
+  "protected_holdout_repository": null,
+  "preregistration_receipt": null,
+  "empirical_data_acquired": false,
+  "confirmatory_evaluation_performed": false,
+  "snapshot_manifest": "source-manifest.json",
+  "snapshot_trust": "Local byte correspondence only; no independent timestamp or authenticated authorship"
+}

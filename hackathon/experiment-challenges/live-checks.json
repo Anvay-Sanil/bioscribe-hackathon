@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "scope": "Seven real local jobs; six relationships checked and six saved outcomes retrieved",
+  "control_run": "68ba13c68ca54ce681eb8dab039d6062",
+  "outcomes": [
+    {
+      "id": "reorder",
+      "title": "Shuffle the library",
+      "question": "Does row order change the scientific result?",
+      "expectation": "Same graph identities, descriptors and selected graph identities after reversing row order.",
+      "status": "passed",
+      "observations": [
+        "Graph identities and complete property records were preserved."
+      ],
+      "run_id": "d85708edb25a4c58a160a87ebfd2ea88"
+    },
+    {
+      "id": "canonical",
+      "title": "Change the spelling",
+      "question": "Does equivalent recorded notation preserve the descriptors?",
+      "expectation": "Canonical isomeric spellings retain graph identities and property records. Selection is not asserted: raw-input tie-breaks may change.",
+      "status": "passed",
+      "observations": [
+        "Graph identities and complete property records were preserved.",
+        "This test makes no claim about canonicalization beyond these specific spellings."
+      ],
+      "run_id": "973d9d5f757b439cbe504bba5109a579"
+    },
+    {
+      "id": "duplicate",
+      "title": "Plant a duplicate",
+      "question": "Will a duplicate quietly count as a new candidate?",
+      "expectation": "The duplicate is retained with the same graph identity and properties; ranking is withheld.",
+      "status": "passed",
+      "observations": [
+        "Duplicate row retained; original records unchanged; both selections withheld."
+      ],
+      "run_id": "930caac92bb6430eb67d6c2bbf35ca2c"
+    },
+    {
+      "id": "invalid",
+      "title": "Break one input",
+      "question": "Will a broken record vanish from the comparison?",
+      "expectation": "Replace the first row with an empty record. Preserve every row; reject that row, withhold its descriptors and all selections.",
+      "status": "passed",
+      "observations": [
+        "The empty row stayed in the library; no numeric value or shortlist was published for it. Other rows were preserved."
+      ],
+      "run_id": "32069522953b441e8b030e977202f055"
+    },
+    {
+      "id": "budget",
+      "title": "Move the budget",
+      "question": "Does changing the budget secretly change the scores?",
+      "expectation": "Same molecular rows and full rankings; the new selections are exact prefixes at the new budget.",
+      "status": "passed",
+      "observations": [
+        "Budget 2 → 3; properties and full rankings unchanged; selections are exact prefixes."
+      ],
+      "run_id": "c2ae2f9ba1404ed089e407ab14d56bac"
+    },
+    {
+      "id": "forged",
+      "title": "Forge a number",
+      "question": "Can a changed number pass after its checksum is rebuilt?",
+      "expectation": "Change molecular weight by +1 and rebuild the result hash. Fresh server replay must fail with replay_result_mismatch.",
+      "status": "passed",
+      "observations": [
+        "Fresh replay rejected the changed value despite its internally consistent checksum."
+      ],
+      "run_id": "717cae12f30e4bf1b77654fafcf526d7"
+    }
+  ],
+  "scientific_assessment": "not_assessed",
+  "user_value": "untested"
+}

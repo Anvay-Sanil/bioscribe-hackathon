@@ -1,0 +1,60 @@
+{
+  "status": "partial_not_qualified",
+  "qualification": "not_assessed",
+  "baseline_beaten": null,
+  "corpus_sha256": "5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65",
+  "claims_sha256": "f6dea38e601214ca1735cf31c38b7ed484670ab8263920edf1845ebfe99ce0ef",
+  "requested_limit": 1,
+  "model_timeout_seconds": 180,
+  "execution_code_sha256": {
+    "validation/evidence_assistant/evaluate.py": "092afef4b96af15bc2bc56b2d559cda1596e83f202b663c6885e2dec4b9e2020",
+    "backend/evidence_assistant/engine.py": "f8ecdb9fb839568ca1354084e95e9b551793be70fd62f193a97a3cb76ba083b0",
+    "backend/evidence_assistant/model.py": "41cf60de4b5eedb242e2eb79a1f5bddf5cff681ae566643cd9cbb02275ac3ea8"
+  },
+  "predictions": {
+    "EA-001": {
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189032"
+      ],
+      "confidence": 0.95,
+      "reason": "The claim specifies Ki = 26000.0 nM for CHEMBL113 (caffeine) inhibiting adenosine A1 receptor binding in rat brain cortical membranes, which is directly supported by the activity record with activity_id '189032'. The endpoint, molecule, target, and units match exactly. The data validity and publication check status are not flagged, and the record is valid and unambiguous.",
+      "model": {
+        "id": "Qwen/Qwen3-4B-Instruct-2507",
+        "parameters": 4000000000,
+        "weights_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+        "quantization": "Q4_K_M",
+        "runtime_release": "b11856",
+        "prompt_sha256": "935122f567fe4132f93e07797cf47f54a624a4d3965f61400ffbf32936ad5f01",
+        "temperature": 0,
+        "seed": 1337,
+        "timeout_seconds": 180,
+        "response_sha256": "83bf6e8788345f50e339545bfe7ff9f456d9215c5e022ffd802c8f8a586a4963",
+        "usage": {
+          "completion_tokens": 136,
+          "prompt_tokens": 1962,
+          "total_tokens": 2098,
+          "prompt_tokens_details": {
+            "cached_tokens": 1961
+          }
+        },
+        "identity_scope": "Configured local runtime/installation receipt; not remote model attestation",
+        "evidence_context_sha256": "3f764e4b7882cd9b4af067d2d57d1db8fed3c154e8b0563c455118681fe1bec9",
+        "claim_sha256": "20297352cb1ac3c820b87f9c776ccf2ea15bb523aa0ebb0ca99f7664b567e5d4",
+        "retrieval_k": 8
+      },
+      "retrieved_source_ids": [
+        "chembl-activity:189032",
+        "chembl-activity:189033",
+        "chembl-activity:189034",
+        "chembl-activity:2172309",
+        "chembl-activity:2172320",
+        "chembl-activity:231261",
+        "chembl-activity:231262",
+        "chembl-activity:331346"
+      ],
+      "confidence_status": "uncalibrated_model_self_report",
+      "elapsed_seconds": 48.078
+    }
+  }
+}

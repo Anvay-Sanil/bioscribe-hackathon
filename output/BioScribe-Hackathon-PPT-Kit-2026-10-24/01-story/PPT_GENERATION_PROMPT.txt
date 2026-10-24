@@ -1,0 +1,13 @@
+Create a polished, editable 16:9 PowerPoint for BioScribe, submitted to HM-01 ProvenanceLab under Health & MedTech.
+
+Use this source pack as the factual boundary. Start with MASTER_BRIEF.md, SLIDE_CONTENT.md, CLAIMS_AND_EVIDENCE.md, ASSET_INDEX.md and BRAND_GUIDE.md. Use exactly the suggested ten slides unless I supply a different organiser requirement. Use SPEAKER_NOTES.md as a five-minute pacing draft. Put detailed source references in speaker notes and keep essential limitations visible on the relevant slide.
+
+Use BioScribe's light white/lavender appearance with restrained violet/fuchsia accents, large typography and real product screenshots. Prefer one clear visual idea per slide. Use supplied Mermaid files as the specification for native editable architecture/workflow diagrams. Do not generate fictitious UI, invented charts or scientific performance metrics. Preserve screenshot aspect ratios and all evidence labels needed to interpret them. Historical verification screenshots must be identified as recorded demonstrations.
+
+Tell a concrete story: the student's input/evidence problem, the implemented workflow, explicit missingness, replay, Experiment Challenges, architecture, scoped verification evidence, current limitations and proposed next development. Lead with the forged-number challenge as the main demonstration. Explain why recomputation adds evidence beyond a checksum.
+
+Current capabilities include descriptors, graph identity, saved local jobs, frozen compound records, exports, replay and six experiment challenges. Automatic Counterexample Finder, Decision Stability Explorer and evidence-dependency features are proposed only. Never show these as implemented. User benefit is untested. Do not claim global novelty, validated affinity/toxicity/half-life, production readiness, clinical usefulness or guaranteed hackathon success.
+
+Use 147 client checks, seven jobs/six expected behaviours and 11 browser checkpoints only with their recorded iteration/date and scope. Do not add overlapping historical counts or convert software checks into accuracy. Six reference records cover three compounds, not entire PubChem or ChEMBL datasets. Windows/Linux replay was on one physical host. Imported capsules do not represent fresh execution or authenticated authorship.
+
+Keep presenter/team/institution/repository placeholders until I supply real details. The included Problem_Statements_hypn.pptx is the organisers' source deck, not a BioScribe presentation template. Do not borrow the MATLAB-specific judging rubric for HM-01. Final output should be a PowerPoint with editable text and diagrams and complete speaker notes.

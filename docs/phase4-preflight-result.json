@@ -1,0 +1,33 @@
+{
+  "tool_version": "phase4-preflight/1.0.0",
+  "status": "blocked",
+  "scientific_assessment": "not_assessed",
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "checked_artifacts": 0,
+  "issues": [
+    "invalid_protocol:artifacts",
+    "invalid_protocol:baselines_and_comparisons",
+    "invalid_protocol:claim_type",
+    "invalid_protocol:dataset",
+    "invalid_protocol:domain",
+    "invalid_protocol:endpoint",
+    "invalid_protocol:intended_use",
+    "invalid_protocol:method",
+    "invalid_protocol:primary_gates",
+    "invalid_protocol:protocol_id",
+    "invalid_protocol:protocol_version",
+    "invalid_protocol:required_disjoint_group_keys",
+    "invalid_protocol:review",
+    "invalid_protocol:sampling",
+    "invalid_protocol:secondary_analyses",
+    "invalid_protocol:split_strategy_and_rationale",
+    "invalid_protocol:task_type"
+  ],
+  "limitations": [
+    "No empirical predictions, performance metrics or confidence intervals were computed.",
+    "Declared group identities, label truth, suitability, thresholds and independence need expert review.",
+    "Local hashes do not prove authorship, preregistration time, holdout secrecy or an independent trust boundary.",
+    "No approval, validation-registry installation, runtime activation or deployment clearance is performed."
+  ]
+}

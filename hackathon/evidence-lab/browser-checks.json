@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "date": "2026-10-24",
+  "checks": [
+    "Initial example loads with checked hashes",
+    "Live authenticated analysis persists three compounds and the expected scientific hash",
+    "Reference pane shows PubChem CID 2244 and CHEMBL25 with separate raw hashes and retrieval date",
+    "Identity-matched aspirin conformer renders and rotation control works",
+    "Exported live package re-imports with explicit computation-not-re-run label",
+    "Export → import → recompute succeeds with identical scientific SHA-256",
+    "Switching to challenge clears the previous replay badge and withholds selections while retaining all 12 records",
+    "C1CC reports ring closure and all six requested descriptors are Not computed",
+    "Rejected input has no 3D substitute and disabled model controls",
+    "H2 aromatic fraction is Not applicable while toxicity remains Not available",
+    "FC=CF visibly reports unspecified double-bond geometry with bond index",
+    "OCC retains its original hash while sharing the CCO graph group with record #1",
+    "Rejected-input filter shows 6 of 12, selects a visible row, preserves saved budget and withholds selection",
+    "SMILES search shows 1 of 12 without changing the result hash or library comparison",
+    "Full HTML report exported from a filtered view contains all 12 original records",
+    "Contradictory toxicity field is rejected on import; all previous rows, comparisons and replay results are cleared"
+  ],
+  "count": 16,
+  "live_run_id": "4c520acad078468c8c686d0229053e7f",
+  "replay_run_id": "cdb429b3925745c691a1be8a3e554bd7",
+  "scope": "Observed browser rehearsal via the running application; recorded examples explicitly distinguished from fresh jobs"
+}

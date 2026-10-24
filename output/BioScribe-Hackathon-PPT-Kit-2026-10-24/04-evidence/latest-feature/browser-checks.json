@@ -1,0 +1,54 @@
+{
+  "recorded_at": "2026-10-24T06:54:36.240Z",
+  "passed": 11,
+  "scope": "Observed local browser behavior; no participant study",
+  "checks": [
+    {
+      "name": "Execution without token/public confirmation is blocked with no completed summary",
+      "status": "passed"
+    },
+    {
+      "name": "Already-canonical example explicitly marks spelling challenge not applicable",
+      "status": "passed"
+    },
+    {
+      "name": "Challenge-ready library loads four accepted records with all six perturbations applicable",
+      "status": "passed"
+    },
+    {
+      "name": "Fresh browser execution reports six observed expected behaviors and zero failures/skips",
+      "status": "passed"
+    },
+    {
+      "name": "Forgery challenge passes only after fresh server replay rejects rebuilt-checksum numeric tampering",
+      "status": "passed"
+    },
+    {
+      "name": "Actual browser export decodes and reopens with explicit imported-not-rerun label",
+      "status": "passed"
+    },
+    {
+      "name": "Damaged capsule rejected; prior successful outcomes and export button cleared",
+      "status": "passed"
+    },
+    {
+      "name": "Rejected/duplicate library disables challenge execution and clears previous summary",
+      "status": "passed"
+    },
+    {
+      "name": "Stop challenges ends execution with no completed capsule or success summary",
+      "status": "passed"
+    },
+    {
+      "name": "A fresh suite succeeds after explicit cancellation",
+      "status": "passed"
+    },
+    {
+      "name": "Challenge page has no horizontal page overflow at observed viewport",
+      "status": "passed",
+      "pageWidth": 611,
+      "summary": true,
+      "viewportWidth": 611
+    }
+  ]
+}

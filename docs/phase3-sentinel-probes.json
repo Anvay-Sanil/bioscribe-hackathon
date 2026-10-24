@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-16",
+  "scientific_validation": false,
+  "R1": {
+    "publication": "rejected",
+    "error_code": "artifact_molecule_input_mismatch",
+    "artifact_unpublished": true,
+    "scope": "direct Store.finish probe; worker failure recovery is covered separately by integration test"
+  },
+  "R2": [
+    {
+      "input": "CCO C1OC1",
+      "identity_status": "unsupported_input",
+      "canonical_smiles": null,
+      "numeric_fields": {},
+      "scan_status": "unsupported_input"
+    },
+    {
+      "input": "*CC",
+      "identity_status": "unsupported_input",
+      "canonical_smiles": null,
+      "numeric_fields": {},
+      "scan_status": "unsupported_input"
+    },
+    {
+      "input": "*",
+      "identity_status": "unsupported_input",
+      "canonical_smiles": null,
+      "numeric_fields": {},
+      "scan_status": "unsupported_input"
+    },
+    {
+      "input": "CCO",
+      "identity_status": "identified",
+      "canonical_smiles": "CCO",
+      "numeric_fields": {
+        "molecular_weight": 46.069,
+        "calculated_logp": -0.0014000000000000123,
+        "tpsa": 20.23,
+        "aromatic_heavy_atom_fraction": 0.0,
+        "descriptor_distance": 1.5986409523809524,
+        "matches_in_limited_rule_set": 0
+      },
+      "scan_status": "succeeded"
+    },
+    {
+      "input": "[13CH3]CO",
+      "identity_status": "identified",
+      "canonical_smiles": "[13CH3]CO",
+      "numeric_fields": {
+        "molecular_weight": 47.06135484000001,
+        "calculated_logp": -0.0014000000000000123,
+        "tpsa": 20.23,
+        "aromatic_heavy_atom_fraction": 0.0,
+        "descriptor_distance": 1.595805652838095,
+        "matches_in_limited_rule_set": 0
+      },
+      "scan_status": "succeeded"
+    }
+  ],
+  "R3": {
+    "higher": {
+      "pearson": {
+        "value": 1.0,
+        "status": "computed",
+        "reason": "Descriptive association only",
+        "n": 3,
+        "endpoint": "Kd",
+        "units": "nM",
+        "prediction_units": "nM",
+        "method_version": "descriptive_metrics/1.1.0",
+        "ranking_direction": "higher",
+        "correlation_basis": "original_prediction_and_label_values",
+        "validation_record": null,
+        "evidence_category": "descriptive_statistic",
+        "label_manifest_sha256": "4e00e5ecb1a0ae7597db900680b1b4f0dd916a12309bc7d2af7d39bca5d8e81e",
+        "exclusions": []
+      },
+      "spearman": {
+        "value": 1.0,
+        "status": "computed",
+        "reason": "Descriptive association only",
+        "n": 3,
+        "endpoint": "Kd",
+        "units": "nM",
+        "prediction_units": "nM",
+        "method_version": "descriptive_metrics/1.1.0",
+        "ranking_direction": "higher",
+        "correlation_basis": "original_prediction_and_label_values",
+        "validation_record": null,
+        "evidence_category": "descriptive_statistic",
+        "label_manifest_sha256": "4e00e5ecb1a0ae7597db900680b1b4f0dd916a12309bc7d2af7d39bca5d8e81e",
+        "exclusions": []
+      },
+      "rmse": {
+        "value": 0.0,
+        "status": "computed",
+        "reason": "Compatible endpoint/units asserted by evaluation caller; provenance still requires review",
+        "n": 3,
+        "endpoint": "Kd",
+        "units": "nM",
+        "prediction_units": "nM",
+        "method_version": "descriptive_metrics/1.1.0",
+        "ranking_direction": "higher",
+        "correlation_basis": "original_prediction_and_label_values",
+        "validation_record": null,
+        "evidence_category": "descriptive_statistic",
+        "label_manifest_sha256": "4e00e5ecb1a0ae7597db900680b1b4f0dd916a12309bc7d2af7d39bca5d8e81e",
+        "exclusions": []
+      },
+      "enrichment": {
+        "value": 0.0,
+        "status": "computed",
+        "reason": "Include entire boundary tie group; labeled eligible population only",
+        "n": 3,
+        "endpoint": "Kd",
+        "units": "nM",
+        "prediction_units": "nM",
+        "method_version": "descriptive_metrics/1.1.0",
+        "ranking_direction": "higher",
+        "correlation_basis": "original_prediction_and_label_values",
+        "validation_record": null,
+        "evidence_category": "descriptive_statistic",
+        "label_manifest_sha256": "4e00e5ecb1a0ae7597db900680b1b4f0dd916a12309bc7d2af7d39bca5d8e81e",
+        "exclusions": [],
+        "requested_k": 1,
+        "actual_k": 1,
+        "actual_fraction": 0.3333333333333333,
+        "actives_total": 1
+      }
+    },
+    "lower": {
+      "pearson": {
+        "value": 1.0,
+        "status": "computed",
+        "reason": "Descriptive association only",
+        "n": 3,
+        "endpoint": "Kd",
+        "units": "nM",
+        "prediction_units": "nM",
+        "method_version": "descriptive_metrics/1.1.0",
+        "ranking_direction": "lower",
+        "correlation_basis": "original_prediction_and_label_values",
+        "validation_record": null,
+        "evidence_category": "descriptive_statistic",
+        "label_manifest_sha256": "4e00e5ecb1a0ae7597db900680b1b4f0dd916a12309bc7d2af7d39bca5d8e81e",
+        "exclusions": []
+      },
+      "spearman": {
+        "value": 1.0,
+        "status": "computed",
+        "reason": "Descriptive association only",
+        "n": 3,
+        "endpoint": "Kd",
+        "units": "nM",
+        "prediction_units": "nM",
+        "method_version": "descriptive_metrics/1.1.0",
+        "ranking_direction": "lower",
+        "correlation_basis": "original_prediction_and_label_values",
+        "validation_record": null,
+        "evidence_category": "descriptive_statistic",
+        "label_manifest_sha256": "4e00e5ecb1a0ae7597db900680b1b4f0dd916a12309bc7d2af7d39bca5d8e81e",
+        "exclusions": []
+      },
+      "rmse": {
+        "value": 0.0,
+        "status": "computed",
+        "reason": "Compatible endpoint/units asserted by evaluation caller; provenance still requires review",
+        "n": 3,
+        "endpoint": "Kd",
+        "units": "nM",
+        "prediction_units": "nM",
+        "method_version": "descriptive_metrics/1.1.0",
+        "ranking_direction": "lower",
+        "correlation_basis": "original_prediction_and_label_values",
+        "validation_record": null,
+        "evidence_category": "descriptive_statistic",
+        "label_manifest_sha256": "4e00e5ecb1a0ae7597db900680b1b4f0dd916a12309bc7d2af7d39bca5d8e81e",
+        "exclusions": []
+      },
+      "enrichment": {
+        "value": 3.0,
+        "status": "computed",
+        "reason": "Include entire boundary tie group; labeled eligible population only",
+        "n": 3,
+        "endpoint": "Kd",
+        "units": "nM",
+        "prediction_units": "nM",
+        "method_version": "descriptive_metrics/1.1.0",
+        "ranking_direction": "lower",
+        "correlation_basis": "original_prediction_and_label_values",
+        "validation_record": null,
+        "evidence_category": "descriptive_statistic",
+        "label_manifest_sha256": "4e00e5ecb1a0ae7597db900680b1b4f0dd916a12309bc7d2af7d39bca5d8e81e",
+        "exclusions": [],
+        "requested_k": 1,
+        "actual_k": 1,
+        "actual_fraction": 0.3333333333333333,
+        "actives_total": 1
+      }
+    }
+  }
+}

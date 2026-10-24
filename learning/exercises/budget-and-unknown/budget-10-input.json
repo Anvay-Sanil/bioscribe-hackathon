@@ -1,0 +1,609 @@
+{
+  "schema_version": "learning-library/1.0.0",
+  "data_class": "synthetic_software_fixture",
+  "label_origin": "fabricated_for_software_demonstration",
+  "dataset_id": "invented-alkane-label-exercise-v1",
+  "selection_budget": 10,
+  "molecules": [
+    {
+      "record_id": "alkane-001",
+      "smiles": "C",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-002",
+      "smiles": "CC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-003",
+      "smiles": "CCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-004",
+      "smiles": "CCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-005",
+      "smiles": "CCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-006",
+      "smiles": "CCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-007",
+      "smiles": "CCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-008",
+      "smiles": "CCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-009",
+      "smiles": "CCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-010",
+      "smiles": "CCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-011",
+      "smiles": "CCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-012",
+      "smiles": "CCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-013",
+      "smiles": "CCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-014",
+      "smiles": "CCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-015",
+      "smiles": "CCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-016",
+      "smiles": "CCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-017",
+      "smiles": "CCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-018",
+      "smiles": "CCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-019",
+      "smiles": "CCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-020",
+      "smiles": "CCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-021",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-022",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-023",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-024",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-025",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-026",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-027",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-028",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-029",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-030",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-031",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-032",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-033",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-034",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-035",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-036",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-037",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-038",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-039",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-040",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-041",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-042",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-043",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-044",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-045",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-046",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-047",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-048",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-049",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-050",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-051",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-052",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-053",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-054",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-055",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-056",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-057",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-058",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-059",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-060",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-061",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-062",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-063",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-064",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-065",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-066",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-067",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-068",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-069",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-070",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-071",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-072",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-073",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-074",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-075",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-076",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-077",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-078",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-079",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-080",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-081",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-082",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-083",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-084",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-085",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-086",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-087",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-088",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-089",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-090",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-091",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-092",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-093",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-094",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-095",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-096",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-097",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-098",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-099",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-100",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-101",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-102",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-103",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-104",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-105",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-106",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-107",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-108",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-109",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-110",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-111",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-112",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-113",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-114",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-115",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-116",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-117",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-118",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    },
+    {
+      "record_id": "alkane-119",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": true
+    },
+    {
+      "record_id": "alkane-120",
+      "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "test_label": false
+    }
+  ]
+}

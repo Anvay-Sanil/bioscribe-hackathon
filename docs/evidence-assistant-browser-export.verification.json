@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-24T18:11:26.137511+00:00",
+  "status": "passed",
+  "run_id": "8a6dcc35165b4d80a28c63dd357fe5a1",
+  "export_sha256": "ed110af8d5b259ce183b94dbacfa9f1645ea1c18d4d7f1a8c11a5e6d605dbcaf",
+  "review_sha256": "33bbf35e0b75e552568ddbb55c206c738998b3c3e96fdbd0c03773b5297f9201",
+  "corpus_sha256": "5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65",
+  "checks": [
+    "fresh_review_not_recorded_example",
+    "strict_review_contract",
+    "authenticated_saved_record_succeeded",
+    "run_id_matches",
+    "export_equals_saved_output",
+    "frozen_corpus_matches"
+  ],
+  "scope": "Browser export corresponds to saved public-data review; no biological validation."
+}

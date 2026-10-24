@@ -1,0 +1,10 @@
+# Direct dependencies; requirements-phase3.lock is the resolved verification lock.
+fastapi==0.115.12
+pydantic==2.11.7
+uvicorn==0.34.3
+biopython==1.83
+rdkit==2025.3.3
+numpy==1.26.4
+httpx==0.28.1
+pytest==8.4.1
+cryptography==45.0.5

@@ -1,0 +1,280 @@
+{
+  "$defs": {
+    "Citation": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "assay_record",
+            "paper_passage",
+            "run_record"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "supports",
+            "contradicts",
+            "context",
+            "excluded",
+            "assessment_trace"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "locator": {
+          "title": "Locator",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Url"
+        },
+        "source_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Source Sha256",
+          "type": "string"
+        },
+        "excerpt": {
+          "title": "Excerpt",
+          "type": "string"
+        },
+        "retraction_status": {
+          "title": "Retraction Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "kind",
+        "role",
+        "locator",
+        "url",
+        "source_sha256",
+        "excerpt",
+        "retraction_status"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "Statement": {
+      "additionalProperties": false,
+      "properties": {
+        "statement_id": {
+          "title": "Statement Id",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "start": {
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "title": "End",
+          "type": "integer"
+        },
+        "category": {
+          "enum": [
+            "assay_observation",
+            "computed_property",
+            "activity",
+            "efficacy_or_safety",
+            "unparsed"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "verdict": {
+          "enum": [
+            "supported",
+            "contradicted",
+            "insufficient_evidence",
+            "out_of_scope"
+          ],
+          "title": "Verdict",
+          "type": "string"
+        },
+        "reason_code": {
+          "title": "Reason Code",
+          "type": "string"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        },
+        "citations": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "minItems": 1,
+          "title": "Citations",
+          "type": "array"
+        },
+        "confidence": {
+          "default": null,
+          "title": "Confidence",
+          "type": "null"
+        },
+        "confidence_status": {
+          "const": "not_calibrated",
+          "default": "not_calibrated",
+          "title": "Confidence Status",
+          "type": "string"
+        },
+        "decision_basis": {
+          "enum": [
+            "exact_record_comparison",
+            "abstention",
+            "scope_policy"
+          ],
+          "title": "Decision Basis",
+          "type": "string"
+        },
+        "requires_review": {
+          "title": "Requires Review",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "statement_id",
+        "text",
+        "start",
+        "end",
+        "category",
+        "verdict",
+        "reason_code",
+        "explanation",
+        "citations",
+        "confidence",
+        "confidence_status",
+        "decision_basis",
+        "requires_review"
+      ],
+      "title": "Statement",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "contract_version": {
+      "const": "evidence-assistant/0.1.0",
+      "default": "evidence-assistant/0.1.0",
+      "title": "Contract Version",
+      "type": "string"
+    },
+    "research_aid_label": {
+      "const": "Research aid, not a prediction of efficacy or safety.",
+      "default": "Research aid, not a prediction of efficacy or safety.",
+      "title": "Research Aid Label",
+      "type": "string"
+    },
+    "run_id": {
+      "pattern": "^[a-f0-9]{32}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "input_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Input Sha256",
+      "type": "string"
+    },
+    "corpus_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Corpus Sha256",
+      "type": "string"
+    },
+    "created_utc": {
+      "title": "Created Utc",
+      "type": "string"
+    },
+    "text": {
+      "title": "Text",
+      "type": "string"
+    },
+    "statements": {
+      "items": {
+        "$ref": "#/$defs/Statement"
+      },
+      "maxItems": 16,
+      "minItems": 1,
+      "title": "Statements",
+      "type": "array"
+    },
+    "decomposition": {
+      "additionalProperties": true,
+      "title": "Decomposition",
+      "type": "object"
+    },
+    "disagreements": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Disagreements",
+      "type": "array"
+    },
+    "excluded_sources": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Excluded Sources",
+      "type": "array"
+    },
+    "model": {
+      "additionalProperties": true,
+      "title": "Model",
+      "type": "object"
+    },
+    "evidence_scope": {
+      "title": "Evidence Scope",
+      "type": "string"
+    },
+    "scientific_assessment": {
+      "const": "not_assessed",
+      "default": "not_assessed",
+      "title": "Scientific Assessment",
+      "type": "string"
+    },
+    "benchmark_status": {
+      "const": "provisional_unreviewed",
+      "default": "provisional_unreviewed",
+      "title": "Benchmark Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "contract_version",
+    "research_aid_label",
+    "run_id",
+    "input_sha256",
+    "corpus_sha256",
+    "created_utc",
+    "text",
+    "statements",
+    "decomposition",
+    "disagreements",
+    "excluded_sources",
+    "model",
+    "evidence_scope",
+    "scientific_assessment",
+    "benchmark_status"
+  ],
+  "title": "Review",
+  "type": "object"
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Asia/Calcutta",
+  "status": "passed",
+  "method": "Interactive Codex in-app browser against final production frontend and real local API/worker",
+  "run_id": "55e23b76697f412eba9df84bda2463f0",
+  "inputs": [
+    "CCO C1OC1",
+    "*CC",
+    "CCO",
+    " CCO ",
+    "[13CH3]CO"
+  ],
+  "checks": [
+    "Molecule-only selection sets declared sequence record count to zero",
+    "Each nonempty SMILES line is persisted unchanged, including leading/trailing spaces",
+    "Submitted run resolves to its backend-issued persistent identifier",
+    "Malformed compound, dummy atom and padded SMILES show no numeric fields and unsupported-input abstention",
+    "Valid ethanol and isotope-labelled ethanol display version-1.1.0 descriptors",
+    "Unsupported rule scans are absent rather than completed negative scans",
+    "Browser export equals the persisted run; input/output hashes and ordered molecular hashes agree",
+    "Reload clears the in-memory credential and shows no cached findings",
+    "Reauthentication restores the persisted corrected run",
+    "Old method-1.0.0 molecular artifact shows explicit unavailable/integrity failure without scientific fields"
+  ],
+  "screenshot": "phase3-sentinel-browser.jpg",
+  "export": "phase3-sentinel-browser-export.json",
+  "limitations": "Public synthetic software fixtures only. This manual test is not an extra automated-test count or scientific validation. No historical artifact or provenance was rewritten."
+}

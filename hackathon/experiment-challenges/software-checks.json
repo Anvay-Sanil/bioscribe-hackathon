@@ -1,0 +1,142 @@
+{
+  "scope": "Unit checks with computed molecular fixtures and labelled synthetic job receipts",
+  "passed": 34,
+  "checks": [
+    {
+      "name": "Shuffle the library satisfies its relationship using computed fixtures",
+      "status": "passed"
+    },
+    {
+      "name": "Change the spelling satisfies its relationship using computed fixtures",
+      "status": "passed"
+    },
+    {
+      "name": "Plant a duplicate satisfies its relationship using computed fixtures",
+      "status": "passed"
+    },
+    {
+      "name": "Break one input satisfies its relationship using computed fixtures",
+      "status": "passed"
+    },
+    {
+      "name": "Move the budget satisfies its relationship using computed fixtures",
+      "status": "passed"
+    },
+    {
+      "name": "Forge a number satisfies its relationship using computed fixtures",
+      "status": "passed"
+    },
+    {
+      "name": "All six dispositions rederived from capsule, not trusted counters",
+      "status": "passed"
+    },
+    {
+      "name": "Three one-row operations explicitly not run",
+      "status": "passed"
+    },
+    {
+      "name": "Sixteen-row input skips duplicate injection instead of exceeding bound",
+      "status": "passed"
+    },
+    {
+      "name": "Rejected input and duplicate libraries cannot earn a challenge score",
+      "status": "passed"
+    },
+    {
+      "name": "Checksummed forged number still passes structural decoding but differs from control",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with trial removed",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with trial order changed",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with receipt run reused",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with extra field",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with wrong source",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with method silently upgraded",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with wrong source molecule",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with false skipped execution",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with job output removed",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with wrong operation attribution",
+      "status": "passed"
+    },
+    {
+      "name": "Reject capsule with unbound failed replay receipt",
+      "status": "passed"
+    },
+    {
+      "name": "Tamper without rehash is detected",
+      "status": "passed"
+    },
+    {
+      "name": "Wrong computation cannot masquerade as reordered request",
+      "status": "passed"
+    },
+    {
+      "name": "Generic failure is not accepted as successful forgery detection",
+      "status": "passed"
+    },
+    {
+      "name": "Cancellation is not counted as successful detection",
+      "status": "passed"
+    },
+    {
+      "name": "Changed descriptor under same graph fails invariant",
+      "status": "passed"
+    },
+    {
+      "name": "Different engine never becomes an invariant pass",
+      "status": "passed"
+    },
+    {
+      "name": "Runner executes a fresh control followed by exactly six planned jobs",
+      "status": "passed"
+    },
+    {
+      "name": "No token sends no request",
+      "status": "passed"
+    },
+    {
+      "name": "Abort before start sends no request",
+      "status": "passed"
+    },
+    {
+      "name": "Active job cancellation is attempted when stopped",
+      "status": "passed"
+    },
+    {
+      "name": "Unconfirmed cancellation is explicit",
+      "status": "passed"
+    },
+    {
+      "name": "Control mismatch stops the suite before any mutation",
+      "status": "passed"
+    }
+  ]
+}

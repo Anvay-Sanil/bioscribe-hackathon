@@ -1,0 +1,24 @@
+{
+  "passed": 17,
+  "checks": [
+    "empty page has no fabricated metrics",
+    "budget-100 displays both exact-100 selections",
+    "budget-10 displays exact selections, invented-positive counts and all 120 rows",
+    "ID search is case-insensitive and leaves report-level results unchanged",
+    "SMILES substring search shows the correct table count",
+    "search and invented-label filtering combine without changing selections or metrics",
+    "positive, negative and empty unknown filters preserve complete-report comparisons",
+    "previous selections and metrics disappear before the next file finishes reading",
+    "unknown report retains all 120 molecular calculations and clears every outcome comparison",
+    "Unknown shows only alkane-028 while every comparison remains Not assessed",
+    "clearing Unknown restores all 120 rows without changing report-level results",
+    "no-match search has an empty state; Clear filters restores the full table",
+    "mobile view fits the viewport with the synthetic label intact",
+    "invalid files clear the old report and show an error",
+    "file content is rendered as text, never HTML",
+    "clear removes the current report",
+    "no browser errors or HTTP requests"
+  ],
+  "browserErrors": [],
+  "httpRequests": []
+}

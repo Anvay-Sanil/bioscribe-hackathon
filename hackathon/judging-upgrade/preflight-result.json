@@ -1,0 +1,12 @@
+{
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File hackathon/start-demo.ps1 -Verify",
+  "exit_code": 0,
+  "status": "passed",
+  "analysis_run": "550aabbfceb94a8fb537e9277ad3fe19",
+  "replay_run": "213ac5af88e845da894a010a87f647c9",
+  "result_sha256": "3411ddb468e0efc30887f5e50dfe62d96673810a39e2ae59b177559198b63398",
+  "checks": ["API and worker readiness", "authenticated capabilities", "fresh public computation", "persisted export equality", "fresh exact replay", "evidence and proof HTTP routes"],
+  "scientific_assessment": "not_assessed",
+  "user_value": "untested",
+  "scope": "Existing local services running. Not a cold-start, clean-install, browser or cross-machine test."
+}

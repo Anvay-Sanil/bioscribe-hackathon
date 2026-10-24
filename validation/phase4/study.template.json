@@ -1,0 +1,23 @@
+{
+  "schema_version": "phase4-protocol/1.0.0",
+  "state": "proposed",
+  "protocol_id": null,
+  "protocol_version": null,
+  "data_class": "public_non_sensitive",
+  "claim_type": null,
+  "task_type": null,
+  "intended_use": null,
+  "prohibited_uses": ["Clinical or dosing decisions", "Sensitive-data intake", "Unsupported safety claims"],
+  "endpoint": null,
+  "method": null,
+  "dataset": null,
+  "baselines_and_comparisons": [],
+  "sampling": null,
+  "primary_gates": [],
+  "secondary_analyses": [],
+  "domain": null,
+  "split_strategy_and_rationale": null,
+  "required_disjoint_group_keys": [],
+  "artifacts": null,
+  "review": null
+}

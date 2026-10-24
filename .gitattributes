@@ -1,0 +1,3 @@
+# Capsules and their manifests identify bytes. Never let core.autocrlf rewrite them.
+# Newline changes must be deliberate edits with a new version/receipt.
+* -text

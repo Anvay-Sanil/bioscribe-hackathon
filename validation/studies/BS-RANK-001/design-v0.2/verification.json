@@ -1,0 +1,73 @@
+{
+  "recorded_at_utc": "2026-10-16T19:37:43.876325+00:00",
+  "design_id": "BS-RANK-001",
+  "design_version": "0.2",
+  "scope": "Proposed study design and public metadata verification; no empirical validation",
+  "scientific_assessment": "not_assessed",
+  "scientific_release": "blocked",
+  "sensitive_intake": "blocked",
+  "protocol_freeze": "blocked",
+  "application_code_changed": false,
+  "accepted_framework_changed": false,
+  "new_software_tests_run": false,
+  "baseline_checks": [
+    {
+      "ledger": "docs/PHASE_3_VERIFICATION.json",
+      "ledger_sha256": "39a2ad7d62ba964061784aff18a128ea0bfbc6dca9396d63afaa34f665eaa94c",
+      "checked": 78,
+      "mismatches": []
+    },
+    {
+      "ledger": "docs/PHASE_4_VERIFICATION.json",
+      "ledger_sha256": "e0494760a7e50dc457b40d5f2bc396206e250bd689de4a4ab1a1ef144cd4a7fc",
+      "checked": 15,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/preparation-verification.json",
+      "ledger_sha256": "da16b1bf855d50fa081263825e53a5844a9fa365bffd9d53758cc7c47a3f883b",
+      "checked": 18,
+      "mismatches": []
+    }
+  ],
+  "preflight": {
+    "command": "& .phase3-clean/Scripts/python.exe -B -m validation.phase4.preflight validation/studies/BS-RANK-001/design-v0.2/protocol.draft.json --bundle-root validation/studies/BS-RANK-001/design-v0.2",
+    "python_exit_code": 2,
+    "status": "blocked",
+    "artifact": "preflight-result.json"
+  },
+  "reference_checks": {
+    "sequence_match": true,
+    "length": 501,
+    "requested_assay_version_verified": false,
+    "description_responses_identify": "2.1",
+    "experimental_construct_verified": false,
+    "empirical_outcome_data_acquired": false
+  },
+  "exact_offline_verification_commands": "VERIFICATION.md",
+  "unmet_requirements": [
+    "Requested assay version 1.1 and experimental construct identity",
+    "Field/sign/quality-control mapping and source-level label adjudication",
+    "Frozen empirical cohort, actual leakage analysis and independent units",
+    "Inferential population, paired scaffold-cluster interval method and calibrated inference",
+    "Power/sample size, coverage and subgroup rules",
+    "Named accepted independent appointments and verified protected repository",
+    "Protocol freeze and trusted preregistration receipt",
+    "Existing scientific release, sensitive intake and deployment gates"
+  ],
+  "file_sha256": {
+    "design-decisions.json": "40a49496ea860d3fc63741f3be6608d89371bfe96fe8998d24b93b5e40e1d1bc",
+    "preflight-result.json": "a005d9628bf0a0406b26832b9cd608119d40b01480c85d926bab09e574d8a542",
+    "protocol.draft.json": "795f15f09117d417a1b8c806eb14e6525d985182d55aae5e6b3c0ad98b4110c6",
+    "PROTOCOL_DRAFT.md": "809693ba8b23752af8d6ee93660b5ea39f987c4204861198495f0c04c0f5b887",
+    "references/acquisition-versioned.json": "6326d935830fcc84dd6e92dd09993dfd8beadfeeb4d59fb4c4136fd009724f9f",
+    "references/acquisition.json": "08c301ea8c761a46d69163f206dddd295f5fd6b8dbd627f474fd395a692857aa",
+    "references/NCBI-AAP35567.1.fasta": "0fefcab3f171f653359de3d7a278d1ff0e2a93e6f4488c4435037981715fa5ef",
+    "references/pubchem-AID1030-description.json": "fd6fbc1c65c0957b1a737d33c1fa8e6bf89e81eaf103437ac53d64bb1902e2c9",
+    "references/pubchem-requested-v1.1-returned-v2.1-description.json": "fd6fbc1c65c0957b1a737d33c1fa8e6bf89e81eaf103437ac53d64bb1902e2c9",
+    "references/rdkit-QED-2025.03.3.py": "e465598a522df115865546b9dd2fc72e882753053230706166862406e479e0e2",
+    "references/uniprot-P00352.json": "e03a1bf6d3d96bff2110460e9bbae25463a8bf5c6250226245b2877354677561",
+    "VERIFICATION.md": "58241f6580d9b1752d716e64bb777f592ac3504421b78824ed0902f753922316"
+  },
+  "hash_meaning": "Local byte correspondence only; not authorship, approval or independently protected timestamp"
+}

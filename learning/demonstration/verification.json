@@ -1,0 +1,75 @@
+{
+  "client_date": "2026-10-18",
+  "client_timezone": "Asia/Calcutta",
+  "scope": "Prepared one-page explanation and four-step local synthetic demonstration",
+  "one_page_explanation": {
+    "path": "output/pdf/bioscribe-project-demonstration.pdf",
+    "pages": 1,
+    "rendered_visual_review": "passed",
+    "preview": "evidence/one-page-preview.png"
+  },
+  "rehearsal": {
+    "command": "node learning/demonstration/rehearse.cjs",
+    "exit_code": 0,
+    "browser_checkpoints_passed": 7,
+    "invalid_single_field_fixtures_rejected": 2,
+    "valid_exports_accepted": 3,
+    "record": "evidence/rehearsal.json",
+    "execution": "Automated local-file headless Edge outside Windows command sandbox; not a human presentation or interactive in-app rerun"
+  },
+  "existing_software_suites_rerun": false,
+  "reason_no_suite_rerun": "No viewer, parser or computation code changed; the demonstration and both new fixtures were checked directly.",
+  "accepted_viewer_hashes": {
+    "ledger": "learning/viewer/verification-search.json",
+    "checked": 15,
+    "mismatches": []
+  },
+  "prior_application_and_study_hash_checks": [
+    {
+      "ledger": "docs/PHASE_3_VERIFICATION.json",
+      "checked": 78,
+      "mismatches": []
+    },
+    {
+      "ledger": "docs/PHASE_4_VERIFICATION.json",
+      "checked": 15,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/preparation-verification.json",
+      "checked": 18,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/design-v0.2/verification.json",
+      "checked": 12,
+      "mismatches": []
+    },
+    {
+      "ledger": "validation/studies/BS-RANK-001/design-v0.3/verification.json",
+      "checked": 7,
+      "mismatches": []
+    }
+  ],
+  "application_viewer_locks_or_study_changed": false,
+  "saved_accepted_exports_changed": false,
+  "file_sha256": {
+    "learning/demonstration/build_explanation.py": "a0bf3d24aacdc9f52099a6bfec9e71e6350864df46850a122752e8e62b0c3589",
+    "learning/demonstration/DEMO_GUIDE.md": "22129ade2f3dcdde7f424bad11e4382ada4863a8f92630f700b1fb28acbed397",
+    "learning/demonstration/evidence/01-budget-100.png": "113d6f17b69a81d91aa1aab6a585d80b7d7e9d3ea017238dd428832dabcbc75a",
+    "learning/demonstration/evidence/02-budget-10.png": "25d9329b539c7bffff1e01ed1167b62bdbbf256be0c8229f5d013f0f5390cacc",
+    "learning/demonstration/evidence/03-unknown-label.png": "405aafda4324d02517f4b7a6999e92d47b2b21c203a9d756c00feacba60f0daf",
+    "learning/demonstration/evidence/04-find-alkane-028.png": "ed2ac6a1725732210fefba2b4b8bce8dadce60cffe180ef3d6fbce0b93d8a6fe",
+    "learning/demonstration/evidence/05-restore-all.png": "00e0d055624c7244a71a5753a50329d285ba61f5199714543f8d808bede63069",
+    "learning/demonstration/evidence/06-heuristic-rejected.png": "7545b9a8a595da30e80a2dedb9f52a4bd97d3f285f4781762a65a706f373a925",
+    "learning/demonstration/evidence/07-molecular_weight-rejected.png": "7545b9a8a595da30e80a2dedb9f52a4bd97d3f285f4781762a65a706f373a925",
+    "learning/demonstration/evidence/one-page-preview.png": "e4d55b21a02a2c723ba5fb863f0c03d100158671321b8230100a520fc1da1772",
+    "learning/demonstration/evidence/rehearsal.json": "17730b8b5d0450ae841c3b3609bff531da129b814568f211e39acbc74aa95c31",
+    "learning/demonstration/fixtures/invalid-heuristic-status.json": "2d2254b38b70aa15d986ced06c2e24d92152a837f43a9b82c1590829e8086672",
+    "learning/demonstration/fixtures/invalid-molecular-weight-units.json": "7b07e20f6f40a27682db92d59d0ccf1d0d6fa064b3d30ba9e0d1a51d2c65a393",
+    "learning/demonstration/fixtures/manifest.json": "54a1650762f3db5c54b0a53f651648c511fa978480d41c312782232d5122eb94",
+    "learning/demonstration/ONE_PAGE_EXPLANATION.md": "8531d1e14c7a5df0e963907688d0c6bda9c8f875592bb1bfefc0300b4dbd89a2",
+    "learning/demonstration/rehearse.cjs": "782a99aa688bf6006b58461fbfc3eab83dff642585dc5c1d354f5ee72225909d",
+    "output/pdf/bioscribe-project-demonstration.pdf": "0882fad898ffa2b83e6b6b3f0fdca050d6763e1ae545e8f5215d1a7f544bb1ce"
+  }
+}

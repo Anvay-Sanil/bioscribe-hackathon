@@ -1,0 +1,83 @@
+{
+  "dossier_id": "BS-RANK-001",
+  "source_baseline": "docs/PHASE_3_VERIFICATION.json",
+  "source_ledger_sha256": "39a2ad7d62ba964061784aff18a128ea0bfbc6dca9396d63afaa34f665eaa94c",
+  "files": [
+    {
+      "original_path": "backend/bioscribe/__init__.py",
+      "snapshot_path": "method-source/backend/bioscribe/__init__.py",
+      "sha256": "9c5d21ed2939f9737727c79ea856d19483675e15c54e02692bab69f696696cb5"
+    },
+    {
+      "original_path": "backend/bioscribe/api.py",
+      "snapshot_path": "method-source/backend/bioscribe/api.py",
+      "sha256": "a05323926aa0794835e1b6699e6c981a31cb1155ad3717891aece82dfd34d612"
+    },
+    {
+      "original_path": "backend/bioscribe/auth.py",
+      "snapshot_path": "method-source/backend/bioscribe/auth.py",
+      "sha256": "18a1610bb586f4530761ea389d42f05d3eef27d56bd712330e69e8848b24843f"
+    },
+    {
+      "original_path": "backend/bioscribe/checkpoint_service.py",
+      "snapshot_path": "method-source/backend/bioscribe/checkpoint_service.py",
+      "sha256": "0c34c50bcd183728985d0383e4cbcf3e4bf75d113e56811f78eb89b1b42525e5"
+    },
+    {
+      "original_path": "backend/bioscribe/checkpoints.py",
+      "snapshot_path": "method-source/backend/bioscribe/checkpoints.py",
+      "sha256": "5611afa8e195ec041705a777fdfb14f786d9bd194ee27744a1c10ded2758958c"
+    },
+    {
+      "original_path": "backend/bioscribe/compute.py",
+      "snapshot_path": "method-source/backend/bioscribe/compute.py",
+      "sha256": "272cf9230e135bb1b25d34ef70acf75fe3e5455d9e2232c52ff729b1fc657644"
+    },
+    {
+      "original_path": "backend/bioscribe/config.py",
+      "snapshot_path": "method-source/backend/bioscribe/config.py",
+      "sha256": "527f9160750585152e212fc0d92e44a08b8afeb44e0e85acc6717cc47d353c6d"
+    },
+    {
+      "original_path": "backend/bioscribe/identity.py",
+      "snapshot_path": "method-source/backend/bioscribe/identity.py",
+      "sha256": "516e7df65cd1c9dec110c7e520efb8d3e2589889b03e586dea821bb7cb823ed7"
+    },
+    {
+      "original_path": "backend/bioscribe/metrics.py",
+      "snapshot_path": "method-source/backend/bioscribe/metrics.py",
+      "sha256": "44bf8224367a75dfeddaa70aa721ef2dc972c87ba733cfde1351441266f39ce3"
+    },
+    {
+      "original_path": "backend/bioscribe/provenance.py",
+      "snapshot_path": "method-source/backend/bioscribe/provenance.py",
+      "sha256": "6d17474cdeb9cfeb46327527e2107d2a71ba6afb1e4c3a350b87f1edb012769d"
+    },
+    {
+      "original_path": "backend/bioscribe/registry.py",
+      "snapshot_path": "method-source/backend/bioscribe/registry.py",
+      "sha256": "5f9d0a0d3037684f6706e11df1feca7b083a3b87625b992f27a79c50e9d2104a"
+    },
+    {
+      "original_path": "backend/bioscribe/schemas.py",
+      "snapshot_path": "method-source/backend/bioscribe/schemas.py",
+      "sha256": "7ac1069fe572ccfa549033f80c1b5b41d444377e2d594d3acdef66c1b7e1a80d"
+    },
+    {
+      "original_path": "backend/bioscribe/store.py",
+      "snapshot_path": "method-source/backend/bioscribe/store.py",
+      "sha256": "21b4b5c8ded5224047d8f05898330eb4832e4a95a6a47c03c645a849c11cb65c"
+    },
+    {
+      "original_path": "backend/bioscribe/worker.py",
+      "snapshot_path": "method-source/backend/bioscribe/worker.py",
+      "sha256": "0f765f6fa95072ee79007fb4d8778593bf15e02e6f4075b9d78a826fe9993eed"
+    },
+    {
+      "original_path": "backend/requirements-phase3.lock",
+      "snapshot_path": "method-source/backend/requirements-phase3.lock",
+      "sha256": "ae4b09ee9910ec3bbfcde31d922d24184ed188bdc128218288156e43815c998b"
+    }
+  ],
+  "warning": "Local reproducibility snapshot, not a preregistration receipt or independent trust boundary"
+}

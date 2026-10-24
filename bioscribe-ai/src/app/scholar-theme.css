@@ -1,0 +1,433 @@
+/* ================================================================== */
+/* BIOSCRIBE SCHOLAR — Sci-Fi Laboratory Theme                        */
+/* ================================================================== */
+
+/* ─── Sci-Fi Color Palette ────────────────────────────────────────── */
+:root {
+  --scholar-bg: #0a0e1a;
+  --scholar-bg-secondary: #111827;
+  --scholar-surface: rgba(17, 24, 39, 0.8);
+  --scholar-surface-hover: rgba(30, 41, 59, 0.9);
+  --scholar-neon-cyan: #00f0ff;
+  --scholar-neon-magenta: #ff00e5;
+  --scholar-neon-green: #00ff88;
+  --scholar-neon-red: #ff3355;
+  --scholar-neon-gold: #ffd700;
+  --scholar-neon-purple: #a855f7;
+  --scholar-text: #e2e8f0;
+  --scholar-text-muted: #94a3b8;
+  --scholar-border: rgba(0, 240, 255, 0.15);
+  --scholar-glow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+/* ─── Base Scholar Layout ─────────────────────────────────────────── */
+.scholar-layout {
+  background: var(--scholar-bg);
+  color: var(--scholar-text);
+  min-height: 100vh;
+  font-family: 'Inter', 'JetBrains Mono', system-ui, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.scholar-layout::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(0, 240, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(255, 0, 229, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(0, 255, 136, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── Scanline Overlay ────────────────────────────────────────────── */
+.scholar-scanlines::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 240, 255, 0.015) 2px,
+      rgba(0, 240, 255, 0.015) 4px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ─── Holographic Cards ───────────────────────────────────────────── */
+.scholar-card {
+  background: var(--scholar-surface);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid var(--scholar-border);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.scholar-card:hover {
+  border-color: rgba(0, 240, 255, 0.4);
+  transform: translateY(-4px);
+  box-shadow:
+    var(--scholar-glow),
+    0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.scholar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      var(--scholar-neon-cyan),
+      var(--scholar-neon-magenta),
+      transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.scholar-card:hover::before {
+  opacity: 1;
+}
+
+/* ─── Neon Buttons ────────────────────────────────────────────────── */
+.scholar-btn {
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: var(--scholar-neon-cyan);
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+  overflow: hidden;
+}
+
+.scholar-btn:hover {
+  background: rgba(0, 240, 255, 0.2);
+  border-color: var(--scholar-neon-cyan);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3), inset 0 0 20px rgba(0, 240, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.scholar-btn-danger {
+  background: rgba(255, 51, 85, 0.1);
+  border-color: rgba(255, 51, 85, 0.3);
+  color: var(--scholar-neon-red);
+}
+
+.scholar-btn-danger:hover {
+  background: rgba(255, 51, 85, 0.2);
+  border-color: var(--scholar-neon-red);
+  box-shadow: 0 0 20px rgba(255, 51, 85, 0.3), inset 0 0 20px rgba(255, 51, 85, 0.05);
+}
+
+.scholar-btn-success {
+  background: rgba(0, 255, 136, 0.1);
+  border-color: rgba(0, 255, 136, 0.3);
+  color: var(--scholar-neon-green);
+}
+
+.scholar-btn-success:hover {
+  background: rgba(0, 255, 136, 0.2);
+  border-color: var(--scholar-neon-green);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+/* ─── XP Progress Bar ─────────────────────────────────────────────── */
+.xp-bar-outer {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+  height: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 240, 255, 0.1);
+}
+
+.xp-bar-inner {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--scholar-neon-cyan), var(--scholar-neon-magenta));
+  box-shadow: 0 0 12px var(--scholar-neon-cyan);
+  transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ─── Emergency Room Pulse ────────────────────────────────────────── */
+@keyframes er-pulse {
+
+  0%,
+  100% {
+    border-color: rgba(255, 51, 85, 0.3);
+    box-shadow: inset 0 0 40px rgba(255, 51, 85, 0.05);
+  }
+
+  50% {
+    border-color: rgba(255, 51, 85, 0.8);
+    box-shadow: inset 0 0 80px rgba(255, 51, 85, 0.15), 0 0 40px rgba(255, 51, 85, 0.2);
+  }
+}
+
+.er-pulse-border {
+  animation: er-pulse 1s ease-in-out infinite;
+  border: 3px solid var(--scholar-neon-red);
+  border-radius: 20px;
+}
+
+/* ─── Heartbeat Monitor Line ──────────────────────────────────────── */
+@keyframes heartbeat-line {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.heartbeat-svg {
+  animation: heartbeat-line 2s linear infinite;
+}
+
+/* ─── Neon Text Glow ──────────────────────────────────────────────── */
+.neon-text-cyan {
+  color: var(--scholar-neon-cyan);
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.neon-text-red {
+  color: var(--scholar-neon-red);
+  text-shadow: 0 0 10px rgba(255, 51, 85, 0.5), 0 0 20px rgba(255, 51, 85, 0.3);
+}
+
+.neon-text-green {
+  color: var(--scholar-neon-green);
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5), 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.neon-text-gold {
+  color: var(--scholar-neon-gold);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+/* ─── Grid Hologram Effect ────────────────────────────────────────── */
+.holo-grid {
+  background-image:
+    linear-gradient(rgba(0, 240, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ─── Badge Shimmer ───────────────────────────────────────────────── */
+@keyframes badge-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.badge-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.15) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: badge-shimmer 3s linear infinite;
+}
+
+/* ─── Molecule Voxel Glow ─────────────────────────────────────────── */
+.voxel-carbon {
+  background: #1a1a1a;
+  box-shadow: 0 0 8px rgba(100, 100, 100, 0.5);
+}
+
+.voxel-oxygen {
+  background: #dc2626;
+  box-shadow: 0 0 8px rgba(220, 38, 38, 0.5);
+}
+
+.voxel-nitrogen {
+  background: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
+
+.voxel-hydrogen {
+  background: #e5e7eb;
+  box-shadow: 0 0 8px rgba(229, 231, 235, 0.3);
+}
+
+.voxel-sulfur {
+  background: #eab308;
+  box-shadow: 0 0 8px rgba(234, 179, 8, 0.5);
+}
+
+/* ─── Countdown Timer ─────────────────────────────────────────────── */
+.countdown-critical {
+  animation: er-pulse 0.5s ease-in-out infinite;
+}
+
+/* ─── Voice Waveform ──────────────────────────────────────────────── */
+@keyframes wave {
+
+  0%,
+  100% {
+    height: 4px;
+  }
+
+  50% {
+    height: 24px;
+  }
+}
+
+.voice-wave-bar {
+  width: 3px;
+  background: var(--scholar-neon-cyan);
+  border-radius: 2px;
+  animation: wave 0.8s ease-in-out infinite;
+}
+
+/* ─── Level Progress Ring ─────────────────────────────────────────── */
+@keyframes rotate-ring {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.level-ring {
+  animation: rotate-ring 8s linear infinite;
+}
+
+/* ─── Scholar Scrollbar ───────────────────────────────────────────── */
+.scholar-layout::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scholar-layout::-webkit-scrollbar-track {
+  background: var(--scholar-bg);
+}
+
+.scholar-layout::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--scholar-neon-cyan), var(--scholar-neon-magenta));
+  border-radius: 3px;
+}
+
+/* ─── Scholar Page (child page wrapper) ──────────────────────────── */
+.scholar-page {
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+/* ─── Team Code Blue ─────────────────────────────────────────────── */
+.code-blue-chat {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(239, 68, 68, 0.3) transparent;
+}
+
+.code-blue-chat::-webkit-scrollbar {
+  width: 4px;
+}
+
+.code-blue-chat::-webkit-scrollbar-thumb {
+  background: rgba(239, 68, 68, 0.3);
+  border-radius: 2px;
+}
+
+@keyframes code-blue-siren {
+
+  0%,
+  100% {
+    background: rgba(239, 68, 68, 0.02);
+  }
+
+  50% {
+    background: rgba(239, 68, 68, 0.06);
+  }
+}
+
+.code-blue-siren {
+  animation: code-blue-siren 2s ease-in-out infinite;
+}
+
+/* ─── Dr. House Whiteboard Reveal ────────────────────────────────── */
+@keyframes whiteboard-write {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.whiteboard-text {
+  animation: whiteboard-write 1.5s ease-out forwards;
+}
+
+/* ─── Career Passport Gold Accent ────────────────────────────────── */
+@keyframes gold-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 215, 0, 0.2) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: gold-shimmer 3s linear infinite;
+}
+
+/* ─── Terminal Processing Log ────────────────────────────────────── */
+.terminal-log {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@keyframes terminal-cursor {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.terminal-cursor {
+  animation: terminal-cursor 0.8s step-start infinite;
+}
+
+/* ─── Discovery Feed Pulse ───────────────────────────────────────── */
+@keyframes discovery-pulse {
+
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.discovery-new {
+  animation: discovery-pulse 2s ease-in-out infinite;
+}

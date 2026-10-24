@@ -1,0 +1,150 @@
+{"claim_id":"EA-001","record_group":"chembl-activity:189032","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 in activity 189032 has Ki = 26000.0 nM."}
+{"claim_id":"EA-002","record_group":"chembl-activity:189032","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 in activity 189032 has Ki = 52001.0 nM."}
+{"claim_id":"EA-003","record_group":"chembl-activity:189032","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 in activity 189032 has IC50 = 26000.0 nM."}
+{"claim_id":"EA-004","record_group":"chembl-activity:189032","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 inhibits Adenosine receptor A1 in every experimental context, based on activity 189032."}
+{"claim_id":"EA-005","record_group":"chembl-activity:189032","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 is safe for patients because activity 189032 reports a measurement."}
+{"claim_id":"EA-006","record_group":"chembl-activity:189033","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 in activity 189033 has Ki = 16000.0 nM."}
+{"claim_id":"EA-007","record_group":"chembl-activity:189033","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 in activity 189033 has Ki = 32001.0 nM."}
+{"claim_id":"EA-008","record_group":"chembl-activity:189033","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 in activity 189033 has IC50 = 16000.0 nM."}
+{"claim_id":"EA-009","record_group":"chembl-activity:189033","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 inhibits Adenosine receptor A2a in every experimental context, based on activity 189033."}
+{"claim_id":"EA-010","record_group":"chembl-activity:189033","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 is safe for patients because activity 189033 reports a measurement."}
+{"claim_id":"EA-011","record_group":"chembl-activity:189034","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 in activity 189034 has Ki = 22000.0 nM."}
+{"claim_id":"EA-012","record_group":"chembl-activity:189034","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 in activity 189034 has Ki = 44001.0 nM."}
+{"claim_id":"EA-013","record_group":"chembl-activity:189034","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 in activity 189034 has IC50 = 22000.0 nM."}
+{"claim_id":"EA-014","record_group":"chembl-activity:189034","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 inhibits Adenosine receptor A2a in every experimental context, based on activity 189034."}
+{"claim_id":"EA-015","record_group":"chembl-activity:189034","source_group":"PMID:9435909","split":"unassigned","text":"CHEMBL113 is safe for patients because activity 189034 reports a measurement."}
+{"claim_id":"EA-016","record_group":"chembl-activity:231261","source_group":"PMID:2795597","split":"unassigned","text":"CHEMBL113 in activity 231261 has Ki = 29000.0 nM."}
+{"claim_id":"EA-017","record_group":"chembl-activity:231261","source_group":"PMID:2795597","split":"unassigned","text":"CHEMBL113 in activity 231261 has Ki = 58001.0 nM."}
+{"claim_id":"EA-018","record_group":"chembl-activity:231261","source_group":"PMID:2795597","split":"unassigned","text":"CHEMBL113 in activity 231261 has IC50 = 29000.0 nM."}
+{"claim_id":"EA-019","record_group":"chembl-activity:231261","source_group":"PMID:2795597","split":"unassigned","text":"CHEMBL113 inhibits Adenosine receptor A1 in every experimental context, based on activity 231261."}
+{"claim_id":"EA-020","record_group":"chembl-activity:231261","source_group":"PMID:2795597","split":"unassigned","text":"CHEMBL113 is safe for patients because activity 231261 reports a measurement."}
+{"claim_id":"EA-021","record_group":"chembl-activity:231262","source_group":"PMID:2795597","split":"unassigned","text":"CHEMBL113 in activity 231262 has Ki = 48000.0 nM."}
+{"claim_id":"EA-022","record_group":"chembl-activity:231262","source_group":"PMID:2795597","split":"unassigned","text":"CHEMBL113 in activity 231262 has Ki = 96001.0 nM."}
+{"claim_id":"EA-023","record_group":"chembl-activity:231262","source_group":"PMID:2795597","split":"unassigned","text":"CHEMBL113 in activity 231262 has IC50 = 48000.0 nM."}
+{"claim_id":"EA-024","record_group":"chembl-activity:231262","source_group":"PMID:2795597","split":"unassigned","text":"CHEMBL113 inhibits Adenosine A2 receptor in every experimental context, based on activity 231262."}
+{"claim_id":"EA-025","record_group":"chembl-activity:231262","source_group":"PMID:2795597","split":"unassigned","text":"CHEMBL113 is safe for patients because activity 231262 reports a measurement."}
+{"claim_id":"EA-026","record_group":"chembl-activity:328437","source_group":"PMID:1992150","split":"unassigned","text":"CHEMBL113 in activity 328437 has Ki = 27000.0 nM."}
+{"claim_id":"EA-027","record_group":"chembl-activity:328437","source_group":"PMID:1992150","split":"unassigned","text":"CHEMBL113 in activity 328437 has Ki = 54001.0 nM."}
+{"claim_id":"EA-028","record_group":"chembl-activity:328437","source_group":"PMID:1992150","split":"unassigned","text":"CHEMBL113 in activity 328437 has IC50 = 27000.0 nM."}
+{"claim_id":"EA-029","record_group":"chembl-activity:328437","source_group":"PMID:1992150","split":"unassigned","text":"CHEMBL113 inhibits Adenosine A2 receptor in every experimental context, based on activity 328437."}
+{"claim_id":"EA-030","record_group":"chembl-activity:328437","source_group":"PMID:1992150","split":"unassigned","text":"CHEMBL113 is safe for patients because activity 328437 reports a measurement."}
+{"claim_id":"EA-031","record_group":"chembl-activity:331346","source_group":"PMID:6279840","split":"unassigned","text":"CHEMBL113 in activity 331346 has Ki = 80000.0 nM."}
+{"claim_id":"EA-032","record_group":"chembl-activity:331346","source_group":"PMID:6279840","split":"unassigned","text":"CHEMBL113 in activity 331346 has Ki = 160001.0 nM."}
+{"claim_id":"EA-033","record_group":"chembl-activity:331346","source_group":"PMID:6279840","split":"unassigned","text":"CHEMBL113 in activity 331346 has IC50 = 80000.0 nM."}
+{"claim_id":"EA-034","record_group":"chembl-activity:331346","source_group":"PMID:6279840","split":"unassigned","text":"CHEMBL113 inhibits Adenosine receptor A2a in every experimental context, based on activity 331346."}
+{"claim_id":"EA-035","record_group":"chembl-activity:331346","source_group":"PMID:6279840","split":"unassigned","text":"CHEMBL113 is safe for patients because activity 331346 reports a measurement."}
+{"claim_id":"EA-036","record_group":"chembl-activity:331347","source_group":"PMID:6279840","split":"unassigned","text":"CHEMBL113 in activity 331347 has Ki = 40000.0 nM."}
+{"claim_id":"EA-037","record_group":"chembl-activity:331347","source_group":"PMID:6279840","split":"unassigned","text":"CHEMBL113 in activity 331347 has Ki = 80001.0 nM."}
+{"claim_id":"EA-038","record_group":"chembl-activity:331347","source_group":"PMID:6279840","split":"unassigned","text":"CHEMBL113 in activity 331347 has IC50 = 40000.0 nM."}
+{"claim_id":"EA-039","record_group":"chembl-activity:331347","source_group":"PMID:6279840","split":"unassigned","text":"CHEMBL113 inhibits Adenosine receptor in every experimental context, based on activity 331347."}
+{"claim_id":"EA-040","record_group":"chembl-activity:331347","source_group":"PMID:6279840","split":"unassigned","text":"CHEMBL113 is safe for patients because activity 331347 reports a measurement."}
+{"claim_id":"EA-041","record_group":"chembl-activity:88326","source_group":"PMID:12873516","split":"unassigned","text":"CHEMBL25 in activity 88326 has IC50 = 34600.0 nM."}
+{"claim_id":"EA-042","record_group":"chembl-activity:88326","source_group":"PMID:12873516","split":"unassigned","text":"CHEMBL25 in activity 88326 has IC50 = 69201.0 nM."}
+{"claim_id":"EA-043","record_group":"chembl-activity:88326","source_group":"PMID:12873516","split":"unassigned","text":"CHEMBL25 in activity 88326 has Ki = 34600.0 nM."}
+{"claim_id":"EA-044","record_group":"chembl-activity:88326","source_group":"PMID:12873516","split":"unassigned","text":"CHEMBL25 inhibits Unchecked in every experimental context, based on activity 88326."}
+{"claim_id":"EA-045","record_group":"chembl-activity:88326","source_group":"PMID:12873516","split":"unassigned","text":"CHEMBL25 is safe for patients because activity 88326 reports a measurement."}
+{"claim_id":"EA-046","record_group":"chembl-activity:88327","source_group":"PMID:12873516","split":"unassigned","text":"CHEMBL25 in activity 88327 has IC50 = 34900.0 nM."}
+{"claim_id":"EA-047","record_group":"chembl-activity:88327","source_group":"PMID:12873516","split":"unassigned","text":"CHEMBL25 in activity 88327 has IC50 = 69801.0 nM."}
+{"claim_id":"EA-048","record_group":"chembl-activity:88327","source_group":"PMID:12873516","split":"unassigned","text":"CHEMBL25 in activity 88327 has Ki = 34900.0 nM."}
+{"claim_id":"EA-049","record_group":"chembl-activity:88327","source_group":"PMID:12873516","split":"unassigned","text":"CHEMBL25 inhibits Unchecked in every experimental context, based on activity 88327."}
+{"claim_id":"EA-050","record_group":"chembl-activity:88327","source_group":"PMID:12873516","split":"unassigned","text":"CHEMBL25 is safe for patients because activity 88327 reports a measurement."}
+{"claim_id":"EA-051","record_group":"chembl-activity:91852","source_group":"PMID:9822550","split":"unassigned","text":"CHEMBL25 in activity 91852 has IC50 = 62500.0 nM."}
+{"claim_id":"EA-052","record_group":"chembl-activity:91852","source_group":"PMID:9822550","split":"unassigned","text":"CHEMBL25 in activity 91852 has IC50 = 125001.0 nM."}
+{"claim_id":"EA-053","record_group":"chembl-activity:91852","source_group":"PMID:9822550","split":"unassigned","text":"CHEMBL25 in activity 91852 has Ki = 62500.0 nM."}
+{"claim_id":"EA-054","record_group":"chembl-activity:91852","source_group":"PMID:9822550","split":"unassigned","text":"CHEMBL25 inhibits Prostaglandin G/H synthase 2 in every experimental context, based on activity 91852."}
+{"claim_id":"EA-055","record_group":"chembl-activity:91852","source_group":"PMID:9822550","split":"unassigned","text":"CHEMBL25 is safe for patients because activity 91852 reports a measurement."}
+{"claim_id":"EA-056","record_group":"chembl-activity:91853","source_group":"PMID:9822550","split":"unassigned","text":"CHEMBL25 in activity 91853 has IC50 = 12500.0 nM."}
+{"claim_id":"EA-057","record_group":"chembl-activity:91853","source_group":"PMID:9822550","split":"unassigned","text":"CHEMBL25 in activity 91853 has IC50 = 25001.0 nM."}
+{"claim_id":"EA-058","record_group":"chembl-activity:91853","source_group":"PMID:9822550","split":"unassigned","text":"CHEMBL25 in activity 91853 has Ki = 12500.0 nM."}
+{"claim_id":"EA-059","record_group":"chembl-activity:91853","source_group":"PMID:9822550","split":"unassigned","text":"CHEMBL25 inhibits Prostaglandin G/H synthase 1 in every experimental context, based on activity 91853."}
+{"claim_id":"EA-060","record_group":"chembl-activity:91853","source_group":"PMID:9822550","split":"unassigned","text":"CHEMBL25 is safe for patients because activity 91853 reports a measurement."}
+{"claim_id":"EA-061","record_group":"chembl-activity:392578","source_group":"PMID:8164261","split":"unassigned","text":"CHEMBL25 in activity 392578 has IC50 = 16000.0 nM."}
+{"claim_id":"EA-062","record_group":"chembl-activity:392578","source_group":"PMID:8164261","split":"unassigned","text":"CHEMBL25 in activity 392578 has IC50 = 32001.0 nM."}
+{"claim_id":"EA-063","record_group":"chembl-activity:392578","source_group":"PMID:8164261","split":"unassigned","text":"CHEMBL25 in activity 392578 has Ki = 16000.0 nM."}
+{"claim_id":"EA-064","record_group":"chembl-activity:392578","source_group":"PMID:8164261","split":"unassigned","text":"CHEMBL25 inhibits Oryctolagus cuniculus in every experimental context, based on activity 392578."}
+{"claim_id":"EA-065","record_group":"chembl-activity:392578","source_group":"PMID:8164261","split":"unassigned","text":"CHEMBL25 is safe for patients because activity 392578 reports a measurement."}
+{"claim_id":"EA-066","record_group":"chembl-activity:513632","source_group":"PMID:11212091","split":"unassigned","text":"CHEMBL25 in activity 513632 has IC50 = 20000.0 nM."}
+{"claim_id":"EA-067","record_group":"chembl-activity:513632","source_group":"PMID:11212091","split":"unassigned","text":"CHEMBL25 in activity 513632 has IC50 = 40001.0 nM."}
+{"claim_id":"EA-068","record_group":"chembl-activity:513632","source_group":"PMID:11212091","split":"unassigned","text":"CHEMBL25 in activity 513632 has Ki = 20000.0 nM."}
+{"claim_id":"EA-069","record_group":"chembl-activity:513632","source_group":"PMID:11212091","split":"unassigned","text":"CHEMBL25 inhibits Homo sapiens in every experimental context, based on activity 513632."}
+{"claim_id":"EA-070","record_group":"chembl-activity:513632","source_group":"PMID:11212091","split":"unassigned","text":"CHEMBL25 is safe for patients because activity 513632 reports a measurement."}
+{"claim_id":"EA-071","record_group":"chembl-activity:515159","source_group":"PMID:7837237","split":"unassigned","text":"CHEMBL25 in activity 515159 has IC50 = 5000.0 nM."}
+{"claim_id":"EA-072","record_group":"chembl-activity:515159","source_group":"PMID:7837237","split":"unassigned","text":"CHEMBL25 in activity 515159 has IC50 = 10001.0 nM."}
+{"claim_id":"EA-073","record_group":"chembl-activity:515159","source_group":"PMID:7837237","split":"unassigned","text":"CHEMBL25 in activity 515159 has Ki = 5000.0 nM."}
+{"claim_id":"EA-074","record_group":"chembl-activity:515159","source_group":"PMID:7837237","split":"unassigned","text":"CHEMBL25 inhibits Integrin alpha-IIb/beta-3 in every experimental context, based on activity 515159."}
+{"claim_id":"EA-075","record_group":"chembl-activity:515159","source_group":"PMID:7837237","split":"unassigned","text":"CHEMBL25 is safe for patients because activity 515159 reports a measurement."}
+{"claim_id":"EA-076","record_group":"chembl-activity:597862","source_group":"PMID:11378363","split":"unassigned","text":"CHEMBL25 in activity 597862 has IC50 = 48000.0 nM."}
+{"claim_id":"EA-077","record_group":"chembl-activity:597862","source_group":"PMID:11378363","split":"unassigned","text":"CHEMBL25 in activity 597862 has IC50 = 96001.0 nM."}
+{"claim_id":"EA-078","record_group":"chembl-activity:597862","source_group":"PMID:11378363","split":"unassigned","text":"CHEMBL25 in activity 597862 has Ki = 48000.0 nM."}
+{"claim_id":"EA-079","record_group":"chembl-activity:597862","source_group":"PMID:11378363","split":"unassigned","text":"CHEMBL25 inhibits Cavia porcellus in every experimental context, based on activity 597862."}
+{"claim_id":"EA-080","record_group":"chembl-activity:597862","source_group":"PMID:11378363","split":"unassigned","text":"CHEMBL25 is safe for patients because activity 597862 reports a measurement."}
+{"claim_id":"EA-081","record_group":"chembl-activity:2108574","source_group":"PMID:18260613","split":"unassigned","text":"CHEMBL112 in activity 2108574 has IC50 = 86700.0 nM."}
+{"claim_id":"EA-082","record_group":"chembl-activity:2108574","source_group":"PMID:18260613","split":"unassigned","text":"CHEMBL112 in activity 2108574 has IC50 = 173401.0 nM."}
+{"claim_id":"EA-083","record_group":"chembl-activity:2108574","source_group":"PMID:18260613","split":"unassigned","text":"CHEMBL112 in activity 2108574 has Ki = 86700.0 nM."}
+{"claim_id":"EA-084","record_group":"chembl-activity:2108574","source_group":"PMID:18260613","split":"unassigned","text":"CHEMBL112 inhibits Plasmodium falciparum in every experimental context, based on activity 2108574."}
+{"claim_id":"EA-085","record_group":"chembl-activity:2108574","source_group":"PMID:18260613","split":"unassigned","text":"CHEMBL112 is safe for patients because activity 2108574 reports a measurement."}
+{"claim_id":"EA-086","record_group":"chembl-activity:2172299","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 in activity 2172299 has Ki = 10000.0 nM."}
+{"claim_id":"EA-087","record_group":"chembl-activity:2172299","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 in activity 2172299 has Ki = 20001.0 nM."}
+{"claim_id":"EA-088","record_group":"chembl-activity:2172299","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 in activity 2172299 has IC50 = 10000.0 nM."}
+{"claim_id":"EA-089","record_group":"chembl-activity:2172299","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 inhibits Carbonic anhydrase 1 in every experimental context, based on activity 2172299."}
+{"claim_id":"EA-090","record_group":"chembl-activity:2172299","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 is safe for patients because activity 2172299 reports a measurement."}
+{"claim_id":"EA-091","record_group":"chembl-activity:2172309","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 in activity 2172309 has Ki = 6200.0 nM."}
+{"claim_id":"EA-092","record_group":"chembl-activity:2172309","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 in activity 2172309 has Ki = 12401.0 nM."}
+{"claim_id":"EA-093","record_group":"chembl-activity:2172309","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 in activity 2172309 has IC50 = 6200.0 nM."}
+{"claim_id":"EA-094","record_group":"chembl-activity:2172309","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 inhibits Carbonic anhydrase 2 in every experimental context, based on activity 2172309."}
+{"claim_id":"EA-095","record_group":"chembl-activity:2172309","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 is safe for patients because activity 2172309 reports a measurement."}
+{"claim_id":"EA-096","record_group":"chembl-activity:2172320","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 in activity 2172320 has Ki = 9230.0 nM."}
+{"claim_id":"EA-097","record_group":"chembl-activity:2172320","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 in activity 2172320 has Ki = 18461.0 nM."}
+{"claim_id":"EA-098","record_group":"chembl-activity:2172320","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 in activity 2172320 has IC50 = 9230.0 nM."}
+{"claim_id":"EA-099","record_group":"chembl-activity:2172320","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 inhibits Carbonic anhydrase 15 in every experimental context, based on activity 2172320."}
+{"claim_id":"EA-100","record_group":"chembl-activity:2172320","source_group":"PMID:18501600","split":"unassigned","text":"CHEMBL112 is safe for patients because activity 2172320 reports a measurement."}
+{"claim_id":"EA-101","record_group":"chembl-activity:2460301","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 in activity 2460301 has IC50 = 44000.0 nM."}
+{"claim_id":"EA-102","record_group":"chembl-activity:2460301","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 in activity 2460301 has IC50 = 88001.0 nM."}
+{"claim_id":"EA-103","record_group":"chembl-activity:2460301","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 in activity 2460301 has Ki = 44000.0 nM."}
+{"claim_id":"EA-104","record_group":"chembl-activity:2460301","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 inhibits Arachidonate 5-lipoxygenase-activating protein in every experimental context, based on activity 2460301."}
+{"claim_id":"EA-105","record_group":"chembl-activity:2460301","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 is safe for patients because activity 2460301 reports a measurement."}
+{"claim_id":"EA-106","record_group":"chembl-activity:2460352","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 in activity 2460352 has IC50 = 44000.0 nM."}
+{"claim_id":"EA-107","record_group":"chembl-activity:2460352","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 in activity 2460352 has IC50 = 88001.0 nM."}
+{"claim_id":"EA-108","record_group":"chembl-activity:2460352","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 in activity 2460352 has Ki = 44000.0 nM."}
+{"claim_id":"EA-109","record_group":"chembl-activity:2460352","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 inhibits Blood in every experimental context, based on activity 2460352."}
+{"claim_id":"EA-110","record_group":"chembl-activity:2460352","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 is safe for patients because activity 2460352 reports a measurement."}
+{"claim_id":"EA-111","record_group":"chembl-activity:2460353","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 in activity 2460353 has IC50 = 94000.0 nM."}
+{"claim_id":"EA-112","record_group":"chembl-activity:2460353","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 in activity 2460353 has IC50 = 188001.0 nM."}
+{"claim_id":"EA-113","record_group":"chembl-activity:2460353","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 in activity 2460353 has Ki = 94000.0 nM."}
+{"claim_id":"EA-114","record_group":"chembl-activity:2460353","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 inhibits Blood in every experimental context, based on activity 2460353."}
+{"claim_id":"EA-115","record_group":"chembl-activity:2460353","source_group":"PMID:18459759","split":"unassigned","text":"CHEMBL112 is safe for patients because activity 2460353 reports a measurement."}
+{"claim_id":"EA-116","record_group":"chembl-activity:2572978","source_group":"PMID:18579385","split":"unassigned","text":"CHEMBL112 in activity 2572978 has Ki = 30300.0 nM."}
+{"claim_id":"EA-117","record_group":"chembl-activity:2572978","source_group":"PMID:18579385","split":"unassigned","text":"CHEMBL112 in activity 2572978 has Ki = 60601.0 nM."}
+{"claim_id":"EA-118","record_group":"chembl-activity:2572978","source_group":"PMID:18579385","split":"unassigned","text":"CHEMBL112 in activity 2572978 has IC50 = 30300.0 nM."}
+{"claim_id":"EA-119","record_group":"chembl-activity:2572978","source_group":"PMID:18579385","split":"unassigned","text":"CHEMBL112 inhibits Carbonic anhydrase 13 in every experimental context, based on activity 2572978."}
+{"claim_id":"EA-120","record_group":"chembl-activity:2572978","source_group":"PMID:18579385","split":"unassigned","text":"CHEMBL112 is safe for patients because activity 2572978 reports a measurement."}
+{"claim_id":"EA-121","record_group":"chembl-activity:242732","source_group":"PMID:8568814","split":"unassigned","text":"CHEMBL521 in activity 242732 has IC50 = 220.0 nM."}
+{"claim_id":"EA-122","record_group":"chembl-activity:242732","source_group":"PMID:8568814","split":"unassigned","text":"CHEMBL521 in activity 242732 has IC50 = 441.0 nM."}
+{"claim_id":"EA-123","record_group":"chembl-activity:242732","source_group":"PMID:8568814","split":"unassigned","text":"CHEMBL521 in activity 242732 has Ki = 220.0 nM."}
+{"claim_id":"EA-124","record_group":"chembl-activity:242732","source_group":"PMID:8568814","split":"unassigned","text":"CHEMBL521 inhibits Prostaglandin G/H synthase (cyclooxygenase) in every experimental context, based on activity 242732."}
+{"claim_id":"EA-125","record_group":"chembl-activity:242732","source_group":"PMID:8568814","split":"unassigned","text":"CHEMBL521 is safe for patients because activity 242732 reports a measurement."}
+{"claim_id":"EA-126","record_group":"chembl-activity:348013","source_group":"PMID:1900533","split":"unassigned","text":"CHEMBL521 in activity 348013 has IC50 = 13000.0 nM."}
+{"claim_id":"EA-127","record_group":"chembl-activity:348013","source_group":"PMID:1900533","split":"unassigned","text":"CHEMBL521 in activity 348013 has IC50 = 26001.0 nM."}
+{"claim_id":"EA-128","record_group":"chembl-activity:348013","source_group":"PMID:1900533","split":"unassigned","text":"CHEMBL521 in activity 348013 has Ki = 13000.0 nM."}
+{"claim_id":"EA-129","record_group":"chembl-activity:348013","source_group":"PMID:1900533","split":"unassigned","text":"CHEMBL521 inhibits Prostaglandin-H2 D-isomerase in every experimental context, based on activity 348013."}
+{"claim_id":"EA-130","record_group":"chembl-activity:348013","source_group":"PMID:1900533","split":"unassigned","text":"CHEMBL521 is safe for patients because activity 348013 reports a measurement."}
+{"claim_id":"EA-131","record_group":"chembl-activity:490365","source_group":"PMID:14741265","split":"unassigned","text":"CHEMBL521 in activity 490365 has IC50 = 1060.0 nM."}
+{"claim_id":"EA-132","record_group":"chembl-activity:490365","source_group":"PMID:14741265","split":"unassigned","text":"CHEMBL521 in activity 490365 has IC50 = 2121.0 nM."}
+{"claim_id":"EA-133","record_group":"chembl-activity:490365","source_group":"PMID:14741265","split":"unassigned","text":"CHEMBL521 in activity 490365 has Ki = 1060.0 nM."}
+{"claim_id":"EA-134","record_group":"chembl-activity:490365","source_group":"PMID:14741265","split":"unassigned","text":"CHEMBL521 inhibits Prostaglandin G/H synthase 1 in every experimental context, based on activity 490365."}
+{"claim_id":"EA-135","record_group":"chembl-activity:490365","source_group":"PMID:14741265","split":"unassigned","text":"CHEMBL521 is safe for patients because activity 490365 reports a measurement."}
+{"claim_id":"EA-136","record_group":"chembl-activity:557523","source_group":"PMID:7562922","split":"unassigned","text":"CHEMBL521 in activity 557523 has IC50 = 9000.0 nM."}
+{"claim_id":"EA-137","record_group":"chembl-activity:557523","source_group":"PMID:7562922","split":"unassigned","text":"CHEMBL521 in activity 557523 has IC50 = 18001.0 nM."}
+{"claim_id":"EA-138","record_group":"chembl-activity:557523","source_group":"PMID:7562922","split":"unassigned","text":"CHEMBL521 in activity 557523 has Ki = 9000.0 nM."}
+{"claim_id":"EA-139","record_group":"chembl-activity:557523","source_group":"PMID:7562922","split":"unassigned","text":"CHEMBL521 inhibits Prostaglandin G/H synthase 1 in every experimental context, based on activity 557523."}
+{"claim_id":"EA-140","record_group":"chembl-activity:557523","source_group":"PMID:7562922","split":"unassigned","text":"CHEMBL521 is safe for patients because activity 557523 reports a measurement."}
+{"claim_id":"EA-141","record_group":"chembl-activity:557524","source_group":"PMID:7562922","split":"unassigned","text":"CHEMBL521 in activity 557524 has IC50 = 8000.0 nM."}
+{"claim_id":"EA-142","record_group":"chembl-activity:557524","source_group":"PMID:7562922","split":"unassigned","text":"CHEMBL521 in activity 557524 has IC50 = 16001.0 nM."}
+{"claim_id":"EA-143","record_group":"chembl-activity:557524","source_group":"PMID:7562922","split":"unassigned","text":"CHEMBL521 in activity 557524 has Ki = 8000.0 nM."}
+{"claim_id":"EA-144","record_group":"chembl-activity:557524","source_group":"PMID:7562922","split":"unassigned","text":"CHEMBL521 inhibits Prostaglandin G/H synthase 2 in every experimental context, based on activity 557524."}
+{"claim_id":"EA-145","record_group":"chembl-activity:557524","source_group":"PMID:7562922","split":"unassigned","text":"CHEMBL521 is safe for patients because activity 557524 reports a measurement."}
+{"claim_id":"EA-146","record_group":"chembl-activity:844010","source_group":"PMID:2115586","split":"unassigned","text":"CHEMBL521 in activity 844010 has IC50 = 2000.0 nM."}
+{"claim_id":"EA-147","record_group":"chembl-activity:844010","source_group":"PMID:2115586","split":"unassigned","text":"CHEMBL521 in activity 844010 has IC50 = 4001.0 nM."}
+{"claim_id":"EA-148","record_group":"chembl-activity:844010","source_group":"PMID:2115586","split":"unassigned","text":"CHEMBL521 in activity 844010 has Ki = 2000.0 nM."}
+{"claim_id":"EA-149","record_group":"chembl-activity:844010","source_group":"PMID:2115586","split":"unassigned","text":"CHEMBL521 inhibits Cyclooxygenase in every experimental context, based on activity 844010."}
+{"claim_id":"EA-150","record_group":"chembl-activity:844010","source_group":"PMID:2115586","split":"unassigned","text":"CHEMBL521 is safe for patients because activity 844010 reports a measurement."}

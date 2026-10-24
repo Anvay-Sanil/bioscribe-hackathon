@@ -1,0 +1,3878 @@
+{
+  "status": "running",
+  "started_utc": "2026-10-24T20:28:13.438247+00:00",
+  "protocol": {
+    "version": "draft-comparison/0.3.0",
+    "model": {
+      "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+      "nominal_parameter_count": 500000000,
+      "license": "Apache-2.0",
+      "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+      "file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "bytes": 491400032,
+      "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+      "endpoint": "http://127.0.0.1:8092/v1/chat/completions",
+      "local_alias": "bioscribe-qwen25-05b",
+      "runtime_release": "b11856",
+      "context_limit": 8192,
+      "use": "Experimental passage interpretations and separately versioned provisional CPU baseline. Does not replace historical 4B results."
+    },
+    "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+    "dataset": {
+      "status": "provisional_unreviewed",
+      "claims": 150,
+      "source_records": 30,
+      "source_groups": 19,
+      "corpus_sha256": "5de60ebef53b9434ff512c39b63f9094d6d9d0bfd8a635bdfa39e099abb9cd65",
+      "claims_sha256": "f6dea38e601214ca1735cf31c38b7ed484670ab8263920edf1845ebfe99ce0ef",
+      "proposed_labels_sha256": "69230d2a941292644f032fa2cd09316824815d6e3b17cfbe2969205141d09728",
+      "label_counts": {
+        "supported": 30,
+        "contradicted": 30,
+        "insufficient_evidence": 60,
+        "out_of_scope": 30
+      },
+      "limitations": [
+        "Template-generated challenge set, not a representative independent benchmark",
+        "Labels drafted after implementation and not independently adjudicated",
+        "No protected holdout or source-group split assigned",
+        "Repeated source records and publications are dependent",
+        "No real retracted-paper claim in this 150-row draft; retraction handling has synthetic software fixtures only",
+        "No inferential performance or calibrated-confidence claim"
+      ]
+    },
+    "batch_size": 5,
+    "retrieval_k_per_claim": 8,
+    "cache_prompt": false,
+    "max_output_tokens_per_claim": 130,
+    "timeout_seconds_per_batch": 90,
+    "code_sha256": {
+      "validation/evidence_assistant/round1.py": "12fa6f819c1029d174553abeb0172119aaad928e4d01271e90907d3507cd6901",
+      "backend/evidence_assistant/compact_model.py": "08f67b87aaf0aba760da12182ac645db253cf36763a483c8390e2f5cfe2690ca",
+      "backend/evidence_assistant/engine.py": "f8ecdb9fb839568ca1354084e95e9b551793be70fd62f193a97a3cb76ba083b0",
+      "backend/evidence_assistant/corpus.py": "1fbddae7e5f7694baec7e8bf5342d4b74d483ce461963a01c36db63f585ac576",
+      "backend/evidence_assistant/schemas.py": "6db83978fdb40b7ea88ad65998017e9d5c6fbc2c310cf2a56c1edd6c347b78ba",
+      "validation/evidence_assistant/evaluate.py": "092afef4b96af15bc2bc56b2d559cda1596e83f202b663c6885e2dec4b9e2020"
+    },
+    "purpose": "Complete engineering rehearsal on developer-exposed, unreviewed template labels; no scientific qualification",
+    "fairness": "Same frozen corpus/retriever; baseline receives per-claim top 8; deterministic system additionally enforces exact record identity. Shared batch context permits cross-claim context; no gold labels supplied.",
+    "historical_results": "Existing 4B baseline failures and cached longer-budget success remain separate historical receipts."
+  },
+  "protocol_sha256": "0edfc36c7ecd34f0d4da0c6b0623b7b4f8a28270bdbf0d3c1b40d3422a593ee5",
+  "predictions": {
+    "EA-001": {
+      "claim_id": "EA-001",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189032",
+        "chembl-activity:189033",
+        "chembl-activity:189034"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "7f6555b98c3eeee8cb131e7b24e414248c364aada99b4326fd9d1d563caa75f7",
+        "response_sha256": "829d78bcc16789e90bc1a3a901de3932e2af0493f0805306af30289563d7b77f",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4519,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 56.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-002": {
+      "claim_id": "EA-002",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189032",
+        "chembl-activity:189033",
+        "chembl-activity:189034"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "7f6555b98c3eeee8cb131e7b24e414248c364aada99b4326fd9d1d563caa75f7",
+        "response_sha256": "829d78bcc16789e90bc1a3a901de3932e2af0493f0805306af30289563d7b77f",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4519,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 56.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-003": {
+      "claim_id": "EA-003",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189032",
+        "chembl-activity:189032",
+        "chembl-activity:189032"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "7f6555b98c3eeee8cb131e7b24e414248c364aada99b4326fd9d1d563caa75f7",
+        "response_sha256": "829d78bcc16789e90bc1a3a901de3932e2af0493f0805306af30289563d7b77f",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4519,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 56.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-004": {
+      "claim_id": "EA-004",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189032",
+        "chembl-activity:189032",
+        "chembl-activity:189032"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "7f6555b98c3eeee8cb131e7b24e414248c364aada99b4326fd9d1d563caa75f7",
+        "response_sha256": "829d78bcc16789e90bc1a3a901de3932e2af0493f0805306af30289563d7b77f",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4519,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 56.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-005": {
+      "claim_id": "EA-005",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189032",
+        "chembl-activity:189032",
+        "chembl-activity:189032"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "7f6555b98c3eeee8cb131e7b24e414248c364aada99b4326fd9d1d563caa75f7",
+        "response_sha256": "829d78bcc16789e90bc1a3a901de3932e2af0493f0805306af30289563d7b77f",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4519,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 56.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-006": {
+      "claim_id": "EA-006",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189033",
+        "chembl-activity:189032",
+        "chembl-activity:189034"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1cdf6b46feed216621a78bfdb3e66db8d6b2c1095f008e66c6752678a5a7d9c9",
+        "response_sha256": "a490515d01109fc25172def69a9d90d52d46a67f96401ad9d2c9b53485418e0d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 87.86,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-007": {
+      "claim_id": "EA-007",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189033",
+        "chembl-activity:189034",
+        "chembl-activity:331346"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1cdf6b46feed216621a78bfdb3e66db8d6b2c1095f008e66c6752678a5a7d9c9",
+        "response_sha256": "a490515d01109fc25172def69a9d90d52d46a67f96401ad9d2c9b53485418e0d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 87.86,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-008": {
+      "claim_id": "EA-008",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189033",
+        "chembl-activity:189033",
+        "chembl-activity:242732"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1cdf6b46feed216621a78bfdb3e66db8d6b2c1095f008e66c6752678a5a7d9c9",
+        "response_sha256": "a490515d01109fc25172def69a9d90d52d46a67f96401ad9d2c9b53485418e0d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 87.86,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-009": {
+      "claim_id": "EA-009",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189033",
+        "chembl-activity:189033",
+        "chembl-activity:231261"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1cdf6b46feed216621a78bfdb3e66db8d6b2c1095f008e66c6752678a5a7d9c9",
+        "response_sha256": "a490515d01109fc25172def69a9d90d52d46a67f96401ad9d2c9b53485418e0d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 87.86,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-010": {
+      "claim_id": "EA-010",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189033",
+        "chembl-activity:189033",
+        "chembl-activity:231262"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1cdf6b46feed216621a78bfdb3e66db8d6b2c1095f008e66c6752678a5a7d9c9",
+        "response_sha256": "a490515d01109fc25172def69a9d90d52d46a67f96401ad9d2c9b53485418e0d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 87.86,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-011": {
+      "claim_id": "EA-011",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189034",
+        "chembl-activity:189032",
+        "chembl-activity:189033"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "48edadd4166ed555ad1f96aed4ddb84754cd3905bdd4fa616fa8663ff2a71bdf",
+        "response_sha256": "b0f451bd8542465219b2a9a473d1bf0859a3ad6dc86d860fda60a3af32e4cdb7",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.907,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-012": {
+      "claim_id": "EA-012",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189034",
+        "chembl-activity:189033",
+        "chembl-activity:331346"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "48edadd4166ed555ad1f96aed4ddb84754cd3905bdd4fa616fa8663ff2a71bdf",
+        "response_sha256": "b0f451bd8542465219b2a9a473d1bf0859a3ad6dc86d860fda60a3af32e4cdb7",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.907,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-013": {
+      "claim_id": "EA-013",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189034",
+        "chembl-activity:189034",
+        "chembl-activity:242732"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "48edadd4166ed555ad1f96aed4ddb84754cd3905bdd4fa616fa8663ff2a71bdf",
+        "response_sha256": "b0f451bd8542465219b2a9a473d1bf0859a3ad6dc86d860fda60a3af32e4cdb7",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.907,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-014": {
+      "claim_id": "EA-014",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189034",
+        "chembl-activity:189034",
+        "chembl-activity:231261"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "48edadd4166ed555ad1f96aed4ddb84754cd3905bdd4fa616fa8663ff2a71bdf",
+        "response_sha256": "b0f451bd8542465219b2a9a473d1bf0859a3ad6dc86d860fda60a3af32e4cdb7",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.907,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-015": {
+      "claim_id": "EA-015",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189034",
+        "chembl-activity:189034",
+        "chembl-activity:231262"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "48edadd4166ed555ad1f96aed4ddb84754cd3905bdd4fa616fa8663ff2a71bdf",
+        "response_sha256": "b0f451bd8542465219b2a9a473d1bf0859a3ad6dc86d860fda60a3af32e4cdb7",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.907,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-016": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-017": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-018": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-019": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-020": {
+      "status": "failed",
+      "error_code": "model_unavailable_or_invalid"
+    },
+    "EA-021": {
+      "claim_id": "EA-021",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189032",
+        "chembl-activity:189033",
+        "chembl-activity:189034"
+      ],
+      "confidence": 0.9,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "dc5e07198913dfd9674ba3ef4e942922b16029bbcd8745cc5734ece9dc6e8ccd",
+        "response_sha256": "b9e8eb33830c7d5087eb563509007267bbfbe8975b41d36948c985b43a12e300",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 361,
+          "prompt_tokens": 4519,
+          "total_tokens": 4880,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 75.985,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-022": {
+      "claim_id": "EA-022",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:231262",
+        "chembl-activity:2172309",
+        "chembl-activity:2172320"
+      ],
+      "confidence": 0.9,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "dc5e07198913dfd9674ba3ef4e942922b16029bbcd8745cc5734ece9dc6e8ccd",
+        "response_sha256": "b9e8eb33830c7d5087eb563509007267bbfbe8975b41d36948c985b43a12e300",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 361,
+          "prompt_tokens": 4519,
+          "total_tokens": 4880,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 75.985,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-023": {
+      "claim_id": "EA-023",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:231262",
+        "chembl-activity:242732",
+        "chembl-activity:490365"
+      ],
+      "confidence": 0.9,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "dc5e07198913dfd9674ba3ef4e942922b16029bbcd8745cc5734ece9dc6e8ccd",
+        "response_sha256": "b9e8eb33830c7d5087eb563509007267bbfbe8975b41d36948c985b43a12e300",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 361,
+          "prompt_tokens": 4519,
+          "total_tokens": 4880,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 75.985,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-024": {
+      "claim_id": "EA-024",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:231262",
+        "chembl-activity:231261"
+      ],
+      "confidence": 0.9,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "dc5e07198913dfd9674ba3ef4e942922b16029bbcd8745cc5734ece9dc6e8ccd",
+        "response_sha256": "b9e8eb33830c7d5087eb563509007267bbfbe8975b41d36948c985b43a12e300",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 361,
+          "prompt_tokens": 4519,
+          "total_tokens": 4880,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 75.985,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-025": {
+      "claim_id": "EA-025",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:231262",
+        "chembl-activity:328437",
+        "chembl-activity:331346"
+      ],
+      "confidence": 0.9,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "dc5e07198913dfd9674ba3ef4e942922b16029bbcd8745cc5734ece9dc6e8ccd",
+        "response_sha256": "b9e8eb33830c7d5087eb563509007267bbfbe8975b41d36948c985b43a12e300",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 361,
+          "prompt_tokens": 4519,
+          "total_tokens": 4880,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 75.985,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-026": {
+      "claim_id": "EA-026",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:328437",
+        "chembl-activity:189032",
+        "chembl-activity:189033"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "cafb1f19872a4c3e044e8e87a292a4b6c8debbc311c125dc03a0f0495473006d",
+        "response_sha256": "2e3f748287e88d6df474055adcc54d884fbdf1e124cadfd929d92e09d45f9a94",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4519,
+          "total_tokens": 4883,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 74.235,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-027": {
+      "claim_id": "EA-027",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:328437",
+        "chembl-activity:189032",
+        "chembl-activity:189033"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "cafb1f19872a4c3e044e8e87a292a4b6c8debbc311c125dc03a0f0495473006d",
+        "response_sha256": "2e3f748287e88d6df474055adcc54d884fbdf1e124cadfd929d92e09d45f9a94",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4519,
+          "total_tokens": 4883,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 74.235,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-028": {
+      "claim_id": "EA-028",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:328437",
+        "chembl-activity:242732",
+        "chembl-activity:490365"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "cafb1f19872a4c3e044e8e87a292a4b6c8debbc311c125dc03a0f0495473006d",
+        "response_sha256": "2e3f748287e88d6df474055adcc54d884fbdf1e124cadfd929d92e09d45f9a94",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4519,
+          "total_tokens": 4883,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 74.235,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-029": {
+      "claim_id": "EA-029",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:328437",
+        "chembl-activity:231261"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "cafb1f19872a4c3e044e8e87a292a4b6c8debbc311c125dc03a0f0495473006d",
+        "response_sha256": "2e3f748287e88d6df474055adcc54d884fbdf1e124cadfd929d92e09d45f9a94",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4519,
+          "total_tokens": 4883,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 74.235,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-030": {
+      "claim_id": "EA-030",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:328437",
+        "chembl-activity:189032",
+        "chembl-activity:189033"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "cafb1f19872a4c3e044e8e87a292a4b6c8debbc311c125dc03a0f0495473006d",
+        "response_sha256": "2e3f748287e88d6df474055adcc54d884fbdf1e124cadfd929d92e09d45f9a94",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4519,
+          "total_tokens": 4883,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 74.235,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-031": {
+      "claim_id": "EA-031",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189032",
+        "chembl-activity:189033",
+        "chembl-activity:189034"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c4b4f48a2dac8bdf6e328113d85dc94c2ff07e847c775c42ccdc23c77232558e",
+        "response_sha256": "b05e99d3135591beed26fe8b0b8b66ea1e702fdffcfde528126f46cdadf7419d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4521,
+          "total_tokens": 4898,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-032": {
+      "claim_id": "EA-032",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189032",
+        "chembl-activity:189033",
+        "chembl-activity:189034"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c4b4f48a2dac8bdf6e328113d85dc94c2ff07e847c775c42ccdc23c77232558e",
+        "response_sha256": "b05e99d3135591beed26fe8b0b8b66ea1e702fdffcfde528126f46cdadf7419d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4521,
+          "total_tokens": 4898,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-033": {
+      "claim_id": "EA-033",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:331346",
+        "chembl-activity:242732",
+        "chembl-activity:490365"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c4b4f48a2dac8bdf6e328113d85dc94c2ff07e847c775c42ccdc23c77232558e",
+        "response_sha256": "b05e99d3135591beed26fe8b0b8b66ea1e702fdffcfde528126f46cdadf7419d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4521,
+          "total_tokens": 4898,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-034": {
+      "claim_id": "EA-034",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:331346",
+        "chembl-activity:231261",
+        "chembl-activity:231262"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c4b4f48a2dac8bdf6e328113d85dc94c2ff07e847c775c42ccdc23c77232558e",
+        "response_sha256": "b05e99d3135591beed26fe8b0b8b66ea1e702fdffcfde528126f46cdadf7419d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4521,
+          "total_tokens": 4898,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-035": {
+      "claim_id": "EA-035",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:331346",
+        "chembl-activity:189033",
+        "chembl-activity:189034"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c4b4f48a2dac8bdf6e328113d85dc94c2ff07e847c775c42ccdc23c77232558e",
+        "response_sha256": "b05e99d3135591beed26fe8b0b8b66ea1e702fdffcfde528126f46cdadf7419d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4521,
+          "total_tokens": 4898,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-036": {
+      "claim_id": "EA-036",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:189032",
+        "chembl-activity:189033",
+        "chembl-activity:189034"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c78ccd192518b0672f5be00b13ad1403e87ee28b80e50569919837d3b42e9e78",
+        "response_sha256": "9e10cc33134626b38cae88ab679c0b4d1aa85b4c9976ce08cb592771224e1c91",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 379,
+          "prompt_tokens": 4517,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.297,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-037": {
+      "claim_id": "EA-037",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:331347",
+        "chembl-activity:2172309",
+        "chembl-activity:2172320"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c78ccd192518b0672f5be00b13ad1403e87ee28b80e50569919837d3b42e9e78",
+        "response_sha256": "9e10cc33134626b38cae88ab679c0b4d1aa85b4c9976ce08cb592771224e1c91",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 379,
+          "prompt_tokens": 4517,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.297,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-038": {
+      "claim_id": "EA-038",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:331347",
+        "chembl-activity:242732",
+        "chembl-activity:490365"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c78ccd192518b0672f5be00b13ad1403e87ee28b80e50569919837d3b42e9e78",
+        "response_sha256": "9e10cc33134626b38cae88ab679c0b4d1aa85b4c9976ce08cb592771224e1c91",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 379,
+          "prompt_tokens": 4517,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.297,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-039": {
+      "claim_id": "EA-039",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:331347",
+        "chembl-activity:231261",
+        "chembl-activity:231262"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c78ccd192518b0672f5be00b13ad1403e87ee28b80e50569919837d3b42e9e78",
+        "response_sha256": "9e10cc33134626b38cae88ab679c0b4d1aa85b4c9976ce08cb592771224e1c91",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 379,
+          "prompt_tokens": 4517,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.297,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-040": {
+      "claim_id": "EA-040",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:231261",
+        "chembl-activity:231262",
+        "chembl-activity:328437"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c78ccd192518b0672f5be00b13ad1403e87ee28b80e50569919837d3b42e9e78",
+        "response_sha256": "9e10cc33134626b38cae88ab679c0b4d1aa85b4c9976ce08cb592771224e1c91",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 379,
+          "prompt_tokens": 4517,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.297,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-041": {
+      "claim_id": "EA-041",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:88326",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1e1888c0c55f52a7b25b51d7d09b5ff1d30bd13b9fcc0792f4234b0ff12e46c7",
+        "response_sha256": "c5e09813808119a9e868134361905f4bc62bac0b13079ccb934102c11c9b1b10",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4607,
+          "total_tokens": 4971,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.813,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-042": {
+      "claim_id": "EA-042",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:88326",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1e1888c0c55f52a7b25b51d7d09b5ff1d30bd13b9fcc0792f4234b0ff12e46c7",
+        "response_sha256": "c5e09813808119a9e868134361905f4bc62bac0b13079ccb934102c11c9b1b10",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4607,
+          "total_tokens": 4971,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.813,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-043": {
+      "claim_id": "EA-043",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:88326",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1e1888c0c55f52a7b25b51d7d09b5ff1d30bd13b9fcc0792f4234b0ff12e46c7",
+        "response_sha256": "c5e09813808119a9e868134361905f4bc62bac0b13079ccb934102c11c9b1b10",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4607,
+          "total_tokens": 4971,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.813,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-044": {
+      "claim_id": "EA-044",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:88326",
+        "chembl-activity:88327",
+        "chembl-activity:2172299"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1e1888c0c55f52a7b25b51d7d09b5ff1d30bd13b9fcc0792f4234b0ff12e46c7",
+        "response_sha256": "c5e09813808119a9e868134361905f4bc62bac0b13079ccb934102c11c9b1b10",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4607,
+          "total_tokens": 4971,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.813,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-045": {
+      "claim_id": "EA-045",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:88326",
+        "chembl-activity:88327",
+        "chembl-activity:91852"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1e1888c0c55f52a7b25b51d7d09b5ff1d30bd13b9fcc0792f4234b0ff12e46c7",
+        "response_sha256": "c5e09813808119a9e868134361905f4bc62bac0b13079ccb934102c11c9b1b10",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4607,
+          "total_tokens": 4971,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.813,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-046": {
+      "claim_id": "EA-046",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:88327",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "eadaa50736e176ee1861d112c3ccdee27815677efc8ccaae9799a0ce804af4bd",
+        "response_sha256": "bb94b832e0034e51e75ecfbbc497d84a87d5440ffef91e49dcb6d6770a49b0e5",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 362,
+          "prompt_tokens": 4607,
+          "total_tokens": 4969,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.281,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-047": {
+      "claim_id": "EA-047",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:88327",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "eadaa50736e176ee1861d112c3ccdee27815677efc8ccaae9799a0ce804af4bd",
+        "response_sha256": "bb94b832e0034e51e75ecfbbc497d84a87d5440ffef91e49dcb6d6770a49b0e5",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 362,
+          "prompt_tokens": 4607,
+          "total_tokens": 4969,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.281,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-048": {
+      "claim_id": "EA-048",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:88327",
+        "chembl-activity:88327",
+        "chembl-activity:88327"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "eadaa50736e176ee1861d112c3ccdee27815677efc8ccaae9799a0ce804af4bd",
+        "response_sha256": "bb94b832e0034e51e75ecfbbc497d84a87d5440ffef91e49dcb6d6770a49b0e5",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 362,
+          "prompt_tokens": 4607,
+          "total_tokens": 4969,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.281,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-049": {
+      "claim_id": "EA-049",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:88327",
+        "chembl-activity:88327",
+        "chembl-activity:88327"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "eadaa50736e176ee1861d112c3ccdee27815677efc8ccaae9799a0ce804af4bd",
+        "response_sha256": "bb94b832e0034e51e75ecfbbc497d84a87d5440ffef91e49dcb6d6770a49b0e5",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 362,
+          "prompt_tokens": 4607,
+          "total_tokens": 4969,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.281,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-050": {
+      "claim_id": "EA-050",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:88327",
+        "chembl-activity:88326",
+        "chembl-activity:88326"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "eadaa50736e176ee1861d112c3ccdee27815677efc8ccaae9799a0ce804af4bd",
+        "response_sha256": "bb94b832e0034e51e75ecfbbc497d84a87d5440ffef91e49dcb6d6770a49b0e5",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 362,
+          "prompt_tokens": 4607,
+          "total_tokens": 4969,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.281,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-051": {
+      "claim_id": "EA-051",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:91852",
+        "chembl-activity:91853",
+        "chembl-activity:242732"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "071f97e17a0e6dd7aa1b9da8dd730b5dbeb5a182a2ac2663f5351f0995291960",
+        "response_sha256": "4b2b3a18e2a01a995472d590e2aab0b70f575c2668e82e6d4ee3fdce50dcd096",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4820,
+          "total_tokens": 5189,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 67.844,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-052": {
+      "claim_id": "EA-052",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:91852",
+        "chembl-activity:91853",
+        "chembl-activity:242732"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "071f97e17a0e6dd7aa1b9da8dd730b5dbeb5a182a2ac2663f5351f0995291960",
+        "response_sha256": "4b2b3a18e2a01a995472d590e2aab0b70f575c2668e82e6d4ee3fdce50dcd096",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4820,
+          "total_tokens": 5189,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 67.844,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-053": {
+      "claim_id": "EA-053",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:91852",
+        "chembl-activity:91853",
+        "chembl-activity:189032"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "071f97e17a0e6dd7aa1b9da8dd730b5dbeb5a182a2ac2663f5351f0995291960",
+        "response_sha256": "4b2b3a18e2a01a995472d590e2aab0b70f575c2668e82e6d4ee3fdce50dcd096",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4820,
+          "total_tokens": 5189,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 67.844,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-054": {
+      "claim_id": "EA-054",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:91852",
+        "chembl-activity:91853",
+        "chembl-activity:2172299"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "071f97e17a0e6dd7aa1b9da8dd730b5dbeb5a182a2ac2663f5351f0995291960",
+        "response_sha256": "4b2b3a18e2a01a995472d590e2aab0b70f575c2668e82e6d4ee3fdce50dcd096",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4820,
+          "total_tokens": 5189,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 67.844,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-055": {
+      "claim_id": "EA-055",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:91852",
+        "chembl-activity:392578",
+        "chembl-activity:513632"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "071f97e17a0e6dd7aa1b9da8dd730b5dbeb5a182a2ac2663f5351f0995291960",
+        "response_sha256": "4b2b3a18e2a01a995472d590e2aab0b70f575c2668e82e6d4ee3fdce50dcd096",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4820,
+          "total_tokens": 5189,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 67.844,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-056": {
+      "claim_id": "EA-056",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:91853",
+        "chembl-activity:91852",
+        "chembl-activity:242732"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "b6e15461b11c34d578f14dc8a59e07af3c5b4a7794479d5ac5c9c4585ff932d3",
+        "response_sha256": "4be6220f34405e5c166514bf7db9ad9359661b073f173679a9b65c0f249172b9",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4819,
+          "total_tokens": 5188,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.36,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-057": {
+      "claim_id": "EA-057",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:91853",
+        "chembl-activity:91852",
+        "chembl-activity:242732"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "b6e15461b11c34d578f14dc8a59e07af3c5b4a7794479d5ac5c9c4585ff932d3",
+        "response_sha256": "4be6220f34405e5c166514bf7db9ad9359661b073f173679a9b65c0f249172b9",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4819,
+          "total_tokens": 5188,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.36,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-058": {
+      "claim_id": "EA-058",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:91853",
+        "chembl-activity:91852",
+        "chembl-activity:189032"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "b6e15461b11c34d578f14dc8a59e07af3c5b4a7794479d5ac5c9c4585ff932d3",
+        "response_sha256": "4be6220f34405e5c166514bf7db9ad9359661b073f173679a9b65c0f249172b9",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4819,
+          "total_tokens": 5188,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.36,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-059": {
+      "claim_id": "EA-059",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:91853",
+        "chembl-activity:91852",
+        "chembl-activity:2172299"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "b6e15461b11c34d578f14dc8a59e07af3c5b4a7794479d5ac5c9c4585ff932d3",
+        "response_sha256": "4be6220f34405e5c166514bf7db9ad9359661b073f173679a9b65c0f249172b9",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4819,
+          "total_tokens": 5188,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.36,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-060": {
+      "claim_id": "EA-060",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:91853",
+        "chembl-activity:392578",
+        "chembl-activity:513632"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "b6e15461b11c34d578f14dc8a59e07af3c5b4a7794479d5ac5c9c4585ff932d3",
+        "response_sha256": "4be6220f34405e5c166514bf7db9ad9359661b073f173679a9b65c0f249172b9",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4819,
+          "total_tokens": 5188,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.36,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-061": {
+      "claim_id": "EA-061",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:392578",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "28695f7ab9a44b1266e042ef16f6aa169b4c2317832022de0001363de054e790",
+        "response_sha256": "66163535e98041a35abae81db491d30abddc0b82676c6a58a2c430dae0717c95",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 373,
+          "prompt_tokens": 4829,
+          "total_tokens": 5202,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 72.093,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-062": {
+      "claim_id": "EA-062",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:392578",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "28695f7ab9a44b1266e042ef16f6aa169b4c2317832022de0001363de054e790",
+        "response_sha256": "66163535e98041a35abae81db491d30abddc0b82676c6a58a2c430dae0717c95",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 373,
+          "prompt_tokens": 4829,
+          "total_tokens": 5202,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 72.093,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-063": {
+      "claim_id": "EA-063",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:392578",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "28695f7ab9a44b1266e042ef16f6aa169b4c2317832022de0001363de054e790",
+        "response_sha256": "66163535e98041a35abae81db491d30abddc0b82676c6a58a2c430dae0717c95",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 373,
+          "prompt_tokens": 4829,
+          "total_tokens": 5202,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 72.093,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-064": {
+      "claim_id": "EA-064",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:392578",
+        "chembl-activity:2172299",
+        "chembl-activity:2172309"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "28695f7ab9a44b1266e042ef16f6aa169b4c2317832022de0001363de054e790",
+        "response_sha256": "66163535e98041a35abae81db491d30abddc0b82676c6a58a2c430dae0717c95",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 373,
+          "prompt_tokens": 4829,
+          "total_tokens": 5202,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 72.093,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-065": {
+      "claim_id": "EA-065",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:392578",
+        "chembl-activity:513632",
+        "chembl-activity:515159"
+      ],
+      "confidence": 0.95,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "28695f7ab9a44b1266e042ef16f6aa169b4c2317832022de0001363de054e790",
+        "response_sha256": "66163535e98041a35abae81db491d30abddc0b82676c6a58a2c430dae0717c95",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 373,
+          "prompt_tokens": 4829,
+          "total_tokens": 5202,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 72.093,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-066": {
+      "claim_id": "EA-066",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:513632",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "56d54a30cb93990c1e383c7989581f2b4a9caaf9c0874084618ef981d3a1c11b",
+        "response_sha256": "ea6a39c68e21ffceec80f36dc72ca81e20fe2983cc3b934bcdd6123d76024489",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 365,
+          "prompt_tokens": 5028,
+          "total_tokens": 5393,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.125,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-067": {
+      "claim_id": "EA-067",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:513632",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "56d54a30cb93990c1e383c7989581f2b4a9caaf9c0874084618ef981d3a1c11b",
+        "response_sha256": "ea6a39c68e21ffceec80f36dc72ca81e20fe2983cc3b934bcdd6123d76024489",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 365,
+          "prompt_tokens": 5028,
+          "total_tokens": 5393,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.125,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-068": {
+      "claim_id": "EA-068",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:513632",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "56d54a30cb93990c1e383c7989581f2b4a9caaf9c0874084618ef981d3a1c11b",
+        "response_sha256": "ea6a39c68e21ffceec80f36dc72ca81e20fe2983cc3b934bcdd6123d76024489",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 365,
+          "prompt_tokens": 5028,
+          "total_tokens": 5393,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.125,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-069": {
+      "claim_id": "EA-069",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:513632",
+        "chembl-activity:91852",
+        "chembl-activity:91852"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "56d54a30cb93990c1e383c7989581f2b4a9caaf9c0874084618ef981d3a1c11b",
+        "response_sha256": "ea6a39c68e21ffceec80f36dc72ca81e20fe2983cc3b934bcdd6123d76024489",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 365,
+          "prompt_tokens": 5028,
+          "total_tokens": 5393,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.125,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-070": {
+      "claim_id": "EA-070",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:513632",
+        "chembl-activity:392578",
+        "chembl-activity:515159"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "56d54a30cb93990c1e383c7989581f2b4a9caaf9c0874084618ef981d3a1c11b",
+        "response_sha256": "ea6a39c68e21ffceec80f36dc72ca81e20fe2983cc3b934bcdd6123d76024489",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 365,
+          "prompt_tokens": 5028,
+          "total_tokens": 5393,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.125,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-071": {
+      "claim_id": "EA-071",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:515159",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.9,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "30fedc3619cbd0755fa72fbe9c00fdfee7bff94f7e719d9c6da7e7b18bf903bd",
+        "response_sha256": "439a8dbf3116e05a3d4ab6d2d75ddd3e086315e60858ee56fa6e483506d7c79c",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4828,
+          "total_tokens": 5196,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 81.468,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-072": {
+      "claim_id": "EA-072",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:515159",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.9,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "30fedc3619cbd0755fa72fbe9c00fdfee7bff94f7e719d9c6da7e7b18bf903bd",
+        "response_sha256": "439a8dbf3116e05a3d4ab6d2d75ddd3e086315e60858ee56fa6e483506d7c79c",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4828,
+          "total_tokens": 5196,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 81.468,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-073": {
+      "claim_id": "EA-073",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:515159",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.9,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "30fedc3619cbd0755fa72fbe9c00fdfee7bff94f7e719d9c6da7e7b18bf903bd",
+        "response_sha256": "439a8dbf3116e05a3d4ab6d2d75ddd3e086315e60858ee56fa6e483506d7c79c",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4828,
+          "total_tokens": 5196,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 81.468,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-074": {
+      "claim_id": "EA-074",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:515159",
+        "chembl-activity:2172299",
+        "chembl-activity:2172309"
+      ],
+      "confidence": 0.9,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "30fedc3619cbd0755fa72fbe9c00fdfee7bff94f7e719d9c6da7e7b18bf903bd",
+        "response_sha256": "439a8dbf3116e05a3d4ab6d2d75ddd3e086315e60858ee56fa6e483506d7c79c",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4828,
+          "total_tokens": 5196,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 81.468,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-075": {
+      "claim_id": "EA-075",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:515159",
+        "chembl-activity:392578",
+        "chembl-activity:513632"
+      ],
+      "confidence": 0.9,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "30fedc3619cbd0755fa72fbe9c00fdfee7bff94f7e719d9c6da7e7b18bf903bd",
+        "response_sha256": "439a8dbf3116e05a3d4ab6d2d75ddd3e086315e60858ee56fa6e483506d7c79c",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4828,
+          "total_tokens": 5196,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 81.468,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-076": {
+      "claim_id": "EA-076",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:597862",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1f5ddd015d830bb25f27f072b911059170b5c0f0b22ac4a0610ea4794bbadd0d",
+        "response_sha256": "2ba6df9004223672c53c55ba16c9f350f497cf20627e146e6947abca6482f0c6",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4826,
+          "total_tokens": 5194,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 76.828,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-077": {
+      "claim_id": "EA-077",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:597862",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1f5ddd015d830bb25f27f072b911059170b5c0f0b22ac4a0610ea4794bbadd0d",
+        "response_sha256": "2ba6df9004223672c53c55ba16c9f350f497cf20627e146e6947abca6482f0c6",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4826,
+          "total_tokens": 5194,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 76.828,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-078": {
+      "claim_id": "EA-078",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:597862",
+        "chembl-activity:91852",
+        "chembl-activity:91853"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1f5ddd015d830bb25f27f072b911059170b5c0f0b22ac4a0610ea4794bbadd0d",
+        "response_sha256": "2ba6df9004223672c53c55ba16c9f350f497cf20627e146e6947abca6482f0c6",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4826,
+          "total_tokens": 5194,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 76.828,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-079": {
+      "claim_id": "EA-079",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:597862",
+        "chembl-activity:331346",
+        "chembl-activity:2172309"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1f5ddd015d830bb25f27f072b911059170b5c0f0b22ac4a0610ea4794bbadd0d",
+        "response_sha256": "2ba6df9004223672c53c55ba16c9f350f497cf20627e146e6947abca6482f0c6",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4826,
+          "total_tokens": 5194,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 76.828,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-080": {
+      "claim_id": "EA-080",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:597862",
+        "chembl-activity:392578",
+        "chembl-activity:513632"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1f5ddd015d830bb25f27f072b911059170b5c0f0b22ac4a0610ea4794bbadd0d",
+        "response_sha256": "2ba6df9004223672c53c55ba16c9f350f497cf20627e146e6947abca6482f0c6",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4826,
+          "total_tokens": 5194,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 76.828,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-081": {
+      "claim_id": "EA-081",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2108574",
+        "chembl-activity:242732",
+        "chembl-activity:2460301"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5285c8a295d584041ef33fdfe4db58686342eb3e843d8d79d3bd5cef99cb32e7",
+        "response_sha256": "9a324d27fd3b966de4e2ceab191bcbfa6bc04f8a77291cbdce62a2f38afb24fa",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 4077,
+          "total_tokens": 4468,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 66.657,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-082": {
+      "claim_id": "EA-082",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2108574",
+        "chembl-activity:2108574",
+        "chembl-activity:2108574"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5285c8a295d584041ef33fdfe4db58686342eb3e843d8d79d3bd5cef99cb32e7",
+        "response_sha256": "9a324d27fd3b966de4e2ceab191bcbfa6bc04f8a77291cbdce62a2f38afb24fa",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 4077,
+          "total_tokens": 4468,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 66.657,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-083": {
+      "claim_id": "EA-083",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2108574",
+        "chembl-activity:2108574",
+        "chembl-activity:2108574"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5285c8a295d584041ef33fdfe4db58686342eb3e843d8d79d3bd5cef99cb32e7",
+        "response_sha256": "9a324d27fd3b966de4e2ceab191bcbfa6bc04f8a77291cbdce62a2f38afb24fa",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 4077,
+          "total_tokens": 4468,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 66.657,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-084": {
+      "claim_id": "EA-084",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2108574",
+        "chembl-activity:2108574",
+        "chembl-activity:2108574"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5285c8a295d584041ef33fdfe4db58686342eb3e843d8d79d3bd5cef99cb32e7",
+        "response_sha256": "9a324d27fd3b966de4e2ceab191bcbfa6bc04f8a77291cbdce62a2f38afb24fa",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 4077,
+          "total_tokens": 4468,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 66.657,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-085": {
+      "claim_id": "EA-085",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2108574",
+        "chembl-activity:2108574",
+        "chembl-activity:2108574"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5285c8a295d584041ef33fdfe4db58686342eb3e843d8d79d3bd5cef99cb32e7",
+        "response_sha256": "9a324d27fd3b966de4e2ceab191bcbfa6bc04f8a77291cbdce62a2f38afb24fa",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 4077,
+          "total_tokens": 4468,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 66.657,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-086": {
+      "claim_id": "EA-086",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2172299",
+        "chembl-activity:2172309",
+        "chembl-activity:2172320"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5d6cb2459a42417766a57333a5e87ad917483b806765ce4e8957b5f918376093",
+        "response_sha256": "81a28bbfc9f76b9fcfc131a4dde1b2e8274246bb23e88b8749f432de9231380d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 392,
+          "prompt_tokens": 3869,
+          "total_tokens": 4261,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 57.094,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-087": {
+      "claim_id": "EA-087",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2172299",
+        "chembl-activity:2108574",
+        "chembl-activity:2172309"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5d6cb2459a42417766a57333a5e87ad917483b806765ce4e8957b5f918376093",
+        "response_sha256": "81a28bbfc9f76b9fcfc131a4dde1b2e8274246bb23e88b8749f432de9231380d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 392,
+          "prompt_tokens": 3869,
+          "total_tokens": 4261,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 57.094,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-088": {
+      "claim_id": "EA-088",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2172299",
+        "chembl-activity:2172299",
+        "chembl-activity:2172299"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5d6cb2459a42417766a57333a5e87ad917483b806765ce4e8957b5f918376093",
+        "response_sha256": "81a28bbfc9f76b9fcfc131a4dde1b2e8274246bb23e88b8749f432de9231380d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 392,
+          "prompt_tokens": 3869,
+          "total_tokens": 4261,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 57.094,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-089": {
+      "claim_id": "EA-089",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2172299",
+        "chembl-activity:2172299",
+        "chembl-activity:2172299"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5d6cb2459a42417766a57333a5e87ad917483b806765ce4e8957b5f918376093",
+        "response_sha256": "81a28bbfc9f76b9fcfc131a4dde1b2e8274246bb23e88b8749f432de9231380d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 392,
+          "prompt_tokens": 3869,
+          "total_tokens": 4261,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 57.094,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-090": {
+      "claim_id": "EA-090",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2172299",
+        "chembl-activity:2172299",
+        "chembl-activity:2172299"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5d6cb2459a42417766a57333a5e87ad917483b806765ce4e8957b5f918376093",
+        "response_sha256": "81a28bbfc9f76b9fcfc131a4dde1b2e8274246bb23e88b8749f432de9231380d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 392,
+          "prompt_tokens": 3869,
+          "total_tokens": 4261,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 57.094,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-091": {
+      "claim_id": "EA-091",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2172309",
+        "chembl-activity:2172320",
+        "chembl-activity:189032"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "f58f07ccd679fd7ec3fb5479d34e4c10cb88ae3d9c896cd859ce2d0201908bbb",
+        "response_sha256": "f58c488d59ca2fa7f54fe36b221345ca1979ae360e3071118f59e8c42f59acc8",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 3867,
+          "total_tokens": 4258,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.375,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-092": {
+      "claim_id": "EA-092",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2172309",
+        "chembl-activity:2172299",
+        "chembl-activity:2172320"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "f58f07ccd679fd7ec3fb5479d34e4c10cb88ae3d9c896cd859ce2d0201908bbb",
+        "response_sha256": "f58c488d59ca2fa7f54fe36b221345ca1979ae360e3071118f59e8c42f59acc8",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 3867,
+          "total_tokens": 4258,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.375,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-093": {
+      "claim_id": "EA-093",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2172309",
+        "chembl-activity:2108574",
+        "chembl-activity:2172309"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "f58f07ccd679fd7ec3fb5479d34e4c10cb88ae3d9c896cd859ce2d0201908bbb",
+        "response_sha256": "f58c488d59ca2fa7f54fe36b221345ca1979ae360e3071118f59e8c42f59acc8",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 3867,
+          "total_tokens": 4258,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.375,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-094": {
+      "claim_id": "EA-094",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2172309",
+        "chembl-activity:2172299",
+        "chembl-activity:2172320"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "f58f07ccd679fd7ec3fb5479d34e4c10cb88ae3d9c896cd859ce2d0201908bbb",
+        "response_sha256": "f58c488d59ca2fa7f54fe36b221345ca1979ae360e3071118f59e8c42f59acc8",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 3867,
+          "total_tokens": 4258,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.375,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    },
+    "EA-095": {
+      "claim_id": "EA-095",
+      "verdict": "supported",
+      "source_ids": [
+        "chembl-activity:2172309",
+        "chembl-activity:2108574",
+        "chembl-activity:2172309"
+      ],
+      "confidence": 0.99,
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "f58f07ccd679fd7ec3fb5479d34e4c10cb88ae3d9c896cd859ce2d0201908bbb",
+        "response_sha256": "f58c488d59ca2fa7f54fe36b221345ca1979ae360e3071118f59e8c42f59acc8",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 3867,
+          "total_tokens": 4258,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.375,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "confidence_status": "uncalibrated_model_self_report"
+    }
+  },
+  "attempts": [
+    {
+      "claim_ids": [
+        "EA-001",
+        "EA-002",
+        "EA-003",
+        "EA-004",
+        "EA-005"
+      ],
+      "started_utc": "2026-10-24T20:28:13.440244+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "7f6555b98c3eeee8cb131e7b24e414248c364aada99b4326fd9d1d563caa75f7",
+        "response_sha256": "829d78bcc16789e90bc1a3a901de3932e2af0493f0805306af30289563d7b77f",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4519,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 56.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 56.516
+    },
+    {
+      "claim_ids": [
+        "EA-006",
+        "EA-007",
+        "EA-008",
+        "EA-009",
+        "EA-010"
+      ],
+      "started_utc": "2026-10-24T20:29:09.956567+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1cdf6b46feed216621a78bfdb3e66db8d6b2c1095f008e66c6752678a5a7d9c9",
+        "response_sha256": "a490515d01109fc25172def69a9d90d52d46a67f96401ad9d2c9b53485418e0d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 87.86,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 87.875
+    },
+    {
+      "claim_ids": [
+        "EA-011",
+        "EA-012",
+        "EA-013",
+        "EA-014",
+        "EA-015"
+      ],
+      "started_utc": "2026-10-24T20:30:37.828650+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "48edadd4166ed555ad1f96aed4ddb84754cd3905bdd4fa616fa8663ff2a71bdf",
+        "response_sha256": "b0f451bd8542465219b2a9a473d1bf0859a3ad6dc86d860fda60a3af32e4cdb7",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4520,
+          "total_tokens": 4897,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.907,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 86.969
+    },
+    {
+      "claim_ids": [
+        "EA-016",
+        "EA-017",
+        "EA-018",
+        "EA-019",
+        "EA-020"
+      ],
+      "started_utc": "2026-10-24T20:32:04.801107+00:00",
+      "status": "failed",
+      "error_type": "ReadTimeout",
+      "error_code": "model_unavailable_or_invalid",
+      "seconds": 90.453
+    },
+    {
+      "claim_ids": [
+        "EA-021",
+        "EA-022",
+        "EA-023",
+        "EA-024",
+        "EA-025"
+      ],
+      "started_utc": "2026-10-24T20:33:35.250639+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "dc5e07198913dfd9674ba3ef4e942922b16029bbcd8745cc5734ece9dc6e8ccd",
+        "response_sha256": "b9e8eb33830c7d5087eb563509007267bbfbe8975b41d36948c985b43a12e300",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 361,
+          "prompt_tokens": 4519,
+          "total_tokens": 4880,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 75.985,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 76.0
+    },
+    {
+      "claim_ids": [
+        "EA-026",
+        "EA-027",
+        "EA-028",
+        "EA-029",
+        "EA-030"
+      ],
+      "started_utc": "2026-10-24T20:34:51.252018+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "cafb1f19872a4c3e044e8e87a292a4b6c8debbc311c125dc03a0f0495473006d",
+        "response_sha256": "2e3f748287e88d6df474055adcc54d884fbdf1e124cadfd929d92e09d45f9a94",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4519,
+          "total_tokens": 4883,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 74.235,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 74.25
+    },
+    {
+      "claim_ids": [
+        "EA-031",
+        "EA-032",
+        "EA-033",
+        "EA-034",
+        "EA-035"
+      ],
+      "started_utc": "2026-10-24T20:36:05.494854+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c4b4f48a2dac8bdf6e328113d85dc94c2ff07e847c775c42ccdc23c77232558e",
+        "response_sha256": "b05e99d3135591beed26fe8b0b8b66ea1e702fdffcfde528126f46cdadf7419d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 377,
+          "prompt_tokens": 4521,
+          "total_tokens": 4898,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 86.5,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 86.5
+    },
+    {
+      "claim_ids": [
+        "EA-036",
+        "EA-037",
+        "EA-038",
+        "EA-039",
+        "EA-040"
+      ],
+      "started_utc": "2026-10-24T20:37:32.013318+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "c78ccd192518b0672f5be00b13ad1403e87ee28b80e50569919837d3b42e9e78",
+        "response_sha256": "9e10cc33134626b38cae88ab679c0b4d1aa85b4c9976ce08cb592771224e1c91",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 379,
+          "prompt_tokens": 4517,
+          "total_tokens": 4896,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.297,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 70.313
+    },
+    {
+      "claim_ids": [
+        "EA-041",
+        "EA-042",
+        "EA-043",
+        "EA-044",
+        "EA-045"
+      ],
+      "started_utc": "2026-10-24T20:38:42.334725+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1e1888c0c55f52a7b25b51d7d09b5ff1d30bd13b9fcc0792f4234b0ff12e46c7",
+        "response_sha256": "c5e09813808119a9e868134361905f4bc62bac0b13079ccb934102c11c9b1b10",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 364,
+          "prompt_tokens": 4607,
+          "total_tokens": 4971,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.813,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 68.828
+    },
+    {
+      "claim_ids": [
+        "EA-046",
+        "EA-047",
+        "EA-048",
+        "EA-049",
+        "EA-050"
+      ],
+      "started_utc": "2026-10-24T20:39:51.162504+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "eadaa50736e176ee1861d112c3ccdee27815677efc8ccaae9799a0ce804af4bd",
+        "response_sha256": "bb94b832e0034e51e75ecfbbc497d84a87d5440ffef91e49dcb6d6770a49b0e5",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 362,
+          "prompt_tokens": 4607,
+          "total_tokens": 4969,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 68.281,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 68.297
+    },
+    {
+      "claim_ids": [
+        "EA-051",
+        "EA-052",
+        "EA-053",
+        "EA-054",
+        "EA-055"
+      ],
+      "started_utc": "2026-10-24T20:40:59.448035+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "071f97e17a0e6dd7aa1b9da8dd730b5dbeb5a182a2ac2663f5351f0995291960",
+        "response_sha256": "4b2b3a18e2a01a995472d590e2aab0b70f575c2668e82e6d4ee3fdce50dcd096",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4820,
+          "total_tokens": 5189,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 67.844,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 67.844
+    },
+    {
+      "claim_ids": [
+        "EA-056",
+        "EA-057",
+        "EA-058",
+        "EA-059",
+        "EA-060"
+      ],
+      "started_utc": "2026-10-24T20:42:07.302165+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "b6e15461b11c34d578f14dc8a59e07af3c5b4a7794479d5ac5c9c4585ff932d3",
+        "response_sha256": "4be6220f34405e5c166514bf7db9ad9359661b073f173679a9b65c0f249172b9",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 4819,
+          "total_tokens": 5188,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.36,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 62.375
+    },
+    {
+      "claim_ids": [
+        "EA-061",
+        "EA-062",
+        "EA-063",
+        "EA-064",
+        "EA-065"
+      ],
+      "started_utc": "2026-10-24T20:43:09.670039+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "28695f7ab9a44b1266e042ef16f6aa169b4c2317832022de0001363de054e790",
+        "response_sha256": "66163535e98041a35abae81db491d30abddc0b82676c6a58a2c430dae0717c95",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 373,
+          "prompt_tokens": 4829,
+          "total_tokens": 5202,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 72.093,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 72.093
+    },
+    {
+      "claim_ids": [
+        "EA-066",
+        "EA-067",
+        "EA-068",
+        "EA-069",
+        "EA-070"
+      ],
+      "started_utc": "2026-10-24T20:44:21.772731+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "56d54a30cb93990c1e383c7989581f2b4a9caaf9c0874084618ef981d3a1c11b",
+        "response_sha256": "ea6a39c68e21ffceec80f36dc72ca81e20fe2983cc3b934bcdd6123d76024489",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 365,
+          "prompt_tokens": 5028,
+          "total_tokens": 5393,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 70.125,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 70.125
+    },
+    {
+      "claim_ids": [
+        "EA-071",
+        "EA-072",
+        "EA-073",
+        "EA-074",
+        "EA-075"
+      ],
+      "started_utc": "2026-10-24T20:45:31.915120+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "30fedc3619cbd0755fa72fbe9c00fdfee7bff94f7e719d9c6da7e7b18bf903bd",
+        "response_sha256": "439a8dbf3116e05a3d4ab6d2d75ddd3e086315e60858ee56fa6e483506d7c79c",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4828,
+          "total_tokens": 5196,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 81.468,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 81.468
+    },
+    {
+      "claim_ids": [
+        "EA-076",
+        "EA-077",
+        "EA-078",
+        "EA-079",
+        "EA-080"
+      ],
+      "started_utc": "2026-10-24T20:46:53.396248+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "1f5ddd015d830bb25f27f072b911059170b5c0f0b22ac4a0610ea4794bbadd0d",
+        "response_sha256": "2ba6df9004223672c53c55ba16c9f350f497cf20627e146e6947abca6482f0c6",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 368,
+          "prompt_tokens": 4826,
+          "total_tokens": 5194,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 76.828,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 76.844
+    },
+    {
+      "claim_ids": [
+        "EA-081",
+        "EA-082",
+        "EA-083",
+        "EA-084",
+        "EA-085"
+      ],
+      "started_utc": "2026-10-24T20:48:10.251011+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5285c8a295d584041ef33fdfe4db58686342eb3e843d8d79d3bd5cef99cb32e7",
+        "response_sha256": "9a324d27fd3b966de4e2ceab191bcbfa6bc04f8a77291cbdce62a2f38afb24fa",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 4077,
+          "total_tokens": 4468,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 66.657,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 66.672
+    },
+    {
+      "claim_ids": [
+        "EA-086",
+        "EA-087",
+        "EA-088",
+        "EA-089",
+        "EA-090"
+      ],
+      "started_utc": "2026-10-24T20:49:16.943078+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "5d6cb2459a42417766a57333a5e87ad917483b806765ce4e8957b5f918376093",
+        "response_sha256": "81a28bbfc9f76b9fcfc131a4dde1b2e8274246bb23e88b8749f432de9231380d",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 392,
+          "prompt_tokens": 3869,
+          "total_tokens": 4261,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 57.094,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 57.11
+    },
+    {
+      "claim_ids": [
+        "EA-091",
+        "EA-092",
+        "EA-093",
+        "EA-094",
+        "EA-095"
+      ],
+      "started_utc": "2026-10-24T20:50:14.056871+00:00",
+      "status": "returned",
+      "model": {
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "weights_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "nominal_parameters": 500000000,
+        "prompt_sha256": "696dc48fc999ca3985caa196607cd8b8c4138bd860f2af5aa74a9cf57a995585",
+        "context_sha256": "f58f07ccd679fd7ec3fb5479d34e4c10cb88ae3d9c896cd859ce2d0201908bbb",
+        "response_sha256": "f58c488d59ca2fa7f54fe36b221345ca1979ae360e3071118f59e8c42f59acc8",
+        "temperature": 0,
+        "seed": 1337,
+        "cache_prompt": false,
+        "timeout_seconds": 90,
+        "max_output_tokens": 650,
+        "usage": {
+          "completion_tokens": 391,
+          "prompt_tokens": 3867,
+          "total_tokens": 4258,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 62.375,
+        "identity_scope": "Configured local installation; not remote attestation"
+      },
+      "seconds": 62.375
+    }
+  ]
+}

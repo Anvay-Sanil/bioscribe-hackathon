@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "checks": 24,
+  "scope": "Generated JSON Schema plus client semantic decoder; synthetic persisted API/export fixture"
+}

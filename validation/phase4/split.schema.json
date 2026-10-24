@@ -1,0 +1,89 @@
+{
+  "$defs": {
+    "SplitRow": {
+      "additionalProperties": false,
+      "properties": {
+        "unit_id": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Unit Id",
+          "type": "string"
+        },
+        "entity_key": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Entity Key",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "train",
+            "tune",
+            "calibration",
+            "external_test",
+            "challenge"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "groups": {
+          "patternProperties": {
+            "\\S": {
+              "maxLength": 8000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            }
+          },
+          "propertyNames": {
+            "maxLength": 8000,
+            "minLength": 1
+          },
+          "title": "Groups",
+          "type": "object"
+        }
+      },
+      "required": [
+        "unit_id",
+        "entity_key",
+        "role",
+        "groups"
+      ],
+      "title": "SplitRow",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "phase4-split/1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "dataset_id": {
+      "maxLength": 8000,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "rows": {
+      "items": {
+        "$ref": "#/$defs/SplitRow"
+      },
+      "maxItems": 100000,
+      "minItems": 1,
+      "title": "Rows",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "rows"
+  ],
+  "title": "SplitManifest",
+  "type": "object"
+}

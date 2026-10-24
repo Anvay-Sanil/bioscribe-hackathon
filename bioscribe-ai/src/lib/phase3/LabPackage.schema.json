@@ -1,0 +1,652 @@
+{
+  "$defs": {
+    "Bundle": {
+      "additionalProperties": false,
+      "properties": {
+        "sources": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Sources",
+          "type": "object"
+        },
+        "dependency_lock": {
+          "title": "Dependency Lock",
+          "type": "string"
+        },
+        "installation_lock": {
+          "title": "Installation Lock",
+          "type": "string"
+        },
+        "references": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "References",
+          "type": "object"
+        }
+      },
+      "required": [
+        "sources",
+        "dependency_lock",
+        "installation_lock",
+        "references"
+      ],
+      "title": "Bundle",
+      "type": "object"
+    },
+    "Diagnostic": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "enum": [
+            "empty_input",
+            "unsupported_annotation",
+            "non_ascii_character",
+            "whitespace_or_control",
+            "atom_limit",
+            "dummy_atom",
+            "query_graph",
+            "unsupported_bond",
+            "unsupported_stereo",
+            "atom_map",
+            "ring_closure",
+            "branch_syntax",
+            "smiles_syntax",
+            "invalid_valence",
+            "aromaticity_failure",
+            "sanitization_failure",
+            "unspecified_stereo",
+            "multiple_fragments",
+            "charged_graph"
+          ],
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "error",
+            "warning"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "character_offset": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Character Offset"
+        },
+        "atom_indices": {
+          "default": [],
+          "items": {
+            "type": "integer"
+          },
+          "title": "Atom Indices",
+          "type": "array"
+        },
+        "bond_indices": {
+          "default": [],
+          "items": {
+            "type": "integer"
+          },
+          "title": "Bond Indices",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "Diagnostic",
+      "type": "object"
+    },
+    "LabRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "contract_version": {
+          "const": "lab-1.1.0",
+          "default": "lab-1.1.0",
+          "title": "Contract Version",
+          "type": "string"
+        },
+        "data_scope": {
+          "const": "public_non_sensitive",
+          "default": "public_non_sensitive",
+          "title": "Data Scope",
+          "type": "string"
+        },
+        "molecules": {
+          "items": {
+            "maxLength": 2048,
+            "type": "string"
+          },
+          "maxItems": 16,
+          "minItems": 1,
+          "title": "Molecules",
+          "type": "array"
+        },
+        "budget": {
+          "default": 3,
+          "maximum": 16,
+          "minimum": 1,
+          "title": "Budget",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "molecules"
+      ],
+      "title": "LabRequest",
+      "type": "object"
+    },
+    "Molecule": {
+      "additionalProperties": false,
+      "properties": {
+        "index": {
+          "title": "Index",
+          "type": "integer"
+        },
+        "original_smiles": {
+          "title": "Original Smiles",
+          "type": "string"
+        },
+        "input_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Input Sha256",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "identified",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "canonical_smiles": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Canonical Smiles"
+        },
+        "identity_sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Identity Sha256"
+        },
+        "formal_charge": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Formal Charge"
+        },
+        "fragments": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Fragments"
+        },
+        "normalization_history": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Normalization History",
+          "type": "array"
+        },
+        "diagnostics": {
+          "items": {
+            "$ref": "#/$defs/Diagnostic"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "properties": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Property"
+          },
+          "title": "Properties"
+        },
+        "references": {
+          "items": {
+            "$ref": "#/$defs/Reference"
+          },
+          "title": "References",
+          "type": "array"
+        },
+        "reference_status": {
+          "enum": [
+            "matched_frozen_record",
+            "not_available",
+            "not_computed"
+          ],
+          "title": "Reference Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "original_smiles",
+        "input_sha256",
+        "status",
+        "canonical_smiles",
+        "identity_sha256",
+        "formal_charge",
+        "fragments",
+        "normalization_history",
+        "diagnostics",
+        "properties",
+        "references",
+        "reference_status"
+      ],
+      "title": "Molecule",
+      "type": "object"
+    },
+    "Property": {
+      "additionalProperties": false,
+      "properties": {
+        "quantity": {
+          "title": "Quantity",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "units": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Units"
+        },
+        "availability": {
+          "enum": [
+            "computed",
+            "not_computed",
+            "not_available",
+            "not_applicable"
+          ],
+          "title": "Availability",
+          "type": "string"
+        },
+        "assessment_status": {
+          "enum": [
+            "computed",
+            "not_assessed"
+          ],
+          "title": "Assessment Status",
+          "type": "string"
+        },
+        "evidence_category": {
+          "enum": [
+            "computed_descriptor",
+            "unvalidated_heuristic",
+            "model_prediction"
+          ],
+          "title": "Evidence Category",
+          "type": "string"
+        },
+        "method": {
+          "const": "bioscribe-evidence-lab/1.1.0",
+          "default": "bioscribe-evidence-lab/1.1.0",
+          "title": "Method",
+          "type": "string"
+        },
+        "implementation_fidelity": {
+          "const": "software_fixture_checked",
+          "default": "software_fixture_checked",
+          "title": "Implementation Fidelity",
+          "type": "string"
+        },
+        "validation_record": {
+          "default": null,
+          "title": "Validation Record",
+          "type": "null"
+        },
+        "predictive_validation": {
+          "const": "not_assessed",
+          "default": "not_assessed",
+          "title": "Predictive Validation",
+          "type": "string"
+        },
+        "domain": {
+          "enum": [
+            "accepted_graph",
+            "unsupported_input",
+            "undefined_quantity",
+            "not_established"
+          ],
+          "title": "Domain",
+          "type": "string"
+        },
+        "coverage": {
+          "enum": [
+            "complete",
+            "none"
+          ],
+          "title": "Coverage",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "quantity",
+        "value",
+        "units",
+        "availability",
+        "assessment_status",
+        "evidence_category",
+        "domain",
+        "coverage",
+        "reason"
+      ],
+      "title": "Property",
+      "type": "object"
+    },
+    "Ranking": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "computed",
+            "not_assessed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "budget": {
+          "title": "Budget",
+          "type": "integer"
+        },
+        "heuristic_order": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Heuristic Order",
+          "type": "array"
+        },
+        "qed_order": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Qed Order",
+          "type": "array"
+        },
+        "heuristic_selection": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Heuristic Selection",
+          "type": "array"
+        },
+        "qed_selection": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Qed Selection",
+          "type": "array"
+        },
+        "tie_break": {
+          "const": "identity_sha256_then_index",
+          "default": "identity_sha256_then_index",
+          "title": "Tie Break",
+          "type": "string"
+        },
+        "interpretation": {
+          "const": "Descriptor orderings only; no activity labels or performance assessment",
+          "default": "Descriptor orderings only; no activity labels or performance assessment",
+          "title": "Interpretation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "reason",
+        "budget",
+        "heuristic_order",
+        "qed_order",
+        "heuristic_selection",
+        "qed_selection"
+      ],
+      "title": "Ranking",
+      "type": "object"
+    },
+    "Reference": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "enum": [
+            "PubChem",
+            "ChEMBL"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "identifier": {
+          "title": "Identifier",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "raw_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Raw Sha256",
+          "type": "string"
+        },
+        "retrieved_utc": {
+          "title": "Retrieved Utc",
+          "type": "string"
+        },
+        "source_version": {
+          "title": "Source Version",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "correspondence": {
+          "const": "exact_isomeric_graph",
+          "default": "exact_isomeric_graph",
+          "title": "Correspondence",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source",
+        "identifier",
+        "label",
+        "raw_sha256",
+        "retrieved_utc",
+        "source_version",
+        "url"
+      ],
+      "title": "Reference",
+      "type": "object"
+    },
+    "Result": {
+      "additionalProperties": false,
+      "properties": {
+        "contract_version": {
+          "const": "lab-1.1.0",
+          "default": "lab-1.1.0",
+          "title": "Contract Version",
+          "type": "string"
+        },
+        "request_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Request Sha256",
+          "type": "string"
+        },
+        "engine_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Engine Sha256",
+          "type": "string"
+        },
+        "snapshot_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Snapshot Sha256",
+          "type": "string"
+        },
+        "identity_policy": {
+          "const": "exact_isomeric_graph/1.0.0",
+          "default": "exact_isomeric_graph/1.0.0",
+          "title": "Identity Policy",
+          "type": "string"
+        },
+        "rows": {
+          "items": {
+            "$ref": "#/$defs/Molecule"
+          },
+          "title": "Rows",
+          "type": "array"
+        },
+        "identity_groups": {
+          "items": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "title": "Identity Groups",
+          "type": "array"
+        },
+        "ranking": {
+          "$ref": "#/$defs/Ranking"
+        },
+        "scientific_assessment": {
+          "const": "not_assessed",
+          "default": "not_assessed",
+          "title": "Scientific Assessment",
+          "type": "string"
+        },
+        "sensitive_intake": {
+          "const": "blocked",
+          "default": "blocked",
+          "title": "Sensitive Intake",
+          "type": "string"
+        }
+      },
+      "required": [
+        "request_sha256",
+        "engine_sha256",
+        "snapshot_sha256",
+        "rows",
+        "identity_groups",
+        "ranking"
+      ],
+      "title": "Result",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "format": {
+      "const": "bioscribe-replay/1.0.0",
+      "default": "bioscribe-replay/1.0.0",
+      "title": "Format",
+      "type": "string"
+    },
+    "run_id": {
+      "pattern": "^[a-f0-9]{32}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "request": {
+      "$ref": "#/$defs/LabRequest"
+    },
+    "result": {
+      "$ref": "#/$defs/Result"
+    },
+    "result_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Result Sha256",
+      "type": "string"
+    },
+    "bundle": {
+      "$ref": "#/$defs/Bundle"
+    },
+    "runtime": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Runtime",
+      "type": "object"
+    },
+    "integrity_scope": {
+      "const": "Checksums detect inconsistency; they do not authenticate authorship",
+      "default": "Checksums detect inconsistency; they do not authenticate authorship",
+      "title": "Integrity Scope",
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "request",
+    "result",
+    "result_sha256",
+    "bundle",
+    "runtime"
+  ],
+  "title": "ReplayPackage",
+  "type": "object"
+}

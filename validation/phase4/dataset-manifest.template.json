@@ -1,0 +1,38 @@
+{
+  "worksheet_version": "phase4-dataset-worksheet/1.0.0",
+  "status": "not_acquired",
+  "note": "Planning worksheet, not a validated dataset schema or evidence of empirical labels.",
+  "dataset_id": null,
+  "source_release_query_retrieved_at_license": null,
+  "source_files_and_sha256": [],
+  "endpoint_target_construct_organism_assay_units": null,
+  "identity_and_normalization_policy": null,
+  "label_relation_censoring_missingness_policy": null,
+  "replicate_duplicate_and_conflict_policy": null,
+  "row_ledger_location_and_sha256": null,
+  "row_ledger_required_columns": [
+    "source_record_id", "source_release", "source_payload_sha256", "source_evidence_location",
+    "assay_id", "document_id", "target_accession_version", "target_sequence_sha256", "organism_taxon",
+    "construct_and_assay_conditions", "raw_molecule_sha256", "accepted_molecule_identity",
+    "normalization_history", "endpoint", "raw_value", "raw_units", "relation", "normalized_value",
+    "normalized_units", "label_transform", "replicate_uncertainty", "assay_date", "quality_flags",
+    "eligibility_decision", "decision_reason", "curator", "adjudication_record",
+    "source_lineage_cluster", "analysis_unit_id", "entity_key", "split_role", "leakage_groups"
+  ],
+  "counts": {
+    "retrieved_records": null,
+    "excluded_records": null,
+    "unresolved_records": null,
+    "included_records": null,
+    "analysis_units_after_aggregation": null,
+    "independent_groups": null,
+    "positive_units": null,
+    "negative_units": null,
+    "unknown_units": null
+  },
+  "flow_and_exclusion_report": null,
+  "primary_source_verification": null,
+  "independent_curation_and_agreement": null,
+  "selection_bias_and_limitations": null,
+  "suitability_review": null
+}

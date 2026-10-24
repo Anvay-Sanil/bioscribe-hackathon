@@ -1,0 +1,10 @@
+{
+  "hackathon/hm01/probe.py": "7cb14a54b696278ee0d781cd5cd54249e74d5f45c6d050cb3792d74396f00452",
+  "hackathon/hm01/results.json": "1de461c7fd09a42078848d7f7f7139ac001d899aeb277b85b49cf4c1677ce2ee",
+  "hackathon/hm01/client-checks.json": "4e81e9663235396b769bc02c21c1f1780e463711b749e5e43bcf980ccca9525b",
+  "hackathon/hm01/backend-tests.xml": "9b3e8723e2ac26251b0a742f35199e61a1b766e04fda2122be1a999b922bc14d",
+  "hackathon/hm01/mixed-case-run.json": "ac414a9b7f5859465c1eef0cdc808fb59eb2630726eeed90569e2babb6281919",
+  "hackathon/hm01/mixed-input-browser.jpg": "50ec34645d46c27f4c19c118ae5cfa60b9a422c0341a08fe666954dca695772b",
+  "hackathon/hm01/ASSESSMENT.md": "58229552b93fa900177bf35ada54105943e17e9ea5bf722c55592cfd705019d3",
+  "bioscribe-ai/scripts/hm01-check.cjs": "d58cc07842a4ffacc91d75889ec7da5f14bf8f21061ad3f770a7e5794b31aa11"
+}

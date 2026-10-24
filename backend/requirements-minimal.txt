@@ -1,0 +1,36 @@
+# ============================================================================
+# BioScribe AI - Minimal Requirements (Quick Start)
+# For rapid development and testing without heavy ML dependencies
+# ============================================================================
+
+# Core Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Scientific Computing
+numpy==1.26.3
+scipy==1.11.4
+pandas==2.1.4
+
+# Bioinformatics (Essential)
+biopython==1.83
+
+# Database
+motor==3.3.2
+pymongo==4.6.1
+
+# HTTP & Utilities
+httpx==0.26.0
+requests==2.31.0
+python-multipart==0.0.6
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Logging
+python-json-logger==2.0.7
+
+# Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3

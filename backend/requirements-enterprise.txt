@@ -1,0 +1,41 @@
+# BioScribe AI Enterprise Edition Requirements
+# Core dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# Compliance & Security
+cryptography==41.0.7
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+
+# Database (for production)
+sqlalchemy==2.0.23
+alembic==1.13.1
+psycopg2-binary==2.9.9
+
+# Monitoring & Logging
+structlog==23.2.0
+sentry-sdk[fastapi]==1.38.0
+
+# Data processing
+pandas==2.1.4
+numpy==1.25.2
+scipy==1.11.4
+
+# HTTP client for ELN/LIMS integration
+httpx==0.25.2
+requests==2.31.0
+
+# Development
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+flake8==6.1.0
+
+# Optional: Real AI/ML libraries (for future integration)
+# scikit-learn==1.3.2
+# torch==2.1.1
+# transformers==4.35.2
+# rdkit-pypi==2023.9.2

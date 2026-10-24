@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checks": [
+    "API startup",
+    "worker readiness",
+    "queued run survives API kill",
+    "real spawned computation",
+    "run/export identity",
+    "API and worker restart preserve artifact"
+  ],
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "commands": {
+    "api": [
+      "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\.phase3-clean\\Scripts\\python.exe",
+      "-m",
+      "uvicorn",
+      "bioscribe.api:app",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "55618",
+      "--no-access-log"
+    ],
+    "worker": [
+      "E:\\Bioscribe\\CascadeProjects\\windsurf-project\\.phase3-clean\\Scripts\\python.exe",
+      "-m",
+      "bioscribe.worker"
+    ]
+  },
+  "data": "synthetic public software fixture; no scientific performance evidence"
+}
